@@ -41,7 +41,11 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add directory="SFML/include" />
 		</Compiler>
+		<Linker>
+			<Add directory="SFML/lib" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
