@@ -2,29 +2,41 @@
 #include "pj.h"
 void pj::update(){
 
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
-            _sprite.move(_velocity,0);
+        _velocity={0,0};
+
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
+                _velocity.y=-4;
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
-                _sprite.move(-_velocity,0);
-        }
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
-                _sprite.move(0,-_velocity);
+                _velocity.x=-4;
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
-                _sprite.move(0,_velocity);
+                _velocity.y=4;
         }
-        if(_sprite.getPosition().x < 0){
-            _sprite.setPosition(0, _sprite.getPosition().y);
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+                _velocity.x=4;
         }
-        if(_sprite.getPosition().y < 0){
-            _sprite.setPosition(_sprite.getPosition().x,0);
+        _sprite.move(_velocity);
+
+        if(_velocity.x < 0){
+            _sprite.setScale(-1,1);
+
+        }else if(_velocity.x > 0 ){
+            _sprite.setScale(1,1);
         }
-        if(_sprite.getPosition().x + _sprite.getGlobalBounds().width > 800){
-            _sprite.setPosition(800 - _sprite.getGlobalBounds().width, _sprite.getPosition().y);
+
+
+        if(_sprite.getGlobalBounds().left < 0){
+            _sprite.setPosition(_sprite.getOrigin().x, _sprite.getPosition().y);
         }
-        if(_sprite.getPosition().y + _sprite.getGlobalBounds().height > 600){
-            _sprite.setPosition(_sprite.getPosition().x,600 - _sprite.getGlobalBounds().height);
+        if(_sprite.getGlobalBounds().top < 0){
+            _sprite.setPosition(_sprite.getPosition().x,_sprite.getOrigin().y);
+        }
+        if(_sprite.getGlobalBounds().left + _sprite.getGlobalBounds().width > 800){
+            _sprite.setPosition(800 - (_sprite.getGlobalBounds().width-_sprite.getOrigin().x), _sprite.getPosition().y);
+        }
+        if(_sprite.getGlobalBounds().top+ _sprite.getGlobalBounds().height > 600){
+            _sprite.setPosition(_sprite.getPosition().x,600 +(_sprite.getGlobalBounds().height - _sprite.getOrigin().y));
         }
 }
 
@@ -35,9 +47,9 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
 
 pj::pj()
 {
-    _velocity=4;
     _textureM.loadFromFile("data/images/ejemplo.png");
     _sprite.setTexture(_textureM);
+    _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     //ctor
 }
 

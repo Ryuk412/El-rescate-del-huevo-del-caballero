@@ -17,7 +17,7 @@ class pj: public sf::Drawable
     private:
         sf::Sprite _sprite;
         sf::Texture _textureM;
-        float _velocity;
+        sf::Vector2f _velocity={};
 };
 
 #endif // PJ_H

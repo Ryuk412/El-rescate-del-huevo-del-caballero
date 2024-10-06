@@ -48,9 +48,9 @@
 		<Linker>
 			<Add directory="SFML/lib" />
 		</Linker>
+		<Unit filename="data/characters/clsPJ.cpp" />
 		<Unit filename="data/characters/pj.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/pj.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
