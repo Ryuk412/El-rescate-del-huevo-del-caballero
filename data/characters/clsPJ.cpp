@@ -37,8 +37,8 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
 pj::pj()
 {
     _velocity=4;
-    if(!_textureM.loadFromFile("data/images/ejempl.png")){
-        sf::RenderWindow window(sf::VideoMode(100,100),"ERROR");
+    if(!_textureM.loadFromFile("data/images/ejemplo.png")){
+
     }
     _sprite.setTexture(_textureM);
     //ctor
