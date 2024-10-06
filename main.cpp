@@ -2,14 +2,11 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
-#include "data/characters/pj.h"
 using namespace std;
 using namespace sf;
 
-
 int main()
 {
-    pj asd;
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
@@ -23,7 +20,7 @@ int main()
         }
 
         window.clear();
-        window.draw(asd);
+        window.draw(shape);
         window.display();
     }
 
