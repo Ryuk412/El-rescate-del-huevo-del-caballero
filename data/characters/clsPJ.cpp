@@ -1,6 +1,5 @@
 #include<iostream>
 #include "pj.h"
-
 void pj::update(){
 
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
@@ -37,9 +36,7 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
 pj::pj()
 {
     _velocity=4;
-    if(!_textureM.loadFromFile("data/images/ejemplo.png")){
-
-    }
+    _textureM.loadFromFile("data/images/ejemplo.png");
     _sprite.setTexture(_textureM);
     //ctor
 }

@@ -9,8 +9,9 @@ using namespace sf;
 
 int main()
 {
-    pj asd;
+    pj ejemplo;
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
+    window.setFramerateLimit(60);
     CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
     while (window.isOpen())
@@ -23,7 +24,8 @@ int main()
         }
 
         window.clear();
-        window.draw(asd);
+        ejemplo.update();
+        window.draw(ejemplo);
         window.display();
     }
 
