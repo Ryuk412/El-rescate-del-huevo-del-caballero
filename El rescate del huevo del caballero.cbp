@@ -42,7 +42,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="data/characters/clsP.cpp" />
 		<Unit filename="data/characters/clsP.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
