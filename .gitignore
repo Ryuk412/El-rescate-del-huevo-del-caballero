@@ -33,3 +33,4 @@
 # Asd
 *.layout
 *.depend
+doxygen/doxyfile.txt
