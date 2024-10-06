@@ -14,6 +14,7 @@
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="SFML/include" />
+					<Add directory="data/characters" />
 				</Compiler>
 				<Linker>
 					<Add library="SFML/lib/libsfml-graphics-d.a" />
@@ -29,6 +30,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="data/characters" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -42,7 +44,9 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="data/characters/pj.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/pj.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
