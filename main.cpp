@@ -9,6 +9,7 @@ using namespace sf;
 
 int main()
 {
+    //Declaracion objeto "pj"
     pj ejemplo;
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -24,8 +25,8 @@ int main()
         }
 
         window.clear();
-        ejemplo.update();
-        window.draw(ejemplo);
+        ejemplo.update();//Se actualiza la posicion del personaje
+        window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
         window.display();
     }
 

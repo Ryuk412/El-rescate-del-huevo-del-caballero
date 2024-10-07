@@ -2,8 +2,11 @@
 #include "pj.h"
 void pj::update(){
 
+        //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
         _velocity={0,0};
 
+        //Si se presiona una tecla, la velocidad cambia a 4 o -4, dependiendo la dirección,
+        //Por lo que antes de dibujar el personaje se va a mover de su posicion anterior
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
                 _velocity.y=-4;
         }
@@ -18,14 +21,17 @@ void pj::update(){
         }
         _sprite.move(_velocity);
 
+        //Estas dos condicionales lo que hacen es verificar si el personaje se esta moviendo
+        //Hacia la derecha o hacia la izquierda, para que el sprite mire hacia la misma direccion
         if(_velocity.x < 0){
-            _sprite.setScale(-1,1);
+            _sprite.setScale(-1,1);//setScale es el encargado del efecto visual para que el personaje se de vuelta
 
         }else if(_velocity.x > 0 ){
             _sprite.setScale(1,1);
         }
 
 
+        //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
         if(_sprite.getGlobalBounds().left < 0){
             _sprite.setPosition(_sprite.getOrigin().x, _sprite.getPosition().y);
         }
@@ -47,6 +53,8 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
 
 pj::pj()
 {
+    //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
+    //Y que solo tengamos que enviar la direccion de la imagen
     _textureM.loadFromFile("data/images/ejemplo.png");
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
