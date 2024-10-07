@@ -15,6 +15,8 @@
 					<Add option="-g" />
 					<Add directory="SFML/include" />
 					<Add directory="data/characters" />
+					<Add directory="include" />
+					<Add directory="data/etc" />
 				</Compiler>
 				<Linker>
 					<Add library="SFML/lib/libsfml-graphics-d.a" />
@@ -31,6 +33,8 @@
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="data/characters" />
+					<Add directory="include" />
+					<Add directory="data/etc" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -50,6 +54,8 @@
 		</Linker>
 		<Unit filename="data/characters/clsPJ.cpp" />
 		<Unit filename="data/characters/pj.h" />
+		<Unit filename="data/etc/Item.cpp" />
+		<Unit filename="data/etc/Item.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
