@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "data/characters/pj.h"
 #include "data/etc/Item.h"
+#include "include/Fondo.h"
 using namespace std;
 using namespace sf;
 
@@ -16,6 +17,7 @@ int main()
    srand((unsigned)time(0));
     //Declaracion objeto "pj"
     pj ejemplo;
+    Fondo fondo;
     Item corazon;
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
@@ -34,6 +36,7 @@ int main()
         if(ejemplo.isCollision(corazon)){
             corazon.respawn();
         }
+        window.draw(fondo);
         window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
         window.draw(corazon);//Se dibuja el pesronaje en la pantalla
 
