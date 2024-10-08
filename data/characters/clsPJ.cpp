@@ -1,5 +1,8 @@
 #include<iostream>
 #include "pj.h"
+sf::FloatRect pj::getBounds()const{
+        return _sprite.getGlobalBounds();
+}
 void pj::update(){
 
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y

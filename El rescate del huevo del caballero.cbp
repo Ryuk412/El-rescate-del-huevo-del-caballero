@@ -56,6 +56,8 @@
 		<Unit filename="data/characters/pj.h" />
 		<Unit filename="data/etc/Item.cpp" />
 		<Unit filename="data/etc/Item.h" />
+		<Unit filename="data/etc/clsColissionable.cpp" />
+		<Unit filename="data/etc/colisionable.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
