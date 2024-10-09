@@ -5,15 +5,19 @@ sf::FloatRect pj::getBounds()const{
 }
 void pj::update(){
 
-   sf::Clock clock;
-    int _frameWidth = 100;   // Ancho de cada cuadro
-    int _frameHeight = 100;  // Altura de cada cuadro
-    int _numFrames = 7;      // Número total de cuadros en el spritesheet
-    int _currentFrame = 0;         // Índice del cuadro actual
-    float _frameDuration = 0.2f;   // Duración de cada cuadro (en segundos)
-    float _elapsedTime = 0.0f;     // Tiempo acumulado desde el último cambio de cuadro
+
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
         _velocity={0,0};
+        if(_velocity.x==0 && _velocity.y==0){
+            _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Idle.png");
+            sf::IntRect rect(0, 0, _frameWidth, _frameHeight);
+            _sprite.setTextureRect(rect);
+            _sprite.setTexture(_textureM);
+            _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+            float deltaTime = clock.restart().asSeconds();
+            _elapsedTime += deltaTime;
+
+        }
 
         //Si se presiona una tecla, la velocidad cambia a 4 o -4, dependiendo la dirección,
         //Por lo que antes de dibujar el personaje se va a mover de su posicion anterior
@@ -21,22 +25,16 @@ void pj::update(){
                 _velocity.y=-4;
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
-                _velocity.x=-4;
+            _velocity.x=-4;
+            _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Walk.png");
 
-    int _frameWidth = 100;   // Ancho de cada cuadro
-    int _frameHeight = 100;  // Altura de cada cuadro
-    int _numFrames = 7;      // Número total de cuadros en el spritesheet
-    int _currentFrame = 0;         // Índice del cuadro actual
-    float _frameDuration = 0.2f;   // Duración de cada cuadro (en segundos)
-    float _elapsedTime = 0.0f;     // Tiempo acumulado desde el último cambio de cuadro
-
-             _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Walk.png");
-   sf::IntRect rect(0, 0, _frameWidth, _frameHeight);
-   _sprite.setTextureRect(rect);
-    _sprite.setTexture(_textureM);
-    _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
-    float deltaTime = clock.restart().asSeconds();
-        _elapsedTime += deltaTime;
+            sf::IntRect rect(0, 0, _frameWidth, _frameHeight);
+            _sprite.setTextureRect(rect);
+            _sprite.setTexture(_textureM);
+            _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+            float deltaTime = clock.restart().asSeconds();
+            _elapsedTime += deltaTime;
+        }
 
         // Cambia al siguiente cuadro si ha pasado suficiente tiempo
         if (_elapsedTime >= _frameDuration) {
@@ -50,14 +48,6 @@ void pj::update(){
 
             // Ajusta la parte de la textura que se muestra
             _sprite.setTextureRect(sf::IntRect(_currentFrame * _frameWidth, 0, _frameWidth, _frameHeight));
-        }
-
-
-
-
-
-
-
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
                 _velocity.y=4;
@@ -101,13 +91,9 @@ pj::pj()
 {
     //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
     //Y que solo tengamos que enviar la direccion de la imagen
-<<<<<<< Updated upstream
-    _textureM.loadFromFile("data/images/ejemplo.png");
-=======
     _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Dylan.png");
-    // sf::IntRect rect(0, 0, frameWidth, frameHeight);
-    //_sprite.setTextureRect(rect);
->>>>>>> Stashed changes
+     sf::IntRect rect(0, 0, _frameWidth, _frameHeight);
+    _sprite.setTextureRect(rect);
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
 

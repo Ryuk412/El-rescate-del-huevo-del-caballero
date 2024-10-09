@@ -19,12 +19,13 @@ class pj: public sf::Drawable, public colisionable
     protected:
 
     private:
-        int _frameWidth ;  // Ancho de cada cuadro
-        int _frameHeight;   // Altura de cada cuadro
-        int _numFrames;     // Número total de cuadros en el spritesheet
-        int _currentFrame;   // Índice del cuadro actual
-        float _frameDuration;  // Duración de cada cuadro (en segundos)
-        float _elapsedTime; // Tiempo acumulado desde el último cambio de cuadro
+        sf::Clock clock;
+        int _frameWidth = 100;   // Ancho de cada cuadro
+        int _frameHeight = 100;  // Altura de cada cuadro
+        int _numFrames = 7;      // Número total de cuadros en el spritesheet
+        int _currentFrame = 0;         // Índice del cuadro actual
+        float _frameDuration = 0.2f;   // Duración de cada cuadro (en segundos)
+        float _elapsedTime = 0.0f;     // Tiempo acumulado desde el último cambio de cuadro
         sf::Sprite _sprite;
         sf::Texture _textureM;
         sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
