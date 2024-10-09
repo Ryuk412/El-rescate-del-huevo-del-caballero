@@ -24,7 +24,7 @@ class pj: public sf::Drawable, public colisionable
         int _frameHeight = 100;  // Altura de cada cuadro
         int _numFrames = 6;      // Número total de cuadros en el spritesheet
         int _currentFrame = 0;         // Índice del cuadro actual
-        float _frameDuration = 0.5f;   // Duración de cada cuadro (en segundos)
+        float _frameDuration = 10.f;   // Duración de cada cuadro (en segundos)
         float _elapsedTime = 0.0f;
         sf::IntRect _rect;
         sf::Sprite _sprite;

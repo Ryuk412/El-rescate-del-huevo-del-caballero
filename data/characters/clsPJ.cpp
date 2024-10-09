@@ -4,8 +4,6 @@ sf::FloatRect pj::getBounds()const{
         return _sprite.getGlobalBounds();
 }
 void pj::update(){
-
-
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
         _velocity={0,0};
         if(_velocity.x==0 && _velocity.y==0){
@@ -40,28 +38,9 @@ void pj::update(){
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
             _velocity.x=-4;
-            _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Walk.png");
 
-            sf::IntRect _rect(0, 0, _frameWidth, _frameHeight);
-            _sprite.setTextureRect(_rect);
-            _sprite.setTexture(_textureM);
-            _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
-            float deltaTime = clock.restart().asSeconds();
-            _elapsedTime += deltaTime;
-        // Cambia al siguiente cuadro si ha pasado suficiente tiempo
-        if (_elapsedTime >= _frameDuration) {
-            _elapsedTime = 0.0f; // Reinicia el tiempo acumulado
-            _currentFrame++;     // Pasa al siguiente cuadro
-
-            // Vuelve al primer cuadro si estamos en el último
-            if (_currentFrame >= _numFrames) {
-                _currentFrame = 0;
-            }
-
-            // Ajusta la parte de la textura que se muestra
-            _sprite.setTextureRect(sf::IntRect(_currentFrame * _frameWidth, 0, _frameWidth, _frameHeight));
         }
-        }
+
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
                 _velocity.y=4;
         }
@@ -126,7 +105,7 @@ pj::pj()
 {
     //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
     //Y que solo tengamos que enviar la direccion de la imagen
-    _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Dylan.png");
+    _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Idle.png");
     _sprite.setTextureRect(_rect);
     _sprite.setTexture(_textureM);
     _sprite.setScale(1,1);
