@@ -95,8 +95,8 @@ pj::pj()
      sf::IntRect rect(0, 0, _frameWidth, _frameHeight);
     _sprite.setTextureRect(rect);
     _sprite.setTexture(_textureM);
+    _sprite.setScale(1,1);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
-
     //ctor
 }
 
