@@ -20,8 +20,8 @@ class pj: public sf::Drawable, public colisionable
 
     private:
         sf::Clock clock;
-        int _frameWidth = 26;   // Ancho de cada cuadro
-        int _frameHeight = 18;  // Altura de cada cuadro
+        int _frameWidth = 100;   // Ancho de cada cuadro
+        int _frameHeight = 100;  // Altura de cada cuadro
         int _numFrames = 6;      // Número total de cuadros en el spritesheet
         int _currentFrame = 0;         // Índice del cuadro actual
         float _frameDuration = 10.f;   // Duración de cada cuadro (en segundos)

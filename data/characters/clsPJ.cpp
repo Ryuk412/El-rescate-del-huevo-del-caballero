@@ -12,7 +12,7 @@ void pj::update(){
             sf::IntRect _rect(0, 0, _frameWidth, _frameHeight);
             _sprite.setTextureRect(_rect);
             _sprite.setTexture(_textureM);
-            _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+            _sprite.setOrigin(_sprite.getGlobalBounds().width*0.75f, _sprite.getGlobalBounds().height*0.75f);
             float deltaTime = clock.restart().asSeconds();
             _elapsedTime += deltaTime;
         // Cambia al siguiente cuadro si ha pasado suficiente tiempo
@@ -52,7 +52,7 @@ void pj::update(){
             sf::IntRect _rect(0, 0, _frameWidth, _frameHeight);
             _sprite.setTextureRect(_rect);
             _sprite.setTexture(_textureM);
-            _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+           // _sprite.setOrigin(_sprite.getGlobalBounds().width*0.75f, _sprite.getGlobalBounds().height*0.75f);
             float deltaTime = clock.restart().asSeconds();
             _elapsedTime += deltaTime;
         // Cambia al siguiente cuadro si ha pasado suficiente tiempo
@@ -74,10 +74,12 @@ void pj::update(){
         //Estas dos condicionales lo que hacen es verificar si el personaje se esta moviendo
         //Hacia la derecha o hacia la izquierda, para que el sprite mire hacia la misma direccion
         if(_velocity.x < 0){
-            _sprite.setScale(-1,1);//setScale es el encargado del efecto visual para que el personaje se de vuelta
+            _sprite.setScale(-1.5,1.5);//setScale es el encargado del efecto visual para que el personaje se de vuelta
 
         }else if(_velocity.x > 0 ){
-            _sprite.setScale(1,1);
+
+            _sprite.setScale(1.5,1.5);
+
         }
 
 
@@ -108,8 +110,9 @@ pj::pj()
     _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight.png");
     _sprite.setTextureRect(_rect);
     _sprite.setTexture(_textureM);
-    _sprite.setScale(1,1);
-    _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+      _sprite.setPosition(450,450);
+    _sprite.setScale(1.5,1.5);
+    _sprite.setOrigin(_sprite.getGlobalBounds().width*0.75f, _sprite.getGlobalBounds().height*0.75f);
     //ctor
 }
 
