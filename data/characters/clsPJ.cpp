@@ -37,7 +37,7 @@ void pj::update(){
                 _velocity.y=-4;
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
-            _velocity.x=-4;
+                _velocity.x=-4;
 
         }
 
@@ -105,7 +105,7 @@ pj::pj()
 {
     //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
     //Y que solo tengamos que enviar la direccion de la imagen
-    _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight-Idle.png");
+    _textureM.loadFromFile("assets/Characters(100x100)/Knight/Knight/Knight.png");
     _sprite.setTextureRect(_rect);
     _sprite.setTexture(_textureM);
     _sprite.setScale(1,1);
