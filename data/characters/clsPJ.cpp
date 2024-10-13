@@ -58,7 +58,7 @@ pj::pj()
 {
     //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
     //Y que solo tengamos que enviar la direccion de la imagen
-    _textureM.loadFromFile("data/images/ejemplo.png");
+    _textureM.loadFromFile("assets/characters(100x100)/Knight/Knight/Knight.png");
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     //ctor
