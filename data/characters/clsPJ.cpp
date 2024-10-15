@@ -6,21 +6,50 @@ sf::FloatRect pj::getBounds()const{
 void pj::update(){
 
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
+
         _velocity={0,0};
 
+        if(_velocity.x==0&&_velocity.y==0){
+            _frame+=0.09;
+            _sprite.setTextureRect({0 + (int)_frame*195 ,0,195,195});//Ancho y Alto del Personaje,70x65.
+            if(_frame>=5){
+                _frame=0;
+            }
+        }
         //Si se presiona una tecla, la velocidad cambia a 4 o -4, dependiendo la dirección,
         //Por lo que antes de dibujar el personaje se va a mover de su posicion anterior
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
+                _frame+=0.2;
                 _velocity.y=-4;
+                _sprite.setTextureRect({195 + (int)_frame*195 ,195,195,195});//Ancho y Alto del Personaje,70x65.
+                if(_frame>=7){
+                _frame=0;
+                }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
+                _frame+=0.2;
                 _velocity.x=-4;
+                _sprite.setTextureRect({195 + (int)_frame*195 ,195,195,195});//Ancho y Alto del Personaje,70x65.
+                if(_frame>=7){
+                _frame=0;
+                }
+
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down)){
+                _frame+=0.2;
                 _velocity.y=4;
+                _sprite.setTextureRect({195 + (int)_frame*195 ,195,195,195});//Ancho y Alto del Personaje,70x65.
+                if(_frame>=7){
+                _frame=0;
+                }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
+                _frame+=0.2;
                 _velocity.x=4;
+                _sprite.setTextureRect({195 + (int)_frame*195 ,195,195,195});//Ancho y Alto del Personaje,70x65.
+                if(_frame>=7){
+                _frame=0;
+                }
         }
         _sprite.move(_velocity);
 
@@ -60,6 +89,7 @@ pj::pj()
     //Y que solo tengamos que enviar la direccion de la imagen
     _textureM.loadFromFile("assets/characters(100x100)/Knight/Knight/Knight.png");
     _sprite.setTexture(_textureM);
+    _sprite.setTextureRect({0,0,195,195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     //ctor
 }
