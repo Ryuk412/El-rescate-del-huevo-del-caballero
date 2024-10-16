@@ -3,6 +3,7 @@
 sf::FloatRect pj::getBounds()const{
         return _sprite.getGlobalBounds();
 }
+
 void pj::update(){
 
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
@@ -50,6 +51,10 @@ void pj::update(){
                 if(_frame>=7){
                 _frame=0;
                 }
+        }
+        if(_velocity.x!=0 && _velocity.y!=0){
+            _velocity.x=_velocity.x/1.414213562;
+            _velocity.y=_velocity.y/1.414213562;
         }
         _sprite.move(_velocity);
 
