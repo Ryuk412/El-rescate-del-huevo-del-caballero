@@ -5,7 +5,7 @@
 class colisionable{
 
 public:
-    virtual sf::FloatRect getBounds()const=0;
+    virtual sf::RectangleShape getHitbox()const=0;
     bool isCollision(colisionable& col) const;
 };
 

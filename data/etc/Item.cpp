@@ -2,8 +2,11 @@
 #include <stdlib.h>
 #include "Item.h"
 
-sf::FloatRect Item::getBounds() const{
-    return _sprite.getGlobalBounds();
+//sf::FloatRect Item::getBounds() const{
+//    return _sprite.getGlobalBounds();
+//}
+sf::RectangleShape Item::getHitbox()const{
+    return m_hitbox;
 }
 
 void Item::respawn(){
@@ -11,6 +14,7 @@ void Item::respawn(){
 }
 void Item::draw(sf::RenderTarget& target, sf::RenderStates state)const{
         target.draw(_sprite, state);
+        target.draw(m_hitbox,state);
 }
 
 
@@ -21,6 +25,9 @@ Item::Item()
     _textureM.loadFromFile("data/images/ejemploPU.png");
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
+    m_hitbox.setSize({_sprite.getGlobalBounds().getSize()});
+    m_hitbox.setFillColor(sf::Color::Green);
+
     //ctor
 }
 

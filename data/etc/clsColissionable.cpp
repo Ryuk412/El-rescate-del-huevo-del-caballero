@@ -2,5 +2,5 @@
 
 bool colisionable::isCollision(colisionable& obj)const {
 
-    return getBounds().intersects(obj.getBounds());
+    return getHitbox().getGlobalBounds().intersects(obj.getHitbox().getGlobalBounds());
 }

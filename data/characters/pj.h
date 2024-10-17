@@ -11,13 +11,15 @@ class pj: public sf::Drawable, public colisionable
     public:
         void update();//Metodo para actualizar la posicion del personaje
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;//Dibuja al personaje
-        sf::FloatRect getBounds()const override;
+//        sf::FloatRect getBounds()const override;
+        sf::RectangleShape getHitbox()const override;
         pj();
         virtual ~pj();
 
     protected:
 
     private:
+        sf::RectangleShape m_hitbox;
         sf::Sprite _sprite;
         sf::Texture _textureM;
         sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
