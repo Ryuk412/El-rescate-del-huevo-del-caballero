@@ -65,7 +65,6 @@ void pj::update(){
         //Hacia la derecha o hacia la izquierda, para que el sprite mire hacia la misma direccion
         if(_velocity.x < 0){
             _sprite.setScale(-1,1);//setScale es el encargado del efecto visual para que el personaje se de vuelta
-
         }else if(_velocity.x > 0 ){
             _sprite.setScale(1,1);
         }
@@ -73,12 +72,12 @@ void pj::update(){
         m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
 
         //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
-        if(_sprite.getGlobalBounds().left < 0){
-            _sprite.setPosition(_sprite.getOrigin().x, _sprite.getPosition().y);
+        if(m_hitbox.getGlobalBounds().left < 0){
+            _sprite.setPosition(_sprite.getPosition().x+4, _sprite.getPosition().y);
            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
-        if(_sprite.getGlobalBounds().top < 0){
-            _sprite.setPosition(_sprite.getPosition().x,_sprite.getOrigin().y);
+        if(m_hitbox.getGlobalBounds().top < 0){
+            _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y+4);
            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
         if(_sprite.getGlobalBounds().left + _sprite.getGlobalBounds().width > 800){
@@ -107,6 +106,7 @@ pj::pj()
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({50,60});
     m_hitbox.setFillColor(sf::Color::Red);
+    _sprite.setPosition(400,300);
     //ctor
 }
 
