@@ -55,6 +55,18 @@ void pj::update(){
                 _frame=0;
                 }
         }
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
+            _velocity.x=0;
+            _velocity.y=0;
+            _frame2+=0.15;
+            _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
+            if(_frame2>=5){
+                _frame2=0;
+            }
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
+            _frame2=0;
+        }
+
         if(_velocity.x!=0 && _velocity.y!=0){
             _velocity.x=_velocity.x/1.414213562;
             _velocity.y=_velocity.y/1.414213562;
@@ -73,19 +85,19 @@ void pj::update(){
         //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
         if(m_hitbox.getGlobalBounds().left < 0){
             _sprite.setPosition(_sprite.getPosition().x+4, _sprite.getPosition().y);
-           m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
         if(m_hitbox.getGlobalBounds().top < 0){
             _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y+4);
-           m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
         if(_sprite.getGlobalBounds().left + _sprite.getGlobalBounds().width > 800){
             _sprite.setPosition(800 - (_sprite.getGlobalBounds().width-_sprite.getOrigin().x), _sprite.getPosition().y);
-           m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
         if(m_hitbox.getGlobalBounds().top+ m_hitbox.getGlobalBounds().height > 600){
             _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
-           m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
 }
 
