@@ -26,7 +26,6 @@ void pj::update(){
                 _frame+=0.2;
                 _velocity.y=-4;
                 _sprite.setTextureRect({195 + (int)_frame*195 ,195,195,195});//Ancho y Alto del Personaje,70x65.
-
                 if(_frame>=7){
                 _frame=0;
                 }
@@ -69,7 +68,7 @@ void pj::update(){
             _sprite.setScale(1,1);
         }
 
-        m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+        m_hitbox.setPosition(5+_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
 
         //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
         if(m_hitbox.getGlobalBounds().left < 0){
