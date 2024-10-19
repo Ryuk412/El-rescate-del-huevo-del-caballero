@@ -61,7 +61,8 @@ void pj::update(){
             _frame2+=0.15;
             _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
             if(_frame2>=5){
-                _frame2=0;
+                _frame2=5;
+
             }
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
             _frame2=0;
