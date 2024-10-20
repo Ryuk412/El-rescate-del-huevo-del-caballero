@@ -4,6 +4,7 @@
 #include <SFML/System.hpp>
 #include <ctime> //borrar despues
 #include <stdlib.h>
+#include <iostream>
 #include "data/characters/pj.h"
 #include "data/etc/Item.h"
 using namespace std;

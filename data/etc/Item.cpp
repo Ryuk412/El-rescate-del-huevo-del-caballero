@@ -11,10 +11,11 @@ sf::RectangleShape Item::getHitbox()const{
 
 void Item::respawn(){
     _sprite.setPosition(std::rand()%700+_sprite.getGlobalBounds().width,std::rand() % 500+_sprite.getGlobalBounds().height);
+    m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
 }
 void Item::draw(sf::RenderTarget& target, sf::RenderStates state)const{
-        target.draw(_sprite, state);
         target.draw(m_hitbox,state);
+        target.draw(_sprite, state);
 }
 
 

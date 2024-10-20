@@ -24,6 +24,7 @@ class pj: public sf::Drawable, public colisionable
         sf::Texture _textureM;
         sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
         float _frame=0;
+        float _frame2=0;
 };
 
 #endif // PJ_H
