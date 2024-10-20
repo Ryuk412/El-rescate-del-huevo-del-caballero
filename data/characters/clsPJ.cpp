@@ -92,11 +92,11 @@ void pj::update(){
             _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y+4);
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
-        if(_sprite.getGlobalBounds().left + _sprite.getGlobalBounds().width > 800){
-            _sprite.setPosition(800 - (_sprite.getGlobalBounds().width-_sprite.getOrigin().x), _sprite.getPosition().y);
-           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+        if(m_hitbox.getGlobalBounds().left + m_hitbox.getGlobalBounds().width > 800){
+           _sprite.setPosition(800 - (_sprite.getGlobalBounds().width - 170),  _sprite.getPosition().y);
+            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
-        if(m_hitbox.getGlobalBounds().top+ m_hitbox.getGlobalBounds().height > 600){
+        if(m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600){
             _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
