@@ -32,9 +32,11 @@ int main()
 
         window.clear();
         ejemplo.update();//Se actualiza la posicion del personaje
+
         if(ejemplo.isCollision(corazon)){
             corazon.respawn();
         }
+
         window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
         window.draw(corazon);//Se dibuja el pesronaje en la pantalla
 

@@ -56,6 +56,7 @@ void pj::update(){
                 }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
+
             _velocity.x=0;
             _velocity.y=0;
             _frame2+=0.15;
@@ -88,19 +89,26 @@ void pj::update(){
             _sprite.setPosition(_sprite.getPosition().x+4, _sprite.getPosition().y);
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
+//M_HITBOX es una propiedad de la clase pj que se encarga de general el cuadrado de la hiybox (xd)
+
         if(m_hitbox.getGlobalBounds().top < 0){
             _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y+4);
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
+
+
         if(m_hitbox.getGlobalBounds().left + m_hitbox.getGlobalBounds().width > 800){
            _sprite.setPosition(800 - (_sprite.getGlobalBounds().width - 170),  _sprite.getPosition().y);
             m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
+
+
         if(m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600){
             _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
 }
+
 
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
         target.draw(m_hitbox,state);
