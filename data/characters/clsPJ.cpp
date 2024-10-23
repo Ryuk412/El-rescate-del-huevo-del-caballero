@@ -57,16 +57,21 @@ void pj::update(){
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
             _ban=true;
-            e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
-
+            if(_sprite.getScale().x == -1){
+                e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
+            }
+            else{
+                e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+            }
             _velocity.x=0;
             _velocity.y=0;
-            _frame2+=0.15;
+                 _frame2+=0.15;
             _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
             if(_frame2>=5){
                 _frame2=5;
 
             }
+
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
 
             _frame2=0;
