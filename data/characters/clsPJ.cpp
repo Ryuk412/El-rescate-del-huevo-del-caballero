@@ -56,6 +56,8 @@ void pj::update(){
                 }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
+            _ban=true;
+            e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
 
             _velocity.x=0;
             _velocity.y=0;
@@ -66,6 +68,7 @@ void pj::update(){
 
             }
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
+
             _frame2=0;
         }
 
@@ -83,6 +86,7 @@ void pj::update(){
         }
 
         m_hitbox.setPosition(5+_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+
 
         //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
         if(m_hitbox.getGlobalBounds().left < 0){
@@ -112,7 +116,12 @@ void pj::update(){
 
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
         target.draw(m_hitbox,state);
-        target.draw(_sprite, state);
+      target.draw(_sprite, state);
+      if(_ban==true){
+          target.draw(e_hitbox,state);
+      }
+
+
 }
 
 
@@ -126,6 +135,8 @@ pj::pj()
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({50,60});
     m_hitbox.setFillColor(sf::Color::Red);
+     e_hitbox.setSize({25,65});
+    e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(400,300);
     //ctor
 }

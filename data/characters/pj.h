@@ -9,6 +9,7 @@ class pj: public sf::Drawable, public colisionable
 //Si una clase se va a mostrar en pantalla, se debe heredar el metodo DRAW de la clase Drawable
 {
     public:
+
         void update();//Metodo para actualizar la posicion del personaje
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;//Dibuja al personaje
 //        sf::FloatRect getBounds()const override;
@@ -19,6 +20,8 @@ class pj: public sf::Drawable, public colisionable
     protected:
 
     private:
+        bool _ban=false;
+        sf::RectangleShape e_hitbox;
         sf::RectangleShape m_hitbox;
         sf::Sprite _sprite;
         sf::Texture _textureM;
