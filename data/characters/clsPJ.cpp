@@ -55,13 +55,17 @@ void pj::update(){
                 _frame=0;
                 }
         }
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
-            _ban=true;
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==true){
+
+            if(_frame2>2){
+                _ban=true;
             if(_sprite.getScale().x == -1){
+
                 e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
             }
             else{
                 e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+            }
             }
             _velocity.x=0;
             _velocity.y=0;
@@ -71,9 +75,8 @@ void pj::update(){
                 _frame2=5;
 
             }
-
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
-
+            _ban=false;
             _frame2=0;
         }
 
