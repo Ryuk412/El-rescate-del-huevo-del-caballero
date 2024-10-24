@@ -18,6 +18,10 @@ int main()
     //Declaracion objeto "pj"
     pj ejemplo;
     Item corazon;
+    sf::Sprite bg;
+    sf::Texture Fondo;
+    Fondo.loadFromFile("data/maps/8bin_8x55_180330.jpg");
+    bg.setTexture(Fondo);
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -37,6 +41,7 @@ int main()
             corazon.respawn();
         }
 
+        window.draw(bg);
         window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
         window.draw(corazon);//Se dibuja el pesronaje en la pantalla
 
