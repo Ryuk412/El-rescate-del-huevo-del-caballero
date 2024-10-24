@@ -41,6 +41,9 @@ int main()
         if(ejemplo.isCollision(corazon) ){
             corazon.respawn();
         }
+        if(ejemplo.isCollision(slime)){
+            ejemplo.respaw();
+        }
         window.draw(bg);
         window.draw(slime);
         window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla

@@ -6,6 +6,8 @@
 sf::RectangleShape pj::getHitbox()const{
     return m_hitbox;
 }
+void pj::respaw(){    _sprite.setPosition(std::rand()%700+_sprite.getGlobalBounds().width,std::rand() % 500+_sprite.getGlobalBounds().height);
+    m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);}
 void pj::update(){
 
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y
@@ -139,7 +141,7 @@ void pj::update(){
 
 
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
-      //  target.draw(m_hitbox,state);
+        target.draw(m_hitbox,state);
       target.draw(_sprite, state);
       if(_ban==true){
           target.draw(e_hitbox,state);
@@ -147,6 +149,7 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
 
 
 }
+
 
 
 pj::pj()
@@ -158,7 +161,7 @@ pj::pj()
     _sprite.setTextureRect({0,0,195,195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({50,60});
-  //  m_hitbox.setFillColor(sf::Color::Red);
+   m_hitbox.setFillColor(sf::Color::Red);
      e_hitbox.setSize({25,65});
     e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(400,300);

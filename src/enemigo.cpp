@@ -48,7 +48,15 @@ if(e_velocity.x==0&&e_velocity.y==0){
         }
 
 
-       en_hitbox.setPosition( e_sprite.getGlobalBounds().left  , e_sprite.getGlobalBounds().top );
+       en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30 , e_sprite.getGlobalBounds().top + 50 );
+
+
+
+        if(en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width > 800){
+           e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 170),  e_sprite.getPosition().y);
+            en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
+        }
+
 
 }
 

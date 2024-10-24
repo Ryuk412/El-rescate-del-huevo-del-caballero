@@ -15,11 +15,13 @@ class pj: public sf::Drawable, public colisionable
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
         pj();
+        void respaw();
         virtual ~pj();
 
     protected:
 
     private:
+
         bool _ban=false;
         sf::RectangleShape e_hitbox;
         sf::RectangleShape m_hitbox;
