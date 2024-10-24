@@ -55,16 +55,28 @@ void pj::update(){
                 _frame=0;
                 }
         }
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)){
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==true){
+
+            if(_frame2>2){
+                _ban=true;
+            if(_sprite.getScale().x == -1){
+
+                e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
+            }
+            else{
+                e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+            }
+            }
             _velocity.x=0;
             _velocity.y=0;
-            _frame2+=0.15;
+                 _frame2+=0.15;
             _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
             if(_frame2>=5){
                 _frame2=5;
 
             }
         }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
+            _ban=false;
             _frame2=0;
         }
 
@@ -83,28 +95,41 @@ void pj::update(){
 
         m_hitbox.setPosition(5+_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
 
+
         //Condicionales para mantener al personaje dentro de la ventana y que no pueda salir
         if(m_hitbox.getGlobalBounds().left < 0){
             _sprite.setPosition(_sprite.getPosition().x+4, _sprite.getPosition().y);
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
+//M_HITBOX es una propiedad de la clase pj que se encarga de general el cuadrado de la hiybox (xd)
+
         if(m_hitbox.getGlobalBounds().top < 0){
             _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y+4);
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
-        if(_sprite.getGlobalBounds().left + _sprite.getGlobalBounds().width > 800){
-            _sprite.setPosition(800 - (_sprite.getGlobalBounds().width-_sprite.getOrigin().x), _sprite.getPosition().y);
-           m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+
+
+        if(m_hitbox.getGlobalBounds().left + m_hitbox.getGlobalBounds().width > 800){
+           _sprite.setPosition(800 - (_sprite.getGlobalBounds().width - 170),  _sprite.getPosition().y);
+            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
-        if(m_hitbox.getGlobalBounds().top+ m_hitbox.getGlobalBounds().height > 600){
+
+
+        if(m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600){
             _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
            m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
         }
 }
 
+
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
         target.draw(m_hitbox,state);
-        target.draw(_sprite, state);
+      target.draw(_sprite, state);
+      if(_ban==true){
+          target.draw(e_hitbox,state);
+      }
+
+
 }
 
 
@@ -118,6 +143,8 @@ pj::pj()
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({50,60});
     m_hitbox.setFillColor(sf::Color::Red);
+     e_hitbox.setSize({25,65});
+    e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(400,300);
     //ctor
 }
