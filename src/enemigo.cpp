@@ -2,6 +2,9 @@
 
 
 #include "enemigo.h"
+sf::RectangleShape enemigo::getHitbox()const{
+    return en_hitbox;
+}
 
 enemigo::enemigo()
 {
@@ -22,9 +25,9 @@ void enemigo::update(){
 e_velocity={};
 
  if(e_velocity.x==0&&e_velocity.y==0){
-            _frame+=0.09;
+            _frame+=0.009;
             e_sprite.setTextureRect({0 + (int)_frame*130 ,0,130,130});//Ancho y Alto del Personaje,70x65.
-            if(_frame>=6){
+            if(_frame>=4){
                 _frame=0;
             }
         }

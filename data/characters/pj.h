@@ -14,8 +14,9 @@ class pj: public sf::Drawable, public colisionable
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;//Dibuja al personaje
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
+        sf::RectangleShape getHitboxE();
         pj();
-        void respaw();
+        void respawn();
         virtual ~pj();
 
     protected:

@@ -6,7 +6,10 @@
 sf::RectangleShape pj::getHitbox()const{
     return m_hitbox;
 }
-void pj::respaw(){    _sprite.setPosition(std::rand()%700+_sprite.getGlobalBounds().width,std::rand() % 500+_sprite.getGlobalBounds().height);
+sf::RectangleShape pj::getHitboxE(){
+return e_hitbox;
+}
+void pj::respawn(){    _sprite.setPosition(std::rand()%700+_sprite.getGlobalBounds().width,std::rand() % 500+_sprite.getGlobalBounds().height);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);}
 void pj::update(){
 
@@ -59,39 +62,20 @@ void pj::update(){
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==true){
             if(!_ban) _ban = true;
-//            if(_frame2>2){
-//                _ban=true;
-//            if(_sprite.getScale().x == -1){
-//
-//                e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
-//            }
-//            else{
-//                e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
-//            }
-//            }
-//            _velocity.x=0;
-//            _velocity.y=0;
-//                 _frame2+=0.15;
-//            _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
-//            if(_frame2>=5){
-//                _frame2=5;
-//
-//            }
-//        }   else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
-//                _ban=false;
-//                _frame2=0;
         }
         if(_ban){
-            if(_sprite.getScale().x == -1){
+                 _frame2+=0.15;
+            if(_sprite.getScale().x == -1 && _frame2>3) {
 
                 e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
             }
             else{
+                if(_frame2>3){
                 e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+                }
             }
             _velocity.x=0;
             _velocity.y=0;
-                 _frame2+=0.15;
             _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
             if(_frame2>=5){
                 _frame2=0;
