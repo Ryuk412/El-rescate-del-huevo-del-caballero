@@ -62,15 +62,16 @@ void pj::update(){
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==true){
             if(!_ban) _ban = true;
+            e_hitbox.setPosition(-50,-50);
         }
         if(_ban){
                  _frame2+=0.15;
-            if(_sprite.getScale().x == -1 && _frame2>3) {
+            if(_sprite.getScale().x == -1 && _frame2>2) {
 
                 e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
             }
             else{
-                if(_frame2>3){
+                if(_frame2>2){
                 e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
                 }
             }
