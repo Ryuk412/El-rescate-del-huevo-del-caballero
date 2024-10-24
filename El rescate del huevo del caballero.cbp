@@ -58,7 +58,9 @@
 		<Unit filename="data/etc/Item.h" />
 		<Unit filename="data/etc/clsColissionable.cpp" />
 		<Unit filename="data/etc/colisionable.h" />
+		<Unit filename="include/enemigo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/enemigo.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
