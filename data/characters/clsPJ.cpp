@@ -56,9 +56,30 @@ void pj::update(){
                 }
         }
         if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==true){
-
-            if(_frame2>2){
-                _ban=true;
+            if(!_ban) _ban = true;
+//            if(_frame2>2){
+//                _ban=true;
+//            if(_sprite.getScale().x == -1){
+//
+//                e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
+//            }
+//            else{
+//                e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+//            }
+//            }
+//            _velocity.x=0;
+//            _velocity.y=0;
+//                 _frame2+=0.15;
+//            _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
+//            if(_frame2>=5){
+//                _frame2=5;
+//
+//            }
+//        }   else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
+//                _ban=false;
+//                _frame2=0;
+        }
+        if(_ban){
             if(_sprite.getScale().x == -1){
 
                 e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
@@ -66,20 +87,15 @@ void pj::update(){
             else{
                 e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
             }
-            }
             _velocity.x=0;
             _velocity.y=0;
                  _frame2+=0.15;
             _sprite.setTextureRect({195 + (int)_frame2*195,390,195,195});
             if(_frame2>=5){
-                _frame2=5;
-
+                _frame2=0;
+                _ban=false;
             }
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z)==false){
-            _ban=false;
-            _frame2=0;
         }
-
         if(_velocity.x!=0 && _velocity.y!=0){
             _velocity.x=_velocity.x/1.414213562;
             _velocity.y=_velocity.y/1.414213562;
@@ -123,7 +139,7 @@ void pj::update(){
 
 
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state)const{
-        target.draw(m_hitbox,state);
+      //  target.draw(m_hitbox,state);
       target.draw(_sprite, state);
       if(_ban==true){
           target.draw(e_hitbox,state);
@@ -142,7 +158,7 @@ pj::pj()
     _sprite.setTextureRect({0,0,195,195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({50,60});
-    m_hitbox.setFillColor(sf::Color::Red);
+  //  m_hitbox.setFillColor(sf::Color::Red);
      e_hitbox.setSize({25,65});
     e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(400,300);
