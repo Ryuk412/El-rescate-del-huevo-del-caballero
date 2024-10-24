@@ -6,6 +6,9 @@
 sf::RectangleShape pj::getHitbox()const{
     return m_hitbox;
 }
+sf::RectangleShape pj::getHitboxE(){
+    return e_hitbox;
+}
 void pj::update(){
 
         //Cada vez que se actualiza el personaje, obtiene velocidad 0 en x y 0 en y

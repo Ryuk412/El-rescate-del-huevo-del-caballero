@@ -33,7 +33,7 @@ int main()
         window.clear();
         ejemplo.update();//Se actualiza la posicion del personaje
 
-        if(ejemplo.isCollision(corazon) ){
+        if(ejemplo.getHitboxE().getGlobalBounds().intersects(corazon.getHitbox().getGlobalBounds())){
             corazon.respawn();
         }
 
