@@ -24,6 +24,9 @@ void enemigo::update(){
 
 e_velocity={};
 
+
+
+
  if(e_velocity.x==0&&e_velocity.y==0){
             _frame+=0.009;
             e_sprite.setTextureRect({0 + (int)_frame*130 ,0,130,130});//Ancho y Alto del Personaje,70x65.
@@ -31,16 +34,33 @@ e_velocity={};
                 _frame=0;
             }
         }
+
+
+
 if(e_velocity.x==0&&e_velocity.y==0){
 
 
        _frame+=0.2;
-                e_velocity.x=+2;
+                e_velocity.x=-2;
                 e_sprite.setTextureRect({130 + (int)_frame*130 ,130,130,130});//Ancho y Alto del Personaje,70x65.
                 if(_frame>=6){
                 _frame=0;
                 }
 }
+if(e_sprite.getGlobalBounds().left < 0   ){
+
+
+
+e_sprite.setPosition(200,200);
+        _frame+=0.2;
+                e_velocity.x=-2;
+                e_sprite.setTextureRect({130 + (int)_frame*130 ,130,130,130});//Ancho y Alto del Personaje,70x65.
+                if(_frame>=6){
+                _frame=0;
+                }
+
+}
+
  e_sprite.move(e_velocity);
 
 
@@ -53,12 +73,6 @@ if(e_velocity.x==0&&e_velocity.y==0){
 
        en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30 , e_sprite.getGlobalBounds().top + 50 );
 
-
-
-        if(en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width > 800){
-           e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 170),  e_sprite.getPosition().y);
-            en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 30, e_sprite.getGlobalBounds().top + 50);
-        }
 
 
 }
