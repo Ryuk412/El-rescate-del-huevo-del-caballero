@@ -17,6 +17,7 @@
 					<Add directory="data/characters" />
 					<Add directory="include" />
 					<Add directory="data/etc" />
+					<Add directory="src" />
 				</Compiler>
 				<Linker>
 					<Add library="SFML/lib/libsfml-graphics-d.a" />
@@ -35,6 +36,7 @@
 					<Add directory="data/characters" />
 					<Add directory="include" />
 					<Add directory="data/etc" />
+					<Add directory="src" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -61,6 +63,8 @@
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/enemigo.cpp" />
+		<Unit filename="src/inc.cpp" />
+		<Unit filename="src/inc.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

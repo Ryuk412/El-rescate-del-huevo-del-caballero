@@ -13,8 +13,6 @@ using namespace sf;
 
 int main()
 {
-    //Borrar despues
-   srand((unsigned)time(0));
     //Declaracion objeto "pj"
     enemigo slime;
     pj ejemplo;
