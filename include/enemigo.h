@@ -23,6 +23,7 @@ class enemigo:  public sf::Drawable, public colisionable
 
 
         sf::RectangleShape en_hitbox;
+        int _direccion=-1;
         sf::Sprite e_sprite;
         sf::Texture _textureE;
         sf::Vector2f e_velocity={};

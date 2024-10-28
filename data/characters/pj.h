@@ -5,6 +5,7 @@
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
 #include "colisionable.h"
+
 class pj: public sf::Drawable, public colisionable
 //Si una clase se va a mostrar en pantalla, se debe heredar el metodo DRAW de la clase Drawable
 {
