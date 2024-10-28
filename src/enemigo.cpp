@@ -15,13 +15,13 @@ e_sprite.setTextureRect({0,0,130,130});
 e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
 en_hitbox.setSize({60,30});
 en_hitbox.setFillColor(sf::Color::Yellow);
-e_sprite.setPosition(200,255);
+e_sprite.setPosition(500,255);
 
 
 
 }
 void enemigo::update(){
-
+bool ban=true;
 e_velocity={};
 
 
@@ -37,31 +37,38 @@ e_velocity={};
 
 
 
-if(e_velocity.x==0&&e_velocity.y==0){
+if(e_velocity.x==0&&e_velocity.y==0 ){
+
 
 
        _frame+=0.2;
-                e_velocity.x=-2;
+                e_velocity.x=-2 * _direccion;
                 e_sprite.setTextureRect({130 + (int)_frame*130 ,130,130,130});//Ancho y Alto del Personaje,70x65.
                 if(_frame>=6){
                 _frame=0;
-                }
-}
-if(e_sprite.getGlobalBounds().left < 0   ){
-
-
-
-e_sprite.setPosition(200,200);
-        _frame+=0.2;
-                e_velocity.x=-2;
-                e_sprite.setTextureRect({130 + (int)_frame*130 ,130,130,130});//Ancho y Alto del Personaje,70x65.
-                if(_frame>=6){
-                _frame=0;
-                }
+           }
 
 }
 
- e_sprite.move(e_velocity);
+if(en_hitbox.getGlobalBounds().left < 0   ){
+
+     e_sprite.setPosition(e_sprite.getPosition().x + 4, e_sprite.getPosition().y);
+        en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
+
+
+_direccion=_direccion*-1;
+
+
+
+}
+
+  if (en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width > 800) {
+        e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 103), e_sprite.getPosition().y);
+        en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
+
+_direccion=_direccion*-1;
+
+}
 
 
             if(e_velocity.x < 0){
@@ -69,6 +76,10 @@ e_sprite.setPosition(200,200);
         }else if(e_velocity.x > 0 ){
             e_sprite.setScale(1,1);
         }
+
+
+ e_sprite.move(e_velocity);
+
 
 
        en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30 , e_sprite.getGlobalBounds().top + 50 );
