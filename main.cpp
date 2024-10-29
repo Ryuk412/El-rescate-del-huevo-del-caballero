@@ -7,6 +7,7 @@
 #include <iostream>
 #include "data/characters/pj.h"
 #include "data/etc/Item.h"
+#include "src/mapa.h"
 using namespace std;
 using namespace sf;
 
@@ -17,10 +18,8 @@ int main()
     enemigo slime;
     pj ejemplo;
     Item corazon;
-    sf::Sprite bg;
-    sf::Texture Fondo;
-    Fondo.loadFromFile("data/maps/8bin_8x55_180330.jpg");
-    bg.setTexture(Fondo);
+    // Crear el mapa usando el archivo TMX y el tileset
+    mapa mapa("data/maps/mapa.tmx", "data/maps/tileset.png");
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -45,7 +44,8 @@ int main()
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds())){
             slime.respawn();
         }
-        window.draw(bg);
+        // Dibujar el mapa
+        mapa.dibujar(window);
         window.draw(slime);
         window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
         window.draw(corazon);//Se dibuja el pesronaje en la pantalla

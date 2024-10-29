@@ -44,14 +44,18 @@
 					<Add library="SFML/lib/libsfml-audio.a" />
 					<Add library="SFML/lib/libsfml-window.a" />
 					<Add library="SFML/lib/libsfml-system.a" />
+					<Add directory="tmxlite" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="SFML/include" />
+			<Add directory="tmxlite/include" />
+			<Add directory="tmxlite" />
 		</Compiler>
 		<Linker>
+			<Add library="tmxlite/libtmxlite.dll.a" />
 			<Add directory="SFML/lib" />
 		</Linker>
 		<Unit filename="data/characters/clsPJ.cpp" />
@@ -65,6 +69,9 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
+		<Unit filename="src/inc.h" />
+		<Unit filename="src/mapa.cpp" />
+		<Unit filename="src/mapa.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
