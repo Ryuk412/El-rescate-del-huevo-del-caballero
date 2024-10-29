@@ -16,7 +16,10 @@ enemigo::enemigo()
 
 
 }
-
+void enemigo::respawn(){
+    e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
+    en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
+}
 void enemigo::update()
 {
     bool ban=true;

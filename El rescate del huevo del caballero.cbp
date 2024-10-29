@@ -60,11 +60,11 @@
 		<Unit filename="data/etc/Item.h" />
 		<Unit filename="data/etc/clsColissionable.cpp" />
 		<Unit filename="data/etc/colisionable.h" />
+		<Unit filename="include/Menu.h" />
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
-		<Unit filename="src/inc.cpp" />
-		<Unit filename="src/inc.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

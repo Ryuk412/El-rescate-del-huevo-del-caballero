@@ -36,11 +36,14 @@ int main()
         window.clear();
         ejemplo.update();//Se actualiza la posicion del personaje
         slime.update();
-        if(ejemplo.isCollision(corazon) || ejemplo.getHitboxE().getGlobalBounds().intersects(corazon.getHitbox().getGlobalBounds()) ){
+        if(ejemplo.isCollision(corazon) ) {
             corazon.respawn();
         }
         if(ejemplo.isCollision(slime)){
             ejemplo.respawn();
+        }
+        if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds())){
+            slime.respawn();
         }
         window.draw(bg);
         window.draw(slime);
