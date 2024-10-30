@@ -42,10 +42,10 @@ int main()
         if(ejemplo.isCollision(slime)){
             ejemplo.respawn();
         }
-        if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds())){
+        if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             slime.muerte();
-            sf::sleep(sf::milliseconds(3000));
-            slime.respawn();
+
+        //    slime.respawn();
         }
         // Dibujar el mapa
         mapa.dibujar(window);

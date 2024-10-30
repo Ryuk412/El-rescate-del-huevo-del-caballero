@@ -17,6 +17,7 @@ class pj: public sf::Drawable, public colisionable
         sf::RectangleShape getHitbox()const override;
         sf::RectangleShape getHitboxE();
         pj();
+        bool getBan();
         void respawn();
         virtual ~pj();
 

@@ -108,6 +108,10 @@ void pj::update() {
         m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     }
 }
+
+bool pj::getBan(){
+    return _ban;
+}
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
