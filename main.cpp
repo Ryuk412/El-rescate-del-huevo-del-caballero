@@ -20,7 +20,7 @@ int main()
     pj ejemplo;
     Item corazon;
     // Crear el mapa usando el archivo TMX y el tileset
-    mapa mapa("data/maps/nivel1_mapa.png");
+    mapa mapa("data/maps/mapa.tmx", "data/maps/tileset.png");
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -47,10 +47,6 @@ int main()
 
         //    slime.respawn();
         }
-        if(mapa.colisionaConVertexArray(ejemplo.getHitbox(),5.0f)){
-        ejemplo.setColisionando(true);
-        }else{ejemplo.setColisionando(false);};
-
         // Dibujar el mapa
         mapa.dibujar(window);
         window.draw(slime);

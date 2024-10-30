@@ -5,25 +5,19 @@
 
 class mapa {
 public:
-    // Constructor que carga el mapa
-    mapa(const std::string& archivoMapa);
+    // Constructor que carga el mapa y los tiles
+    mapa(const std::string& archivoMapa, const std::string& archivoTileset);
 
-    // Metodo para generar la estructura
-    bool cargarEstructura();
     // Método para dibujar el mapa en la ventana de SFML
     void dibujar(sf::RenderWindow& ventana);
-    bool puntoCercaDeLinea(const sf::RectangleShape& p, const sf::Vector2f& a, const sf::Vector2f& b, float tolerancia);
-    bool colisionaConVertexArray(const sf::RectangleShape& punto, float tolerancia);
-
 
 private:
-    sf::Texture _mapa;        // Textura del mapa
-    sf::Sprite _Smapa;        // Sprite del mapa
-    sf::VertexArray _hitbox;  // Terreno
-    float tolerancia = 5.0f;  // Distancia mínima para considerar colisión
+    sf::Texture tilesetTexture;        // Textura del tileset
+    std::vector<sf::Sprite> tiles;     // Vector de sprites para cada tile
+    sf::Vector2u tileSize;             // Tamaño de cada tile
+    sf::Vector2u mapaDimensiones;      // Dimensiones del mapa en tiles
 
-
-    void cargarMapa(); // Método para cargar el mapa
+    void cargarMapa(const std::string& archivoMapa); // Método para cargar el mapa desde TMX
 };
 
 #endif // MAPA_H

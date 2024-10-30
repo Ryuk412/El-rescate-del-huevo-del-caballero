@@ -46,5 +46,7 @@
 #include <vector>
 
 
-// Mapa
-#include "mapa.h"
+// tmxlite
+#include <tmxlite/Map.hpp>
+#include <tmxlite/TileLayer.hpp>
+#include <tmxlite/detail/Log.hpp>
