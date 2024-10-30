@@ -20,17 +20,16 @@ class enemigo:  public sf::Drawable, public colisionable
     sf::RectangleShape getHitbox()const override;
     void respawn();
     void muerte();
-    void danioRecibido(int danio);
-    bool isAlive();
     private:
+
+
         sf::RectangleShape en_hitbox;
         int _direccion=-1;
         sf::Sprite e_sprite;
         sf::Texture _textureE;
         sf::Vector2f e_velocity={};
          float _frame=0;
-         float _frame2=0;
-         int e_vida;
+          float _frame2=0;
 };
 
 #endif // ENEMIGO_H
