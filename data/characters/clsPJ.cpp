@@ -11,7 +11,7 @@ pj::pj() {
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
-    _sprite.setPosition(400, 300);
+    _sprite.setPosition(200, 200);
 }
 
 pj::~pj() {}
@@ -21,8 +21,9 @@ void pj::update() {
     // Reiniciar velocidad en cada actualización
     _velocity = {0, 0};
 
+    _velocity.y +=3.0f;
     // Animación si el personaje está quieto
-    if (_velocity.x == 0 && _velocity.y == 0) {
+    if (_velocity.x == 0) {
         _frame += 0.09;
         _sprite.setTextureRect({0 + (int)_frame * 195, 0, 195, 195});
         if (_frame >= 5) _frame = 0;
@@ -107,6 +108,12 @@ void pj::update() {
         _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
         m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     }
+    if(_colisiionando){
+            _velocity.x=0;
+            _velocity.y=0;
+        _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y);
+        m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+    }
 }
 
 bool pj::getBan(){
@@ -135,6 +142,11 @@ void pj::respawn() {
     _sprite.setPosition(std::rand() % 700 + _sprite.getGlobalBounds().width,
                         std::rand() % 500 + _sprite.getGlobalBounds().height);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
+}
+void pj::setColisionando(bool estado){
+    std::cout << "Estado de colisionando: " << _colisiionando << std::endl;
+
+    _colisiionando=estado;
 }
 
 
