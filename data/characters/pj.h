@@ -22,10 +22,7 @@ class pj: public sf::Drawable, public colisionable
         bool getBan();
         void respawn();
         virtual ~pj();
-    void muerte();
-    void danioRecibido(int danio);
-    void curar(int cant);
-    bool isAlive();
+
     protected:
 
     private:
@@ -39,8 +36,6 @@ class pj: public sf::Drawable, public colisionable
         sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
         float _frame=0;
         float _frame2=0;
-        float _frame3=0;
-        int _vida;
 };
 
 #endif // PJ_H

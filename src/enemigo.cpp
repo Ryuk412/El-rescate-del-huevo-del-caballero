@@ -12,23 +12,14 @@ enemigo::enemigo()
     en_hitbox.setSize({60,30});
     en_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,255);
-    e_vida=100;
+
+
 
 }
 void enemigo::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
 }
- void enemigo::danioRecibido(int danio){
-
- e_vida=e_vida-danio;
-
- }
- bool enemigo::isAlive(){
- if(e_vida > 0){ return true;    }
- else{  return false;  }
-
- }
  void enemigo::muerte(){
 
 
@@ -82,7 +73,7 @@ void enemigo::update()
 
 
         _frame+=0.2;
-        e_velocity.x=-1 * _direccion;
+        e_velocity.x=-2 * _direccion;
         e_sprite.setTextureRect({130 + (int)_frame*130,130,130,130}); //Ancho y Alto del Personaje,70x65.
         if(_frame>=6)
         {
