@@ -12,6 +12,7 @@ pj::pj() {
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(400, 300);
+    _vida=100;
 }
 
 pj::~pj() {}
@@ -62,7 +63,7 @@ void pj::update() {
 
     // Animación de ataque
     if (_ban) {
-        _frame2 += 0.15;
+        _frame2 += 0.30;
         if (_sprite.getScale().x == -1 && _frame2 > 2) {
             e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
         } else if (_frame2 > 2) {
@@ -129,6 +130,44 @@ sf::RectangleShape pj::getHitbox() const {
 sf::RectangleShape pj::getHitboxE() {
     return e_hitbox;
 }
+ void pj::danioRecibido(int danio){
+
+ _vida=_vida-danio;
+
+ }
+ bool pj::isAlive(){
+ if(_vida > 0){ return true;    }
+ else{  return false;  }
+
+ }
+  void pj::curar(int cant){
+
+ _vida=_vida+cant;
+
+ }
+ void pj::muerte(){
+
+
+
+        _frame3 += 0.15;
+        if (_sprite.getScale().x == -1 && _frame3 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+        }
+        _velocity = {0, 0};
+        _sprite.setTextureRect({195 + (int)_frame3 * 195, 390,195,195});
+        if (_frame3 >= 4) {
+            _frame3 = 0;
+        m_hitbox.setPosition(-50, -50);
+        _sprite.setPosition(-50,-50);
+        }
+
+
+
+
+    }
+
 
 // Método de respawn para reiniciar la posición del personaje
 void pj::respawn() {
