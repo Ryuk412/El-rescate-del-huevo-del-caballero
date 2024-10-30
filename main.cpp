@@ -20,7 +20,7 @@ int main()
     pj ejemplo;
     Item corazon;
     // Crear el mapa usando el archivo TMX y el tileset
-    mapa mapa("data/maps/nivel1_mapa.png");
+    mapa mapa("data/maps.tmx", "data/maps/tileset.png");
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -37,20 +37,23 @@ int main()
         ejemplo.update();//Se actualiza la posicion del personaje
         slime.update();
         if(ejemplo.isCollision(corazon) ) {
+            ejemplo.curar(25);
             corazon.respawn();
         }
         if(ejemplo.isCollision(slime)){
-            ejemplo.respawn();
+            if(ejemplo.isAlive()==false){
+                ejemplo.muerte();
+            }else{ ejemplo.danioRecibido(25);  }
         }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
-            slime.muerte();
+            if(slime.isAlive()==false){
+                slime.muerte();
+            }else{
+                    slime.danioRecibido(25);
+            }
 
-        //    slime.respawn();
+
         }
-        if(mapa.colisionaConVertexArray(ejemplo.getHitbox(),5.0f)){
-        ejemplo.setColisionando(true);
-        }else{ejemplo.setColisionando(false);};
-
         // Dibujar el mapa
         mapa.dibujar(window);
         window.draw(slime);
