@@ -1,3 +1,4 @@
+#include <windows.h>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
 #include <SFML/Window.hpp>
@@ -42,6 +43,8 @@ int main()
             ejemplo.respawn();
         }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds())){
+            slime.muerte();
+            sf::sleep(sf::milliseconds(3000));
             slime.respawn();
         }
         // Dibujar el mapa

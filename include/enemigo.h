@@ -19,7 +19,7 @@ class enemigo:  public sf::Drawable, public colisionable
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
     sf::RectangleShape getHitbox()const override;
     void respawn();
-
+    void muerte();
     private:
 
 
@@ -29,6 +29,7 @@ class enemigo:  public sf::Drawable, public colisionable
         sf::Texture _textureE;
         sf::Vector2f e_velocity={};
          float _frame=0;
+          float _frame2=0;
 };
 
 #endif // ENEMIGO_H

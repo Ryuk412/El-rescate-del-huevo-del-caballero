@@ -20,6 +20,33 @@ void enemigo::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
 }
+ void enemigo::muerte(){
+
+
+
+        _frame2 += 0.15;
+        if (e_sprite.getScale().x == -4 && _frame2 > 2) {
+            en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
+        }
+        e_velocity = {0, 0};
+        e_sprite.setTextureRect({139 + (int)_frame2 * 130, 390, 130, 130});
+        if (_frame2 >= 4) {
+            _frame2 = 0;
+        en_hitbox.setPosition(-50, -50);
+        e_sprite.setPosition(-50,-50);
+        }
+
+
+
+
+    }
+
+
+
+
+
 void enemigo::update()
 {
     bool ban=true;
