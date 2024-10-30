@@ -11,7 +11,8 @@ pj::pj() {
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
-    _sprite.setPosition(200, 200);
+    _sprite.setPosition(400, 300);
+    _vida=100;
 }
 
 pj::~pj() {}
@@ -21,9 +22,8 @@ void pj::update() {
     // Reiniciar velocidad en cada actualización
     _velocity = {0, 0};
 
-    _velocity.y +=3.0f;
     // Animación si el personaje está quieto
-    if (_velocity.x == 0) {
+    if (_velocity.x == 0 && _velocity.y == 0) {
         _frame += 0.09;
         _sprite.setTextureRect({0 + (int)_frame * 195, 0, 195, 195});
         if (_frame >= 5) _frame = 0;
@@ -63,7 +63,7 @@ void pj::update() {
 
     // Animación de ataque
     if (_ban) {
-        _frame2 += 0.15;
+        _frame2 += 0.30;
         if (_sprite.getScale().x == -1 && _frame2 > 2) {
             e_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
         } else if (_frame2 > 2) {
@@ -108,12 +108,6 @@ void pj::update() {
         _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
         m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     }
-    if(_colisiionando){
-            _velocity.x=0;
-            _velocity.y=0;
-        _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y);
-        m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
-    }
 }
 
 bool pj::getBan(){
@@ -136,17 +130,50 @@ sf::RectangleShape pj::getHitbox() const {
 sf::RectangleShape pj::getHitboxE() {
     return e_hitbox;
 }
+ void pj::danioRecibido(int danio){
+
+ _vida=_vida-danio;
+
+ }
+ bool pj::isAlive(){
+ if(_vida > 0){ return true;    }
+ else{  return false;  }
+
+ }
+  void pj::curar(int cant){
+
+ _vida=_vida+cant;
+
+ }
+ void pj::muerte(){
+
+
+
+        _frame3 += 0.15;
+        if (_sprite.getScale().x == -1 && _frame3 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
+        }
+        _velocity = {0, 0};
+        _sprite.setTextureRect({195 + (int)_frame3 * 195, 390,195,195});
+        if (_frame3 >= 4) {
+            _frame3 = 0;
+        m_hitbox.setPosition(-50, -50);
+        _sprite.setPosition(-50,-50);
+        }
+
+
+
+
+    }
+
 
 // Método de respawn para reiniciar la posición del personaje
 void pj::respawn() {
     _sprite.setPosition(std::rand() % 700 + _sprite.getGlobalBounds().width,
                         std::rand() % 500 + _sprite.getGlobalBounds().height);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
-}
-void pj::setColisionando(bool estado){
-    std::cout << "Estado de colisionando: " << _colisiionando << std::endl;
-
-    _colisiionando=estado;
 }
 
 
