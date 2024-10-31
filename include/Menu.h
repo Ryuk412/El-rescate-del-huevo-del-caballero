@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 
-class Menu {
+class Menu  {
 private:
     sf::Font font;
     std::vector<sf::Text> menuOptions;

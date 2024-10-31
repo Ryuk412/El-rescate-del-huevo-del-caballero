@@ -12,7 +12,7 @@ enemigo::enemigo()
     en_hitbox.setSize({60,30});
     en_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,255);
-
+    e_vida=50;
 
 
 }
@@ -43,7 +43,20 @@ void enemigo::respawn(){
 
     }
 
+ bool enemigo::isAlive(){
+ if(e_vida > 0  ){ return true;   }
+ else{return false;    }
 
+
+
+
+ }
+    void enemigo::danioRecibido(int danio){
+
+    e_vida=e_vida-danio;
+
+
+    }
 
 
 

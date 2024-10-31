@@ -66,4 +66,5 @@ void mapa::dibujar(sf::RenderWindow& ventana) {
 
     // Dibujar la hitbox
     ventana.draw(_hitbox);
+
 }

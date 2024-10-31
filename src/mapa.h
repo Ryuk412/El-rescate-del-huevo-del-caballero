@@ -3,7 +3,7 @@
 #include "inc.h"
 
 
-class mapa {
+class mapa : public colisionable {
 public:
     // Constructor que carga el mapa
     mapa(const std::string& archivoMapa);

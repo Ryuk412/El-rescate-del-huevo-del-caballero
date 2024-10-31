@@ -12,6 +12,7 @@ pj::pj() {
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
     _sprite.setPosition(200, 200);
+    _vida=300;
 }
 
 pj::~pj() {}
@@ -119,6 +120,49 @@ void pj::update() {
 bool pj::getBan(){
     return _ban;
 }
+void pj::curar(int cant){
+
+
+}
+ void pj::muerte(){
+
+
+
+        _frame3 += 0.15;
+        if ( _sprite.getScale().x == -4 && _frame3 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
+        }
+        _velocity = {0, 0};
+         _sprite.setTextureRect({195 + (int)_frame3 * 195, 390, 195, 195});
+        if (_frame2 >= 4) {
+            _frame2 = 0;
+        m_hitbox.setPosition(-50, -50);
+        _sprite.setPosition(-50,-50);
+        }
+
+
+
+
+    }
+
+ bool pj::isAlive(){
+ if( _vida > 0  ){ return true;   }
+ else{return false;    }
+
+
+
+
+ }
+    void pj::danioRecibido(int danio){
+
+    _vida=_vida-danio;
+
+
+    }
+
+
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);

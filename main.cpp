@@ -43,9 +43,11 @@ int main()
             ejemplo.respawn();
         }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
-            slime.muerte();
+            if(slime.isAlive()==false){
+                slime.muerte();
+            }else{slime.danioRecibido(25);}
 
-        //    slime.respawn();
+
         }
         if(mapa.colisionaConVertexArray(ejemplo.getHitbox(),5.0f)){
         ejemplo.setColisionando(true);
