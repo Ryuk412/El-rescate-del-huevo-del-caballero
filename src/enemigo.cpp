@@ -11,7 +11,7 @@ enemigo::enemigo()
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
     en_hitbox.setSize({60,30});
     en_hitbox.setFillColor(sf::Color::Yellow);
-    e_sprite.setPosition(500,255);
+    e_sprite.setPosition(500,600);
     e_vida=50;
 
 

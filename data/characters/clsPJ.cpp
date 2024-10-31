@@ -122,6 +122,7 @@ bool pj::getBan(){
 }
 void pj::curar(int cant){
 
+_vida=_vida+cant;
 
 }
  void pj::muerte(){

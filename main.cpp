@@ -37,10 +37,13 @@ int main()
         ejemplo.update();//Se actualiza la posicion del personaje
         slime.update();
         if(ejemplo.isCollision(corazon) ) {
+            ejemplo.curar(25);
             corazon.respawn();
         }
         if(ejemplo.isCollision(slime)){
-            ejemplo.respawn();
+            if(ejemplo.isAlive()==false){
+                ejemplo.muerte();
+            }else{ejemplo.danioRecibido(25);}
         }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             if(slime.isAlive()==false){
@@ -50,8 +53,8 @@ int main()
 
         }
         if(mapa.colisionaConVertexArray(ejemplo.getHitbox(),5.0f)){
-        ejemplo.setColisionando(true);
-        }else{ejemplo.setColisionando(false);};
+        ejemplo.setColisionando(false);
+        }else{ejemplo.setColisionando(true);};
 
         // Dibujar el mapa
         mapa.dibujar(window);
