@@ -12,15 +12,14 @@ public:
     bool cargarEstructura();
     // Método para dibujar el mapa en la ventana de SFML
     void dibujar(sf::RenderWindow& ventana);
-    bool puntoCercaDeLinea(const sf::RectangleShape& p, const sf::Vector2f& a, const sf::Vector2f& b, float tolerancia);
-    bool colisionaConVertexArray(const sf::RectangleShape& punto, float tolerancia);
+    // Método para verificar la colisión con un punto
 
 
 private:
     sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
-    sf::VertexArray _hitbox;  // Terreno
-    float tolerancia = 5.0f;  // Distancia mínima para considerar colisión
+    sf::RectangleShape _hitbox[50];  // Terreno
+
 
 
     void cargarMapa(); // Método para cargar el mapa

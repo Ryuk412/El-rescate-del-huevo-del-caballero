@@ -52,9 +52,6 @@ int main()
 
 
         }
-        if(mapa.colisionaConVertexArray(ejemplo.getHitbox(),5.0f)){
-        ejemplo.setColisionando(false);
-        }else{ejemplo.setColisionando(true);};
 
         // Dibujar el mapa
         mapa.dibujar(window);

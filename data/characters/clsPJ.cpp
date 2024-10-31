@@ -31,21 +31,15 @@ void pj::update() {
     }
 
     // Movimiento y animación en función de las teclas presionadas
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
-        _frame += 0.2;
-        _velocity.y = -4;
-        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
-        if (_frame >= 7) _frame = 0;
-    }
+//    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+//        _frame += 0.2;
+//        _velocity.y = -4;
+//        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
+//        if (_frame >= 7) _frame = 0;
+//    }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         _frame += 0.2;
         _velocity.x = -4;
-        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
-        if (_frame >= 7) _frame = 0;
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-        _frame += 0.2;
-        _velocity.y = 4;
         _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
@@ -55,6 +49,12 @@ void pj::update() {
         _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
+//    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+//        _frame += 0.2;
+//        _velocity.y = 4;
+//        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
+//        if (_frame >= 7) _frame = 0;
+//    }
 
     // Ataque activado con la tecla Z
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
@@ -107,12 +107,6 @@ void pj::update() {
     }
     if (m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600) {
         _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
-        m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
-    }
-    if(_colisiionando){
-            _velocity.x=0;
-            _velocity.y=0;
-        _sprite.setPosition(_sprite.getPosition().x,_sprite.getPosition().y);
         m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     }
 }
