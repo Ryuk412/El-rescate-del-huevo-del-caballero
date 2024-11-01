@@ -11,16 +11,16 @@ pj::pj() {
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
-<<<<<<< Updated upstream
+
     _sprite.setPosition(200, 200);
     _vida=300;
-=======
+
     _sprite.setPosition(400, 300);
     _vida=100;
    _bVida.setSize({100,10});
    _bVida.setFillColor(sf::Color::Green);
 
->>>>>>> Stashed changes
+
 }
 
 pj::~pj() {}
