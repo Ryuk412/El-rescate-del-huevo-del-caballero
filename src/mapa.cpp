@@ -22,9 +22,9 @@ void mapa::cargarMapa() {
 bool mapa::cargarEstructura() {
     //Crear la estructura del terreno
       cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
-//    cargarHitbox();
-//    cargarHitbox();
-//    cargarHitbox();
+      cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
+      cargarHitbox(2,238.0f,38.0f,102.0f,326.0f);
+      cargarHitbox(3,75.0f,88.0f,341.0f,325.0f);
 
     return true;
 }
