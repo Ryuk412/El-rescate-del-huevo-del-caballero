@@ -12,9 +12,9 @@ pj::pj() {
     _sprite.setPosition(200, 200);
 
     // Configurar hitboxes
-    m_hitbox.setSize({50, 60});
+    m_hitbox.setSize({50, 60}); // Hitbox personaje
     m_hitbox.setFillColor(sf::Color::Red);
-    e_hitbox.setSize({25, 65});
+    e_hitbox.setSize({25, 65}); // Hitbox espada
     e_hitbox.setFillColor(sf::Color::Blue);
 
     _vida = 300;
@@ -24,11 +24,10 @@ pj::~pj() {}
 
 // Método de actualización del estado del personaje
 void pj::update(mapa& _objetoMapa) {
-    // Reiniciar velocidad en cada actualización
-    _velocity = {0, 0};
 
-    // Aplicar gravedad en el eje Y
-    _velocity.y += 3.0f;
+    _velocity = {0, 0}; // Reiniciar velocidad en cada actualización
+
+    _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
 
     // Animación si el personaje está quieto
     if (_velocity.x == 0) {
@@ -79,9 +78,7 @@ void pj::update(mapa& _objetoMapa) {
         _velocity.y /= 1.414213562;
     }
 
-
-    // Movimiento en el eje Y
-    _sprite.move(0, _velocity.y);
+    _sprite.move(0, _velocity.y); // Movimiento en el eje Y
 
     // Actualización de la posición de la hitbox del personaje en función del sprite
     m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
@@ -89,23 +86,21 @@ void pj::update(mapa& _objetoMapa) {
     // Verificar colisiones en el eje Y
     if (_objetoMapa.verificarColision(m_hitbox)) {
     if (_velocity.y > 0) {  // Si el personaje estaba cayendo
-        // Reposicionar justo encima de la colisión
-        _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y);
 
-        // Detener solo el movimiento en el eje Y
-        _velocity.y = 0;
+        _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo encima de la colisión
+        _velocity.y = 0; // Detener solo el movimiento en el eje Y
+
     }
 }
 
-    // Movimiento en el eje X
-    _sprite.move(_velocity.x, 0);
+    _sprite.move(_velocity.x, 0); // Movimiento en el eje X
 
     // Verificar colisiones en el eje X
     m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     if (_objetoMapa.verificarColision(m_hitbox)) {
         if (_velocity.x != 0) {  // Si el personaje estaba moviéndose en X
-            // Deshacer el movimiento en X
-            _sprite.move(-_velocity.x, 0);
+
+            _sprite.move(-_velocity.x, 0); // Deshacer el movimiento en X
             _velocity.x = 0; // Detiene el movimiento en X sin afectar el eje Y
         }
 }
@@ -127,9 +122,6 @@ void pj::update(mapa& _objetoMapa) {
     if (m_hitbox.getGlobalBounds().top < 0) {
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y + 4);
     }
-    if (m_hitbox.getGlobalBounds().left + m_hitbox.getGlobalBounds().width > 800) {
-        _sprite.setPosition(800 - (_sprite.getGlobalBounds().width - 170), _sprite.getPosition().y);
-    }
     if (m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600) {
         _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
     }
@@ -140,7 +132,7 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
     target.draw(_sprite, state);
     if (_ban) {
-        target.draw(e_hitbox, state);
+        target.draw(e_hitbox, state); // Si se activa el ataque, lo dibuja
     }
 }
 
@@ -191,11 +183,6 @@ void pj::respawn() {
     _sprite.setPosition(std::rand() % 700 + _sprite.getGlobalBounds().width,
                         std::rand() % 500 + _sprite.getGlobalBounds().height);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
-}
-
-void pj::setColisionando(bool estado) {
-    std::cout << "Estado de colisionando: " << _colisiionando << std::endl;
-    _colisiionando = estado;
 }
 
 

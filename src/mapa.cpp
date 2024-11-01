@@ -3,11 +3,11 @@
 
 // Implementación del constructor
 mapa::mapa(const std::string& archivoMapa) {
-    // Cargar la textura del tileset
+    // Cargar la textura
     if (!_mapa.loadFromFile(archivoMapa)) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
-
+    // Valor del vector cambiado
     _hitbox.resize(50);
     cargarMapa();
     cargarEstructura();
@@ -30,28 +30,28 @@ bool mapa::cargarEstructura() {
 }
 
 bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
-    _hitbox[vecPos].setSize({w,h});
-    _hitbox[vecPos].setPosition({x,y});
-    // Para poder ver las hitboxes, borrar despues
-    _hitbox[vecPos].setFillColor(sf::Color::Blue);
+
+    _hitbox[vecPos].setSize({w,h}); // Define el tamaño en pixeles del rectangulo
+    _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
+    _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
     return true;
 }
 
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
-    // Dibujar mapa
-     ventana.draw(_Smapa);
-     dibujarHitbox(ventana);
+
+     ventana.draw(_Smapa); // Dibujar mapa
+     dibujarHitbox(ventana); // Llamado al metodo dibujar hitbox
 }
-    // Dibujar la hitbox
+    // Metodo para Dibujar la hitbox
 void mapa::dibujarHitbox(sf::RenderWindow& ventana){
-    for(int j=0; j<50;j++){
+    for(int j=0; j<50;j++){ // Recorre el vector
     ventana.draw(_hitbox[j]);
      }
 }
     // Método para verificar colisiones
 bool mapa::verificarColision(const sf::RectangleShape& objeto) {
-    for (int i=0;i<50;i++) {
+    for (int i=0;i<50;i++) { // Recorre el vector buscando colision
         if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())) {
             return true; // Colisión detectada
         }
