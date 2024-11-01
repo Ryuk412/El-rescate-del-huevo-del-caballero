@@ -8,7 +8,7 @@ mapa::mapa(const std::string& archivoMapa) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
 
-
+    _hitbox.resize(50);
     cargarMapa();
     cargarEstructura();
 }
@@ -21,30 +21,41 @@ void mapa::cargarMapa() {
 // Implementación del método para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
     //Crear la estructura del terreno
-    _hitbox[0].setSize({365.0f,75.0f});
-    _hitbox[0].setPosition(0.0f,146.0f);
+      cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
+//    cargarHitbox();
+//    cargarHitbox();
+//    cargarHitbox();
 
-
-
-    // Asignar color rojo a cada Hitbox
-//    for (int i = 0; i < 14; ++i) {
-//        _hitbox[i].setFillColor(sf::Color::Red) ;
-//    }
-    _hitbox[0].setFillColor(sf::Color::Red);
-    for(int j=0;j<50;j++){
-    ventana.draw(_hitbox[j]);
-    std::cout<< "POSICION "<< j <<" DIBUJADA."<<std::endl;
-    }
     return true;
 }
 
-
+bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
+    _hitbox[vecPos].setSize({w,h});
+    _hitbox[vecPos].setPosition({x,y});
+    // Para poder ver las hitboxes, borrar despues
+    _hitbox[vecPos].setFillColor(sf::Color::Blue);
+    return true;
+}
 
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
     // Dibujar mapa
      ventana.draw(_Smapa);
-    // Dibujar la hitbox
-
-
+     dibujarHitbox(ventana);
 }
+    // Dibujar la hitbox
+void mapa::dibujarHitbox(sf::RenderWindow& ventana){
+    for(int j=0; j<50;j++){
+    ventana.draw(_hitbox[j]);
+     }
+}
+    // Método para verificar colisiones
+bool mapa::verificarColision(const sf::RectangleShape& objeto) {
+    for (int i=0;i<50;i++) {
+        if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())) {
+            return true; // Colisión detectada
+        }
+    }
+    return false; // No hay colisión
+}
+

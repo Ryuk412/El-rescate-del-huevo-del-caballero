@@ -14,11 +14,19 @@ public:
     void dibujar(sf::RenderWindow& ventana);
     // Método para verificar la colisión con un punto
 
+    // Metodo para crear una hitbox
+    bool cargarHitbox(int vecPos,float w,float h,float x, float y);
+    // Metodo para dibujar hitbox
+    void dibujarHitbox(sf::RenderWindow& ventana);
+    // Metodo para verificar la colision
+    bool verificarColision(const sf::RectangleShape& objeto);
+
 
 private:
     sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
-    sf::RectangleShape _hitbox[50];  // Terreno
+    std::vector<sf::RectangleShape> _hitbox;  // Terreno
+    bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
 
 
 

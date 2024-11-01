@@ -12,7 +12,7 @@ class pj: public sf::Drawable, public colisionable
 {
     public:
 
-        void update();//Metodo para actualizar la posicion del personaje
+        void update(mapa& _objetoMapa);//Metodo para actualizar la posicion del personaje
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;//Dibuja al personaje
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
@@ -29,7 +29,6 @@ class pj: public sf::Drawable, public colisionable
     protected:
 
     private:
-
         bool _ban=false;
         sf::RectangleShape e_hitbox;
         sf::RectangleShape m_hitbox;

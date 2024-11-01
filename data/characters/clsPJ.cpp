@@ -1,5 +1,6 @@
 #include <iostream>
 #include "pj.h"
+#include "mapa.h"
 
 // Constructor y Destructor
 pj::pj() {
@@ -18,7 +19,7 @@ pj::pj() {
 pj::~pj() {}
 
 // Método de actualización del estado del personaje
-void pj::update() {
+void pj::update(mapa& _objetoMapa) {
     // Reiniciar velocidad en cada actualización
     _velocity = {0, 0};
 
@@ -83,11 +84,25 @@ void pj::update() {
         _velocity.x /= 1.414213562;
         _velocity.y /= 1.414213562;
     }
+    // Verificador de colision con terreno
+    if(_objetoMapa.verificarColision(m_hitbox)){
+        m_hitbox.setPosition(5+_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+        _velocity.y=0;
+    }
     _sprite.move(_velocity);
 
     // Ajuste de dirección del sprite
-    if (_velocity.x < 0) _sprite.setScale(-1, 1);
-    else if (_velocity.x > 0) _sprite.setScale(1, 1);
+    if (_velocity.x < 0){
+            _sprite.setScale(-1, 1);
+        }else if(_velocity.x > 0) {
+            _sprite.setScale(1, 1);
+        }
+
+
+//    if (mapa.verificarColision(m_hitbox)) {
+//        std::cout << "Colisión detectada con el mapa." << std::endl;
+//        // Aquí podrías definir qué ocurre en caso de colisión
+//    }
 
     // Actualización de la posición de la hitbox
     m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);

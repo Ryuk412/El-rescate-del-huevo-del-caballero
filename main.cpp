@@ -15,12 +15,12 @@ using namespace sf;
 
 int main()
 {
+    // Crear el mapa
+    mapa mapa("data/maps/nivel1_mapa.png");
     //Declaracion objeto "pj"
     enemigo slime;
     pj ejemplo;
     Item corazon;
-    // Crear el mapa usando el archivo TMX y el tileset
-    mapa mapa("data/maps/nivel1_mapa.png");
     corazon.respawn();
     RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
     window.setFramerateLimit(60);
@@ -34,7 +34,7 @@ int main()
         }
 
         window.clear();
-        ejemplo.update();//Se actualiza la posicion del personaje
+        ejemplo.update(mapa);//Se actualiza la posicion del personaje
         slime.update();
         if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);
