@@ -41,7 +41,9 @@ class pj: public sf::Drawable, public colisionable
         float _frame=0;
         float _frame2=0;
         float _frame3=0;
-        int _vida;
+        float _frame4=0;
+        float _frame5=0;
+        float _vida;
 };
 
 #endif // PJ_H

@@ -17,7 +17,7 @@ pj::pj() {
 
     _sprite.setPosition(400, 300);
     _vida=100;
-   _bVida.setSize({100,10});
+   _bVida.setSize({_vida,10});
    _bVida.setFillColor(sf::Color::Green);
 
 
@@ -100,6 +100,13 @@ void pj::update() {
     // Actualización de la posición de la hitbox
     m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     _bVida.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 50);
+    if(_vida < 51 ){
+
+        _bVida.setFillColor(sf::Color::Red);
+    }else{
+    _bVida.setFillColor(sf::Color::Green);
+    }
+
     // Límites de la ventana
     if (m_hitbox.getGlobalBounds().left < 0) {
         _sprite.setPosition(_sprite.getPosition().x + 4, _sprite.getPosition().y);
@@ -140,13 +147,13 @@ _vida=_vida+cant;
         _frame3 += 0.15;
         if ( _sprite.getScale().x == -4 && _frame3 > 2) {
             m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
-        } else if (_frame2 > 2) {
+        } else if (_frame3 > 2) {
             m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
         }
         _velocity = {0, 0};
-         _sprite.setTextureRect({195 + (int)_frame3 * 195, 390, 195, 195});
-        if (_frame2 >= 4) {
-            _frame2 = 0;
+         _sprite.setTextureRect({195 + (int)_frame3 * 195, 1365, 195, 195});
+        if (_frame3 >= 4) {
+            _frame3 = 0;
         m_hitbox.setPosition(-50, -50);
         _sprite.setPosition(-50,-50);
         }
@@ -166,10 +173,28 @@ _vida=_vida+cant;
  }
     void pj::danioRecibido(int danio){
 
-    _vida=_vida-danio;
+ _frame4 += 0.15;
+        if ( _sprite.getScale().x == -4 && _frame4 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
+        } else if (_frame4 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
+        }
+
+         _sprite.setTextureRect({195 + (int)_frame4 * 195, 1170 , 195, 195});
+        if (_frame4 >= 4) {
+            _frame4 = 0;
+        _vida=_vida-danio;
+        }
+
+
 
 
     }
+
+
+
+
+
 
 
 // Método para dibujar el personaje y sus hitboxes
