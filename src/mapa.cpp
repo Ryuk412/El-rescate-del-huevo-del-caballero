@@ -8,7 +8,7 @@ mapa::mapa(const std::string& archivoMapa) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
     // Valor del vector cambiado
-    _hitbox.resize(50);
+    _hitbox.resize(25);
     cargarMapa();
     cargarEstructura();
 }
@@ -34,6 +34,18 @@ bool mapa::cargarEstructura() {
       cargarHitbox(10,365.0f,17.0f,325.0f,522.0f);
       cargarHitbox(11,70.0f,39.0f,399.0f,483.0f);
       cargarHitbox(12,199.0f,27.0f,122.0f,557.0f);
+      cargarHitbox(13,117.0f,30.0f,2.0f,529.0f);
+      cargarHitbox(14,27.0f,113.0f,1.0f,415.0f);
+      cargarHitbox(15,53.0f,30.0f,27.0f,415.0f);
+      cargarHitbox(16,213.0f,40.0f,694.0f,505.0f);
+      cargarHitbox(17,167.0f,40.0f,798.0f,337.0f);
+      cargarHitbox(18,71.0f,13.0f,971.0f,194.0f);
+      cargarHitbox(19,258.0f,53.0f,1042.0f,194.0f);
+      cargarHitbox(20,125.0f,23.0f,1306.0f,234.0f);
+      cargarHitbox(21,161.0f,51.0f,1439.0f,195.0f);
+      cargarHitbox(22,19.0f,141.0f,912.0f,387.0f);
+      cargarHitbox(23,302.0f,22.0f,1038.0f,405.0f);
+      cargarHitbox(24,207.0f,131.0f,1393.0f,375.0f);
 
     return true;
 }
@@ -42,7 +54,7 @@ bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
 
     _hitbox[vecPos].setSize({w,h}); // Define el tamaño en pixeles del rectangulo
     _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
-    _hitbox[vecPos].setFillColor(sf::Color::Transparent); // Para poder ver las hitboxes, borrar despues
+    _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
     return true;
 }
 
@@ -54,7 +66,7 @@ void mapa::dibujar(sf::RenderWindow& ventana) {
 }
     // Metodo para Dibujar la hitbox
 void mapa::dibujarHitbox(sf::RenderWindow& ventana){
-    for(int j=0; j<50;j++){ // Recorre el vector
+    for(int j=0; j<25;j++){ // Recorre el vector
     ventana.draw(_hitbox[j]);
      }
 }
