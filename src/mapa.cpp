@@ -25,6 +25,15 @@ bool mapa::cargarEstructura() {
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
       cargarHitbox(2,238.0f,38.0f,102.0f,326.0f);
       cargarHitbox(3,75.0f,88.0f,341.0f,325.0f);
+      cargarHitbox(4,345.0f,45.0f,449.0f,209.0f);
+      cargarHitbox(5,115.0f,13.0f,756.0f,77.0f);
+      cargarHitbox(6,11.0f,120.0f,798.0f,90.0f);
+      cargarHitbox(7,175.0f,26.0f,799.0f,195.0f);
+      cargarHitbox(8,72.0f,34.0f,508.0f,366.0f);
+      cargarHitbox(9,72.0f,34.0f,654.0f,366.0f);
+      cargarHitbox(10,365.0f,17.0f,325.0f,522.0f);
+      cargarHitbox(11,70.0f,39.0f,399.0f,483.0f);
+      cargarHitbox(12,199.0f,27.0f,122.0f,557.0f);
 
     return true;
 }
@@ -33,7 +42,7 @@ bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
 
     _hitbox[vecPos].setSize({w,h}); // Define el tamaño en pixeles del rectangulo
     _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
-    _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
+    _hitbox[vecPos].setFillColor(sf::Color::Transparent); // Para poder ver las hitboxes, borrar despues
     return true;
 }
 
