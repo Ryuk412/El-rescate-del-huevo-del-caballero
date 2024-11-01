@@ -11,8 +11,16 @@ pj::pj() {
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65});
     e_hitbox.setFillColor(sf::Color::Blue);
+<<<<<<< Updated upstream
     _sprite.setPosition(200, 200);
     _vida=300;
+=======
+    _sprite.setPosition(400, 300);
+    _vida=100;
+   _bVida.setSize({100,10});
+   _bVida.setFillColor(sf::Color::Green);
+
+>>>>>>> Stashed changes
 }
 
 pj::~pj() {}
@@ -91,7 +99,7 @@ void pj::update() {
 
     // Actualización de la posición de la hitbox
     m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
-
+    _bVida.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 50);
     // Límites de la ventana
     if (m_hitbox.getGlobalBounds().left < 0) {
         _sprite.setPosition(_sprite.getPosition().x + 4, _sprite.getPosition().y);
@@ -168,6 +176,7 @@ _vida=_vida+cant;
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
     target.draw(_sprite, state);
+    target.draw(_bVida);
     if (_ban) {
         target.draw(e_hitbox, state);
     }

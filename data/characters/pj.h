@@ -33,6 +33,7 @@ class pj: public sf::Drawable, public colisionable
         bool _ban=false;
         sf::RectangleShape e_hitbox;
         sf::RectangleShape m_hitbox;
+        sf::RectangleShape _bVida;
         sf::Sprite _sprite;
         sf::Texture _textureM;
         bool _colisiionando=false;
