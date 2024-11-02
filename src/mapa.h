@@ -34,11 +34,11 @@ public:
 private:
     sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
-    sf::Texture _nivel1;
-    sf::Texture _nivel2;
-    sf::Texture _nivel3;
+    sf::Texture _nivel1;      // Textura nivel 1
+    sf::Texture _nivel2;      // Textura nivel 2
+    sf::Texture _nivel3;      // Textura nivel 3
 
-    int _nivel=2;
+    int _nivel=1;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno
     bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
 
