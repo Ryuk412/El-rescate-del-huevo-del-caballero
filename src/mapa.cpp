@@ -1,7 +1,7 @@
 #include "mapa.h"
 #include <iostream>
 
-// Implementaci髇 del constructor
+// Implementaci贸n del constructor
 mapa::mapa(const std::string& archivoMapa) {
     // Cargar la textura
     if (!_mapa.loadFromFile(archivoMapa)) {
@@ -13,7 +13,7 @@ mapa::mapa(const std::string& archivoMapa) {
     cargarEstructura();
 }
 
-// Implementaci髇 del m閠odo para cargar el mapa
+// Implementaci贸n del m茅todo para cargar el mapa
 void mapa::cargarMapa() {
     _Smapa.setTexture(_mapa);
 }
@@ -46,7 +46,7 @@ case 3:
     break;
     }
 }
-// Implementaci髇 del m閠odo para configurar la estructura de la hitbox
+// Implementaci贸n del m茅todo para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
     //Crear la estructura del terreno segun el nivel
     switch(_nivel){
@@ -67,11 +67,12 @@ case 3:
 }
 // Metodo para cargar hitboxes del nivel 1
 bool mapa::cargarNivel1(){
+  
       inicializarVector(25);
       cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
-      cargarHitbox(2,238.0f,38.0f,102.0f,326.0f);
-      cargarHitbox(3,75.0f,88.0f,341.0f,325.0f);
+      cargarHitbox(2,229.0f,26.0f,110.0f,326.0f);
+      cargarHitbox(3,75.0f,83.0f,341.0f,325.0f);
       cargarHitbox(4,345.0f,45.0f,449.0f,209.0f);
       cargarHitbox(5,115.0f,13.0f,756.0f,77.0f);
       cargarHitbox(6,11.0f,120.0f,798.0f,90.0f);
@@ -83,7 +84,7 @@ bool mapa::cargarNivel1(){
       cargarHitbox(12,199.0f,27.0f,122.0f,557.0f);
       cargarHitbox(13,117.0f,30.0f,2.0f,529.0f);
       cargarHitbox(14,27.0f,113.0f,1.0f,415.0f);
-      cargarHitbox(15,53.0f,30.0f,27.0f,415.0f);
+      cargarHitbox(15,47.0f,29.0f,29.0f,419.0f);//
       cargarHitbox(16,213.0f,40.0f,694.0f,505.0f);
       cargarHitbox(17,167.0f,40.0f,798.0f,337.0f);
       cargarHitbox(18,71.0f,13.0f,971.0f,194.0f);
@@ -152,12 +153,12 @@ bool mapa::cargarNivel3(){
 
 bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
 
-    _hitbox[vecPos].setSize({w,h}); // Define el tama駉 en pixeles del rectangulo
+    _hitbox[vecPos].setSize({w,h}); // Define el tama帽o en pixeles del rectangulo
     _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
     _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
     return true;
 }
-// Limpia el vector y le reasigna el tama駉
+// Limpia el vector y le reasigna el tama帽o
 void mapa::inicializarVector(int tam){
     _hitbox.clear();
     _hitbox.resize(tam);
@@ -166,7 +167,7 @@ void mapa::inicializarVector(int tam){
 void mapa::setNivel(int nivel){
     _nivel=nivel;
 }
-// M閠odo para dibujar el mapa en la ventana
+// M茅todo para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
      ventana.draw(_Smapa); // Dibujar mapa
@@ -178,13 +179,13 @@ void mapa::dibujarHitbox(sf::RenderWindow& ventana){
     ventana.draw(_hitbox[j]);
      }
 }
-    // M閠odo para verificar colisiones
+    // M茅todo para verificar colisiones
 bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     for (int i=0;i<35;i++) { // Recorre el vector buscando colision
         if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())) {
-            return true; // Colisi髇 detectada
+            return true; // Colisi贸n detectada
         }
     }
-    return false; // No hay colisi髇
+    return false; // No hay colisi贸n
 }
 
