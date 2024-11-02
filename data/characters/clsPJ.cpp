@@ -90,13 +90,6 @@ void pj::update(mapa& _objetoMapa) {
             _ban = false;
         }
     }
-
-    // Movimiento diagonal ajustado
-    if (_velocity.x != 0 && _velocity.y != 0) {
-        _velocity.x /= 1.414213562;
-        _velocity.y /= 1.414213562;
-    }
-
     _sprite.move(0, _velocity.y); // Movimiento en el eje Y
 
     // Actualización de la posición de la hitbox del personaje en función del sprite
@@ -104,12 +97,14 @@ void pj::update(mapa& _objetoMapa) {
 
     // Verificar colisiones en el eje Y
     if (_objetoMapa.verificarColision(m_hitbox)) {
-    if (_velocity.y > 0) {  // Si el personaje estaba cayendo
-
-        _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo encima de la colisión
+        if (_velocity.y > 0) {  // Si el personaje estaba cayendo
+            _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo encima de la colisión
+            _velocity.y = 0; // Detener solo el movimiento en el eje Y
+            _isJumping = false;    // Marcar que el personaje está en el suelo
+        }else if (_velocity.y < 0) { // Si el personaje está subiendo
+        _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo debajo de la colisión
         _velocity.y = 0; // Detener solo el movimiento en el eje Y
-        _isJumping = false;    // Marcar que el personaje está en el suelo
-
+        // No es necesario marcar _isJumping como false aca, ya que el personaje todavía está en el aire
     }
 }
 
