@@ -28,8 +28,8 @@ public:
     bool cargarNivel1();
     bool cargarNivel2();
     bool cargarNivel3();
-    // Metodo para dejar el vector en 0
-    void limpiarVector();
+    // Metodo para setearle dinamicamente tamaño al vector
+    void inicializarVector(int tam);
 
 private:
     sf::Texture _mapa;        // Textura del mapa
