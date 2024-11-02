@@ -43,8 +43,10 @@ int main()
         if(ejemplo.isCollision(slime)){
             if(ejemplo.isAlive()==false){
                 ejemplo.muerte();
-            }else{ejemplo.danioRecibido(25);}
+            }else{ejemplo.danioRecibido(1);
+                   //ejemplo.respawn();             }
         }
+    }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             if(slime.isAlive()==false){
                 slime.muerte();

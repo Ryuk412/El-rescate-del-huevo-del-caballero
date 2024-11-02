@@ -9,6 +9,7 @@ pj::pj() {
     _sprite.setTexture(_textureM);
     _sprite.setTextureRect({0, 0, 195, 195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
+
     _sprite.setPosition(200, 200);
 
     // Configurar hitboxes
@@ -18,6 +19,22 @@ pj::pj() {
     e_hitbox.setFillColor(sf::Color::Blue);
 
     _vida = 300;
+
+    m_hitbox.setSize({50, 60});
+    m_hitbox.setFillColor(sf::Color::Red);
+    e_hitbox.setSize({25, 65});
+    e_hitbox.setFillColor(sf::Color::Blue);
+
+    _sprite.setPosition(200, 200);
+    _vida=300;
+
+    _sprite.setPosition(400, 300);
+    _vida=100;
+   _bVida.setSize({_vida,10});
+   _bVida.setFillColor(sf::Color::Green);
+
+
+
 }
 
 pj::~pj() {}
@@ -107,6 +124,13 @@ void pj::update(mapa& _objetoMapa) {
 
     // Actualización de la posición de la hitbox
     m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
+    _bVida.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 50);
+    if(_vida < 51 ){
+
+        _bVida.setFillColor(sf::Color::Red);
+    }else{
+    _bVida.setFillColor(sf::Color::Green);
+    }
 
     // Ajuste de dirección del sprite
     if (_velocity.x < 0) {
@@ -127,21 +151,90 @@ void pj::update(mapa& _objetoMapa) {
     }
 }
 
+
+
+bool pj::getBan(){
+    return _ban;
+}
+void pj::curar(int cant){
+
+_vida=_vida+cant;
+
+}
+ void pj::muerte(){
+
+
+
+        _frame3 += 0.15;
+        if ( _sprite.getScale().x == -4 && _frame3 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
+        } else if (_frame3 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
+        }
+        _velocity = {0, 0};
+         _sprite.setTextureRect({195 + (int)_frame3 * 195, 1365, 195, 195});
+        if (_frame3 >= 4) {
+            _frame3 = 0;
+        m_hitbox.setPosition(-50, -50);
+        _sprite.setPosition(-50,-50);
+        }
+
+
+
+
+    }
+
+ bool pj::isAlive(){
+ if( _vida > 0  ){ return true;   }
+ else{return false;    }
+
+
+
+
+ }
+    void pj::danioRecibido(int danio){
+
+ _frame4 += 0.15;
+        if ( _sprite.getScale().x == -4 && _frame4 > 2) {
+            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
+        } else if (_frame4 > 2) {
+            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
+        }
+
+         _sprite.setTextureRect({195 + (int)_frame4 * 195, 1170 , 195, 195});
+        if (_frame4 >= 4) {
+            _frame4 = 0;
+        _vida=_vida-danio;
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
     target.draw(_sprite, state);
+    target.draw(_bVida);
     if (_ban) {
         target.draw(e_hitbox, state); // Si se activa el ataque, lo dibuja
     }
 }
 
 // Métodos auxiliares y de estado del personaje
-bool pj::getBan() {
-    return _ban;
+bool pj::getBan(){
+return _ban;
 }
 
-void pj::curar(int cant) {
+void pj::curar( cant) {
     _vida = _vida + cant;
 }
 
