@@ -10,7 +10,7 @@ pj::pj() {
     _sprite.setTextureRect({0, 0, 195, 195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
 
-    _sprite.setPosition(200, 200);
+
 
     // Configurar hitboxes
     m_hitbox.setSize({50, 60}); // Hitbox personaje
@@ -18,17 +18,9 @@ pj::pj() {
     e_hitbox.setSize({25, 65}); // Hitbox espada
     e_hitbox.setFillColor(sf::Color::Blue);
 
-    _vida = 300;
-
-    m_hitbox.setSize({50, 60});
-    m_hitbox.setFillColor(sf::Color::Red);
-    e_hitbox.setSize({25, 65});
-    e_hitbox.setFillColor(sf::Color::Blue);
 
     _sprite.setPosition(200, 200);
-    _vida=300;
 
-    _sprite.setPosition(400, 300);
     _vida=100;
    _bVida.setSize({_vida,10});
    _bVida.setFillColor(sf::Color::Green);
