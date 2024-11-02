@@ -9,7 +9,7 @@ pj::pj() {
     _sprite.setTexture(_textureM);
     _sprite.setTextureRect({0, 0, 195, 195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
-<<<<<<< HEAD
+
     _sprite.setPosition(200, 200);
 
     // Configurar hitboxes
@@ -19,7 +19,7 @@ pj::pj() {
     e_hitbox.setFillColor(sf::Color::Blue);
 
     _vida = 300;
-=======
+
     m_hitbox.setSize({50, 60});
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65});
@@ -34,7 +34,7 @@ pj::pj() {
    _bVida.setFillColor(sf::Color::Green);
 
 
->>>>>>> testAxel
+
 }
 
 pj::~pj() {}
@@ -151,8 +151,8 @@ void pj::update(mapa& _objetoMapa) {
     }
 }
 
-<<<<<<< HEAD
-=======
+
+
 bool pj::getBan(){
     return _ban;
 }
@@ -218,7 +218,7 @@ _vida=_vida+cant;
 
 
 
->>>>>>> testAxel
+
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
@@ -230,11 +230,11 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 }
 
 // Métodos auxiliares y de estado del personaje
-bool pj::getBan() {
-    return _ban;
+bool pj::getBan(){
+return _ban;
 }
 
-void pj::curar(int cant) {
+void pj::curar( cant) {
     _vida = _vida + cant;
 }
 
