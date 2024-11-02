@@ -22,6 +22,8 @@ public:
     bool verificarColision(const sf::RectangleShape& objeto);
     // Metodo para cambiar el nivel
     void setNivel(int nivel);
+    // Metodo para cambiar la textura del mapa
+    void setTextMapa(int nivel);
     // Metodos para cargar la estructura de los niveles
     bool cargarNivel1();
     bool cargarNivel2();
@@ -32,7 +34,11 @@ public:
 private:
     sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
-    int _nivel=12;
+    sf::Texture _nivel1;
+    sf::Texture _nivel2;
+    sf::Texture _nivel3;
+
+    int _nivel=2;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno
     bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
 
