@@ -151,39 +151,6 @@ void pj::update(mapa& _objetoMapa) {
     }
 }
 
-
-
-bool pj::getBan(){
-    return _ban;
-}
-void pj::curar(int cant){
-
-_vida=_vida+cant;
-
-}
- void pj::muerte(){
-
-
-
-        _frame3 += 0.15;
-        if ( _sprite.getScale().x == -4 && _frame3 > 2) {
-            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
-        } else if (_frame3 > 2) {
-            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
-        }
-        _velocity = {0, 0};
-         _sprite.setTextureRect({195 + (int)_frame3 * 195, 1365, 195, 195});
-        if (_frame3 >= 4) {
-            _frame3 = 0;
-        m_hitbox.setPosition(-50, -50);
-        _sprite.setPosition(-50,-50);
-        }
-
-
-
-
-    }
-
  bool pj::isAlive(){
  if( _vida > 0  ){ return true;   }
  else{return false;    }
@@ -234,7 +201,7 @@ bool pj::getBan(){
 return _ban;
 }
 
-void pj::curar( cant) {
+void pj::curar(int cant) {
     _vida = _vida + cant;
 }
 
@@ -252,14 +219,6 @@ void pj::muerte() {
         m_hitbox.setPosition(-50, -50);
         _sprite.setPosition(-50, -50);
     }
-}
-
-bool pj::isAlive() {
-    return _vida > 0;
-}
-
-void pj::danioRecibido(int danio) {
-    _vida = _vida - danio;
 }
 
 // Métodos de obtención de hitboxes
