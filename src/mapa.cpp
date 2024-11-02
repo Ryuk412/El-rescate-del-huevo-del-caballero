@@ -21,6 +21,21 @@ void mapa::cargarMapa() {
 // Implementación del método para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
     //Crear la estructura del terreno
+    switch(_nivel){
+case 1:
+    cargarNivel1();
+    break;
+case 2:
+    break;
+case 3:
+    break;
+    }
+
+
+    return true;
+}
+bool mapa::cargarNivel1(){
+      limpiarVector();
       cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
       cargarHitbox(2,238.0f,38.0f,102.0f,326.0f);
@@ -46,8 +61,13 @@ bool mapa::cargarEstructura() {
       cargarHitbox(22,19.0f,141.0f,912.0f,387.0f);
       cargarHitbox(23,302.0f,22.0f,1038.0f,405.0f);
       cargarHitbox(24,207.0f,131.0f,1393.0f,375.0f);
-
-    return true;
+      return true;
+}
+bool mapa::cargarNivel2(){
+    limpiarVector();
+}
+bool mapa::cargarNivel3(){
+    limpiarVector();
 }
 
 bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
@@ -57,7 +77,13 @@ bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
     _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
     return true;
 }
-
+void mapa::limpiarVector(){
+    _hitbox.clear();
+    _hitbox.resize(25);
+}
+void mapa::setNivel(int nivel){
+    _nivel=nivel;
+}
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
