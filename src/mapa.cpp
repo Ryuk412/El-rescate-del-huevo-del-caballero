@@ -8,7 +8,7 @@ mapa::mapa(const std::string& archivoMapa) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
     // Valor del vector cambiado
-    _hitbox.resize(35);
+    _hitbox.resize(25);
     cargarMapa();
     cargarEstructura();
 }
@@ -67,7 +67,7 @@ case 3:
 }
 // Metodo para cargar hitboxes del nivel 1
 bool mapa::cargarNivel1(){
-      limpiarVector();
+      inicializarVector(25);
       cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
       cargarHitbox(2,238.0f,38.0f,102.0f,326.0f);
@@ -97,7 +97,7 @@ bool mapa::cargarNivel1(){
 }
 // Metodo para cargar hitboxes del nivel 2
 bool mapa::cargarNivel2(){
-    limpiarVector();
+    inicializarVector(32);
     cargarHitbox(0,195.0f, 80.0f, 40.0f, 422.0f);
     cargarHitbox(1,40.0f, 10.0f, 265.0f, 415.0f);
     _hitbox[1].setRotation(135.f);
@@ -146,7 +146,7 @@ bool mapa::cargarNivel2(){
 }
 // Metodo para cargar hitboxes del nivel 3
 bool mapa::cargarNivel3(){
-    limpiarVector();
+    inicializarVector(25);
     return true;
 }
 
@@ -158,9 +158,9 @@ bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
     return true;
 }
 // Limpia el vector y le reasigna el tamaño
-void mapa::limpiarVector(){
+void mapa::inicializarVector(int tam){
     _hitbox.clear();
-    _hitbox.resize(35);
+    _hitbox.resize(tam);
 }
 // Metodo para establecer el valor de la variable _nivel
 void mapa::setNivel(int nivel){
@@ -174,7 +174,7 @@ void mapa::dibujar(sf::RenderWindow& ventana) {
 }
     // Metodo para Dibujar la hitbox
 void mapa::dibujarHitbox(sf::RenderWindow& ventana){
-    for(int j=0; j<35;j++){ // Recorre el vector
+    for(int j=0; j<_hitbox.size();j++){ // Recorre el vector
     ventana.draw(_hitbox[j]);
      }
 }
