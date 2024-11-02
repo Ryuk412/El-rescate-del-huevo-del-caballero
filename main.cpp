@@ -43,7 +43,7 @@ int main()
         if(ejemplo.isCollision(slime)){
             if(ejemplo.isAlive()==false){
                 ejemplo.muerte();
-            }else{ejemplo.danioRecibido(1);
+            }else{ejemplo.danioRecibido(25);
                    //ejemplo.respawn();             }
         }
     }

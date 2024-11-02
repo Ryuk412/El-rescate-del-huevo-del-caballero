@@ -44,7 +44,7 @@ void pj::update(mapa& _objetoMapa) {
 
     _velocity = {0, 0}; // Reiniciar velocidad en cada actualización
 
-    _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
+   // _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
 
     // Animación si el personaje está quieto
     if (_velocity.x == 0) {
@@ -154,10 +154,6 @@ void pj::update(mapa& _objetoMapa) {
  bool pj::isAlive(){
  if( _vida > 0  ){ return true;   }
  else{return false;    }
-
-
-
-
  }
     void pj::danioRecibido(int danio){
 
@@ -173,19 +169,7 @@ void pj::update(mapa& _objetoMapa) {
             _frame4 = 0;
         _vida=_vida-danio;
         }
-
-
-
-
-    }
-
-
-
-
-
-
-
-
+}
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
@@ -206,16 +190,17 @@ void pj::curar(int cant) {
 }
 
 void pj::muerte() {
+
     _frame3 += 0.15;
-    if (_sprite.getScale().x == -4 && _frame3 > 2) {
+    if (_sprite.getScale().x == -1 && _frame3 > 2) {
         m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
-    } else if (_frame2 > 2) {
+    } else if (_frame3 > 2) {
         m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
     }
     _velocity = {0, 0};
-    _sprite.setTextureRect({195 + (int)_frame3 * 195, 390, 195, 195});
-    if (_frame2 >= 4) {
-        _frame2 = 0;
+    _sprite.setTextureRect({195 + (int)_frame3 * 195, 1365, 195, 195});
+    if (_frame3 >= 4) {
+        _frame3 = 0;
         m_hitbox.setPosition(-50, -50);
         _sprite.setPosition(-50, -50);
     }
