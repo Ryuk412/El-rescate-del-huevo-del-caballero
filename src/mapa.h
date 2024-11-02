@@ -20,11 +20,25 @@ public:
     void dibujarHitbox(sf::RenderWindow& ventana);
     // Metodo para verificar la colision
     bool verificarColision(const sf::RectangleShape& objeto);
-
+    // Metodo para cambiar el nivel
+    void setNivel(int nivel);
+    // Metodo para cambiar la textura del mapa
+    void setTextMapa(int nivel);
+    // Metodos para cargar la estructura de los niveles
+    bool cargarNivel1();
+    bool cargarNivel2();
+    bool cargarNivel3();
+    // Metodo para dejar el vector en 0
+    void limpiarVector();
 
 private:
     sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
+    sf::Texture _nivel1;      // Textura nivel 1
+    sf::Texture _nivel2;      // Textura nivel 2
+    sf::Texture _nivel3;      // Textura nivel 3
+
+    int _nivel=1;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno
     bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
 
