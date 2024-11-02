@@ -35,6 +35,9 @@ class pj: public sf::Drawable, public colisionable
         sf::RectangleShape _bVida;
         sf::Sprite _sprite;
         sf::Texture _textureM;
+        float _gravity=3.0f;
+        float _jumpVelocity = -30.0f; // Velocidad inicial del salto (negativo para moverse hacia arriba)
+        bool _isJumping = false;      // Variable para saber si el personaje está en el aire
         bool _colisiionando=false;
         sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
         float _frame=0;

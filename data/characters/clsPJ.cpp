@@ -34,7 +34,8 @@ pj::~pj() {}
 // Método de actualización del estado del personaje
 void pj::update(mapa& _objetoMapa) {
 
-    _velocity = {0, 0}; // Reiniciar velocidad en cada actualización
+    _velocity = {0, _velocity.y};  // Reiniciar velocidad en X y mantener la velocidad en Y
+
 
    // _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
 
@@ -58,6 +59,15 @@ void pj::update(mapa& _objetoMapa) {
         _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
+    // Verificar si se presiona la tecla de salto y el personaje no está en el aire
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && !_isJumping) {
+        _velocity.y = _jumpVelocity; // Iniciar el salto con la velocidad de salto
+        _isJumping = true;           // Marcar que está en el aire
+    }
+    // Aplicar gravedad si el personaje está en el aire
+    if (_isJumping) {
+        _velocity.y += _gravity; // Incrementar la velocidad hacia abajo (caída)
+    }else{_velocity.y+=_gravity;}
 
     // Ataque activado con la tecla Z
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
@@ -98,6 +108,7 @@ void pj::update(mapa& _objetoMapa) {
 
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo encima de la colisión
         _velocity.y = 0; // Detener solo el movimiento en el eje Y
+        _isJumping = false;    // Marcar que el personaje está en el suelo
 
     }
 }
