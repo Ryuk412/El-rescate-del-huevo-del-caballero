@@ -2,10 +2,33 @@
 #include "enemigo.h"
 
 
-enemigo::enemigo()
+enemigo::enemigo( )
 {
 
-    _textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
+_nEnemigo=1;
+
+
+
+}
+
+void enemigo::setEnemigo( ){
+
+
+   switch (_nEnemigo)
+   {
+   case 1:
+        _textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
+       break;
+   case 2:
+        _textureE.loadFromFile("assets\Characters(100x100)\Orc rider\Orc rider.png");
+    break;
+
+   default:
+       break;
+   }
+
+
+
     e_sprite.setTexture(_textureE);
     e_sprite.setTextureRect({0,0,130,130});
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);

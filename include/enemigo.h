@@ -10,11 +10,12 @@
 #include <stdlib.h>
 #include <iostream>
 
+
 class enemigo:  public sf::Drawable, public colisionable
 {
     public:
 
-    enemigo();
+    enemigo( );
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
     sf::RectangleShape getHitbox()const override;
@@ -22,6 +23,7 @@ class enemigo:  public sf::Drawable, public colisionable
     void muerte();
     bool isAlive();
     void danioRecibido(int danio);
+    void setEnemigo( );
 
     private:
 
@@ -33,7 +35,7 @@ class enemigo:  public sf::Drawable, public colisionable
     float _frame=0;
     float _frame2=0;
     int e_vida;
-
+    int _nEnemigo;
 };
 
 #endif // ENEMIGO_H
