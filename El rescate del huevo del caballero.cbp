@@ -69,6 +69,8 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
+		<Unit filename="src/game.cpp" />
+		<Unit filename="src/game.h" />
 		<Unit filename="src/inc.h" />
 		<Unit filename="src/mapa.cpp" />
 		<Unit filename="src/mapa.h" />
