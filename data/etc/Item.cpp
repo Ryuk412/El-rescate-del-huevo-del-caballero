@@ -18,6 +18,13 @@ void Item::draw(sf::RenderTarget& target, sf::RenderStates state)const{
         target.draw(_sprite, state);
 }
 
+bool Item::getActive(){
+    return activo;
+}
+
+void Item::setActive(bool e){
+    activo=e;
+}
 
 Item::Item()
 {

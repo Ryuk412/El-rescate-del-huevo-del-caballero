@@ -12,13 +12,15 @@ class Item: public sf::Drawable, public colisionable
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
         Item();
-
+        bool getActive();
+        void setActive(bool e);
     protected:
 
     private:
         sf::Sprite _sprite;
         sf::Texture _textureM;
         sf::RectangleShape m_hitbox;
+        bool activo=false;
 };
 
 #endif // ITEM_H
