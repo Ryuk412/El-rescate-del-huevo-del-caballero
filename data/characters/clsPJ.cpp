@@ -43,7 +43,7 @@ void pj::update(mapa& _objetoMapa) {
     if (_velocity.x == 0) {
         _frame += 0.09;
         _sprite.setTextureRect({0 + (int)_frame * 195, 0, 195, 195});
-        if (_frame >= 5) _frame = 0;
+        if (_frame >= 5)_frame = 0;
     }
 
     // Movimiento y animación en función de las teclas presionadas
@@ -109,7 +109,6 @@ void pj::update(mapa& _objetoMapa) {
 }
 
     _sprite.move(_velocity.x, 0); // Movimiento en el eje X
-
     // Verificar colisiones en el eje X
     m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     if (_objetoMapa.verificarColision(m_hitbox)) {
@@ -140,6 +139,11 @@ void pj::update(mapa& _objetoMapa) {
     // Límites de la ventana
     if (m_hitbox.getGlobalBounds().left < 0) {
         _sprite.setPosition(_sprite.getPosition().x + 4, _sprite.getPosition().y);
+        m_hitbox.setPosition(m_hitbox.getPosition().x - _velocity.x, m_hitbox.getPosition().y);
+    }
+    if (m_hitbox.getGlobalBounds().left+50 > 1600) {
+        _sprite.setPosition(_sprite.getPosition().x - 4, _sprite.getPosition().y);
+        m_hitbox.setPosition(m_hitbox.getPosition().x - _velocity.x, m_hitbox.getPosition().y);
     }
     if (m_hitbox.getGlobalBounds().top < 0) {
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y + 4);
@@ -186,7 +190,12 @@ return _ban;
 void pj::curar(int cant) {
     _vida = _vida + cant;
 }
-
+float pj::getPositionX(){
+    return _sprite.getPosition().x;
+};
+float pj::getPositionY(){
+    return m_hitbox.getPosition().y;
+};
 void pj::muerte() {
 
     _frame3 += 0.15;

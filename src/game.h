@@ -18,10 +18,13 @@ class game{
     //Variables que solo la clase game puede tener acceso:
         sf::RenderWindow window{};
         sf::Event evento;
+        sf::View camara;
         mapa mapaTest;
         enemigo slime;
         pj ejemplo;
         Item corazon;
+        float limiteCamaraIzq=400;
+        float limiteCamaraDer=1200;
     public:
     //Constructor y destructor
         game();
