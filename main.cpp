@@ -1,34 +1,27 @@
+#include <iostream>
 #include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include "data/characters/pj.h"
+#include "menu.h"
+
 using namespace std;
-using namespace sf;
 
+int main(){
 
-int main()
-{
-    //Declaracion objeto "pj"
-    pj ejemplo;
-    RenderWindow window(sf::VideoMode(800, 600), "El rescate del huevo del caballero");
-    window.setFramerateLimit(60);
-    CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-    while (window.isOpen())
-    {
-        Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == Event::Closed)
-                window.close();
-        }
+    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate mágico: El rescate del huevo del caballero");
+    Menu menuPrincipal;
 
-        window.clear();
-        ejemplo.update();//Se actualiza la posicion del personaje
-        window.draw(ejemplo);//Se dibuja el pesronaje en la pantalla
-        window.display();
+    while(ventana.isOpen()){
+        sf::Event evento;
+
+        while(ventana.pollEvent(evento)){
+            if(evento.type == sf::Event::Closed){
+
+                ventana.close();
+            }
+            menuPrincipal.procesarEventoEntrada(evento); /// procesa los eventos que se realizan en el menu
+        }                                                /// y los lleva a sus submenus correspondientes
+        ventana.clear();
+        menuPrincipal.dibujar(ventana);
+        ventana.display();
     }
-
     return 0;
 }
