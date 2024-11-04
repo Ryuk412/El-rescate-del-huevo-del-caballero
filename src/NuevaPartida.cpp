@@ -30,8 +30,8 @@ NuevaPartida::NuevaPartida() {
 }
 
 void NuevaPartida::procesarEventoEntrada(sf::Event &evento){
-    if (evento.type == sf::Event::MouseButtonPressed){
-        if (_enNuevaPartidaMenu){
+    if(evento.type == sf::Event::MouseButtonPressed){
+        if(_enNuevaPartidaMenu){
             if (_siguienteHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
                 _enConfirmacion=true;
                 _enNuevaPartidaMenu=false;
