@@ -1,6 +1,6 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "menu.h"
+#include "src/menu.h"
 
 using namespace std;
 
