@@ -139,6 +139,11 @@ void pj::update(mapa& _objetoMapa) {
     // Límites de la ventana
     if (m_hitbox.getGlobalBounds().left < 0) {
         _sprite.setPosition(_sprite.getPosition().x + 4, _sprite.getPosition().y);
+        m_hitbox.setPosition(m_hitbox.getPosition().x - _velocity.x, m_hitbox.getPosition().y);
+    }
+    if (m_hitbox.getGlobalBounds().left+50 > 1600) {
+        _sprite.setPosition(_sprite.getPosition().x - 4, _sprite.getPosition().y);
+        m_hitbox.setPosition(m_hitbox.getPosition().x - _velocity.x, m_hitbox.getPosition().y);
     }
     if (m_hitbox.getGlobalBounds().top < 0) {
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y + 4);

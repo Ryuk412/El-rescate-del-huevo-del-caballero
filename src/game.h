@@ -23,7 +23,8 @@ class game{
         enemigo slime;
         pj ejemplo;
         Item corazon;
-        float limiteCamara=400;
+        float limiteCamaraIzq=400;
+        float limiteCamaraDer=1200;
     public:
     //Constructor y destructor
         game();
