@@ -1,10 +1,12 @@
 #include "NuevaPartida.h"
+#include <iostream>
 #include <cstring>
 
 NuevaPartida::NuevaPartida() {
     _nuevaPartidaTextura.loadFromFile("menu/nueva_partida.png");
     _nuevaPartidaSprite.setTexture(_nuevaPartidaTextura);
     _nuevaPartidaSprite.setPosition(0, 0);
+
 
     /// Hitboxes: Si y No - Propiedades
     _siguienteHitbox.setSize(sf::Vector2f(60, 60));
@@ -60,6 +62,9 @@ void NuevaPartida::procesarEventoEntrada(sf::Event &evento){
                 _nombreJugador[_longitudNombre] = '\0';///añade '\0'
             }
             _nombreJugadorTexto.setString(_nombreJugador); ///actualiza el texto en pantalla
+            jugador1.setNombreJugador(_nombreJugador);
+            system("cls");
+            std::cout<<jugador1.getNombreJugador();
         }
     }
 }

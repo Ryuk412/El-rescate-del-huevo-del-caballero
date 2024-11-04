@@ -1,6 +1,6 @@
 #ifndef NUEVAPARTIDA_H
 #define NUEVAPARTIDA_H
-
+#include "Jugador.h"
 #include <SFML/Graphics.hpp>
 #include "Confirmacion.h"
 
@@ -12,6 +12,7 @@ private:
     sf::RectangleShape _volverHitBox;
     sf::Font _fuente;
     sf::Text _nombreJugadorTexto;
+    Jugador jugador1;
 
     char _nombreJugador[16]={0}; /// 15 caracteres + '\0'
     int _longitudNombre=0;
