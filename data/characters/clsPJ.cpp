@@ -40,7 +40,7 @@ void pj::update(mapa& _objetoMapa) {
    // _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
 
     // Animación si el personaje está quieto
-    if (_velocity.x == 0) {
+    if (_velocity.x == 0 && !_isJumping) {
         _frame += 0.09;
         _sprite.setTextureRect({0 + (int)_frame * 195, 0, 195, 195});
         if (_frame >= 5)_frame = 0;
@@ -50,13 +50,13 @@ void pj::update(mapa& _objetoMapa) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         _frame += 0.2;
         _velocity.x = -4;
-        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
+        _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
         _frame += 0.2;
         _velocity.x = 4;
-        _sprite.setTextureRect({195 + (int)_frame * 195, 195, 195, 195});
+        _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
     // Verificar si se presiona la tecla de salto y el personaje no está en el aire
@@ -67,10 +67,11 @@ void pj::update(mapa& _objetoMapa) {
     // Aplicar gravedad si el personaje está en el aire
     if (_isJumping) {
         _velocity.y += _gravity; // Incrementar la velocidad hacia abajo (caída)
+        _sprite.setTextureRect({0,1170,195,195});
     }else{_velocity.y+=_gravity;}
 
     // Ataque activado con la tecla Z
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)&& !_isJumping) {
         if (!_ban) _ban = true;
         e_hitbox.setPosition(-50, -50);
     }
@@ -84,8 +85,8 @@ void pj::update(mapa& _objetoMapa) {
             e_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
         }
         _velocity = {0, 0};
-        _sprite.setTextureRect({195 + (int)_frame2 * 195, 390, 195, 195});
-        if (_frame2 >= 5) {
+        _sprite.setTextureRect({0 + (int)_frame2 * 195, 390, 195, 195});
+        if (_frame2 >= 6) {
             _frame2 = 0;
             _ban = false;
         }
@@ -104,8 +105,9 @@ void pj::update(mapa& _objetoMapa) {
         }else if (_velocity.y < 0) { // Si el personaje está subiendo
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y - _velocity.y); // Reposicionar justo debajo de la colisión
         _velocity.y = 0; // Detener solo el movimiento en el eje Y
+        _sprite.setTextureRect({0,1170,195,195});
         // No es necesario marcar _isJumping como false aca, ya que el personaje todavía está en el aire
-    }
+    }else{_sprite.setTextureRect({0,1170,195,195});}
 }
 
     _sprite.move(_velocity.x, 0); // Movimiento en el eje X
@@ -166,7 +168,7 @@ void pj::update(mapa& _objetoMapa) {
             m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
         }
 
-         _sprite.setTextureRect({195 + (int)_frame4 * 195, 1170 , 195, 195});
+         _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
         if (_frame4 >= 4) {
             _frame4 = 0;
         _vida=_vida-danio;
@@ -205,7 +207,7 @@ void pj::muerte() {
         m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
     }
     _velocity = {0, 0};
-    _sprite.setTextureRect({195 + (int)_frame3 * 195, 1365, 195, 195});
+    _sprite.setTextureRect({0 + (int)_frame3 * 195, 1560, 195, 195});
     if (_frame3 >= 4) {
         _frame3 = 0;
         m_hitbox.setPosition(-50, -50);
