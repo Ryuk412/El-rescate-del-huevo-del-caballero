@@ -1,14 +1,26 @@
 #ifndef JUGADOR_H
 #define JUGADOR_H
-#include <string>
+
+#include <iostream>
+using namespace std;
+
 class Jugador{
 private:
-    std::string _nombreJugador;
-
+    string _nombre;
+    int _puntaje=0;
+    int _nivel=1;
 
 public:
-    void setNombreJugador(std::string nombre);
-    std::string getNombreJugador();
+    string getNombre()const;
+    int getPuntaje()const;
+    int getNivel()const;
+
+    void setNombre(const string &n);
+    void setPuntaje(int p);
+    void setNivel(int nv);
+
+    void Mostrar()const;
+
 };
 
 #endif // JUGADOR_H

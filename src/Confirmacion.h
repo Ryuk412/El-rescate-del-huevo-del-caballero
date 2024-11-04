@@ -7,8 +7,11 @@ class Confirmacion{
 private:
     sf::Texture _confirmacionTextura;
     sf::Sprite _confirmacion;
+
     sf::RectangleShape _siHitbox;
     sf::RectangleShape _noHitbox;
+
+
     bool _volver = true;
 
 public:

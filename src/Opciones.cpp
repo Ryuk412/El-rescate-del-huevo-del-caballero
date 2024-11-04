@@ -71,6 +71,7 @@ void Opciones::procesarEventoEntrada(sf::Event &evento){
             }
             else if(_eliminarPartidasHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
                ///vaciar archivo (completo)
+               _archivo.vaciar();
             }
             else if(_volverHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
                 _volver = true;

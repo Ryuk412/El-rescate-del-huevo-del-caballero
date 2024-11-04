@@ -5,6 +5,7 @@
 
 #include "ComoJugar.h"
 #include "Ranking.h"
+#include "ArchivoJugadores.h"
 
 class Opciones
 {
@@ -31,6 +32,7 @@ private:
 
     Ranking _ranking;
     ComoJugar _comoJugar;
+    ArchivoJugadores _archivo;
 
 public:
     Opciones();

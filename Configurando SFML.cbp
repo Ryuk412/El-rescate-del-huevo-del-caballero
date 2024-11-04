@@ -45,9 +45,9 @@
 		<Unit filename="include/ArchivoJugadores.h" />
 		<Unit filename="include/CargarPartida.h" />
 		<Unit filename="include/ComoJugar.h" />
-		<Unit filename="include/Confirmacion.h" />
 		<Unit filename="include/Creditos.h" />
 		<Unit filename="include/Enemigo.h" />
+		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/Jugar.h" />
 		<Unit filename="include/Musica.h" />
 		<Unit filename="include/NuevaPartida.h" />
@@ -59,9 +59,9 @@
 		<Unit filename="src/ArchivoJugadores.cpp" />
 		<Unit filename="src/CargarPartida.cpp" />
 		<Unit filename="src/ComoJugar.cpp" />
-		<Unit filename="src/Confirmacion.cpp" />
 		<Unit filename="src/Creditos.cpp" />
 		<Unit filename="src/Enemigo.cpp" />
+		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Jugar.cpp" />
 		<Unit filename="src/Musica.cpp" />
 		<Unit filename="src/NuevaPartida.cpp" />

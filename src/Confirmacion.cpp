@@ -1,5 +1,7 @@
 #include "Confirmacion.h"
+
 #include <iostream>
+using namespace std;
 
 Confirmacion::Confirmacion(){
     _confirmacionTextura.loadFromFile("menu/confirmacion.png");
@@ -22,6 +24,7 @@ Confirmacion::Confirmacion(){
 void Confirmacion::procesarEventoEntrada(sf::Event &evento){
     if (evento.type == sf::Event::MouseButtonPressed){
         if (_siHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
+
             _volver = false;
         }
         if (_noHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){

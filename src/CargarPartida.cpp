@@ -1,4 +1,7 @@
+#include <iostream>
 #include "CargarPartida.h"
+
+using namespace std;
 
 /// constructor que inicializa el sprite y la hitbox Volver del submenú CargarPartida
 CargarPartida::CargarPartida(){
@@ -46,6 +49,9 @@ bool CargarPartida::getVolver(){
 
 /// dibuja el sprite y el hitbox en la ventana
 void CargarPartida::dibujar(sf::RenderWindow &ventana){
+
+    ventana.clear();
     ventana.draw(_cargarPartidaSprite);
     ventana.draw(_volverHitBox);
+
 }

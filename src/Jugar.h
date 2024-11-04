@@ -5,6 +5,8 @@
 #include "CargarPartida.h"
 #include "NuevaPartida.h"
 
+#include "ArchivoJugadores.h"
+
 class Jugar
 {
 private:
@@ -19,6 +21,8 @@ private:
 
     sf::Text _cargarPartidaTexto;
     sf::Text _nuevaPartidaTexto;
+
+    ArchivoJugadores _archivo;
 
     CargarPartida _cargarPartida;
     NuevaPartida _nuevaPartida;

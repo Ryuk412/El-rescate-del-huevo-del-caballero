@@ -38,31 +38,40 @@ Jugar::Jugar(){
 
 void Jugar::procesarEventoEntrada(sf::Event &evento){
     if(evento.type == sf::Event::MouseButtonPressed){
+
         if(_enJugarMenu){
+
             if(_cargarPartidaHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+
                 _enCargarPartida=true;
                 _enJugarMenu=false;
-            } else if (_nuevaPartidaHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+
+            }
+            else if(_nuevaPartidaHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _enNuevaPartida=true;
                 _enJugarMenu=false;
-            } else if (_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+            }
+            else if(_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _volver=true;
             }
-        }else if(_enCargarPartida){
+        }
+        else if(_enCargarPartida){
             _cargarPartida.procesarEventoEntrada(evento);
             if (_cargarPartida.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+
                 _enCargarPartida=false;
                 _enJugarMenu=true;
             }
         }else if(_enNuevaPartida){
             _nuevaPartida.procesarEventoEntrada(evento);
-            if (_nuevaPartida.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+            if(_nuevaPartida.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _enNuevaPartida=false;
                 _enJugarMenu=true;
             }
         }
-    } else if (evento.type == sf::Event::TextEntered) {
-        if (_enNuevaPartida) {
+    }
+    else if(evento.type == sf::Event::TextEntered){
+        if(_enNuevaPartida){
             _nuevaPartida.procesarEventoEntrada(evento);
         }
     }

@@ -1,12 +1,13 @@
 #include "NuevaPartida.h"
-#include <iostream>
 #include <cstring>
+
+#include <iostream>
+using namespace std;
 
 NuevaPartida::NuevaPartida() {
     _nuevaPartidaTextura.loadFromFile("menu/nueva_partida.png");
     _nuevaPartidaSprite.setTexture(_nuevaPartidaTextura);
     _nuevaPartidaSprite.setPosition(0, 0);
-
 
     /// Hitboxes: Si y No - Propiedades
     _siguienteHitbox.setSize(sf::Vector2f(60, 60));
@@ -30,41 +31,53 @@ NuevaPartida::NuevaPartida() {
 }
 
 void NuevaPartida::procesarEventoEntrada(sf::Event &evento){
-    if(evento.type == sf::Event::MouseButtonPressed){
-        if(_enNuevaPartidaMenu){
-            if (_siguienteHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                _enConfirmacion=true;
-                _enNuevaPartidaMenu=false;
-            } else if(_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                _volver=true;
-            }
-        } else if(_enConfirmacion){
-            _confirmacion.procesarEventoEntrada(evento);
+    if (evento.type == sf::Event::MouseButtonPressed){
 
-            if (_confirmacion.getVolver()){
-                _enConfirmacion=false;
-                _enNuevaPartidaMenu=true;
+        if (_enNuevaPartidaMenu){
+
+            if (_siguienteHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
+
+                cout<<"se dio clic en SI"<<endl;
+                _jugador.setNombre(_nombreJugador);
+                _jugadorCreado=true;
+
+                if(_jugadorCreado==true){
+                        cout<<"Jugador Creado esta en True"<<endl<<endl;
+                        cout<<"Nombre del jugador: "<<_jugador.getNombre()<<endl;
+
+                    ArchivoJugadores archivoJugadores;
+                    if(archivoJugadores.grabarRegistro(_jugador)){
+                        cout<<"Si se creo el registo"<<endl<<" - Nombre: "<<_jugador.getNombre();
+                    }else{
+                        cout<<"No se creo el registro"<<endl;
+
+                    }
+                }
+                else if(_jugadorCreado==false){
+                    cout<<"Sigue Jugador Creado en False"<<endl;
+                }
+
+                _enNuevaPartidaMenu=false;
+
+            }
+            else if(_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
+                _volver=true;
             }
         }
     }
 
     ///si el evento es de tipo texto
     if (evento.type == sf::Event::TextEntered && _enNuevaPartidaMenu) {
+
         if (evento.text.unicode < 128) { ///acepta solo caracteres ASCII
             char character = static_cast<char>(evento.text.unicode);
 
-            if (character == '\b' && _longitudNombre > 0) { ///boton retroceso y longitud mayor a 0
-                _longitudNombre--;
-                _nombreJugador[_longitudNombre] = '\0'; ///elimina el último carácter
-            } else if (_longitudNombre < 15) { /// la long no tiene q pasar los 15 caracteres
-                _nombreJugador[_longitudNombre] = character;
-                _longitudNombre++;
-                _nombreJugador[_longitudNombre] = '\0';///añade '\0'
+            if (character == '\b' && !_nombreJugador.empty()) { ///botn retroceso
+                _nombreJugador.pop_back(); ///elimina el ultimo caracter
+            } else if (_nombreJugador.length() < 15) { ///long max a 15 caracteres
+                _nombreJugador += character; ///añade el caracter
             }
             _nombreJugadorTexto.setString(_nombreJugador); ///actualiza el texto en pantalla
-            jugador1.setNombreJugador(_nombreJugador);
-            system("cls");
-            std::cout<<jugador1.getNombreJugador();
         }
     }
 }
@@ -81,8 +94,5 @@ void NuevaPartida::dibujar(sf::RenderWindow &ventana){
         ventana.draw(_siguienteHitbox);
         ventana.draw(_volverHitBox);
         ventana.draw(_nombreJugadorTexto);
-    }
-    if (_enConfirmacion) {
-        _confirmacion.dibujar(ventana);
     }
 }

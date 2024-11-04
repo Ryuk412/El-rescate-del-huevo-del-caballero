@@ -1,10 +1,14 @@
 #ifndef NUEVAPARTIDA_H
 #define NUEVAPARTIDA_H
-#include "Jugador.h"
-#include <SFML/Graphics.hpp>
-#include "Confirmacion.h"
 
-class NuevaPartida {
+#include <SFML/Graphics.hpp>
+#include "Jugador.h"
+#include "ArchivoJugadores.h"
+
+#include <iostream>
+using namespace std;
+
+class NuevaPartida{
 private:
     sf::Texture _nuevaPartidaTextura;
     sf::Sprite _nuevaPartidaSprite;
@@ -12,15 +16,13 @@ private:
     sf::RectangleShape _volverHitBox;
     sf::Font _fuente;
     sf::Text _nombreJugadorTexto;
-    Jugador jugador1;
 
-    char _nombreJugador[16]={0}; /// 15 caracteres + '\0'
-    int _longitudNombre=0;
+    Jugador _jugador;
+    bool _jugadorCreado=false;
+
+    string _nombreJugador;
 
     bool _enNuevaPartidaMenu = true;
-    bool _enConfirmacion = false;
-
-    Confirmacion _confirmacion;
 
     bool _volver = false;
 
