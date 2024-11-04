@@ -51,6 +51,34 @@
 		<Unit filename="data/characters/clsPJ.cpp" />
 		<Unit filename="data/characters/pj.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ArchivoJugadores.cpp" />
+		<Unit filename="src/ArchivoJugadores.h" />
+		<Unit filename="src/CargarPartida.cpp" />
+		<Unit filename="src/CargarPartida.h" />
+		<Unit filename="src/ComoJugar.cpp" />
+		<Unit filename="src/ComoJugar.h" />
+		<Unit filename="src/Confirmacion.cpp" />
+		<Unit filename="src/Confirmacion.h" />
+		<Unit filename="src/Creditos.cpp" />
+		<Unit filename="src/Creditos.h" />
+		<Unit filename="src/Funciones.cpp" />
+		<Unit filename="src/Funciones.h" />
+		<Unit filename="src/Jugador.cpp" />
+		<Unit filename="src/Jugador.h" />
+		<Unit filename="src/Jugar.cpp" />
+		<Unit filename="src/Jugar.h" />
+		<Unit filename="src/Musica.cpp" />
+		<Unit filename="src/Musica.h" />
+		<Unit filename="src/NuevaPartida.cpp" />
+		<Unit filename="src/NuevaPartida.h" />
+		<Unit filename="src/Opciones.cpp" />
+		<Unit filename="src/Opciones.h" />
+		<Unit filename="src/Personaje.cpp" />
+		<Unit filename="src/Personaje.h" />
+		<Unit filename="src/Ranking.cpp" />
+		<Unit filename="src/Ranking.h" />
+		<Unit filename="src/menu.cpp" />
+		<Unit filename="src/menu.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
