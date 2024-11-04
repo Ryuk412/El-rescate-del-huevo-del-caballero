@@ -718,12 +718,12 @@
 1730651968 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\game.cpp
 	"game.h"
 
-1730588809 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+1730693749 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
 	<iostream>
 	"pj.h"
 	"mapa.h"
 
-1730588809 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\pj.h
+1730693749 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\pj.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -1395,7 +1395,7 @@
 	<windows.h>
 	"game.h"
 
-1730662250 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.h
+1730693749 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -1434,7 +1434,7 @@
 	<vector>
 	<string>
 
-1730662250 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730693749 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1730662250 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\game.h

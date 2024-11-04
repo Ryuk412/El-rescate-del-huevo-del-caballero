@@ -26,6 +26,8 @@ class pj: public sf::Drawable, public colisionable
         bool isAlive();
         void danioRecibido(int danio);
         void curar(int cant);
+        float getPositionX();
+        float getPositionY();
     protected:
 
     private:

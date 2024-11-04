@@ -3,6 +3,8 @@
 
 game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
     window.setFramerateLimit(60);
+    camara.setSize(800.0f,600.0f);
+    camara.move(0,-200);
 }
 
 game::~game(){}
@@ -29,6 +31,18 @@ void game::update(){
     }
     ejemplo.update(mapaTest);
     slime.update();
+    // Verificar si el personaje ha pasado el límite para mover la cámara
+        if (ejemplo.getPositionX() > limiteCamara) {
+            // Centrar la vista en el personaje solo en el eje horizontal
+            camara.setCenter(ejemplo.getPositionX(), camara.getCenter().y);
+        } else {
+            // Si el personaje está antes del límite, la cámara se queda al inicio
+            camara.setCenter(limiteCamara, camara.getCenter().y);
+        }
+
+
+    // Actualizar la vista en la ventana
+    window.setView(camara);
     if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);
             corazon.setActive(false);
