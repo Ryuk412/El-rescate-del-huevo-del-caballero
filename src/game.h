@@ -14,7 +14,7 @@
 #include "mapa.h"
 #include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
-
+//#include "itemPuntos.h"
 //Clase que funciona como el game engine.
 
 class game{
@@ -28,6 +28,8 @@ class game{
         std::vector<enemigoSlime> skl;
         pj ejemplo;
         Item corazon;
+        int contador;
+//        itemPuntos star;
         sf::Font font;
         sf::Text textoTest;
         float limiteCamaraIzq=400;
