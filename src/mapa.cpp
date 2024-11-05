@@ -191,3 +191,7 @@ bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     }
     return false; // No hay colisión
 }
+
+int mapa::getNivel(){
+    return _nivel;
+}

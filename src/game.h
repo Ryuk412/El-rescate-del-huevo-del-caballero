@@ -33,6 +33,8 @@ class game{
         sf::Text textoTest;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
+        void checkCollisions();
+        void setLevel();
     public:
     //Constructor y destructor
         game();
@@ -45,6 +47,9 @@ class game{
         void render();
         void setEnemies();
         void updateEnemies();
+        bool dibujarUnaVez=true;
+        bool nivel1=false;
+        bool nivel2=false;
 };
 
 #endif // GAME_H_INCLUDED

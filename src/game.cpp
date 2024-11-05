@@ -51,20 +51,24 @@ void game::updateEnemies(){
     skl[4].update(450,700);
 }
 
-//Toda las verificaiones y los updates de cada objeto van acÃ¡
-void game::update(){
-    updateEvent();
-    if(corazon.getActive()==false){
-       corazon.respawn(mapaTest);
-       corazon.setActive(true);
+void game::setLevel(){
+    if(contador<=0){
+            mapaTest.setTextMapa(1);
+            mapaTest.setNivel(1);
+            mapaTest.cargarNivel1();
+            dibujarUnaVez=false;
+            nivel1=true;
     }
-    if(star.getActive()==false){
-       star.respawn(mapaTest);
-       star.setActive(true);
-    }
-    ejemplo.update(mapaTest);
-    slime.update();
-    updateEnemies();
+    else if(contador==60){
+            mapaTest.setTextMapa(2);
+            mapaTest.setNivel(2);
+            mapaTest.cargarNivel2();
+            dibujarUnaVez=false;
+            nivel2=true;
+        }
+}
+
+void game::checkCollisions(){
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -103,13 +107,32 @@ void game::update(){
 
 
         }
+        if(contador==60&&nivel2==false){
+                dibujarUnaVez=true;
+        }
+
+}
+
+//Toda las verificaiones y los updates de cada objeto van acÃ¡
+void game::update(){
+    updateEvent();
+    if(dibujarUnaVez==true){
+    setLevel();
+    }
+    if(corazon.getActive()==false){
+       corazon.respawn(mapaTest);
+       corazon.setActive(true);
+    }
+    if(star.getActive()==false){
+       star.respawn(mapaTest);
+       star.setActive(true);
+    }
+    ejemplo.update(mapaTest);
+    slime.update();
+    updateEnemies();
+    checkCollisions();
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador>=60){
-            mapaTest.setTextMapa(2);
-            mapaTest.setNivel(2);
-            mapaTest.cargarNivel2();
-        }
 }
 
 //Todas las visualizaciones
