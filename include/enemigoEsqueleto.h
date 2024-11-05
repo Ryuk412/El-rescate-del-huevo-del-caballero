@@ -1,14 +1,6 @@
 #ifndef ENEMIGOESQUELETO_H_INCLUDED
 #define ENEMIGOESQUELETO_H_INCLUDED
-#include <cstdlib>
-#include <stdio.h>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include "colisionable.h"
-#include <stdlib.h>
-#include <iostream>
+#include "inc.h"
 
 class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     public:

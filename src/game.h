@@ -13,6 +13,7 @@
 #include "Item.h"
 #include "mapa.h"
 #include "enemigoEsqueleto.h"
+#include "enemigoSlime.h"
 
 //Clase que funciona como el game engine.
 
@@ -24,7 +25,7 @@ class game{
         sf::Event evento;
         sf::View camara;
         enemigo slime;
-        std::vector<enemigoEsqueleto> skl;
+        std::vector<enemigoSlime> skl;
         pj ejemplo;
         Item corazon;
         sf::Font font;
@@ -38,6 +39,7 @@ class game{
     //Nexo entre game y main:
         const bool isRunning() const;
     //Funciones:
+        bool verificarColisionEnemigo(sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();

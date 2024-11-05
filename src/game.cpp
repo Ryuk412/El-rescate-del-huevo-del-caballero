@@ -81,13 +81,14 @@ void game::update(){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
-        if(ejemplo.isCollision(slime)){
-            if(ejemplo.isAlive()==false){
-                ejemplo.muerte();
-            }else{ejemplo.danioRecibido(25);
+        if(verificarColisionEnemigo(ejemplo.getHitbox())){
+                if(ejemplo.isAlive()==false){
+                    ejemplo.muerte();
+                }
+                ejemplo.danioRecibido(25);
                    //ejemplo.respawn();             }
         }
-    }
+
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             if(slime.isAlive()==false){
                 slime.muerte();
@@ -98,6 +99,16 @@ void game::update(){
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 
 }
+bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
+    for(int i=0;i<5;i++){
+    if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())){
+
+            return true;
+    }
+
+    }
+    return false;
+};
 
 //Todas las visualizaciones
 void game::render(){

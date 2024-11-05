@@ -25,13 +25,13 @@ void enemigoEsqueleto::respawn(){
 
 
         _frame2 += 0.15;
-        if (esq_sprite.getScale().x == -4 && _frame2 > 2) {
+        if (esq_sprite.getScale().x == -1 && _frame2 > 2) {
             esq_hitbox.setPosition(esq_sprite.getGlobalBounds().left + 40, esq_sprite.getGlobalBounds().top + 60);
         } else if (_frame2 > 2) {
             esq_hitbox.setPosition(esq_hitbox.getGlobalBounds().left + 55, esq_sprite.getGlobalBounds().top + 60);
         }
         esq_velocity = {0, 0};
-        esq_sprite.setTextureRect({139 + (int)_frame2 * 130, 390, 130, 130});
+        esq_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
         if (_frame2 >= 4) {
             _frame2 = 0;
         esq_hitbox.setPosition(-50, -50);
@@ -87,7 +87,7 @@ void enemigoEsqueleto::update(int limitA, int limitB)
 
         _frame+=0.2;
         esq_velocity.x=-2 * _direccion;
-        esq_sprite.setTextureRect({130 + (int)_frame*130,130,130,130}); //Ancho y Alto del Personaje,70x65.
+        esq_sprite.setTextureRect({0 + (int)_frame*130,130,130,130}); //Ancho y Alto del Personaje,70x65.
         if(_frame>=6)
         {
             _frame=0;
