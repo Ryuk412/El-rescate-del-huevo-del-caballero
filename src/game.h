@@ -24,7 +24,6 @@ class game{
         sf::RenderWindow window{};
         sf::Event evento;
         sf::View camara;
-        enemigo slime;
         std::vector<enemigoSlime> skl;
         pj ejemplo;
         Item corazon;
@@ -42,7 +41,7 @@ class game{
         const bool isRunning() const;
     //Funciones:
         bool verificarColisionEnemigo(sf::RectangleShape hitbox);
-        bool verificarColisionEspada(sf::RectangleShape hitbox);
+        bool verificarColisionEspada(pj& p,sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();

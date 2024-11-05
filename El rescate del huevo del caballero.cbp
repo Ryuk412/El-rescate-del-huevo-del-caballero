@@ -65,6 +65,8 @@
 		<Unit filename="data/etc/Item.h" />
 		<Unit filename="data/etc/clsColissionable.cpp" />
 		<Unit filename="data/etc/colisionable.h" />
+		<Unit filename="data/etc/itemPuntos.cpp" />
+		<Unit filename="data/etc/itemPuntos.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />

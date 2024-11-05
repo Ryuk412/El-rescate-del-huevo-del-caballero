@@ -64,7 +64,6 @@ void game::update(){
        star.setActive(true);
     }
     ejemplo.update(mapaTest);
-    slime.update();
     updateEnemies();
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
@@ -86,10 +85,6 @@ void game::update(){
             contador+=20;
             star.setActive(false);
         }
-        if(ejemplo.isCollision(slime)){
-            if(ejemplo.isAlive()==false){
-                ejemplo.muerte();
-            }else{ejemplo.danioRecibido(25);
 
 
     if(ejemplo.isCollision(corazon) ) {
@@ -103,15 +98,11 @@ void game::update(){
                 ejemplo.danioRecibido(25);
                    //ejemplo.respawn();             }
         }
-        if(verificarColisionEspada(ejemplo.getHitboxE()) and ejemplo.getBan()){
+        if(verificarColisionEspada(ejemplo ,ejemplo.getHitboxE()) and ejemplo.getBan()){
+        std::cout << "Colision detectada." << std::endl;
 
         }
 
-
-        if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
-            if(slime.isAlive()==false){
-                slime.muerte();
-            }else{slime.danioRecibido(25);}
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
         if(contador>=60){
@@ -121,8 +112,7 @@ void game::update(){
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-
-}
+        }
 bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
     for(int i=0;i<5;i++){
     if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())){
@@ -134,16 +124,18 @@ bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
     return false;
 };
 
-bool game::verificarColisionEspada(sf::RectangleShape hitbox) {
+bool game::verificarColisionEspada(pj& p,sf::RectangleShape hitbox) {
 
     for (int i = 0; i < skl.size(); i++) {
-        if (skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())) {
+        if (skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())&&p.getBan()) {
             if(skl[i].isAlive()==false){
                 skl[i].muerte();
             }
-
+            if(p.getBan()){
             skl[i].danioRecibido(25); // Aplica daño al slime si es necesario
             return true; // Devuelve true si encuentra una colisión con algún slime
+            }
+
         }
     }
     return false; // Si no hay colisión con ningún slime, devuelve false
@@ -156,7 +148,6 @@ void game::render(){
         for(int i=0;i<5;i++){
         window.draw(skl[i]);
         }
-        window.draw(slime);
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(star);
