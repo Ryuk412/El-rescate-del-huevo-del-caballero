@@ -11,10 +11,9 @@ sf::RectangleShape itemPuntos::getHitbox()const{
 }
 
 void itemPuntos::respawn(mapa& _objetoMapa){
-    if(_objetoMapa.verificarColision(p_hitbox)==false){
     _spriteP.setPosition(std::rand()%1400+_spriteP.getGlobalBounds().width,std::rand() % 400+_spriteP.getGlobalBounds().height);
     p_hitbox.setPosition(_spriteP.getGlobalBounds().left, _spriteP.getGlobalBounds().top);
-    }else{
+    if(_objetoMapa.verificarColision(p_hitbox)==true){
     while(_objetoMapa.verificarColision(p_hitbox)==true){
     _spriteP.setPosition(std::rand()%1500+_spriteP.getGlobalBounds().width,std::rand() % 400+_spriteP.getGlobalBounds().height);
     p_hitbox.setPosition(_spriteP.getGlobalBounds().left, _spriteP.getGlobalBounds().top);
