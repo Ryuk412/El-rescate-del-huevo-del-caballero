@@ -67,9 +67,11 @@
 		<Unit filename="data/etc/colisionable.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/enemigo.h" />
+		<Unit filename="include/enemigoEsqueleto.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
+		<Unit filename="src/enemigoEsqueleto.cpp" />
 		<Unit filename="src/game.cpp" />
 		<Unit filename="src/game.h" />
 		<Unit filename="src/inc.h" />
