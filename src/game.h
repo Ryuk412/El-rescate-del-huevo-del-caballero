@@ -6,7 +6,9 @@
 #include <SFML/System.hpp>
 #include "enemigo.h"
 #include <stdlib.h>
+#include <cstring>
 #include <iostream>
+#include <vector>
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
@@ -22,9 +24,11 @@ class game{
         sf::Event evento;
         sf::View camara;
         enemigo slime;
-        enemigoEsqueleto skl[5];
+        std::vector<enemigoEsqueleto> skl;
         pj ejemplo;
         Item corazon;
+        sf::Font font;
+        sf::Text textoTest;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
     public:

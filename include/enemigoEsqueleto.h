@@ -28,7 +28,7 @@ class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     int _direccion=-1;
     sf::Sprite esq_sprite;
     sf::Texture _textureEsq;
-    sf::Vector2f esq_velocity={};
+    sf::Vector2f esq_velocity={0,0};
     float _frame=0;
     float _frame2=0;
     int esq_vida;

@@ -2,16 +2,22 @@
 
 
 game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+
+    skl.resize(5);
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
     setEnemies();
+    font.loadFromFile("src/arial.ttf");
+    textoTest.setFont(font);
+    textoTest.setPosition(0,200);
+    textoTest.setColor(sf::Color::Black);
+    textoTest.setCharacterSize(15);
 }
 
 game::~game(){}
 
 const bool game::isRunning() const {
-
     return window.isOpen();
 
 }
@@ -89,6 +95,7 @@ void game::update(){
 
 
         }
+        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 
 }
 
@@ -102,6 +109,7 @@ void game::render(){
         window.draw(slime);
         window.draw(ejemplo);
         window.draw(corazon);
+        window.draw(textoTest);
         window.display();
 
 }
