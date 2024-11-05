@@ -9,9 +9,16 @@ sf::RectangleShape Item::getHitbox()const{
     return m_hitbox;
 }
 
-void Item::respawn(){
-    _sprite.setPosition(std::rand()%700+_sprite.getGlobalBounds().width,std::rand() % 500+_sprite.getGlobalBounds().height);
+void Item::respawn(mapa& _objetoMapa){
+    if(_objetoMapa.verificarColision(m_hitbox)==false){
+    _sprite.setPosition(std::rand()%1500+_sprite.getGlobalBounds().width,std::rand() % 400+_sprite.getGlobalBounds().height);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
+    }else{
+    while(_objetoMapa.verificarColision(m_hitbox)==true){
+    _sprite.setPosition(std::rand()%1500+_sprite.getGlobalBounds().width,std::rand() % 400+_sprite.getGlobalBounds().height);
+    m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
+    }
+    }
 }
 void Item::draw(sf::RenderTarget& target, sf::RenderStates state)const{
        target.draw(m_hitbox,state);
