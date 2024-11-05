@@ -115,7 +115,7 @@ void game::update(){
         }
 bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
     for(int i=0;i<5;i++){
-    if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())){
+    if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())&&skl[i].isAlive()){
 
             return true;
     }

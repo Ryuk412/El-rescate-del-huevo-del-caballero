@@ -10,7 +10,7 @@ class enemigoSlime : public colisionable , public sf::Drawable
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
         sf::RectangleShape getHitbox()const override;
         void respawn();
-        void muerte();
+        bool muerte();
         bool isAlive();
         void danioRecibido(int danio);
         void setSpritePosition(int posicionX, int posicionY);

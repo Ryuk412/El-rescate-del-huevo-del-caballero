@@ -22,27 +22,10 @@ void enemigoSlime::respawn(){
     slm_hitbox.setPosition(slm_sprite.getGlobalBounds().left, slm_sprite.getGlobalBounds().top);
 }
 
- void enemigoSlime::muerte(){
-
-
-
-        _frame2 += 0.15;
-//        if (slm_sprite.getScale().x == -1 && _frame2 > 2) {
-//            slm_hitbox.setPosition(slm_sprite.getGlobalBounds().left + 40, slm_sprite.getGlobalBounds().top + 60);
-//        } else if (_frame2 > 2) {
-//            slm_hitbox.setPosition(slm_hitbox.getGlobalBounds().left + 55, slm_sprite.getGlobalBounds().top + 60);
-//        }
-        slm_velocity = {0, 0};
-        slm_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
-        if (_frame2 >= 4) {
-            _frame2 = 0;
-        slm_hitbox.setPosition(-50, -50);
-        slm_sprite.setPosition(-50,-50);
-        }
-
-
-
-
+ bool enemigoSlime::muerte(){
+    if(slm_vida<=0){
+        return true;
+    }else return false;
     }
 
  bool enemigoSlime::isAlive(){
@@ -100,6 +83,17 @@ void enemigoSlime::update(int limitA, int limitB)
         if(_frame>=6)
         {
             _frame=0;
+        }
+
+    }
+        if(muerte()){
+         _frame2 += 0.05;
+        slm_velocity = {0, 0};
+        slm_sprite.setTextureRect({0 + (int)_frame2 * 130, 650, 130, 130});
+        if (_frame2 >= 4) {
+            _frame2 = 0;
+        slm_hitbox.setPosition(-50, -50);
+        slm_sprite.setPosition(-50,-50);
         }
 
     }
