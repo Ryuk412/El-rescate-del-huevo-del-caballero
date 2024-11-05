@@ -231,4 +231,6 @@ void pj::respawn() {
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
 }
 
-
+void pj::resetPosition(){
+    _sprite.setPosition(200, 200);
+}
