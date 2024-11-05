@@ -67,7 +67,7 @@ case 3:
 }
 // Metodo para cargar hitboxes del nivel 1
 bool mapa::cargarNivel1(){
-  
+
       inicializarVector(25);
       cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
@@ -165,7 +165,10 @@ void mapa::inicializarVector(int tam){
 }
 // Metodo para establecer el valor de la variable _nivel
 void mapa::setNivel(int nivel){
-    _nivel=nivel;
+    if(_nivel==2){
+    _nivel=_nivel-nivel;
+    }
+    _nivel=_nivel+nivel;
 }
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
@@ -188,4 +191,3 @@ bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     }
     return false; // No hay colisión
 }
-
