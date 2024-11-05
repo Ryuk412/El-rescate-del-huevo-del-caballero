@@ -69,7 +69,7 @@ case 3:
 bool mapa::cargarNivel1(){
 
       inicializarVector(25);
-      cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
+      cargarHitbox(0,345.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
       cargarHitbox(2,229.0f,26.0f,110.0f,326.0f);
       cargarHitbox(3,75.0f,83.0f,341.0f,325.0f);
@@ -111,19 +111,19 @@ bool mapa::cargarNivel2(){
     cargarHitbox(6,70.0f, 8.0f, 420.0f, 310.0f);
     cargarHitbox(7,125.0f, 8.0f, 570.0f, 250.0f);
     cargarHitbox(8, 70.0f, 8.0f, 530.0f, 105.0f);
-    cargarHitbox(9, 100.0f, 8.0f, 380.0f, 110.0f);
+    cargarHitbox(9, 100.0f, 90.0f, 380.0f, 110.0f);
     cargarHitbox(10,35.0f, 10.0f, 475.0f, 125.0f);
     _hitbox[10].setRotation(45.f);
     cargarHitbox(11,20.0f, 10.0f, 355.0f, 90.0f);
     _hitbox[11].setRotation(45.f);
-    cargarHitbox(12,100.0f, 10.0f, 260.0f, 90.0f);
+    cargarHitbox(12,100.0f, 120.0f, 260.0f, 90.0f);
     cargarHitbox(13,25.0f, 10.0f, 265.0f, 105.f);
     _hitbox[13].setRotation(135.f);
-    cargarHitbox(14,40.0f, 10.0f, 195.0f, 115.0f);
+    cargarHitbox(14,40.0f, 90.0f, 195.0f, 115.0f);
     cargarHitbox(15,25.0f, 10.0f, 195.0f, 120.f);
     _hitbox[15].setRotation(135.f);
     cargarHitbox(16,165.0f, 10.0f, 0.0f, 160.0f);
-    cargarHitbox(17,230.0f, 10.0f, 800.0f, 445.0f);
+    cargarHitbox(17,240.0f, 10.0f, 800.0f, 445.0f);
     cargarHitbox(18,30.0f, 10.0f, 810.0f, 450.0f);
     _hitbox[18].setRotation(135.f);
     cargarHitbox(19,100.0f, 10.0f, 1100.0f, 460.0f);
@@ -133,13 +133,13 @@ bool mapa::cargarNivel2(){
     cargarHitbox(22,50.0f, 10.0f, 975.0f, 370.0f);
     cargarHitbox(23,70.0f, 10.0f, 970.0f, 370.0f);
     _hitbox[23].setRotation(90.f);
-    cargarHitbox(24,20.0f, 10.0f, 1080.0f, 300.0f);
+    cargarHitbox(24,20.0f, 10.0f, 1080.0f, 290.0f);
     cargarHitbox(25,70.0f, 1.0f, 1150.0f, 230.0f);
     cargarHitbox(26,70.0f, 5.0f, 1280.0f, 150.0f);
     cargarHitbox(27,50.0f, 5.0f, 1380.0f, 120.0f);
     cargarHitbox(28,20.0f, 5.0f, 1440.0f, 110.0f);
     _hitbox[28].setRotation(135.f);
-    cargarHitbox(29,70.0f, 10.0f, 1520.0f, 100.0f);
+    cargarHitbox(29,50.0f, 10.0f, 1530.0f, 100.0f);
     _hitbox[29].setRotation(90.f);
     cargarHitbox(30,70.0f, 10.0f, 1520.0f, 90.0f);
     cargarHitbox(31,20.0f, 5.0f, 1440.0f, 110.0f);

@@ -63,6 +63,7 @@ void game::setLevel(){
             mapaTest.setTextMapa(2);
             mapaTest.setNivel(2);
             mapaTest.cargarNivel2();
+            ejemplo.resetPosition();
             dibujarUnaVez=false;
             nivel2=true;
         }
