@@ -11,8 +11,9 @@ game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 
     font.loadFromFile("src/arial.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Black);
+    textoTest.setColor(sf::Color::Cyan);
     textoTest.setCharacterSize(15);
+    contador=0;
 }
 
 game::~game(){}
@@ -52,11 +53,14 @@ void game::updateEnemies(){
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(){
-
     updateEvent();
     if(corazon.getActive()==false){
-       corazon.respawn();
+       corazon.respawn(mapaTest);
        corazon.setActive(true);
+    }
+    if(star.getActive()==false){
+       star.respawn(mapaTest);
+       star.setActive(true);
     }
     ejemplo.update(mapaTest);
     slime.update();
@@ -81,18 +85,17 @@ void game::update(){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
-        if(verificarColisionEnemigo(ejemplo.getHitbox())){
-                if(ejemplo.isAlive()==false){
-                    ejemplo.muerte();
-                }
-                ejemplo.danioRecibido(25);
+    if(ejemplo.isCollision(star) ) {
+            contador+=20;
+            star.setActive(false);
+        }
+        if(ejemplo.isCollision(slime)){
+            if(ejemplo.isAlive()==false){
+                ejemplo.muerte();
+            }else{ejemplo.danioRecibido(25);
                    //ejemplo.respawn();             }
         }
-        if(verificarColisionEspada(ejemplo.getHitboxE()) and ejemplo.getBan()){
-
-        }
-
-
+    }
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             if(slime.isAlive()==false){
                 slime.muerte();
@@ -101,32 +104,12 @@ void game::update(){
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-
-}
-bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
-    for(int i=0;i<5;i++){
-    if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())){
-
-            return true;
-    }
-
-    }
-    return false;
-};
-
-bool game::verificarColisionEspada(sf::RectangleShape hitbox) {
-
-    for (int i = 0; i < skl.size(); i++) {
-        if (skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())) {
-            if(skl[i].isAlive()==false){
-                skl[i].muerte();
-            }
-
-            skl[i].danioRecibido(25); // Aplica daño al slime si es necesario
-            return true; // Devuelve true si encuentra una colisión con algún slime
+        textoTest.setString("PUNTOS: "+std::to_string(contador));
+        if(contador>=60){
+            mapaTest.setTextMapa(2);
+            mapaTest.setNivel(2);
+            mapaTest.cargarNivel2();
         }
-    }
-    return false; // Si no hay colisión con ningún slime, devuelve false
 }
 
 //Todas las visualizaciones
@@ -139,6 +122,7 @@ void game::render(){
         window.draw(slime);
         window.draw(ejemplo);
         window.draw(corazon);
+        window.draw(star);
         window.draw(textoTest);
         window.display();
 
