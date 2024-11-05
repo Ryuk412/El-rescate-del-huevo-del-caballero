@@ -14,7 +14,7 @@ class enemigo:  public sf::Drawable, public colisionable
 {
     public:
 
-    enemigo();
+    enemigo(const std::string& imagenDirecion);
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
     sf::RectangleShape getHitbox()const override;
@@ -33,6 +33,7 @@ class enemigo:  public sf::Drawable, public colisionable
     float _frame=0;
     float _frame2=0;
     int e_vida;
+    int idEnemigo;
 
 };
 

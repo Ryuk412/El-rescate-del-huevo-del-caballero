@@ -2,10 +2,16 @@
 #include "enemigo.h"
 
 
-enemigo::enemigo()
+enemigo::enemigo(const std::string& imagenDirecion)
 {
-
-    _textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
+    // Cargar la textura desde la ruta proporcionada
+    if (!_textureE.loadFromFile(imagenDirecion)) {
+        // Manejar el error, lanzando una excepción o mostrando un mensaje
+        throw std::runtime_error("No se pudo cargar la textura: " + imagenDirecion);
+        // O usar un mensaje de error sin excepción
+        // std::cerr << "Error: No se pudo cargar la textura: " << imagenDirecion << std::endl;
+    }
+    //_textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
     e_sprite.setTexture(_textureE);
     e_sprite.setTextureRect({0,0,130,130});
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);

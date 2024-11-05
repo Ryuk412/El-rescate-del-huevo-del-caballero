@@ -2,7 +2,7 @@
 #define ITEM_H
 #include <SFML/Graphics.hpp>
 #include "colisionable.h"
-
+#include "mapa.h"
 class Item: public sf::Drawable, public colisionable
 {
     public:
@@ -11,7 +11,7 @@ class Item: public sf::Drawable, public colisionable
         void respawn();
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
-        Item();
+        Item(const std::string& imagenDirecion);
         bool getActive();
         void setActive(bool e);
     protected:

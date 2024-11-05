@@ -1,7 +1,7 @@
 #include<iostream>
 #include <stdlib.h>
 #include "Item.h"
-
+#include "mapa.h"
 //sf::FloatRect Item::getBounds() const{
 //    return _sprite.getGlobalBounds();
 //}
@@ -26,11 +26,18 @@ void Item::setActive(bool e){
     activo=e;
 }
 
-Item::Item()
+Item::Item(const std::string& imagenDirecion)
 {
+       // Cargar la textura desde la ruta proporcionada
+    if (!_textureM.loadFromFile(imagenDirecion)) {
+        // Manejar el error, lanzando una excepción o mostrando un mensaje
+        throw std::runtime_error("No se pudo cargar la textura: " + imagenDirecion);
+        // O usar un mensaje de error sin excepción
+        // std::cerr << "Error: No se pudo cargar la textura: " << imagenDirecion << std::endl;
+    }
     //Esto es provisional, deberiamos optimizarlo para que podamos elegir cual textura queremos usar
     //Y que solo tengamos que enviar la direccion de la imagen
-    _textureM.loadFromFile("data/images/ejemploPU.png");
+ //   _textureM.loadFromFile("data/images/ejemploPU.png");
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({_sprite.getGlobalBounds().getSize()});

@@ -1,11 +1,16 @@
 #include "game.h"
 
 
-game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+game::game() :slime("assets/Characters(100x100)/Slime/Slime/Slime.png") ,corazon("data/images/ejemploPU.png"),  mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default)
+
+
+ {
+
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
-}
+
+ }
 
 game::~game(){}
 

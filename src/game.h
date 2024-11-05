@@ -35,6 +35,7 @@ class game{
         void updateEvent();
         void update();
         void render();
+        void cargarSprite();
 };
 
 #endif // GAME_H_INCLUDED
