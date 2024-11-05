@@ -38,7 +38,6 @@ void game::setEnemies(){
     skl[2].setSpritePosition(1050,450);
     skl[3].setSpritePosition(900,250);
     skl[4].setSpritePosition(450,580);
-
 }
 
 void game::updateEnemies(){
@@ -118,6 +117,7 @@ void game::render(){
         window.draw(skl[i]);
         }
         window.draw(slime);
+        window.draw(mago);
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(textoTest);

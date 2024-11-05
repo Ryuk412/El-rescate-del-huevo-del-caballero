@@ -4,17 +4,17 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/System.hpp>
-#include "enemigo.h"
 #include <stdlib.h>
 #include <cstring>
 #include <iostream>
 #include <vector>
+#include "enemigo.h"
+#include "Jefe.h"
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
 #include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
-
 //Clase que funciona como el game engine.
 
 class game{
@@ -26,6 +26,7 @@ class game{
         sf::View camara;
         enemigo slime;
         std::vector<enemigoSlime> skl;
+        Jefe mago;
         pj ejemplo;
         Item corazon;
         sf::Font font;

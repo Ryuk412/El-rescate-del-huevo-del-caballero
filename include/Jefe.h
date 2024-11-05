@@ -1,25 +1,29 @@
 #ifndef JEFE_H
 #define JEFE_H
+#include "inc.h"
 
-
-class Jefe : public sf::Drawable, public colisionable
+class Jefe :public colisionable, public sf::Drawable
 {
     public:
+
+    Jefe();
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
-    void isAlive();
+    sf::RectangleShape getHitbox()const override;
+    bool isAlive();
     void muerte();
     void danioRecivido(int danio);
 
 
     private:
-        Jefe();
+
         sf::RectangleShape j_hitbox;
         sf::RectangleShape _hitbox;
-        sf::Sprite j_sprite;
         sf::Texture j_texture;
-        sf::Vector2f j_velovity={};
-        float j_frame=0;
+        sf::Sprite j_sprite;
+        sf::Vector2f j_velocity={};
+        int _direccion=-1;
+        float _frame=0;
         float j_vida;
 
 
