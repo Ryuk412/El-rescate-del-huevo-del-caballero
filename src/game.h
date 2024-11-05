@@ -10,17 +10,19 @@
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
+#include "enemigoEsqueleto.h"
 
 //Clase que funciona como el game engine.
 
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
+        mapa mapaTest;
         sf::RenderWindow window{};
         sf::Event evento;
         sf::View camara;
-        mapa mapaTest;
         enemigo slime;
+        enemigoEsqueleto skl[5];
         pj ejemplo;
         Item corazon;
         float limiteCamaraIzq=400;
@@ -35,6 +37,8 @@ class game{
         void updateEvent();
         void update();
         void render();
+        void setEnemies();
+        void updateEnemies();
 };
 
 #endif // GAME_H_INCLUDED
