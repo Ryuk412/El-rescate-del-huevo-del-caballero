@@ -12,6 +12,7 @@ game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
     textoTest.setColor(sf::Color::Black);
+    contador=0;
     textoTest.setCharacterSize(15);
 }
 
@@ -58,6 +59,10 @@ void game::update(){
        corazon.respawn();
        corazon.setActive(true);
     }
+    if(star.getActive()==false){
+       star.respawn(mapaTest);
+       star.setActive(true);
+    }
     ejemplo.update(mapaTest);
     slime.update();
     updateEnemies();
@@ -77,6 +82,16 @@ void game::update(){
 
     // Actualizar la vista en la ventana
     window.setView(camara);
+    if(ejemplo.isCollision(star) ) {
+            contador+=20;
+            star.setActive(false);
+        }
+        if(ejemplo.isCollision(slime)){
+            if(ejemplo.isAlive()==false){
+                ejemplo.muerte();
+            }else{ejemplo.danioRecibido(25);
+
+
     if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);
             corazon.setActive(false);
@@ -97,7 +112,12 @@ void game::update(){
             if(slime.isAlive()==false){
                 slime.muerte();
             }else{slime.danioRecibido(25);}
-
+        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
+        textoTest.setString("PUNTOS: "+std::to_string(contador));
+        if(contador>=60){
+            mapaTest.setTextMapa(2);
+            mapaTest.setNivel(2);
+            mapaTest.cargarNivel2();
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
@@ -139,6 +159,7 @@ void game::render(){
         window.draw(slime);
         window.draw(ejemplo);
         window.draw(corazon);
+        window.draw(star);
         window.draw(textoTest);
         window.display();
 
