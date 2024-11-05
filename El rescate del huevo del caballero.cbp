@@ -65,12 +65,12 @@
 		<Unit filename="data/etc/Item.h" />
 		<Unit filename="data/etc/clsColissionable.cpp" />
 		<Unit filename="data/etc/colisionable.h" />
-		<Unit filename="include/Jefe.h" />
+		<Unit filename="data/etc/itemPuntos.cpp" />
+		<Unit filename="data/etc/itemPuntos.h" />
 		<Unit filename="include/Menu.h" />
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Jefe.cpp" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />
