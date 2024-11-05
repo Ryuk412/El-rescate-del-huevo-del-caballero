@@ -40,6 +40,7 @@ class game{
         const bool isRunning() const;
     //Funciones:
         bool verificarColisionEnemigo(sf::RectangleShape hitbox);
+        bool verificarColisionEspada(sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();

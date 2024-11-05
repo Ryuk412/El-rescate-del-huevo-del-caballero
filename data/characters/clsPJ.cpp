@@ -161,12 +161,8 @@ void pj::update(mapa& _objetoMapa) {
  }
     void pj::danioRecibido(int danio){
 
- _frame4 += 0.15;
-        if ( _sprite.getScale().x == -4 && _frame4 > 2) {
-            m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40,  _sprite.getGlobalBounds().top + 60);
-        } else if (_frame4 > 2) {
-            m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55,  _sprite.getGlobalBounds().top + 60);
-        }
+        _frame4 += 0.1f;
+
 
          _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
         if (_frame4 >= 4) {
@@ -201,17 +197,13 @@ float pj::getPositionY(){
 void pj::muerte() {
 
     _frame3 += 0.15;
-    if (_sprite.getScale().x == -1 && _frame3 > 2) {
-        m_hitbox.setPosition(_sprite.getGlobalBounds().left + 40, _sprite.getGlobalBounds().top + 60);
-    } else if (_frame3 > 2) {
-        m_hitbox.setPosition(m_hitbox.getGlobalBounds().left + 55, _sprite.getGlobalBounds().top + 60);
-    }
     _velocity = {0, 0};
     _sprite.setTextureRect({0 + (int)_frame3 * 195, 1560, 195, 195});
     if (_frame3 >= 4) {
         _frame3 = 0;
-        m_hitbox.setPosition(-50, -50);
-        _sprite.setPosition(-50, -50);
+        m_hitbox.setPosition(0, 0);
+        _sprite.setPosition(0, 0);
+    _vida=100;
     }
 }
 

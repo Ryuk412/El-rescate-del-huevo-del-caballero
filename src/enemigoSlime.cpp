@@ -27,11 +27,11 @@ void enemigoSlime::respawn(){
 
 
         _frame2 += 0.15;
-        if (slm_sprite.getScale().x == -1 && _frame2 > 2) {
-            slm_hitbox.setPosition(slm_sprite.getGlobalBounds().left + 40, slm_sprite.getGlobalBounds().top + 60);
-        } else if (_frame2 > 2) {
-            slm_hitbox.setPosition(slm_hitbox.getGlobalBounds().left + 55, slm_sprite.getGlobalBounds().top + 60);
-        }
+//        if (slm_sprite.getScale().x == -1 && _frame2 > 2) {
+//            slm_hitbox.setPosition(slm_sprite.getGlobalBounds().left + 40, slm_sprite.getGlobalBounds().top + 60);
+//        } else if (_frame2 > 2) {
+//            slm_hitbox.setPosition(slm_hitbox.getGlobalBounds().left + 55, slm_sprite.getGlobalBounds().top + 60);
+//        }
         slm_velocity = {0, 0};
         slm_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
         if (_frame2 >= 4) {
@@ -54,7 +54,14 @@ void enemigoSlime::respawn(){
 
  }
     void enemigoSlime::danioRecibido(int danio){
+        _frame3 += 0.1f;
 
+
+         slm_sprite.setTextureRect({0 + (int)_frame3 * 130, 520 , 130, 130});
+        if (_frame3 >= 4) {
+            _frame3 = 0;
+        slm_vida=slm_vida-danio;
+        }
     slm_vida=slm_vida-danio;
 
 

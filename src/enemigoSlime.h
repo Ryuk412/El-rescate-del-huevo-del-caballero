@@ -26,6 +26,7 @@ class enemigoSlime : public colisionable , public sf::Drawable
     sf::Vector2f slm_velocity={0,0};
     float _frame=0;
     float _frame2=0;
+    float _frame3=0;
     int slm_vida;
 };
 

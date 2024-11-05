@@ -88,6 +88,10 @@ void game::update(){
                 ejemplo.danioRecibido(25);
                    //ejemplo.respawn();             }
         }
+        if(verificarColisionEspada(ejemplo.getHitboxE()) and ejemplo.getBan()){
+
+        }
+
 
         if( ejemplo.getHitboxE().getGlobalBounds().intersects(slime.getHitbox().getGlobalBounds()) and ejemplo.getBan()){
             if(slime.isAlive()==false){
@@ -109,6 +113,21 @@ bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
     }
     return false;
 };
+
+bool game::verificarColisionEspada(sf::RectangleShape hitbox) {
+
+    for (int i = 0; i < skl.size(); i++) {
+        if (skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())) {
+            if(skl[i].isAlive()==false){
+                skl[i].muerte();
+            }
+
+            skl[i].danioRecibido(25); // Aplica daño al slime si es necesario
+            return true; // Devuelve true si encuentra una colisión con algún slime
+        }
+    }
+    return false; // Si no hay colisión con ningún slime, devuelve false
+}
 
 //Todas las visualizaciones
 void game::render(){
