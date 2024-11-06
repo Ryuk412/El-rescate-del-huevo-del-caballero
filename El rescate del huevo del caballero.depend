@@ -2180,7 +2180,7 @@
 	"colisionable.h"
 	"inc.h"
 
-1730770554 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\main.cpp
+1730871915 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\main.cpp
 	<windows.h>
 	"game.h"
 
@@ -2240,7 +2240,7 @@
 1730863525 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1730867393 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730873456 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1730865881 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.h
@@ -2265,10 +2265,10 @@
 	"mapa.h"
 	<iostream>
 
-1730867732 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
+1730871904 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 
-1730868108 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1730873729 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>

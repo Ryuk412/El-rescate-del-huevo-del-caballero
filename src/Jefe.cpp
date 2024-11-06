@@ -12,15 +12,12 @@ Jefe::Jefe()
     j_sprite.setOrigin(j_sprite.getGlobalBounds().width,j_sprite.getGlobalBounds().height);
     j_hitbox.setSize({60,30});
     j_hitbox.setFillColor(sf::Color::Magenta);
-    j_sprite.setPosition(900,250);
+    j_sprite.setPosition(1050,250);
     j_vida=500;
+
 
 }
 void Jefe::update(int LimiteA, int LimiteB){
-
-
-
-
 
 j_velocity={};
 
@@ -65,28 +62,12 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
 
 
-     if(j_hitbox.getGlobalBounds().left < LimiteA)
-    {
-
-        j_sprite.setPosition(j_sprite.getPosition().x + 4, j_sprite.getPosition().y);
-        j_hitbox.setPosition(5 + j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
-
-
-        _direccion=_direccion*-1;
-
-
-
-    }
-
-    if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width > LimiteB)
-    {
-        j_sprite.setPosition(LimiteB - (j_sprite.getGlobalBounds().width - 103), j_sprite.getPosition().y);
-        j_hitbox.setPosition(5 + j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
-
-        _direccion=_direccion*-1;
-    }
-
-
+  // Verificar si el objeto ha llegado a los límites y cambiar la dirección suavemente
+if (j_hitbox.getGlobalBounds().left <= LimiteA) {
+    _direccion = 1; // Cambiar dirección hacia la derecha
+} else if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width >= LimiteB) {
+    _direccion = -1; // Cambiar dirección hacia la izquierda
+}
     j_sprite.move(j_velocity);
 
     j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 30, j_sprite.getGlobalBounds().top + 30 );
