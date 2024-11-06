@@ -71,6 +71,8 @@
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Jefe.cpp" />
+		<Unit filename="src/Jefe.h" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />

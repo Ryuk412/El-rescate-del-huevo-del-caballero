@@ -9,6 +9,7 @@
 #include <cstring>
 #include <iostream>
 #include <vector>
+#include "Jefe.h"
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
@@ -24,6 +25,7 @@ class game{
         sf::RenderWindow window{};
         sf::Event evento;
         sf::View camara;
+        Jefe mago;
         std::vector<enemigoSlime> skl;
         pj ejemplo;
         Item corazon;
