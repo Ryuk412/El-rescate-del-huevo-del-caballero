@@ -1,0 +1,29 @@
+#include <SFML/Graphics.hpp>
+#include "menu.h"
+#include "Personaje.h"
+#include "Enemigo.h"
+
+int main() {
+
+    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate mágico: El rescate del huevo del caballero");
+
+    Menu menuPrincipal;
+    Personaje caballero;
+    Enemigo slimes;
+
+    while (ventana.isOpen()){
+        sf::Event evento;
+
+        while (ventana.pollEvent(evento)){
+            if (evento.type == sf::Event::Closed){
+                ventana.close();
+            }
+            menuPrincipal.procesarEventoEntrada(evento);
+        }
+        ventana.clear();
+        menuPrincipal.dibujar(ventana);
+        ventana.display();
+    }
+
+    return 0;
+}

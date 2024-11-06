@@ -1,0 +1,177 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "nivel_1.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Todos los archivos (*)",
+    "fileStates": {
+        "Background.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/Elvis/Downloads/Map.tmx": {
+            "expandedObjectLayers": [
+                3
+            ],
+            "scale": 1,
+            "selectedLayer": 3,
+            "viewCenter": {
+                "x": 378.5,
+                "y": 486.5
+            }
+        },
+        "C:/Users/Elvis/Downloads/main.tsx": {
+            "scaleInDock": 1
+        },
+        "Fondo_arboles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Golden-Tree.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "Green-Tree.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "Patrones/Background.tsx": {
+            "scaleInDock": 0.5,
+            "scaleInEditor": 1
+        },
+        "Patrones/Bosque.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Patrones/Bosque2.tsx": {
+            "scaleInDock": 0.75,
+            "scaleInEditor": 1
+        },
+        "Patrones/Props-Rocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Patrones/Tiles.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Patrones/Tree-Assets.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 2,
+            "scaleInEditor": 1
+        },
+        "Patrones/entrada.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 1,
+            "viewCenter": {
+                "x": 803,
+                "y": 601
+            }
+        },
+        "Props-Rocks.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Tiled/Background.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/Green-Tree.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/Patrones/Background.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/Patrones/Bosque.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/Patrones/Bosque2.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/Yellow-Tree.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/nivel_1.tmx": {
+            "scale": 1,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 398.5,
+                "y": 305.5
+            }
+        },
+        "Tiled/otoño.tsx": {
+            "scaleInDock": 1
+        },
+        "Tiled/piedras.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1
+        },
+        "Tiles.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        },
+        "Tree-Assets.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "Yellow-Tree.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "nivel_1.tmx": {
+            "expandedObjectLayers": [
+                112
+            ],
+            "scale": 1.5,
+            "selectedLayer": 57,
+            "viewCenter": {
+                "x": 460.3333333333333,
+                "y": 202.33333333333334
+            }
+        },
+        "otoño.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "piedras.tsx": {
+            "scaleInDock": 1.5,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/Elvis/OneDrive - frgp.utn.edu.ar/Desktop/Escritorio/Legacy-Fantasy - High Forest 2.3/Assets",
+    "map.height": 120,
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 5,
+    "map.tileWidth": 5,
+    "map.width": 160,
+    "openFiles": [
+        "Patrones/Tiles.tsx",
+        "Patrones/Background.tsx",
+        "Patrones/Props-Rocks.tsx",
+        "nivel_1.tmx",
+        "C:/Users/Elvis/Downloads/Map.tmx"
+    ],
+    "project": "El rescate del huevo del caballero.tiled-project",
+    "recentFiles": [
+        "Patrones/Tiles.tsx",
+        "Patrones/Background.tsx",
+        "Patrones/Props-Rocks.tsx",
+        "C:/Users/Elvis/Downloads/Map.tmx",
+        "nivel_1.tmx",
+        "Patrones/entrada.tmx",
+        "Tiled/nivel_1.tmx",
+        "Patrones/Tree-Assets.tsx",
+        "Patrones/Bosque.tsx",
+        "Patrones/Bosque2.tsx",
+        "Background.tsx",
+        "Green-Tree.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 5,
+        "width": 5
+    }
+}
