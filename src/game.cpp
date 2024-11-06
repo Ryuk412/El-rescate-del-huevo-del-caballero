@@ -9,7 +9,7 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
     font.loadFromFile("src/arial.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Cyan);
+    textoTest.setFillColor(sf::Color::White);
     textoTest.setCharacterSize(15);
     contador=0;
 }
@@ -24,12 +24,12 @@ const bool game::isRunning() const {
 }
 
 void game::updateEvent(){
-    while (window.pollEvent(evento)){
+    window.pollEvent(evento);
             if (evento.type == sf::Event::Closed){
                 window.close();
         }
 }
-}
+
 
 void game::setEnemies(){
     //El punto en el que inicia cada enemigo.
@@ -40,16 +40,21 @@ void game::setEnemies(){
     skl[2].setSpritePosition(1100,450);
     skl[3].setSpritePosition(950,250);
     skl[4].setSpritePosition(500,580);
+    skl[0].setLimit(10,380);
+    skl[1].setLimit(440,620);
+    skl[2].setLimit(1050,1200);
+    skl[3].setLimit(900,1200);
+    skl[4].setLimit(450,700);
 
 }
 
 void game::updateEnemies(){
     //El update de cada enemigo se ejecuta en una funcion aparte para que update() quede mas limpio.
-    skl[0].update(10,380);
-    skl[1].update(440,620);
-    skl[2].update(1050,1200);
-    skl[3].update(900,1200);
-    skl[4].update(450,700);
+    skl[0].update();
+    skl[1].update();
+    skl[2].update();
+    skl[3].update();
+    skl[4].update();
 }
 
 void game::setLevel(){
@@ -131,7 +136,11 @@ void game::update(){
     }
     ejemplo.update(mapaTest);
     slime.update();
-    updateEnemies();
+    skl[0].update();
+    skl[1].update();
+    skl[2].update();
+    skl[3].update();
+    skl[4].update();
     checkCollisions();
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
