@@ -33,9 +33,6 @@ void Historia::procesarEventoEntrada(sf::Event &evento){
                game.render();
             }
         }
-        else if(_pausarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-            cout<<"Clic en Pausar"<<endl;
-        }
     }
 }
 

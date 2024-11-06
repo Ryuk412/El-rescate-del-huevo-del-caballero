@@ -3,13 +3,6 @@
 
 using namespace std;
 
-//
-//#include <windows.h>
-//#include "game.h"
-//using namespace std;
-//using namespace sf;
-
-
 int main(){
 
     sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate mágico: El rescate del huevo del caballero");
@@ -30,11 +23,5 @@ int main(){
         }
     }
         return 0;
-
-//    game game;
-//    while(game.isRunning()){
-//       game.update();
-//       game.render();
-//    }
 }
 

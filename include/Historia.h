@@ -2,9 +2,10 @@
 #define HISTORIA_H
 
 #include <SFML/Graphics.hpp>
-#include "game.h"
-
 #include <windows.h>
+#include "game.h"
+#include "Pausa.h"
+
 using namespace std;
 using namespace sf;
 
@@ -18,6 +19,11 @@ private:
 
     sf::RectangleShape _empezarHitbox;
     sf::RectangleShape _pausarHitbox;
+
+    bool _enHistoria=true;
+    bool _enPausa=false;
+
+    Pausa _pausa;
 
 public:
     Historia();
