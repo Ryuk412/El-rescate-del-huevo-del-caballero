@@ -1,11 +1,11 @@
 #include "Menu.h"
 
-Menu::Menu()
-{
+Menu::Menu() {
     _fondoTextura.loadFromFile("menu/menu_principal.png");
     _fondo.setTexture(_fondoTextura);
-    _musica.reproducir(); /// inicia la reproduccion de la musica
+    _musica.reproducir(); // Inicia la música de fondo
 
+    // Configuración de las hitboxes
     _jugarHitbox.setSize(sf::Vector2f(200, 55));
     _jugarHitbox.setPosition(300, 240);
     _jugarHitbox.setFillColor(sf::Color::Transparent);
@@ -22,8 +22,10 @@ Menu::Menu()
     _salirHitbox.setPosition(300, 500);
     _salirHitbox.setFillColor(sf::Color::Transparent);
 
+    // Cargar la fuente para los textos
     _fuente.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
 
+    // Configuración de los textos
     _jugarTexto.setFont(_fuente);
     _jugarTexto.setString("JUGAR");
     _jugarTexto.setCharacterSize(28);
@@ -49,55 +51,60 @@ Menu::Menu()
     _salirTexto.setPosition(360, 508);
 }
 
-void Menu::procesarEventoEntrada(sf::Event &evento){
-
+void Menu::procesarEventoEntrada(sf::Event &evento) {
     _musica.procesarEventoEntrada(evento);
 
-    if(_enJugar){
-            _jugar.procesarEventoEntrada(evento);
-            if (_jugar.getVolver()){
-                _enJugar = false;
-                _jugar.setVolver(false);
+    if (evento.type == sf::Event::MouseButtonPressed) {
+        if (_enMenu) {  // Solo procesar eventos si estamos en el menú principal
+            if (_jugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+                _enMenu = false;  // Salimos del menú principal
+                _enJugar = true;  // Vamos al submenú de "Jugar"
+            } else if (_opcionesHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+                _enMenu = false;  // Salimos del menú principal
+                _enOpciones = true;  // Vamos al submenú de "Opciones"
+            } else if (_creditosHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+                _enMenu = false;  // Salimos del menú principal
+                _enCreditos = true;  // Vamos al submenú de "Créditos"
+            } else if (_salirHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
+                _musica.detener();
+                exit(0);  // Salir del programa
             }
+        }
     }
-    else if(_enOpciones){
-            _opciones.procesarEventoEntrada(evento);
-            if (_opciones.getVolver()) {
-                _enOpciones = false;
-                _opciones.setVolver(false);
-            }
-    }else if (_enCreditos) {
+
+    // Procesar eventos dependiendo de cuál submenú esté activo
+    if (_enJugar) {
+        _jugar.procesarEventoEntrada(evento);
+        if (_jugar.getVolver()) {
+            _enJugar = false;  // Volvemos al menú principal
+            _enMenu = true;
+            _jugar.setVolver(false);
+        }
+    }
+    else if (_enOpciones) {
+        _opciones.procesarEventoEntrada(evento);
+        if (_opciones.getVolver()) {
+            _enOpciones = false;  // Volvemos al menú principal
+            _enMenu = true;
+            _opciones.setVolver(false);
+        }
+    }
+    else if (_enCreditos) {
         _creditos.procesarEventoEntrada(evento);
         if (_creditos.getVolver()) {
-            _enCreditos = false;
+            _enCreditos = false;  // Volvemos al menú principal
+            _enMenu = true;
             _creditos.setVolver(false);
         }
     }
-
-    else{
-        if(evento.type == sf::Event::MouseButtonPressed){
-
-            if (_jugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enJugar = true;
-            } else if (_opcionesHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enOpciones = true;
-            } else if (_creditosHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enCreditos = true;
-            } else if (_salirHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _musica.detener();
-                exit(0);
-            }
-        }
-    }
-
 }
 
-void Menu::dibujar(sf::RenderWindow &ventana){
-
+void Menu::dibujar(sf::RenderWindow &ventana) {
     ventana.clear();
     ventana.draw(_fondo);
 
-     if(!_enJugar && !_enOpciones && !_enCreditos){
+    // Si estamos en el menú principal, dibujamos las opciones
+    if (_enMenu) {
         ventana.draw(_jugarHitbox);
         ventana.draw(_opcionesHitbox);
         ventana.draw(_creditosHitbox);
@@ -109,7 +116,13 @@ void Menu::dibujar(sf::RenderWindow &ventana){
     ventana.draw(_creditosTexto);
     ventana.draw(_salirTexto);
 
-    if(_enJugar){_jugar.dibujar(ventana);}
-    else if(_enOpciones){_opciones.dibujar(ventana);}
-    else if(_enCreditos){_creditos.dibujar(ventana);}
+    // Dibujar el submenú correspondiente si estamos en alguno
+    if (_enJugar) {
+        _jugar.dibujar(ventana);
+    } else if (_enOpciones) {
+        _opciones.dibujar(ventana);
+    } else if (_enCreditos) {
+        _creditos.dibujar(ventana);
+    }
 }
+

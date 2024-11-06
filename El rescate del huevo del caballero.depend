@@ -4960,7 +4960,7 @@
 1730896427 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1730911379 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730913899 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1730913943 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.h
@@ -5016,7 +5016,7 @@
 1730896427 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\creditos.h
 	<SFML/Graphics.hpp>
 
-1730896426 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\menu.h
+1730929502 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\menu.h
 	<SFML/Graphics.hpp>
 	"Musica.h"
 	"Jugar.h"
@@ -5034,16 +5034,17 @@
 	"NuevaPartida.h"
 	"ArchivoJugadores.h"
 
-1730896288 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\nuevapartida.h
+1730930639 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\nuevapartida.h
 	<SFML/Graphics.hpp>
 	"Jugador.h"
 	"ArchivoJugadores.h"
 	"Historia.h"
 
-1730911165 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\historia.h
+1730930639 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\historia.h
 	<SFML/Graphics.hpp>
 	<windows.h>
 	"game.h"
+	"Pausa.h"
 
 1730896289 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\opciones.h
 	<SFML/Graphics.hpp>
@@ -5054,7 +5055,7 @@
 1730896290 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\ranking.h
 	<SFML/Graphics.hpp>
 
-1730913899 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
+1730929908 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
 	"Historia.h"
 	<iostream>
 
@@ -5066,14 +5067,14 @@
 1730896426 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
 
-1730896426 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
+1730929639 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"Menu.h"
 
 1730896326 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\musica.cpp
 	"musica.h"
 	<iostream>
 
-1730896326 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
+1730930314 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
 	"NuevaPartida.h"
 	<iostream>
 
@@ -5084,9 +5085,9 @@
 1730896327 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\ranking.cpp
 	"Ranking.h"
 
-1730895214 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
+1730930639 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
 	<SFML/Graphics.hpp>
 
-1730895817 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+1730928893 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 	"Pausa.h"
 

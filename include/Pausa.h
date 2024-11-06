@@ -3,34 +3,25 @@
 
 #include <SFML/Graphics.hpp>
 
-class Pausa
-{
-
+class Pausa {
 private:
     sf::Texture _pausaTextura;
-    sf::Sprite _pausaSprite;
+    sf::Sprite _pausa;
 
     sf::RectangleShape _reanudarHitbox;
     sf::RectangleShape _salirHitbox;
 
-    bool _reanudar=false;
-    bool _salir=false;
-
-    bool _enPausa=true;
-    bool _enReanudar=false;
-    bool _enMenu=false;
+    bool _enPausa = true;
+    bool _enReanudar = false;
+    bool _enSalir = false;
 
 public:
     Pausa();
-    void procesarEventoEntrada(sf::Event &evento);
 
-    sf::RectangleShape getVolverHitbox();
-    void setVolver(bool volver);
-    bool getVolver();
-
+    bool procesarEventoEntrada(sf::Event &evento);
     void dibujar(sf::RenderWindow &ventana);
 
+    bool deseaSalir() const { return _enSalir; }
 };
-
 
 #endif // PAUSA_H

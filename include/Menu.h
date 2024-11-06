@@ -23,6 +23,7 @@ private:
     Opciones _opciones;
     Musica _musica;
 
+    bool _enMenu=true;
     bool _enJugar=false;
     bool _enCreditos=false;
     bool _enOpciones=false;

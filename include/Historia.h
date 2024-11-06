@@ -4,11 +4,12 @@
 #include <SFML/Graphics.hpp>
 #include <windows.h>
 #include "game.h"
+#include "Pausa.h"
 
 using namespace std;
 using namespace sf;
 
-class Historia{
+class Historia {
 private:
     sf::Texture _espacioTextura;
     sf::Sprite _espacioSprite;
@@ -19,10 +20,12 @@ private:
     sf::RectangleShape _empezarHitbox;
     sf::RectangleShape _pausarHitbox;
 
-    bool _enHistoria=true;
-    bool _enEmpezar=false;
-    bool _enPausa=false;
+    Pausa _pausa;
 
+    bool _enMenu = false;
+    bool _enHistoria = true;
+    bool _enEmpezar = false;
+    bool _enPausa = false;
 
 public:
     Historia();

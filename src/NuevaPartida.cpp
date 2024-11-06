@@ -22,77 +22,71 @@ NuevaPartida::NuevaPartida() {
     _nombreJugadorTexto.setPosition(310, 305);
 }
 
-void NuevaPartida::procesarEventoEntrada(sf::Event &evento){
+void NuevaPartida::procesarEventoEntrada(sf::Event &evento) {
+    /// Verificar si el evento es un clic del mouse
+    if (evento.type == sf::Event::MouseButtonPressed) {
 
-    ///si el evento es de tipo click del mouse
-    if(evento.type == sf::Event::MouseButtonPressed){
-
-        if(_enNuevaPartidaMenu){
-
-            ///verifica si el click del mouse esta dentro de los limites de la hitbox Siguiente
-            if(_siguienteHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-
+        if (_enNuevaPartida && !_jugadorCreado) {
+            /// Verifica si el clic está dentro de la hitbox de "Siguiente"
+            if (_siguienteHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _jugador.setNombre(_nombreJugador);
                 _jugadorCreado = true;
                 _archivo.grabarRegistro(_jugador);
-                _enNuevaPartidaMenu = false;
+                _enNuevaPartida= false;
                 _enHistoria = true;
             }
-            ///verifica si el click del mouse esta dentro de los limites de la hitbox Volver
-            else if (_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
+            /// Verifica si el clic está dentro de la hitbox de "Volver"
+            else if (_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _volver = true;
             }
         }
 
-        else if(_enHistoria){
+        // Si estamos en la historia, procesar eventos de la historia
+        else if (_enHistoria) {
             _historia.procesarEventoEntrada(evento);
         }
     }
 
-    ///si el evento es de tipo ingreso de texto y si esta en el menu NuevaPartida
-    if(evento.type == sf::Event::TextEntered && _enNuevaPartidaMenu){
+    // Verificar si el evento es de tipo texto ingresado
+    if (evento.type == sf::Event::TextEntered && _enNuevaPartida) {
+        if (evento.text.unicode < 128) { // Verifica si el carácter es un ASCII válido
+            char character = static_cast<char>(evento.text.unicode);
 
-        if (evento.text.unicode < 128){ ///verifica si el caracter ingresado es un caracter ASCII (valores menores a 128)
-
-            char character= static_cast<char>(evento.text.unicode);  ///convierte el valor unicode a un caracter tipo char
-
-                if (character == '\b'){ ///si el caracter es el de retroceso (borrar)
-                    _nombreJugador.pop_back();///elimina el último caracter del nombre del jugador
-                }
-                else if (_nombreJugador.length() < 10){///si el nombre del jugador tiene menos de 10 caracteres
-                    _nombreJugador += character;///agrega el nuevo caracter al nombre del jugador
-                }
-                _nombreJugadorTexto.setString(_nombreJugador);  ///actualiza el texto que muestra el nombre del jugador en pantalla
+            if (character == '\b') { // Retroceso (borrar)
+                _nombreJugador.pop_back();
+            } else if (_nombreJugador.length() < 10) { // Limita a 10 caracteres
+                _nombreJugador += character;
+            }
+            _nombreJugadorTexto.setString(_nombreJugador);  // Actualiza el texto en pantalla
         }
-
     }
-
 }
 
-sf::RectangleShape NuevaPartida::getVolverHitbox(){
+sf::RectangleShape NuevaPartida::getVolverHitbox() {
     return _volverHitBox;
 }
 
-void NuevaPartida::setVolver(bool volver){
+void NuevaPartida::setVolver(bool volver) {
     _volver = volver;
 }
 
-bool NuevaPartida::getVolver(){
+bool NuevaPartida::getVolver() {
     return _volver;
 }
 
-void NuevaPartida::dibujar(sf::RenderWindow &ventana){
-
+void NuevaPartida::dibujar(sf::RenderWindow &ventana) {
     ventana.clear();
     ventana.draw(_nuevaPartidaSprite);
 
-    if(_enNuevaPartidaMenu){
+    // Solo dibujar las hitboxes y textos si estamos en el menú de Nueva Partida
+    if (_enNuevaPartida) {
         ventana.draw(_siguienteHitbox);
         ventana.draw(_volverHitBox);
         ventana.draw(_nombreJugadorTexto);
     }
 
-    if(_enHistoria){
+    // Si estamos en la historia, dibujar la historia
+    if (_enHistoria) {
         _historia.dibujar(ventana);
     }
 }

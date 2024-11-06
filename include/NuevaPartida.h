@@ -23,8 +23,8 @@ private:
     std::string _nombreJugador;
 
     ///banderas
-    bool _enNuevaPartidaMenu = true;
-    bool _jugadorCreado=false;
+    bool _enNuevaPartida = true;
+    bool _jugadorCreado = false;
     bool _enHistoria = false;
     bool _volver = false;
 
@@ -38,3 +38,4 @@ public:
 };
 
 #endif // NUEVAPARTIDA_H
+
