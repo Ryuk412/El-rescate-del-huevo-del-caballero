@@ -2,24 +2,26 @@
 
 
 game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
-
+std::cout<<"NO ANDA";
     skl.resize(5);
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
     setEnemies();
-    font.loadFromFile("src/arial.ttf");
+//    font.loadFromFile("src/arial.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
     textoTest.setColor(sf::Color::Black);
     contador=0;
     textoTest.setCharacterSize(15);
+exit(-2);
 }
 
 game::~game(){}
 
 const bool game::isRunning() const {
     return window.isOpen();
+
 
 }
 
@@ -57,7 +59,7 @@ void game::updateEnemies(){
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(){
-
+std::cout<<"NO AND2";
     updateEvent();
     if(corazon.getActive()==false){
        corazon.respawn();
@@ -151,6 +153,7 @@ void game::render(){
         mapaTest.dibujar(window);
         for(int i=0;i<5;i++){
         window.draw(skl[i]);
+
         }
 
         window.draw(osomaloso);
