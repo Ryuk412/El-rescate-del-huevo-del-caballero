@@ -4,7 +4,6 @@
 #include <SFML/Graphics.hpp>
 #include <windows.h>
 #include "game.h"
-#include "Pausa.h"
 
 using namespace std;
 using namespace sf;
@@ -23,7 +22,6 @@ private:
     bool _enHistoria=true;
     bool _enPausa=false;
 
-    Pausa _pausa;
 
 public:
     Historia();
