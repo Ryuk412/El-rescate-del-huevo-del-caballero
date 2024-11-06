@@ -1,12 +1,20 @@
 #ifndef ENEMIGOESQUELETO_H_INCLUDED
 #define ENEMIGOESQUELETO_H_INCLUDED
-#include "inc.h"
+#include <cstdlib>
+#include <stdio.h>
+#include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>
+#include <SFML/Window.hpp>
+#include <SFML/System.hpp>
+#include "colisionable.h"
+#include <stdlib.h>
+#include <iostream>
 
 class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     public:
 
     enemigoEsqueleto();
-    void update(int limitA, int limitB);
+    void update();
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
     sf::RectangleShape getHitbox()const override;
     void respawn();
@@ -14,6 +22,7 @@ class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     bool isAlive();
     void danioRecibido(int danio);
     void setSpritePosition(int posicionX, int posicionY);
+    void setLimit(int posA,int posB);
     private:
 
     sf::RectangleShape esq_hitbox;
@@ -23,7 +32,10 @@ class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     sf::Vector2f esq_velocity={0,0};
     float _frame=0;
     float _frame2=0;
+    int limitA;
+    int limitB;
     int esq_vida;
 };
+
 
 #endif // ENEMIGOESQUELETO_H_INCLUDED
