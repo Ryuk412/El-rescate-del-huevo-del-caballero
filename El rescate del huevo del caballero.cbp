@@ -81,6 +81,7 @@
 		<Unit filename="include/Musica.h" />
 		<Unit filename="include/NuevaPartida.h" />
 		<Unit filename="include/Opciones.h" />
+		<Unit filename="include/Pausa.h" />
 		<Unit filename="include/Ranking.h" />
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />
@@ -96,6 +97,7 @@
 		<Unit filename="src/Musica.cpp" />
 		<Unit filename="src/NuevaPartida.cpp" />
 		<Unit filename="src/Opciones.cpp" />
+		<Unit filename="src/Pausa.cpp" />
 		<Unit filename="src/Ranking.cpp" />
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />
