@@ -20,6 +20,7 @@ private:
     sf::RectangleShape _pausarHitbox;
 
     bool _enHistoria=true;
+    bool _enEmpezar=false;
     bool _enPausa=false;
 
 

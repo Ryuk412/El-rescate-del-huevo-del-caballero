@@ -35,6 +35,9 @@ class game{
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
 
+        sf::Sprite _nv;
+        sf::Texture _textura;
+
     public:
     //Constructor y destructor
         game();
