@@ -60,12 +60,29 @@ void enemigoEsqueleto::respawn(){
 
 
 
-void enemigoEsqueleto::update(int limitA, int limitB)
+void enemigoEsqueleto::update()
 {
-    bool ban=true;
     esq_velocity= {};
+    if(esq_hitbox.getGlobalBounds().left < limitA)
+    {
+
+      //  esq_sprite.setPosition(esq_sprite.getPosition().x + 4, esq_sprite.getPosition().y);
+      //  esq_hitbox.setPosition(5 + esq_sprite.getGlobalBounds().left + 66, esq_sprite.getGlobalBounds().top + 64);
 
 
+        _direccion=_direccion*-1;
+
+
+
+    }
+
+    if (esq_hitbox.getGlobalBounds().left + esq_hitbox.getGlobalBounds().width > limitB)
+    {
+       // esq_sprite.setPosition(limitB - (esq_sprite.getGlobalBounds().width - 103), esq_sprite.getPosition().y);
+        //esq_hitbox.setPosition(5 + esq_sprite.getGlobalBounds().left + 66, esq_sprite.getGlobalBounds().top + 64);
+
+        _direccion=_direccion*-1;
+    }
 
 
     if(esq_velocity.x==0&&esq_velocity.y==0)
@@ -93,27 +110,6 @@ void enemigoEsqueleto::update(int limitA, int limitB)
             _frame=0;
         }
 
-    }
-
-    if(esq_hitbox.getGlobalBounds().left < limitA)
-    {
-
-        esq_sprite.setPosition(esq_sprite.getPosition().x + 4, esq_sprite.getPosition().y);
-        esq_hitbox.setPosition(5 + esq_sprite.getGlobalBounds().left + 66, esq_sprite.getGlobalBounds().top + 64);
-
-
-        _direccion=_direccion*-1;
-
-
-
-    }
-
-    if (esq_hitbox.getGlobalBounds().left + esq_hitbox.getGlobalBounds().width > limitB)
-    {
-        esq_sprite.setPosition(limitB - (esq_sprite.getGlobalBounds().width - 103), esq_sprite.getPosition().y);
-        esq_hitbox.setPosition(5 + esq_sprite.getGlobalBounds().left + 66, esq_sprite.getGlobalBounds().top + 64);
-
-        _direccion=_direccion*-1;
     }
 
 
@@ -151,4 +147,9 @@ void enemigoEsqueleto::draw(sf::RenderTarget& target, sf::RenderStates state)con
 
 void enemigoEsqueleto::setSpritePosition(int posicionX, int posicionY){
     esq_sprite.setPosition(posicionX,posicionY);
+}
+
+void enemigoEsqueleto::setLimit(int posA,int posB){
+    limitA=posA;
+    limitB=posB;
 }
