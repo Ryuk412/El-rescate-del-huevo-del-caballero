@@ -1,10 +1,11 @@
 #include "Jefe.h"
+#include "inc.h"
 
 
 Jefe::Jefe()
 {
 
-    _textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
+    _textureE.loadFromFile("assets/Characters(100x100)/Werebear/Werebear/Werebear.png");
     e_sprite.setTexture(_textureE);
     e_sprite.setTextureRect({0,0,130,130});
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
@@ -12,13 +13,13 @@ Jefe::Jefe()
     j_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,600);
     e_vida=50;
-    v_barra.setSize(e_vida,10);
+    v_barra.setSize({e_vida,10});
     v_barra.setFillColor(sf::Color::Green);
 
 }
 void Jefe::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
-    en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
+    j_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
 }
  void Jefe::muerte(){
 
@@ -26,15 +27,15 @@ void Jefe::respawn(){
 
         _frame2 += 0.15;
         if (e_sprite.getScale().x == -4 && _frame2 > 2) {
-            en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
+            j_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
         } else if (_frame2 > 2) {
-            en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
+            j_hitbox.setPosition(j_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
         }
         e_velocity = {0, 0};
         e_sprite.setTextureRect({139 + (int)_frame2 * 130, 390, 130, 130});
         if (_frame2 >= 4) {
             _frame2 = 0;
-        en_hitbox.setPosition(-50, -50);
+        j_hitbox.setPosition(-50, -50);
         e_sprite.setPosition(-50,-50);
         }
 
@@ -137,13 +138,15 @@ void Jefe::update()
 
 
 }
-sf::RectangleShape Jefe::getHitbox()const
+sf::RectangleShape Jefe::getHitbox()
 {
+
     return j_hitbox;
+
 }
 
-void Jefe::draw(sf::RenderTarget& target, sf::RenderStates state)const
+void Jefe::draw(sf::RenderTarget& target, sf::RenderStates state) const
 {
-    target.draw(j_hitbox);
-    target.draw(e_sprite);
+    target.draw(j_hitbox, state);
+    target.draw(e_sprite, state);
 }

@@ -1,7 +1,7 @@
 #include "game.h"
 
 
-game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+game::game() :window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default), mapaTest("data/maps/nivel2_mapa.png")  {
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
@@ -31,6 +31,7 @@ void game::update(){
     }
     ejemplo.update(mapaTest);
     slime.update();
+    osomaloso.update();
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -72,8 +73,9 @@ void game::update(){
 void game::render(){
         window.clear();
         mapaTest.dibujar(window);
-        window.draw(slime);
         window.draw(ejemplo);
+        window.draw(osomaloso);
+        window.draw(slime);
         window.draw(corazon);
         window.display();
 

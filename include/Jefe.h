@@ -1,20 +1,20 @@
 #ifndef JEFE_H
 #define JEFE_H
+#include "inc.h"
 
-
-class Jefe
+class Jefe : public sf::Drawable
 {
     public:
     Jefe();
     void update();
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
-    sf::RectangleShape getHitbox()const override;
+    sf::RectangleShape getHitbox();
     void respawn();
     void muerte();
     bool isAlive();
     void danioRecibido(int danio);
 
-        virtual ~Jefe();
+//        virtual ~Jefe();
 
     protected:
 

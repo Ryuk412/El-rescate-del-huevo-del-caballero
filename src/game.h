@@ -10,7 +10,7 @@
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
-
+#include "Jefe.h"
 //Clase que funciona como el game engine.
 
 class game{
@@ -23,6 +23,7 @@ class game{
         enemigo slime;
         pj ejemplo;
         Item corazon;
+        Jefe osomaloso;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
     public:
