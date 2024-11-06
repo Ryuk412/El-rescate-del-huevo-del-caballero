@@ -170,6 +170,9 @@ void mapa::setNivel(int nivel){
     }
     _nivel=_nivel+nivel;
 }
+ int mapa::getNivel(){
+ return _nivel;
+ }
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
@@ -191,3 +194,4 @@ bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     }
     return false; // No hay colisión
 }
+

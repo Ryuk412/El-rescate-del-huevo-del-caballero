@@ -1496,7 +1496,7 @@
 	<stdlib.h>
 	"itemPuntos.h"
 
-1730862505 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+1730863525 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -2155,7 +2155,7 @@
 	<SFML/Network/IpAddress.hpp>
 	<vector>
 
-1730770545 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\mapa.h
+1730866070 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
 
 1730514140 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
@@ -2170,11 +2170,11 @@
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 
-1730862505 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
+1730863525 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
 
-1730862505 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.h
+1730863525 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.h
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	"inc.h"
@@ -2233,16 +2233,16 @@
 	<vector>
 	<string>
 
-1730862505 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
+1730863525 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
 	"enemigoSlime.h"
 
-1730862505 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
+1730863525 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1730862505 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730867393 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
-1730863060 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.h
+1730865881 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -2260,14 +2260,14 @@
 	"enemigoSlime.h"
 	"itemPuntos.h"
 
-1730862505 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\mapa.cpp
+1730865250 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\mapa.cpp
 	"mapa.h"
 	<iostream>
 
-1730863174 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
+1730867732 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 
-1730863202 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1730868108 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>

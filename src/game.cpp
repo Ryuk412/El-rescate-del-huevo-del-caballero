@@ -47,8 +47,11 @@ void game::updateEnemies(){
     skl[0].update(10,380);
     skl[1].update(440,620);
     skl[2].update(1050,1200);
-    skl[3].update(900,1200);
+    //skl[3].update(900,1200);
     skl[4].update(450,700);
+    osomaloso.update(900,1200);
+
+
 }
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
@@ -148,6 +151,8 @@ void game::render(){
         for(int i=0;i<5;i++){
         window.draw(skl[i]);
         }
+
+        window.draw(osomaloso);
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(star);

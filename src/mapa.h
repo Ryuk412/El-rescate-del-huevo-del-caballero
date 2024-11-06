@@ -30,6 +30,7 @@ public:
     bool cargarNivel3();
     // Metodo para setearle dinamicamente tamaño al vector
     void inicializarVector(int tam);
+    int getNivel();
 
 private:
     sf::Texture _mapa;        // Textura del mapa

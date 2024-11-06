@@ -21,11 +21,12 @@
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
+
         mapa mapaTest;
         sf::RenderWindow window{};
         sf::Event evento;
         sf::View camara;
-        Jefe mago;
+        Jefe osomaloso;
         std::vector<enemigoSlime> skl;
         pj ejemplo;
         Item corazon;
@@ -49,6 +50,7 @@ class game{
         void render();
         void setEnemies();
         void updateEnemies();
+
 };
 
 #endif // GAME_H_INCLUDED
