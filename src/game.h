@@ -15,6 +15,8 @@
 #include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
 #include "itemPuntos.h"
+
+#include "menu.h"
 //Clase que funciona como el game engine.
 
 class game{
@@ -33,6 +35,8 @@ class game{
         sf::Text textoTest;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
+
+        Menu menuPrincipal;
     public:
     //Constructor y destructor
         game();

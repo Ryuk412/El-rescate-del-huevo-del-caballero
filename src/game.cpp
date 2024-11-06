@@ -24,11 +24,12 @@ const bool game::isRunning() const {
 }
 
 void game::updateEvent(){
-    while (window.pollEvent(evento)){
+    while(window.pollEvent(evento)){
             if (evento.type == sf::Event::Closed){
                 window.close();
-        }
-}
+            }
+        menuPrincipal.procesarEventoEntrada(evento); ///procesa los eventos de entrada del menu
+    }
 }
 
 void game::setEnemies(){
@@ -152,6 +153,9 @@ void game::render(){
         window.draw(corazon);
         window.draw(star);
         window.draw(textoTest);
+
+        menuPrincipal.dibujar(window);
+
         window.display();
 
 }
