@@ -151,7 +151,8 @@ void pj::update(mapa& _objetoMapa) {
         _sprite.setPosition(_sprite.getPosition().x, _sprite.getPosition().y + 4);
     }
     if (m_hitbox.getGlobalBounds().top + m_hitbox.getGlobalBounds().height > 600) {
-        _sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
+          muerte();
+        //_sprite.setPosition(_sprite.getPosition().x, 600 + (_sprite.getGlobalBounds().height - 122));
     }
 }
 
