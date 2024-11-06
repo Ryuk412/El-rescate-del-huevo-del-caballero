@@ -718,12 +718,12 @@
 1730651968 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\game.cpp
 	"game.h"
 
-1730828140 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+1730862688 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
 	<iostream>
 	"pj.h"
 	"mapa.h"
 
-1730828140 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\pj.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\pj.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -1253,10 +1253,10 @@
 	<SFML/Audio/Export.hpp>
 	<string>
 
-1730776602 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
 
-1730827410 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\inc.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\inc.h
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -1377,26 +1377,26 @@
 	<SFML/Network/IpAddress.hpp>
 	<vector>
 
-1730828140 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\mapa.h
+1730869527 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
 
-1730776602 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
+1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
 	<colisionable.h>
 
-1730828140 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
+1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
 	<iostream>
 	<stdlib.h>
 	"Item.h"
 
-1730828140 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\item.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\item.h
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 
-1730779141 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\main.cpp
+1730869521 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\main.cpp
 	<windows.h>
 	"game.h"
 
-1730829034 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.h
+1730869527 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -1406,6 +1406,7 @@
 	<cstring>
 	<iostream>
 	<vector>
+	"Jefe.h"
 	"pj.h"
 	"Item.h"
 	"mapa.h"
@@ -1413,7 +1414,7 @@
 	"enemigoSlime.h"
 	"itemPuntos.h"
 
-1730776603 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\enemigo.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\enemigo.h
 	<cstdlib>
 	<stdio.h>
 	<SFML/Graphics.hpp>
@@ -1424,26 +1425,26 @@
 	<stdlib.h>
 	<iostream>
 
-1730776603 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
 	<iostream>
 	"enemigo.h"
 
-1730828140 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\mapa.cpp
+1730869527 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\mapa.cpp
 	"mapa.h"
 	<iostream>
 
-1730776603 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\menu.cpp
+1730869521 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"Menu.h"
 
-1730776603 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\menu.h
+1730869521 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\menu.h
 	<SFML/Graphics.hpp>
 	<vector>
 	<string>
 
-1730829077 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730870469 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
-1730776603 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\game.h
+1730862109 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -1455,7 +1456,7 @@
 	"data/etc/Item.h"
 	"src/mapa.h"
 
-1730827410 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
+1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
 	<iostream>
 	"enemigoEsqueleto.h"
 
@@ -1470,7 +1471,7 @@
 	<stdlib.h>
 	<iostream>
 
-1730827410 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.h
+1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.h
 	<cstdlib>
 	<stdio.h>
 	<SFML/Graphics.hpp>
@@ -1481,18 +1482,18 @@
 	<stdlib.h>
 	<iostream>
 
-1730828140 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
+1730862688 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
 	"enemigoSlime.h"
 
-1730828140 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
+1730862688 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1730828093 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.h
+1730862688 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.h
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	"inc.h"
 
-1730828093 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
+1730862688 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
 
@@ -2268,6 +2269,15 @@
 	"inc.h"
 
 1730868108 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	"Jefe.h"
+
+1730869909 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jefe.h
+	"inc.h"
+
+1730870711 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>

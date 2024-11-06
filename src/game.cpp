@@ -39,6 +39,7 @@ void game::setEnemies(){
     skl[2].setSpritePosition(1050,450);
     skl[3].setSpritePosition(900,250);
     skl[4].setSpritePosition(450,580);
+    osomaloso.setSpritePosition(440,250);
 
 }
 
@@ -47,9 +48,9 @@ void game::updateEnemies(){
     skl[0].update(10,380);
     skl[1].update(440,620);
     skl[2].update(1050,1200);
-    //skl[3].update(900,1200);
+    skl[3].update(900,1200);
     skl[4].update(450,700);
-    osomaloso.update(900,1200);
+    osomaloso.update(440,620);
 
 
 }

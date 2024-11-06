@@ -12,6 +12,7 @@ class Jefe : public sf::Drawable
     bool isAlive();
     void muerte();
     void danioRecivido(int danio);
+    void setSpritePosition(float x,float y);
 
 
     private:

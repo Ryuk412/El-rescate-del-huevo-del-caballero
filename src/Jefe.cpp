@@ -16,7 +16,7 @@ Jefe::Jefe()
     j_vida=500;
 
 }
-void Jefe::update(int limitA, int limitB){
+void Jefe::update(int LimiteA, int LimiteB){
 
 
 
@@ -49,27 +49,9 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
     }
 
-    if(j_hitbox.getGlobalBounds().left < 0   )
-    {
-
-        j_sprite.setPosition(j_sprite.getPosition().x + 4, j_sprite.getPosition().y);
-        j_hitbox.setPosition(5 + j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
-
-
-        _direccion=_direccion*-1;
 
 
 
-    }
-
-    if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width > 800)
-    {
-        j_sprite.setPosition(800 - (j_sprite.getGlobalBounds().width - 103),j_sprite.getPosition().y);
-        j_hitbox.setPosition(5 + j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
-
-        _direccion=_direccion*-1;
-
-    }
 
 
     if(j_velocity.x < 0)
@@ -83,7 +65,7 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
 
 
-     if(j_hitbox.getGlobalBounds().left < limitA)
+     if(j_hitbox.getGlobalBounds().left < LimiteA)
     {
 
         j_sprite.setPosition(j_sprite.getPosition().x + 4, j_sprite.getPosition().y);
@@ -96,9 +78,9 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
     }
 
-    if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width > limitB)
+    if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width > LimiteB)
     {
-        j_sprite.setPosition(limitB - (j_sprite.getGlobalBounds().width - 103), j_sprite.getPosition().y);
+        j_sprite.setPosition(LimiteB - (j_sprite.getGlobalBounds().width - 103), j_sprite.getPosition().y);
         j_hitbox.setPosition(5 + j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
 
         _direccion=_direccion*-1;
@@ -118,7 +100,9 @@ if(j_vida > 0  ){ return true;   }
 
 
 }
-
+void Jefe::setSpritePosition(float x,float y){
+    j_sprite.setPosition(x,y);
+}
 void Jefe::danioRecivido(int danio){
 
 j_vida=j_vida-danio;
