@@ -1,9 +1,7 @@
 #include "game.h"
 
 
-game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
-
-    skl.resize(5);
+game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
@@ -16,7 +14,9 @@ game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 
     contador=0;
 }
 
-game::~game(){}
+game::~game(){
+    skl.clear();
+}
 
 const bool game::isRunning() const {
     return window.isOpen();
@@ -34,11 +34,12 @@ void game::updateEvent(){
 void game::setEnemies(){
     //El punto en el que inicia cada enemigo.
     //Esta funcion se ejecuta en el constructor para que se ejecute una sola vez.
-    skl[0].setSpritePosition(10,200);
-    skl[1].setSpritePosition(440,250);
-    skl[2].setSpritePosition(1050,450);
-    skl[3].setSpritePosition(900,250);
-    skl[4].setSpritePosition(450,580);
+    skl.resize(5);
+    skl[0].setSpritePosition(50,200);
+    skl[1].setSpritePosition(500,250);
+    skl[2].setSpritePosition(1100,450);
+    skl[3].setSpritePosition(950,250);
+    skl[4].setSpritePosition(500,580);
 
 }
 
