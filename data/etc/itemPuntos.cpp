@@ -11,11 +11,11 @@ sf::RectangleShape itemPuntos::getHitbox()const{
 }
 
 void itemPuntos::respawn(mapa& _objetoMapa){
-    _spriteP.setPosition(std::rand()%1300+_spriteP.getGlobalBounds().width,std::rand() % 400+_spriteP.getGlobalBounds().height);
+    _spriteP.setPosition(std::rand()%1300+_spriteP.getGlobalBounds().width,std::rand() % 350+_spriteP.getGlobalBounds().height);
     p_hitbox.setPosition(_spriteP.getGlobalBounds().left, _spriteP.getGlobalBounds().top);
     if(_objetoMapa.verificarColision(p_hitbox)==true){
     while(_objetoMapa.verificarColision(p_hitbox)==true){
-    _spriteP.setPosition(std::rand()%1300+_spriteP.getGlobalBounds().width,std::rand() % 400+_spriteP.getGlobalBounds().height);
+    _spriteP.setPosition(std::rand()%1300+_spriteP.getGlobalBounds().width,std::rand() % 350+_spriteP.getGlobalBounds().height);
     p_hitbox.setPosition(_spriteP.getGlobalBounds().left, _spriteP.getGlobalBounds().top);
     }
 
