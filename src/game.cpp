@@ -1,7 +1,7 @@
 #include "game.h"
 
 
-game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+game::game() : mapaTest("data/maps/nivel2_mapa.png") {
 
     skl.resize(5);
     window.setFramerateLimit(60);
@@ -28,7 +28,7 @@ void game::updateEvent(){
             if (evento.type == sf::Event::Closed){
                 window.close();
             }
-        menuPrincipal.procesarEventoEntrada(evento); ///procesa los eventos de entrada del menu
+
     }
 }
 
@@ -56,6 +56,7 @@ void game::updateEnemies(){
 void game::update(){
 
     updateEvent();
+
     if(corazon.getActive()==false){
        corazon.respawn();
        corazon.setActive(true);
@@ -92,17 +93,19 @@ void game::update(){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
-        if(verificarColisionEnemigo(ejemplo.getHitbox())){
-                if(ejemplo.isAlive()==false){
-                    ejemplo.muerte();
-                }
-                ejemplo.danioRecibido(25);
-                   //ejemplo.respawn();             }
-        }
-        if(verificarColisionEspada(ejemplo ,ejemplo.getHitboxE()) and ejemplo.getBan()){
+    if(verificarColisionEnemigo(ejemplo.getHitbox())){
+            if(ejemplo.isAlive()==false){
+                ejemplo.muerte();
+            }
+            ejemplo.danioRecibido(25);
+                //ejemplo.respawn();             }
+    }
+
+    if(verificarColisionEspada(ejemplo ,ejemplo.getHitboxE()) and ejemplo.getBan()){
+
         std::cout << "Colision detectada." << std::endl;
 
-        }
+    }
 
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
@@ -113,7 +116,8 @@ void game::update(){
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        }
+}
+
 bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
     for(int i=0;i<5;i++){
     if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())&&skl[i].isAlive()){
@@ -145,6 +149,7 @@ bool game::verificarColisionEspada(pj& p,sf::RectangleShape hitbox) {
 //Todas las visualizaciones
 void game::render(){
         window.clear();
+
         mapaTest.dibujar(window);
         for(int i=0;i<5;i++){
         window.draw(skl[i]);
@@ -153,8 +158,6 @@ void game::render(){
         window.draw(corazon);
         window.draw(star);
         window.draw(textoTest);
-
-        menuPrincipal.dibujar(window);
 
         window.display();
 

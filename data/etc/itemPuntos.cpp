@@ -19,7 +19,7 @@ void itemPuntos::respawn(mapa& _objetoMapa){
     p_hitbox.setPosition(_spriteP.getGlobalBounds().left, _spriteP.getGlobalBounds().top);
     }
 
-}
+    }
 }
 void itemPuntos::draw(sf::RenderTarget& target, sf::RenderStates state)const{
        target.draw(p_hitbox,state);

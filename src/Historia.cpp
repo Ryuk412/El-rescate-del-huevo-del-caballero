@@ -26,7 +26,12 @@ void Historia::procesarEventoEntrada(sf::Event &evento){
     if(evento.type == sf::Event::MouseButtonPressed){
 
         if(_empezarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-            cout<<"Clic en Empezar"<<endl;
+
+            game game;
+            while(game.isRunning()){
+               game.update();
+               game.render();
+            }
         }
         else if(_pausarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
             cout<<"Clic en Pausar"<<endl;

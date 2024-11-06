@@ -2,8 +2,13 @@
 #define HISTORIA_H
 
 #include <SFML/Graphics.hpp>
+#include "game.h"
 
-class Historia {
+#include <windows.h>
+using namespace std;
+using namespace sf;
+
+class Historia{
 private:
     sf::Texture _espacioTextura;
     sf::Sprite _espacioSprite;
