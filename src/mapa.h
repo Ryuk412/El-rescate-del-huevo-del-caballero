@@ -6,8 +6,8 @@
 class mapa  {
 public:
     // Constructor que carga el mapa
-    mapa(const std::string& archivoMapa);
-
+    mapa();
+    ~mapa();
     // Metodo para generar la estructura
     bool cargarEstructura();
     // Método para dibujar el mapa en la ventana de SFML
@@ -33,7 +33,6 @@ public:
     int getNivel();
 
 private:
-    sf::Texture _mapa;        // Textura del mapa
     sf::Sprite _Smapa;        // Sprite del mapa
     sf::Texture _nivel1;      // Textura nivel 1
     sf::Texture _nivel2;      // Textura nivel 2

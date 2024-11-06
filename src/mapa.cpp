@@ -2,20 +2,34 @@
 #include <iostream>
 
 // Implementación del constructor
-mapa::mapa(const std::string& archivoMapa) {
+mapa::mapa() {
     // Cargar la textura
-    if (!_mapa.loadFromFile(archivoMapa)) {
+    if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
+    if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
+        std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
+    }
     // Valor del vector cambiado
-    _hitbox.resize(25);
-    cargarMapa();
+    _hitbox.resize(35);
     cargarEstructura();
+    cargarMapa();
+}
+
+mapa::~mapa(){
+    _hitbox.clear();
 }
 
 // Implementación del método para cargar el mapa
 void mapa::cargarMapa() {
-    _Smapa.setTexture(_mapa);
+    switch(_nivel){
+    case 1:
+        _Smapa.setTexture(_nivel1);
+        break;
+    case 2:
+        _Smapa.setTexture(_nivel2);
+        break;
+    }
 }
 // Implementacion del metodo para cambiar la textura del mapa segun el nivel
 void mapa::setTextMapa(int numero){
@@ -25,7 +39,6 @@ case 1:
     if(!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 1" << std::endl;
     }
-    _mapa=_nivel1;
     cargarMapa();
     break;
 case 2:
@@ -33,7 +46,6 @@ case 2:
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
-    _mapa=_nivel2;
     cargarMapa();
     break;
 case 3:
@@ -41,7 +53,6 @@ case 3:
     if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
     }
-    _mapa=_nivel3;
     cargarMapa();
     break;
     }
@@ -98,7 +109,7 @@ bool mapa::cargarNivel1(){
 }
 // Metodo para cargar hitboxes del nivel 2
 bool mapa::cargarNivel2(){
-    inicializarVector(32);
+    inicializarVector(35);
     cargarHitbox(0,195.0f, 80.0f, 40.0f, 422.0f);
     cargarHitbox(1,40.0f, 10.0f, 265.0f, 415.0f);
     _hitbox[1].setRotation(135.f);
@@ -166,9 +177,9 @@ void mapa::inicializarVector(int tam){
 // Metodo para establecer el valor de la variable _nivel
 void mapa::setNivel(int nivel){
     if(_nivel==2){
-    _nivel=_nivel-nivel;
+    _nivel=1;
     }
-    _nivel=_nivel+nivel;
+    _nivel=2;
 }
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
