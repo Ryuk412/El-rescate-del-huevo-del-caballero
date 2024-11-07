@@ -22,12 +22,10 @@ class game{
     private:
     //Variables que solo la clase game puede tener acceso:
 
-        mapa mapaTest;
         sf::RenderWindow window{};
         sf::Event evento;
         sf::View camara;
-        Jefe osomaloso;
-        std::vector<enemigoSlime> skl;
+
         pj ejemplo;
         Item corazon;
         int contador;
@@ -43,13 +41,9 @@ class game{
     //Nexo entre game y main:
         const bool isRunning() const;
     //Funciones:
-        bool verificarColisionEnemigo(sf::RectangleShape hitbox);
-        bool verificarColisionEspada(pj& p,sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();
-        void setEnemies();
-        void updateEnemies();
 
 };
 

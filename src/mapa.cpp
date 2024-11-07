@@ -3,6 +3,11 @@
 
 // Implementación del constructor
 mapa::mapa() {
+    // Inicia el hilo para cargar el mapa de forma asíncrona
+    std::thread hiloCarga(&mapa::cargarMapaEnHilo, this);
+    hiloCarga.detach();  // Desconectar el hilo para que cargue de fondo
+}
+void mapa::cargarTexturaMapa(){
     // Cargar la textura
     if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
@@ -14,6 +19,10 @@ mapa::mapa() {
     _hitbox.resize(35);
     cargarEstructura();
     cargarMapa();
+    _cargado=true;
+}
+void mapa::cargarMapaEnHilo() {
+    cargarTexturaMapa();  // Ejecuta la carga
 }
 mapa::~mapa(){
     _hitbox.clear();
