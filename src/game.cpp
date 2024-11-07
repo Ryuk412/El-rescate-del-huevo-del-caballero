@@ -2,8 +2,8 @@
 
      mapa mapaTest;
 
-game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
-
+game::game() : window {
+//axel giil d emierd
      // Espera hasta que el mapa esté completamente cargado antes de continuar
     while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
