@@ -8,17 +8,17 @@ Opciones::Opciones(){
     _opciones.setTexture(_opcionesTextura);
     _opciones.setPosition(0,0);
 
-    _rankingHitbox.setSize(sf::Vector2f(320, 55));
-    _rankingHitbox.setPosition(243, 230);
-    _rankingHitbox.setFillColor(sf::Color::Transparent);
-
     _comoJugarHitbox.setSize(sf::Vector2f(320, 56));
     _comoJugarHitbox.setPosition(243, 314);
     _comoJugarHitbox.setFillColor(sf::Color::Transparent);
+    _comoJugarHitbox.setOutlineColor(sf::Color::Blue);
+    _comoJugarHitbox.setOutlineThickness(2);
 
     _eliminarPartidasHitbox.setSize(sf::Vector2f(320, 55));
     _eliminarPartidasHitbox.setPosition(243, 402);
     _eliminarPartidasHitbox.setFillColor(sf::Color::Transparent);
+    _eliminarPartidasHitbox.setOutlineColor(sf::Color::Green);
+    _eliminarPartidasHitbox.setOutlineThickness(2);
 
     _volverHitbox.setSize(sf::Vector2f(70, 20));
     _volverHitbox.setPosition(365, 485);
@@ -26,12 +26,6 @@ Opciones::Opciones(){
 
 
     _fuente.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
-
-    _rankingTexto.setFont(_fuente);
-    _rankingTexto.setString("RANKING");
-    _rankingTexto.setCharacterSize(28);
-    _rankingTexto.setFillColor(sf::Color::White);
-    _rankingTexto.setPosition(340, 237);
 
     _comoJugarTexto.setFont(_fuente);
     _comoJugarTexto.setString("COMO JUGAR");
@@ -53,11 +47,8 @@ void Opciones::procesarEventoEntrada(sf::Event &evento){
     if(evento.type == sf::Event::MouseButtonPressed){
 
         if(_enOpcionesMenu){
-            if(_rankingHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                _enRanking = true;
-                _enOpcionesMenu = false;
-            }
-            else if(_comoJugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
+
+            if(_comoJugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
                 _enComoJugar = true;
                 _enOpcionesMenu = false;
             }
@@ -70,18 +61,10 @@ void Opciones::procesarEventoEntrada(sf::Event &evento){
             }
         }
 
-        /// recibe el evento de los Volver de cada submenu cuando quieren volver el menu Opciones
         if(_enComoJugar){
                 _comoJugar.procesarEventoEntrada(evento);
                 if (_comoJugar.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
                     _enComoJugar = false;
-                    _enOpcionesMenu = true;
-                }
-        }
-        else if(_enRanking){
-                _ranking.procesarEventoEntrada(evento);
-                if (_ranking.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                    _enRanking = false;
                     _enOpcionesMenu = true;
                 }
         }
@@ -98,20 +81,15 @@ void Opciones::dibujar(sf::RenderWindow &ventana){
     ventana.draw(_opciones);
 
     if (_enOpcionesMenu){
-        ventana.draw(_rankingHitbox);
         ventana.draw(_comoJugarHitbox);
         ventana.draw(_eliminarPartidasHitbox);
         ventana.draw(_volverHitbox);
-        ventana.draw(_rankingTexto);
         ventana.draw(_comoJugarTexto);
         ventana.draw(_eliminarPartidasTexto);
     }
 
     if(_enComoJugar){
         _comoJugar.dibujar(ventana);
-    }
-    if(_enRanking){
-        _ranking.dibujar(ventana);
     }
 
 }

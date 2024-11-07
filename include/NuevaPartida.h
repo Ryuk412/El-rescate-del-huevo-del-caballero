@@ -12,14 +12,11 @@ private:
     sf::Sprite _nuevaPartidaSprite;
     sf::RectangleShape _siguienteHitbox;
     sf::RectangleShape _volverHitBox;
-
     sf::Font _fuente;
     sf::Text _nombreJugadorTexto;
-
     ArchivoJugadores _archivo;
     Jugador _jugador;
     Historia _historia;
-
     std::string _nombreJugador;
 
     ///banderas

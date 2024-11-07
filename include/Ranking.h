@@ -8,7 +8,6 @@ class Ranking
 private:
     sf::Texture _rankingTextura;
     sf::Sprite _rankingSprite;
-
     sf::RectangleShape _volverHitBox;
 
     bool _volver=false;
@@ -17,11 +16,9 @@ private:
 public:
     Ranking();
     void procesarEventoEntrada(sf::Event &evento);
-
     sf::RectangleShape getVolverHitbox();
     void setVolver(bool volver);
     bool getVolver();
-
     void dibujar(sf::RenderWindow &ventana);
 };
 

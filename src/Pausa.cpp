@@ -21,7 +21,6 @@ Pausa::Pausa(){
 bool Pausa::procesarEventoEntrada(sf::Event &evento) {
 
     if (evento.type == sf::Event::MouseButtonPressed) {
-
         if(_enPausa){
             if(_reanudarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 _enPausa=false;
