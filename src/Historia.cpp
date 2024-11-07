@@ -2,7 +2,8 @@
 #include <iostream>
 using namespace std;
 
-Historia::Historia() {
+Historia::Historia(sf::RenderWindow& window) : _window(window)
+{
     _historiaTextura.loadFromFile("menu/historia.png");
     _historiaSprite.setTexture(_historiaTextura);
     _historiaSprite.setPosition(0, 0);

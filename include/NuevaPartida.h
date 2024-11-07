@@ -12,6 +12,7 @@ private:
     sf::Sprite _nuevaPartidaSprite;
     sf::RectangleShape _siguienteHitbox;
     sf::RectangleShape _volverHitBox;
+    sf::RenderWindow& _window;
 
     sf::Font _fuente;
     sf::Text _nombreJugadorTexto;
@@ -29,7 +30,7 @@ private:
     bool _volver = false;
 
 public:
-    NuevaPartida();
+    NuevaPartida(sf::RenderWindow& window);
     void procesarEventoEntrada(sf::Event &evento);
     sf::RectangleShape getVolverHitbox();
     void setVolver(bool volver);

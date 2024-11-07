@@ -10,7 +10,7 @@
 class Menu
 {
 public:
-    Menu();
+    Menu(sf::RenderWindow& window);
     void procesarEventoEntrada(sf::Event &evento);
     void dibujar(sf::RenderWindow &ventana);
 
@@ -18,6 +18,7 @@ private:
     sf::Texture _fondoTextura;
     sf::Sprite _fondo;
     Jugar _jugar;
+    sf::RenderWindow& _window; // Referencia a la ventana principal
 
     Creditos _creditos;
     Opciones _opciones;

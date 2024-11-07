@@ -1,6 +1,6 @@
 #include "menu.h"
 
-Menu::Menu()
+Menu::Menu(sf::RenderWindow& window) : _window(window) , _jugar(_window)
 {
     _fondoTextura.loadFromFile("menu/menu_principal.png");
     _fondo.setTexture(_fondoTextura);

@@ -1,6 +1,7 @@
 #include "Jugar.h"
 
-Jugar::Jugar(){
+Jugar::Jugar(sf::RenderWindow& window) : _window(window),_nuevaPartida(_window)
+{
     _jugarTextura.loadFromFile("menu/jugar.png");
     _jugar.setTexture(_jugarTextura);
     _jugar.setPosition(0,0);
