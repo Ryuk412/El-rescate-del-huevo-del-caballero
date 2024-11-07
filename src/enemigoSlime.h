@@ -6,16 +6,16 @@ class enemigoSlime : public colisionable , public sf::Drawable
 {
     public:
         enemigoSlime();
-        void update(int limitA, int limitB);
+        void update();
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
         sf::RectangleShape getHitbox()const override;
         void respawn();
         bool muerte();
         bool isAlive();
         void danioRecibido(int danio);
-        void setSpritePosition(int posicionX, int posicionY);
+        /*void setSpritePosition(int posicionX, int posicionY);*/
         virtual ~enemigoSlime();
-
+        void setSpritePosition(int posX, int posY,int posA,int posB);
     protected:
 
     private:
@@ -28,6 +28,10 @@ class enemigoSlime : public colisionable , public sf::Drawable
     float _frame2=0;
     float _frame3=0;
     int slm_vida;
+    int limitA=300;
+    int limitB=400;
+    bool _life;
+
 };
 
 #endif // ENEMIGOSLIME_H

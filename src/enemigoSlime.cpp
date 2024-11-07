@@ -6,7 +6,7 @@ enemigoSlime::enemigoSlime()
     _textureSlm.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
     slm_sprite.setTexture(_textureSlm);
     slm_sprite.setTextureRect({0,0,130,130});
-    slm_sprite.setOrigin(slm_sprite.getGlobalBounds().width/2, slm_sprite.getGlobalBounds().height);
+    /*slm_sprite.setOrigin(slm_sprite.getGlobalBounds().width/2, slm_sprite.getGlobalBounds().height);*/
     slm_hitbox.setSize({60,30});
     slm_hitbox.setFillColor(sf::Color::Yellow);
     slm_vida=50;
@@ -52,7 +52,7 @@ void enemigoSlime::respawn(){
 
 
 
-void enemigoSlime::update(int limitA, int limitB)
+void enemigoSlime::update()
 {
     bool ban=true;
     slm_velocity= {};
@@ -152,6 +152,14 @@ void enemigoSlime::draw(sf::RenderTarget& target, sf::RenderStates state)const
 
 
 
-void enemigoSlime::setSpritePosition(int posicionX, int posicionY){
+/*void enemigoSlime::setSpritePosition(int posicionX, int posicionY){
     slm_sprite.setPosition(posicionX,posicionY);
+}*/
+
+void enemigoSlime::setSpritePosition(int posX, int posY, int posA,int posB){
+    slm_vida=50;
+    slm_sprite.setPosition(sf::Vector2f(posX,posY));
+    limitA=posA;
+    limitB=posB;
+    slm_sprite.setOrigin(slm_sprite.getGlobalBounds().width/2, slm_sprite.getGlobalBounds().height);
 }

@@ -1,3 +1,4 @@
+
 #include "mapa.h"
 #include <iostream>
 
@@ -15,6 +16,7 @@ void mapa::cargarTexturaMapa(){
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
+
     // Valor del vector cambiado
     _hitbox.resize(35);
     cargarEstructura();
@@ -35,6 +37,10 @@ void mapa::cargarMapa() {
         break;
     case 2:
         _Smapa.setTexture(_nivel2);
+        break;
+
+    case 3:
+        _Smapa.setTexture(_nivel3);
         break;
     }
 }
@@ -65,6 +71,7 @@ case 3:
     cargarMapa();
     break;
     }
+
 }
 // Implementación del método para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
@@ -79,6 +86,8 @@ case 2:
     cargarNivel2();
     break;
 case 3:
+    setTextMapa(3);
+    cargarNivel3();
     break;
     }
 
@@ -89,7 +98,7 @@ case 3:
 bool mapa::cargarNivel1(){
 
       inicializarVector(25);
-      cargarHitbox(0,365.0f, 75.0f, 0.0f, 146.0f);
+      cargarHitbox(0,345.0f, 75.0f, 0.0f, 146.0f);
       cargarHitbox(1,48.0f,101.0f,310.0f,221.0f);
       cargarHitbox(2,229.0f,26.0f,110.0f,326.0f);
       cargarHitbox(3,75.0f,83.0f,341.0f,325.0f);
@@ -167,7 +176,15 @@ bool mapa::cargarNivel2(){
 }
 // Metodo para cargar hitboxes del nivel 3
 bool mapa::cargarNivel3(){
-    inicializarVector(25);
+    inicializarVector(8);
+    cargarHitbox(0,1600.f, 200.f, 0.0f, 480.0f);
+    cargarHitbox(1,140.f, 20.f, 0.0f, 340.0f);
+    cargarHitbox(2,60.f, 20.f, 215.0f, 230.0f);
+    cargarHitbox(3,260.f, 20.f, 415.0f, 180.0f);
+    cargarHitbox(4,50.f, 15.f, 820.f, 260.0f);
+    cargarHitbox(5,90.f, 20.f, 1000.0f, 210.0f);
+    cargarHitbox(6,130.f, 20.f, 1220.0f, 135.0f);
+    cargarHitbox(7,150.f, 20.f, 1450.0f, 190.0f);
     return true;
 }
 
@@ -184,15 +201,7 @@ void mapa::inicializarVector(int tam){
     _hitbox.resize(tam);
 }
 // Metodo para establecer el valor de la variable _nivel
-void mapa::setNivel(int nivel){
-    if(_nivel==2){
-    _nivel=1;
-    }
-    _nivel=2;
-}
- int mapa::getNivel(){
- return _nivel;
- }
+
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 

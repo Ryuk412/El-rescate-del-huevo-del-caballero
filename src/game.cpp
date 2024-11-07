@@ -11,19 +11,25 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
     }
 
 
+game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+
+
+
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
     font.loadFromFile("src/arial.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Black);
-    contador=0;
+    textoTest.setFillColor(sf::Color::White);
     textoTest.setCharacterSize(15);
+    contador=0;
+    setLevel();
 
 }
 
-game::~game(){}
+game::~game(){
+}
 
 const bool game::isRunning() const {
     return window.isOpen();
@@ -41,6 +47,21 @@ void game::updateEvent(){
 
 
 
+void game::setLevel(){
+    /*if(contador<=0){
+            mapaTest.setTextMapa(1);
+            mapaTest.cargarEstructura();
+            enemyManager.setEnemies();
+            nivel1=true;
+    }
+    else if(contador==60){
+            mapaTest.setTextMapa(2);
+            mapaTest.cargarNivel2();
+        }*/
+        mapaTest.setTextMapa(3);
+        mapaTest.cargarEstructura();
+        enemyManager.setEnemies();
+}
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(){
@@ -56,6 +77,7 @@ void game::update(){
     }
     ejemplo.update(mapaTest);
 
+    enemyManager.updateEnemies(ejemplo);
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -83,21 +105,39 @@ void game::update(){
             corazon.setActive(false);
         }
 
-        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador>=60){
-            mapaTest.setTextMapa(2);
-            mapaTest.setNivel(2);
-            mapaTest.cargarNivel2();
+        if(enemyManager.verificarColisionEnemigo(ejemplo.getHitbox())){
+
+                if(ejemplo.isAlive()==false){
+                    ejemplo.muerte();
+
+
+                }
+                ejemplo.danioRecibido(25);
+        }
+                   //ejemplo.respawn();
+        if(enemyManager.verificarColisionEspada(ejemplo ,ejemplo.getHitboxE())){
+        std::cout << "Colision detectada." << std::endl;
 
         }
+
+
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        }
+        textoTest.setString("PUNTOS: "+std::to_string(contador));
+        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
+
+        /*if(contador==60&&nivel2==false){
+            setLevel();
+            nivel2=true;
+        }*/
+
+}
 
 //Todas las visualizaciones
 void game::render(){
         window.clear();
         mapaTest.dibujar(window);
+
+        enemyManager.draw(window, Default);
 
         window.draw(ejemplo);
         window.draw(corazon);
