@@ -1,8 +1,8 @@
 #include "game.h"
 
 
-game::game() : mapaTest("data/maps/nivel2_mapa.png"), window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
-
+game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default), mapaTest("data/maps/nivel2_mapa.png") {
+    std::cout<<"constructor"<<std::endl;
     skl.resize(5);
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);

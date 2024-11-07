@@ -19,23 +19,6 @@
 //Clase que funciona como el game engine.
 
 class game{
-    private:
-    //Variables que solo la clase game puede tener acceso:
-
-        mapa mapaTest;
-        sf::RenderWindow window{};
-        sf::Event evento;
-        sf::View camara;
-        Jefe osomaloso;
-        std::vector<enemigoSlime> skl;
-        pj ejemplo;
-        Item corazon;
-        int contador;
-        itemPuntos star;
-        sf::Font font;
-        sf::Text textoTest;
-        float limiteCamaraIzq=400;
-        float limiteCamaraDer=1200;
     public:
     //Constructor y destructor
         game();
@@ -50,6 +33,23 @@ class game{
         void render();
         void setEnemies();
         void updateEnemies();
+    private:
+    //Variables que solo la clase game puede tener acceso:
+
+        mapa mapaTest;
+        sf::RenderWindow window{};
+        sf::Event evento;
+        sf::View camara;
+        pj ejemplo;
+        Item corazon;
+        int contador;
+        itemPuntos star;
+        sf::Font font;
+        sf::Text textoTest;
+        float limiteCamaraIzq=400;
+        float limiteCamaraDer=1200;
+        Jefe osomaloso;
+        std::vector<enemigoSlime> skl;
 
 };
 
