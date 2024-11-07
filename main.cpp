@@ -7,6 +7,7 @@ using namespace sf;
 int main(){
     game game;
     while(game.isRunning()){
+
        game.update();
        game.render();
     }
