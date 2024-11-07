@@ -26,7 +26,8 @@ void Historia::procesarEventoEntrada(sf::Event &evento) {
 
         if (_enHistoria){
             if (_empezarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                game game;
+                game game(_window);
+                std::cout<<"Creo game"<<std::endl;
                 while (game.isRunning()) {
                     game.update();
                     game.render();

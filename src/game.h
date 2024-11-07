@@ -23,7 +23,7 @@ class game{
     private:
     //Variables que solo la clase game puede tener acceso:
 
-        sf::RenderWindow& window;
+        sf::RenderWindow& _window;
 
         sf::Event evento;
         sf::View camara;
@@ -42,7 +42,7 @@ class game{
 
     public:
     //Constructor y destructor
-        game();
+        game(sf::RenderWindow& window);
         virtual ~game();
     //Nexo entre game y main:
         const bool isRunning() const;
