@@ -54,3 +54,5 @@ class game{
 };
 
 #endif // GAME_H_INCLUDED
+        bool nivel1=false;
+        bool nivel2=false;

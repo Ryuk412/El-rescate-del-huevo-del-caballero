@@ -8,7 +8,7 @@ enemigoSlime::enemigoSlime()
     slm_sprite.setTextureRect({0,0,130,130});
     slm_sprite.setOrigin(slm_sprite.getGlobalBounds().width/2, slm_sprite.getGlobalBounds().height);
     slm_hitbox.setSize({60,30});
-    slm_hitbox.setFillColor(sf::Color::Yellow);
+    slm_hitbox.setFillColor(sf::Color::Transparent);
     slm_vida=50;
 }
 

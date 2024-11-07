@@ -16,6 +16,8 @@ Jefe::Jefe()
     j_vida=500;
 
 
+    j_hitbox.setFillColor(sf::Color::Transparent);
+    j_vida=50;
 }
 void Jefe::update(int LimiteA, int LimiteB){
 

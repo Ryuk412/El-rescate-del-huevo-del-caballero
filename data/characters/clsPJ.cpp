@@ -14,9 +14,9 @@ pj::pj() {
 
     // Configurar hitboxes
     m_hitbox.setSize({50, 60}); // Hitbox personaje
-    m_hitbox.setFillColor(sf::Color::Red);
+    m_hitbox.setFillColor(sf::Color::Transparent);
     e_hitbox.setSize({25, 65}); // Hitbox espada
-    e_hitbox.setFillColor(sf::Color::Blue);
+    e_hitbox.setFillColor(sf::Color::Transparent);
 
 
     _sprite.setPosition(200, 200);
