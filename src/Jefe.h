@@ -1,30 +1,38 @@
 #ifndef JEFE_H
 #define JEFE_H
 #include "inc.h"
-class Jefe : public sf::Drawable
+#include "pj.h"
+class Jefe : public sf::Drawable, public colisionable
 {
-    public:
+     public:
         Jefe();
-    void update(int LimiteA, int LimiteB );
-
-       void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-//    sf::RectangleShape getHitbox()const override;
-    bool isAlive();
-    void muerte();
-    void danioRecivido(int danio);
-    void setSpritePosition(float x,float y);
-
+        void update(pj ejemplo);
+        void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
+        void respawn();
+        bool muerte();
+        sf::RectangleShape getHitbox()const override;
+        bool isAlive();
+        void danioRecibido(int danio);
+        /*void setSpritePosition(int posicionX, int posicionY);*/
+        virtual ~Jefe();
+        void setSpritePosition(int posX, int posY,int posA,int posB);
+    protected:
 
     private:
-
-        sf::RectangleShape j_hitbox;
-        sf::RectangleShape _hitbox;
-        sf::Sprite j_sprite;
-        sf::Texture j_texture;
-        sf::Vector2f j_velocity={};
-        int _direccion=-1;
-        float  _frame=0;
-        float j_vida;
+    sf::RectangleShape j_hitbox;
+    int _direccion=-1;
+    sf::Sprite j_sprite;
+    sf::Texture _texturej;
+    sf::Vector2f j_velocity={0,0};
+    float _frame=0;
+    float _frame2=0;
+    float _frame3=0;
+    float countdown=0;
+    int j_vida;
+    int limitA=300;
+    int limitB=400;
+    bool _life;
+    bool attack=false;
 };
 
 #endif // JEFE_H
