@@ -10,6 +10,9 @@ mapa::mapa() {
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
+    if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
+        std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
+    }
     // Valor del vector cambiado
     _hitbox.resize(35);
     cargarEstructura();
@@ -28,6 +31,9 @@ void mapa::cargarMapa() {
         break;
     case 2:
         _Smapa.setTexture(_nivel2);
+        break;
+    case 3:
+        _Smapa.setTexture(_nivel3);
         break;
     }
 }
@@ -72,6 +78,8 @@ case 2:
     cargarNivel2();
     break;
 case 3:
+    setTextMapa(3);
+    cargarNivel3();
     break;
     }
 
@@ -160,7 +168,15 @@ bool mapa::cargarNivel2(){
 }
 // Metodo para cargar hitboxes del nivel 3
 bool mapa::cargarNivel3(){
-    inicializarVector(25);
+    inicializarVector(8);
+    cargarHitbox(0,1600.f, 200.f, 0.0f, 480.0f);
+    cargarHitbox(1,140.f, 20.f, 0.0f, 340.0f);
+    cargarHitbox(2,60.f, 20.f, 215.0f, 230.0f);
+    cargarHitbox(3,260.f, 20.f, 415.0f, 180.0f);
+    cargarHitbox(4,50.f, 15.f, 820.f, 260.0f);
+    cargarHitbox(5,90.f, 20.f, 1000.0f, 210.0f);
+    cargarHitbox(6,130.f, 20.f, 1220.0f, 135.0f);
+    cargarHitbox(7,150.f, 20.f, 1450.0f, 190.0f);
     return true;
 }
 
