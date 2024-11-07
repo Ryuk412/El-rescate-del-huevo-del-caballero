@@ -13,9 +13,9 @@
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
-#include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
 #include "itemPuntos.h"
+#include "enemigoGenerico.h"
 //Clase que funciona como el game engine.
 
 class game{
@@ -33,23 +33,28 @@ class game{
         void render();
         void setEnemies();
         void updateEnemies();
+        void enemiesResize();
+        void setLevel();
     private:
     //Variables que solo la clase game puede tener acceso:
-
+        enemigoGenerico enemyManager;
         mapa mapaTest;
         sf::RenderWindow window{};
+        sf::RenderStates Default;
         sf::Event evento;
         sf::View camara;
         pj ejemplo;
         Item corazon;
-        int contador;
         itemPuntos star;
+        int contador;
         sf::Font font;
         sf::Text textoTest;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
         Jefe osomaloso;
         std::vector<enemigoSlime> skl;
+        bool nivel1=false;
+        bool nivel2=false;
 
 };
 

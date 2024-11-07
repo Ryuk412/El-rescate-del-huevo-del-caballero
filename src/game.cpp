@@ -1,22 +1,21 @@
 #include "game.h"
 
 
-game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default), mapaTest("data/maps/nivel2_mapa.png") {
-    std::cout<<"constructor"<<std::endl;
-    skl.resize(5);
+game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
-    setEnemies();
     font.loadFromFile("src/arial.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Black);
-    contador=0;
+    textoTest.setFillColor(sf::Color::White);
     textoTest.setCharacterSize(15);
+    contador=0;
+    setLevel();
 }
 
-game::~game(){}
+game::~game(){
+}
 
 const bool game::isRunning() const {
     return window.isOpen();
@@ -31,28 +30,19 @@ void game::updateEvent(){
 }
 }
 
-void game::setEnemies(){
-    //El punto en el que inicia cada enemigo.
-    //Esta funcion se ejecuta en el constructor para que se ejecute una sola vez.
-    skl[0].setSpritePosition(10,200);
-    skl[1].setSpritePosition(440,250);
-    skl[2].setSpritePosition(1050,450);
-    skl[3].setSpritePosition(900,250);
-    skl[4].setSpritePosition(450,580);
-    osomaloso.setSpritePosition(920,250);
-
-}
-
-void game::updateEnemies(){
-    //El update de cada enemigo se ejecuta en una funcion aparte para que update() quede mas limpio.
-    skl[0].update(10,380);
-    skl[1].update(440,620);
-    skl[2].update(1050,1200);
-    skl[3].update(900,1200);
-    skl[4].update(450,700);
-    osomaloso.update(1200,820);
 
 
+void game::setLevel(){
+    if(contador<=0){
+            mapaTest.setTextMapa(1);
+            mapaTest.cargarEstructura();
+            enemyManager.setEnemies();
+            nivel1=true;
+    }
+    else if(contador==60){
+            mapaTest.setTextMapa(2);
+            mapaTest.cargarNivel2();
+        }
 }
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
@@ -68,7 +58,7 @@ void game::update(){
        star.setActive(true);
     }
     ejemplo.update(mapaTest);
-    updateEnemies();
+    enemyManager.updateEnemies(ejemplo);
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -95,65 +85,36 @@ void game::update(){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
-        if(verificarColisionEnemigo(ejemplo.getHitbox())){
+        if(enemyManager.verificarColisionEnemigo(ejemplo.getHitbox())){
+
                 if(ejemplo.isAlive()==false){
                     ejemplo.muerte();
+
+
                 }
                 ejemplo.danioRecibido(25);
-                   //ejemplo.respawn();             }
         }
-        if(verificarColisionEspada(ejemplo ,ejemplo.getHitboxE()) and ejemplo.getBan()){
+                   //ejemplo.respawn();
+        if(enemyManager.verificarColisionEspada(ejemplo ,ejemplo.getHitboxE())){
         std::cout << "Colision detectada." << std::endl;
 
         }
 
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador>=60){
-            mapaTest.setTextMapa(2);
-            mapaTest.setNivel(2);
-            mapaTest.cargarNivel2();
-
-        }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
+        if(contador==60&&nivel2==false){
+            setLevel();
+            nivel2=true;
         }
-bool game::verificarColisionEnemigo(sf::RectangleShape hitbox){
-    for(int i=0;i<5;i++){
-    if(skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())&&skl[i].isAlive()){
-
-            return true;
-    }
-
-    }
-    return false;
-};
-
-bool game::verificarColisionEspada(pj& p,sf::RectangleShape hitbox) {
-
-    for (int i = 0; i < skl.size(); i++) {
-        if (skl[i].getHitbox().getGlobalBounds().intersects(hitbox.getGlobalBounds())&&p.getBan()) {
-            if(skl[i].isAlive()==false){
-                skl[i].muerte();
-            }
-            if(p.getBan()){
-            skl[i].danioRecibido(25); // Aplica daño al slime si es necesario
-            return true; // Devuelve true si encuentra una colisión con algún slime
-            }
-
-        }
-    }
-    return false; // Si no hay colisión con ningún slime, devuelve false
 }
+
 
 //Todas las visualizaciones
 void game::render(){
         window.clear();
         mapaTest.dibujar(window);
-        for(int i=0;i<5;i++){
-        window.draw(skl[i]);
-        }
-
-        window.draw(osomaloso);
+        enemyManager.draw(window, Default);
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(star);
