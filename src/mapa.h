@@ -6,8 +6,8 @@
 class mapa  {
 public:
     // Constructor que carga el mapa
-    mapa(const std::string& archivoMapa);
-
+    mapa();
+    ~mapa();
     // Metodo para generar la estructura
     bool cargarEstructura();
     // Método para dibujar el mapa en la ventana de SFML
