@@ -23,8 +23,7 @@ Historia::Historia() {
 void Historia::procesarEventoEntrada(sf::Event &evento) {
     if (evento.type == sf::Event::MouseButtonPressed) {
 
-        if (_enHistoria){ // Si estamos en la historia
-            // Verificamos si el jugador hace clic en el botón "Empezar"
+        if (_enHistoria){
             if (_empezarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
                 game game;
                 while (game.isRunning()) {
@@ -36,14 +35,12 @@ void Historia::procesarEventoEntrada(sf::Event &evento) {
                 _enEmpezar = true;
             }
 
-            // Verificamos si el jugador hace clic en el botón "Pausar"
             if (_pausarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enHistoria = false;  // Cambiamos a la pantalla de pausa
+                _enHistoria = false;
                 _enPausa = true;
             }
         }
 
-        // Si estamos en pausa, procesamos los eventos del menú de pausa
         if (_enPausa) {
             _pausa.procesarEventoEntrada(evento);
         }
