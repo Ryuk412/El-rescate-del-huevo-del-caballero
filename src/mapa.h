@@ -6,14 +6,18 @@
 class mapa  {
 public:
     // Constructor que carga el mapa
-    mapa(const std::string& archivoMapa);
-
+    mapa();
+    ~mapa();
+    // Nueva función que se encargará de cargar el mapa en un hilo
+    void cargarMapaEnHilo();
+    // Método para verificar si el mapa está cargado
+    bool mapaCargado() const { return _cargado; }
     // Metodo para generar la estructura
     bool cargarEstructura();
     // Método para dibujar el mapa en la ventana de SFML
     void dibujar(sf::RenderWindow& ventana);
-    // Método para verificar la colisión con un punto
-
+    // Metodo para cargar la textura del mapa
+    void cargarTexturaMapa();
     // Metodo para crear una hitbox
     bool cargarHitbox(int vecPos,float w,float h,float x, float y);
     // Metodo para dibujar hitbox
@@ -30,6 +34,7 @@ public:
     bool cargarNivel3();
     // Metodo para setearle dinamicamente tamaño al vector
     void inicializarVector(int tam);
+    int getNivel();
 
 private:
     sf::Texture _mapa;        // Textura del mapa
@@ -37,6 +42,8 @@ private:
     sf::Texture _nivel1;      // Textura nivel 1
     sf::Texture _nivel2;      // Textura nivel 2
     sf::Texture _nivel3;      // Textura nivel 3
+
+    std::atomic<bool> _cargado{false};  // Bandera de carga
 
     int _nivel=1;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno

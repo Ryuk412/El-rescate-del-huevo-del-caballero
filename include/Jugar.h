@@ -12,6 +12,7 @@ class Jugar
 private:
     sf::Texture _jugarTextura;
     sf::Sprite _jugar;
+    sf::RenderWindow& _window;
 
     sf::RectangleShape _cargarPartidaHitbox;
     sf::RectangleShape _nuevaPartidaHitbox;
@@ -33,7 +34,7 @@ private:
     bool _volver=false;
 
 public:
-    Jugar();
+    Jugar(sf::RenderWindow& window);
     void procesarEventoEntrada(sf::Event &evento);
 
     sf::RectangleShape getVolverHitbox();

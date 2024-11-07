@@ -9,6 +9,7 @@
 #include <cstring>
 #include <iostream>
 #include <vector>
+#include "Jefe.h"
 #include "pj.h"
 #include "Item.h"
 #include "mapa.h"
@@ -21,11 +22,12 @@
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
-        mapa mapaTest;
-        sf::RenderWindow window;
+
+        sf::RenderWindow& window;
+
         sf::Event evento;
         sf::View camara;
-        std::vector<enemigoSlime> skl;
+
         pj ejemplo;
         Item corazon;
         int contador;
@@ -45,13 +47,10 @@ class game{
     //Nexo entre game y main:
         const bool isRunning() const;
     //Funciones:
-        bool verificarColisionEnemigo(sf::RectangleShape hitbox);
-        bool verificarColisionEspada(pj& p,sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();
-        void setEnemies();
-        void updateEnemies();
+
 };
 
 #endif // GAME_H_INCLUDED

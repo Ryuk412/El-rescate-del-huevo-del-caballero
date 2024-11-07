@@ -93,6 +93,8 @@
 		<Unit filename="src/Historia.cpp" />
 		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Jugar.cpp" />
+		<Unit filename="src/Jefe.cpp" />
+		<Unit filename="src/Jefe.h" />
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/Musica.cpp" />
 		<Unit filename="src/NuevaPartida.cpp" />

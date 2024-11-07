@@ -19,6 +19,7 @@ private:
 
     sf::RectangleShape _empezarHitbox;
     sf::RectangleShape _pausarHitbox;
+    sf::RenderWindow& _window;
 
     Pausa _pausa;
 
@@ -28,7 +29,7 @@ private:
     bool _enPausa = false;
 
 public:
-    Historia();
+    Historia(sf::RenderWindow& window);
     void procesarEventoEntrada(sf::Event &evento);
     void dibujar(sf::RenderWindow &ventana);
 };

@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
 
-    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate mágico: El rescate del huevo del caballero");
-    Menu menuPrincipal;
+    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate mï¿½gico: El rescate del huevo del caballero");
+    Menu menuPrincipal(ventana);
 
     while(ventana.isOpen()){
         sf::Event evento;
@@ -21,6 +21,7 @@ int main(){
             menuPrincipal.dibujar(ventana);
             ventana.display();
         }
+
     }
         return 0;
 }
