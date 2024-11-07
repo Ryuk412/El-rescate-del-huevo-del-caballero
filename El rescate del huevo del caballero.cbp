@@ -76,6 +76,8 @@
 		<Unit filename="src/Menu.cpp" />
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />
+		<Unit filename="src/enemigoGenerico.cpp" />
+		<Unit filename="src/enemigoGenerico.h" />
 		<Unit filename="src/enemigoSlime.cpp" />
 		<Unit filename="src/enemigoSlime.h" />
 		<Unit filename="src/game.cpp" />
