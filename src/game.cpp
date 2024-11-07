@@ -8,10 +8,10 @@ game::game() : mapaTest("data/maps/nivel2_mapa.png") {
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
     setEnemies();
-    font.loadFromFile("src/arial.ttf");
+    font.loadFromFile("menu/fuente/Arimo-Bold.ttf");
     textoTest.setFont(font);
     textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Black);
+    textoTest.setFillColor(sf::Color::Black);
     contador=0;
     textoTest.setCharacterSize(15);
 }
