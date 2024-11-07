@@ -1,24 +1,38 @@
 #ifndef MENU_H
 #define MENU_H
+
 #include <SFML/Graphics.hpp>
-#include <vector>
-#include <string>
+#include "Musica.h"
+#include "Jugar.h"
+#include "Creditos.h"
+#include "Opciones.h"
 
-class Menu  {
-private:
-    sf::Font font;
-    std::vector<sf::Text> menuOptions;
-    int selectedIndex;
-    sf::Color normalColor = sf::Color::White;
-    sf::Color selectedColor = sf::Color::Red;
-
+class Menu
+{
 public:
-    Menu(const std::vector<std::string>& options, const sf::Font& menuFont, float width, float height);
+    Menu(sf::RenderWindow& window);
+    void procesarEventoEntrada(sf::Event &evento);
+    void dibujar(sf::RenderWindow &ventana);
 
-    void draw(sf::RenderWindow& window);
-    void moveUp();
-    void moveDown();
-    int getSelectedOption();
+private:
+    sf::Texture _fondoTextura;
+    sf::Sprite _fondo;
+    Jugar _jugar;
+    sf::RenderWindow& _window; // Referencia a la ventana principal
+
+    Creditos _creditos;
+    Opciones _opciones;
+    Musica _musica;
+
+    bool _enMenu=true;
+    bool _enJugar=false;
+    bool _enCreditos=false;
+    bool _enOpciones=false;
+
+    sf::Font _fuente;
+
+    sf::Text _jugarTexto, _opcionesTexto, _creditosTexto, _salirTexto;
+    sf::RectangleShape _jugarHitbox, _opcionesHitbox, _creditosHitbox, _salirHitbox, _volverHitbox;
 };
 
 #endif // MENU_H

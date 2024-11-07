@@ -22,7 +22,7 @@ pj::pj() {
     _sprite.setPosition(200, 200);
 
     _vida=100;
-   _bVida.setSize({_vida,10});
+   _bVida.setSize({_vida,10}); /// _bVida: barra de vida(grafica x ventana)
    _bVida.setFillColor(sf::Color::Green);
 
 
@@ -32,7 +32,7 @@ pj::pj() {
 pj::~pj() {}
 
 // Método de actualización del estado del personaje
-void pj::update(mapa& _objetoMapa) {
+void pj::update(mapa& _objetoMapa){
 
     _velocity = {0, _velocity.y};  // Reiniciar velocidad en X y mantener la velocidad en Y
 
@@ -50,7 +50,7 @@ void pj::update(mapa& _objetoMapa) {
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
         _frame += 0.2;
         _velocity.x = -4;
-        _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});
+        _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});///x y posicion ancho alto de la imagen
         if (_frame >= 7) _frame = 0;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
@@ -111,6 +111,8 @@ void pj::update(mapa& _objetoMapa) {
 }
 
     _sprite.move(_velocity.x, 0); // Movimiento en el eje X
+
+
     // Verificar colisiones en el eje X
     m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     if (_objetoMapa.verificarColision(m_hitbox)) {
@@ -121,14 +123,16 @@ void pj::update(mapa& _objetoMapa) {
         }
 }
 
-    // Actualización de la posición de la hitbox
-    m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
-    _bVida.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 50);
-    if(_vida < 51 ){
+    ///actualización de la posición de la hitbox (ancho, alto) 5= 66=offset
+    ///conj de fotogramas q animamos con la
+    m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);///hitbox se posiciona al sprite
+    _bVida.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 50);///barra de vida se posiciona sobre sprite del caballero
 
+    if(_vida < 51 ){
         _bVida.setFillColor(sf::Color::Red);
-    }else{
-    _bVida.setFillColor(sf::Color::Green);
+    }
+    else{
+        _bVida.setFillColor(sf::Color::Green);
     }
 
     // Ajuste de dirección del sprite
@@ -156,11 +160,12 @@ void pj::update(mapa& _objetoMapa) {
     }
 }
 
- bool pj::isAlive(){
+bool pj::isAlive(){
  if( _vida > 0  ){ return true;   }
  else{return false;    }
- }
-    void pj::danioRecibido(int danio){
+}
+
+void pj::danioRecibido(int danio){
 
         _frame4 += 0.1f;
 
@@ -171,6 +176,7 @@ void pj::update(mapa& _objetoMapa) {
         _vida=_vida-danio;
         }
 }
+
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);

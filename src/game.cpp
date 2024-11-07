@@ -10,7 +10,6 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
-
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
@@ -31,11 +30,12 @@ const bool game::isRunning() const {
 }
 
 void game::updateEvent(){
-    while (window.pollEvent(evento)){
+    while(window.pollEvent(evento)){
             if (evento.type == sf::Event::Closed){
                 window.close();
-        }
-}
+            }
+
+    }
 }
 
 
@@ -46,6 +46,7 @@ void game::updateEvent(){
 void game::update(){
 
     updateEvent();
+
     if(corazon.getActive()==false){
        corazon.respawn();
        corazon.setActive(true);
@@ -83,6 +84,7 @@ void game::update(){
             corazon.setActive(false);
         }
 
+
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
         if(contador>=60){
@@ -92,17 +94,19 @@ void game::update(){
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        }
+
 
 //Todas las visualizaciones
 void game::render(){
         window.clear();
+
         mapaTest.dibujar(window);
 
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(star);
         window.draw(textoTest);
+
         window.display();
 
 }

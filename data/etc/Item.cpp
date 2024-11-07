@@ -5,6 +5,7 @@
 //sf::FloatRect Item::getBounds() const{
 //    return _sprite.getGlobalBounds();
 //}
+
 sf::RectangleShape Item::getHitbox()const{
     return m_hitbox;
 }

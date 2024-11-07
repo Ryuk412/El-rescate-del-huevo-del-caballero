@@ -16,13 +16,15 @@
 #include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
 #include "itemPuntos.h"
+
 //Clase que funciona como el game engine.
 
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
 
-        sf::RenderWindow window{};
+        sf::RenderWindow& window;
+
         sf::Event evento;
         sf::View camara;
 
@@ -34,6 +36,10 @@ class game{
         sf::Text textoTest;
         float limiteCamaraIzq=400;
         float limiteCamaraDer=1200;
+
+        sf::Sprite _nv;
+        sf::Texture _textura;
+
     public:
     //Constructor y destructor
         game();

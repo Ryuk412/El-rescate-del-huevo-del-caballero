@@ -50,7 +50,10 @@
 			</Target>
 		</Build>
 		<Compiler>
+			<Add option="-pedantic-errors" />
+			<Add option="-pedantic" />
 			<Add option="-Wall" />
+			<Add option="-std=c++14" />
 			<Add directory="SFML/include" />
 			<Add directory="tmxlite/include" />
 			<Add directory="tmxlite" />
@@ -67,13 +70,37 @@
 		<Unit filename="data/etc/colisionable.h" />
 		<Unit filename="data/etc/itemPuntos.cpp" />
 		<Unit filename="data/etc/itemPuntos.h" />
+		<Unit filename="include/ArchivoJugadores.h" />
+		<Unit filename="include/CargarPartida.h" />
+		<Unit filename="include/ComoJugar.h" />
+		<Unit filename="include/Creditos.h" />
+		<Unit filename="include/Historia.h" />
+		<Unit filename="include/Jugador.h" />
+		<Unit filename="include/Jugar.h" />
 		<Unit filename="include/Menu.h" />
+		<Unit filename="include/Musica.h" />
+		<Unit filename="include/NuevaPartida.h" />
+		<Unit filename="include/Opciones.h" />
+		<Unit filename="include/Pausa.h" />
+		<Unit filename="include/Ranking.h" />
 		<Unit filename="include/enemigo.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ArchivoJugadores.cpp" />
+		<Unit filename="src/CargarPartida.cpp" />
+		<Unit filename="src/ComoJugar.cpp" />
+		<Unit filename="src/Creditos.cpp" />
+		<Unit filename="src/Historia.cpp" />
+		<Unit filename="src/Jugador.cpp" />
+		<Unit filename="src/Jugar.cpp" />
 		<Unit filename="src/Jefe.cpp" />
 		<Unit filename="src/Jefe.h" />
 		<Unit filename="src/Menu.cpp" />
+		<Unit filename="src/Musica.cpp" />
+		<Unit filename="src/NuevaPartida.cpp" />
+		<Unit filename="src/Opciones.cpp" />
+		<Unit filename="src/Pausa.cpp" />
+		<Unit filename="src/Ranking.cpp" />
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />
 		<Unit filename="src/enemigoSlime.cpp" />
