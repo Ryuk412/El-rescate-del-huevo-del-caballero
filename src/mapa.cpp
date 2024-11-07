@@ -2,38 +2,59 @@
 #include <iostream>
 
 // Implementación del constructor
-mapa::mapa(const std::string& archivoMapa) {
+mapa::mapa() {
+    // Inicia el hilo para cargar el mapa de forma asíncrona
+    std::thread hiloCarga(&mapa::cargarMapaEnHilo, this);
+    hiloCarga.detach();  // Desconectar el hilo para que cargue de fondo
+}
+void mapa::cargarTexturaMapa(){
     // Cargar la textura
-    if (!_mapa.loadFromFile(archivoMapa)) {
+    if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
     }
+    if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
+        std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
+    }
     // Valor del vector cambiado
-    _hitbox.resize(25);
-    cargarMapa();
+    _hitbox.resize(35);
     cargarEstructura();
+    cargarMapa();
+    _cargado=true;
 }
-
+void mapa::cargarMapaEnHilo() {
+    cargarTexturaMapa();  // Ejecuta la carga
+}
+mapa::~mapa(){
+    _hitbox.clear();
+}
 // Implementación del método para cargar el mapa
 void mapa::cargarMapa() {
-    _Smapa.setTexture(_mapa);
+    switch(_nivel){
+    case 1:
+        _Smapa.setTexture(_nivel1);
+        break;
+    case 2:
+        _Smapa.setTexture(_nivel2);
+        break;
+    }
 }
 // Implementacion del metodo para cambiar la textura del mapa segun el nivel
 void mapa::setTextMapa(int numero){
     switch(numero){
 case 1:
     // Desarrollo del cambio de textura
+    _nivel=1;
     if(!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 1" << std::endl;
     }
-    _mapa=_nivel1;
     cargarMapa();
     break;
 case 2:
     // Desarrollo del cambio de textura
+    _nivel=2;
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
-    _mapa=_nivel2;
     cargarMapa();
     break;
 case 3:
@@ -41,7 +62,6 @@ case 3:
     if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
     }
-    _mapa=_nivel3;
     cargarMapa();
     break;
     }
@@ -98,7 +118,7 @@ bool mapa::cargarNivel1(){
 }
 // Metodo para cargar hitboxes del nivel 2
 bool mapa::cargarNivel2(){
-    inicializarVector(32);
+    inicializarVector(35);
     cargarHitbox(0,195.0f, 80.0f, 40.0f, 422.0f);
     cargarHitbox(1,40.0f, 10.0f, 265.0f, 415.0f);
     _hitbox[1].setRotation(135.f);
@@ -111,19 +131,19 @@ bool mapa::cargarNivel2(){
     cargarHitbox(6,70.0f, 8.0f, 420.0f, 310.0f);
     cargarHitbox(7,125.0f, 8.0f, 570.0f, 250.0f);
     cargarHitbox(8, 70.0f, 8.0f, 530.0f, 105.0f);
-    cargarHitbox(9, 100.0f, 8.0f, 380.0f, 110.0f);
+    cargarHitbox(9, 100.0f, 90.0f, 380.0f, 110.0f);
     cargarHitbox(10,35.0f, 10.0f, 475.0f, 125.0f);
     _hitbox[10].setRotation(45.f);
     cargarHitbox(11,20.0f, 10.0f, 355.0f, 90.0f);
     _hitbox[11].setRotation(45.f);
-    cargarHitbox(12,100.0f, 10.0f, 260.0f, 90.0f);
+    cargarHitbox(12,100.0f, 120.0f, 260.0f, 90.0f);
     cargarHitbox(13,25.0f, 10.0f, 265.0f, 105.f);
     _hitbox[13].setRotation(135.f);
-    cargarHitbox(14,40.0f, 10.0f, 195.0f, 115.0f);
+    cargarHitbox(14,40.0f, 90.0f, 195.0f, 115.0f);
     cargarHitbox(15,25.0f, 10.0f, 195.0f, 120.f);
     _hitbox[15].setRotation(135.f);
     cargarHitbox(16,165.0f, 10.0f, 0.0f, 160.0f);
-    cargarHitbox(17,230.0f, 10.0f, 800.0f, 445.0f);
+    cargarHitbox(17,240.0f, 10.0f, 800.0f, 445.0f);
     cargarHitbox(18,30.0f, 10.0f, 810.0f, 450.0f);
     _hitbox[18].setRotation(135.f);
     cargarHitbox(19,100.0f, 10.0f, 1100.0f, 460.0f);
@@ -133,13 +153,13 @@ bool mapa::cargarNivel2(){
     cargarHitbox(22,50.0f, 10.0f, 975.0f, 370.0f);
     cargarHitbox(23,70.0f, 10.0f, 970.0f, 370.0f);
     _hitbox[23].setRotation(90.f);
-    cargarHitbox(24,20.0f, 10.0f, 1080.0f, 300.0f);
+    cargarHitbox(24,20.0f, 10.0f, 1080.0f, 290.0f);
     cargarHitbox(25,70.0f, 1.0f, 1150.0f, 230.0f);
     cargarHitbox(26,70.0f, 5.0f, 1280.0f, 150.0f);
     cargarHitbox(27,50.0f, 5.0f, 1380.0f, 120.0f);
     cargarHitbox(28,20.0f, 5.0f, 1440.0f, 110.0f);
     _hitbox[28].setRotation(135.f);
-    cargarHitbox(29,70.0f, 10.0f, 1520.0f, 100.0f);
+    cargarHitbox(29,50.0f, 10.0f, 1530.0f, 100.0f);
     _hitbox[29].setRotation(90.f);
     cargarHitbox(30,70.0f, 10.0f, 1520.0f, 90.0f);
     cargarHitbox(31,20.0f, 5.0f, 1440.0f, 110.0f);
@@ -166,10 +186,13 @@ void mapa::inicializarVector(int tam){
 // Metodo para establecer el valor de la variable _nivel
 void mapa::setNivel(int nivel){
     if(_nivel==2){
-    _nivel=_nivel-nivel;
+    _nivel=1;
     }
-    _nivel=_nivel+nivel;
+    _nivel=2;
 }
+ int mapa::getNivel(){
+ return _nivel;
+ }
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
@@ -191,3 +214,4 @@ bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     }
     return false; // No hay colisión
 }
+
