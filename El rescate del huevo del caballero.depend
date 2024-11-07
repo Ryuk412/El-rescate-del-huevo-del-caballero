@@ -4752,7 +4752,7 @@
 	<SFML/Network/IpAddress.hpp>
 	<vector>
 
-1730954667 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.h
+1730962969 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
 
 1730860746 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
@@ -4777,7 +4777,7 @@
 	"colisionable.h"
 	"inc.h"
 
-1730946480 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\main.cpp
+1730962968 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\main.cpp
 	<SFML/Graphics.hpp>
 	"Menu.h"
 
@@ -4850,10 +4850,10 @@
 1730896427 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1730954667 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
-1730946936 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.h
+1730963320 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -4863,6 +4863,7 @@
 	<cstring>
 	<iostream>
 	<vector>
+	"Jefe.h"
 	"pj.h"
 	"Item.h"
 	"mapa.h"
@@ -4870,11 +4871,11 @@
 	"enemigoSlime.h"
 	"itemPuntos.h"
 
-1730954667 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.cpp
+1730962969 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.cpp
 	"mapa.h"
 	<iostream>
 
-1730896427 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\archivojugadores.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\archivojugadores.cpp
 	"ArchivoJugadores.h"
 	<iostream>
 	<cstring>
@@ -4906,7 +4907,7 @@
 1730896427 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\creditos.h
 	<SFML/Graphics.hpp>
 
-1730929502 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\menu.h
+1730962968 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\menu.h
 	<SFML/Graphics.hpp>
 	"Musica.h"
 	"Jugar.h"
@@ -4918,67 +4919,67 @@
 	<SFML/Audio.hpp>
 	<iostream>
 
-1730896427 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\jugar.h
+1730962968 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\jugar.h
 	<SFML/Graphics.hpp>
 	"CargarPartida.h"
 	"NuevaPartida.h"
 	"ArchivoJugadores.h"
 
-1730930639 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\nuevapartida.h
+1730963319 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\nuevapartida.h
 	<SFML/Graphics.hpp>
 	"Jugador.h"
 	"ArchivoJugadores.h"
 	"Historia.h"
 
-1730954667 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\historia.h
+1730962968 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\historia.h
 	<SFML/Graphics.hpp>
 	<windows.h>
 	"game.h"
 	"Pausa.h"
 
-1730896289 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\opciones.h
+1730963319 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\opciones.h
 	<SFML/Graphics.hpp>
 	"ComoJugar.h"
 	"Ranking.h"
 	"ArchivoJugadores.h"
 
-1730896290 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\ranking.h
+1730963319 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\ranking.h
 	<SFML/Graphics.hpp>
 
-1730954767 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
 	"Historia.h"
 	<iostream>
 
-1730896325 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugador.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugador.cpp
 	"Jugador.h"
 	<iostream>
 	<cstring>
 
-1730948137 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
+1730962968 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
 
-1730948137 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
+1730962968 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"menu.h"
 
 1730896326 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\musica.cpp
 	"musica.h"
 	<iostream>
 
-1730930805 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
 	"NuevaPartida.h"
 	<iostream>
 
-1730896327 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\opciones.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\opciones.cpp
 	<iostream>
 	"Opciones.h"
 
 1730896327 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\ranking.cpp
 	"Ranking.h"
 
-1730930639 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
+1730963319 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
 	<SFML/Graphics.hpp>
 
-1730928893 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+1730963320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 	"Pausa.h"
 
 1730962413 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\musica.h
@@ -5091,6 +5092,15 @@
 	"inc.h"
 
 1730962350 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	"Jefe.h"
+
+1730962968 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jefe.h
+	"inc.h"
+
+1730962968 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>

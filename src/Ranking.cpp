@@ -5,6 +5,7 @@ Ranking::Ranking(){
     _rankingSprite.setTexture(_rankingTextura);
     _rankingSprite.setPosition(0, 0);
 
+    ///hitbox
     _volverHitBox.setSize(sf::Vector2f(70, 18));
     _volverHitBox.setPosition(365, 530);
     _volverHitBox.setFillColor(sf::Color::Transparent);
