@@ -1,7 +1,20 @@
 #include "game.h"
 
+     mapa mapaTest;
 
 game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+
+     // Espera hasta que el mapa esté completamente cargado antes de continuar
+    while (!mapaTest.mapaCargado()) {
+        std::cout<<"Mapa cargando..."<<std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+    }
+
+
+game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+
+
+
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
@@ -12,6 +25,7 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
     textoTest.setCharacterSize(15);
     contador=0;
     setLevel();
+
 }
 
 game::~game(){
@@ -29,6 +43,7 @@ void game::updateEvent(){
         }
 }
 }
+
 
 
 
@@ -61,6 +76,7 @@ void game::update(){
        star.setActive(true);
     }
     ejemplo.update(mapaTest);
+
     enemyManager.updateEnemies(ejemplo);
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
@@ -88,6 +104,7 @@ void game::update(){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
+
         if(enemyManager.verificarColisionEnemigo(ejemplo.getHitbox())){
 
                 if(ejemplo.isAlive()==false){
@@ -103,20 +120,25 @@ void game::update(){
 
         }
 
+
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
+
         /*if(contador==60&&nivel2==false){
             setLevel();
             nivel2=true;
         }*/
 
 }
+
 //Todas las visualizaciones
 void game::render(){
         window.clear();
         mapaTest.dibujar(window);
+
         enemyManager.draw(window, Default);
+
         window.draw(ejemplo);
         window.draw(corazon);
         window.draw(star);

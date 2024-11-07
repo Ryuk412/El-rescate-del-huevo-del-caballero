@@ -19,6 +19,22 @@
 //Clase que funciona como el game engine.
 
 class game{
+    private:
+    //Variables que solo la clase game puede tener acceso:
+
+        sf::RenderWindow window{};
+        sf::Event evento;
+        sf::View camara;
+
+        pj ejemplo;
+        Item corazon;
+        int contador;
+        itemPuntos star;
+        sf::Font font;
+        sf::Text textoTest;
+        float limiteCamaraIzq=400;
+        float limiteCamaraDer=1200;
+
     public:
     //Constructor y destructor
         game();
@@ -26,11 +42,10 @@ class game{
     //Nexo entre game y main:
         const bool isRunning() const;
     //Funciones:
-        bool verificarColisionEnemigo(sf::RectangleShape hitbox);
-        bool verificarColisionEspada(pj& p,sf::RectangleShape hitbox);
         void updateEvent();
         void update();
         void render();
+
         void setEnemies();
         void updateEnemies();
         void enemiesResize();

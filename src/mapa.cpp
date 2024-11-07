@@ -1,8 +1,14 @@
+
 #include "mapa.h"
 #include <iostream>
 
 // Implementación del constructor
 mapa::mapa() {
+    // Inicia el hilo para cargar el mapa de forma asíncrona
+    std::thread hiloCarga(&mapa::cargarMapaEnHilo, this);
+    hiloCarga.detach();  // Desconectar el hilo para que cargue de fondo
+}
+void mapa::cargarTexturaMapa(){
     // Cargar la textura
     if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
         std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
@@ -10,18 +16,19 @@ mapa::mapa() {
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
-    if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
-    }
+
     // Valor del vector cambiado
     _hitbox.resize(35);
     cargarEstructura();
+    cargarMapa();
+    _cargado=true;
 }
-
+void mapa::cargarMapaEnHilo() {
+    cargarTexturaMapa();  // Ejecuta la carga
+}
 mapa::~mapa(){
     _hitbox.clear();
 }
-
 // Implementación del método para cargar el mapa
 void mapa::cargarMapa() {
     switch(_nivel){
@@ -31,6 +38,7 @@ void mapa::cargarMapa() {
     case 2:
         _Smapa.setTexture(_nivel2);
         break;
+
     case 3:
         _Smapa.setTexture(_nivel3);
         break;
@@ -63,6 +71,7 @@ case 3:
     cargarMapa();
     break;
     }
+
 }
 // Implementación del método para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
