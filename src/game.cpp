@@ -33,7 +33,7 @@ void game::updateEvent(){
 
 
 void game::setLevel(){
-    if(contador<=0){
+    /*if(contador<=0){
             mapaTest.setTextMapa(1);
             mapaTest.cargarEstructura();
             enemyManager.setEnemies();
@@ -42,7 +42,10 @@ void game::setLevel(){
     else if(contador==60){
             mapaTest.setTextMapa(2);
             mapaTest.cargarNivel2();
-        }
+        }*/
+        mapaTest.setTextMapa(3);
+        mapaTest.cargarEstructura();
+        enemyManager.setEnemies();
 }
 
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
@@ -103,13 +106,12 @@ void game::update(){
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        if(contador==60&&nivel2==false){
+        /*if(contador==60&&nivel2==false){
             setLevel();
             nivel2=true;
-        }
+        }*/
+
 }
-
-
 //Todas las visualizaciones
 void game::render(){
         window.clear();

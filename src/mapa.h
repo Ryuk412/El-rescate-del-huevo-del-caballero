@@ -13,7 +13,7 @@ public:
     // Método para dibujar el mapa en la ventana de SFML
     void dibujar(sf::RenderWindow& ventana);
     // Método para verificar la colisión con un punto
-
+   void cargarMapa();
     // Metodo para crear una hitbox
     bool cargarHitbox(int vecPos,float w,float h,float x, float y);
     // Metodo para dibujar hitbox
@@ -21,7 +21,7 @@ public:
     // Metodo para verificar la colision
     bool verificarColision(const sf::RectangleShape& objeto);
     // Metodo para cambiar el nivel
-    void setNivel(int nivel);
+    int setNivel(int numero);
     // Metodo para cambiar la textura del mapa
     void setTextMapa(int nivel);
     // Metodos para cargar la estructura de los niveles
@@ -30,9 +30,6 @@ public:
     bool cargarNivel3();
     // Metodo para setearle dinamicamente tamaño al vector
     void inicializarVector(int tam);
-    int getNivel();
-    void destructor();
-
 private:
     sf::Sprite _Smapa;        // Sprite del mapa
     sf::Texture _nivel1;      // Textura nivel 1
@@ -42,7 +39,7 @@ private:
     int _nivel=3;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno
     bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
-    void cargarMapa(); // Método para cargar el mapa
+
 };
 
 #endif // MAPA_H

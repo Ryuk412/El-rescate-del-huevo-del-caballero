@@ -16,7 +16,6 @@ mapa::mapa() {
     // Valor del vector cambiado
     _hitbox.resize(35);
     cargarEstructura();
-    cargarMapa();
 }
 
 mapa::~mapa(){
@@ -193,12 +192,7 @@ void mapa::inicializarVector(int tam){
     _hitbox.resize(tam);
 }
 // Metodo para establecer el valor de la variable _nivel
-void mapa::setNivel(int nivel){
-    if(_nivel==2){
-    _nivel=1;
-    }
-    _nivel=2;
-}
+
 // Método para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
@@ -221,10 +215,3 @@ bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     return false; // No hay colisión
 }
 
-int mapa::getNivel(){
-    return _nivel;
-}
-
-void mapa::destructor(){
-    _hitbox.clear();
-}
