@@ -22,7 +22,7 @@ class game{
     private:
     //Variables que solo la clase game puede tener acceso:
         mapa mapaTest;
-        sf::RenderWindow window{};
+        sf::RenderWindow window;
         sf::Event evento;
         sf::View camara;
         std::vector<enemigoSlime> skl;
