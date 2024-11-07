@@ -4,29 +4,24 @@
 
 using namespace std;
 
-/**
-    constructor que recibe por referencia(la direccion de mem) una cadena
-    de texto (nombre del archivo) y se la asigna al atributo
-    'nombre' del objeto 'ArchivoJugadores'
-*/
+///constructor que recibe por referencia el nombre del jugador
 ArchivoJugadores::ArchivoJugadores(const std::string &n){
     nombre=n;
 }
 
 /// .c_str (puntero para los tipo string)
-
 int ArchivoJugadores::contarRegistro(){
-    FILE *p=fopen(nombre.c_str(), "rb");///abre el archivo con el nombre almacenado en 'nombre' usando el puntero FILE y lo abre en modo lectura(binaria)
-    if (p == nullptr){///verifica si el archivo se abrio
+    FILE *p=fopen(nombre.c_str(), "rb");///abre el archivo modo lectura(binaria)
+    if (p == nullptr){
         return 0;
     }
     fseek(p, 0, 2);///mueve el puntero de archivo al final(SEEK_END)
-    int tam=ftell(p);///obtiene el tamaño del archivo
-    fclose(p);///cierra el archivo
-    return tam/sizeof(Jugador);///devuelve la cantidad de objetos jugador que estan almacenados en el archivo
+    int tam=ftell(p);
+    fclose(p);
+    return tam/sizeof(Jugador);
 }
 
-bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){///recibe el nombre del jugador desde jugador.h
+bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){///recibe el nombre del jugador desde leerDeArchivo (jugador.h)
     FILE *p;
     p=fopen(nombre.c_str(),"ab");///abre el archivo en modo append(agrega datos al final del archivo)
     if(p==nullptr){
@@ -50,7 +45,6 @@ std::string ArchivoJugadores::listarRegistro(){
     while(jug.leerDeArchivo(p)){
         registro += jug.getNombre() + "     " + std::to_string(jug.getPuntaje()) +" puntos     nivel " + std::to_string(jug.getNivel()) + "\n";
     }
-    ///std::to_string convierte los int (niveles/puntajes) a string
 
     fclose(p);
     return registro;
@@ -60,9 +54,9 @@ std::string ArchivoJugadores::listarRegistro(){
 void ArchivoJugadores::vaciar(){
     FILE* p = fopen(nombre.c_str(), "wb");///abre al archivo y como el archivo ya existe su contenido sera borrado
     if (p == nullptr) {
-        cout << "Error al vaciar el archivo." << endl;
+        cout<<"Error al vaciar el archivo."<<endl;
         return;
     }
-    fclose(p);///cierra el archivo
-    cout << "Se eliminaron todos los registros." << endl;
+    fclose(p);
+    cout<<"Se eliminaron todos los registros."<<endl;
 }
