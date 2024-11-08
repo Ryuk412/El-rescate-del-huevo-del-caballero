@@ -4,6 +4,7 @@
 #include <SFML/System.hpp>
 using namespace std;
 using namespace sf;
+#include "Menu.h"
 
 int main()
 {
