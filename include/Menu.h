@@ -17,8 +17,8 @@ public:
 private:
     sf::Texture _fondoTextura;
     sf::Sprite _fondo;
-    Jugar _jugar;
     sf::RenderWindow& _window; // Referencia a la ventana principal
+    Jugar _jugar;
 
     Creditos _creditos;
     Opciones _opciones;

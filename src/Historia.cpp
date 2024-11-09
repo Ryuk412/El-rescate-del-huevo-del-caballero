@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-Historia::Historia(sf::RenderWindow& window) : _window(window)
+Historia::Historia(sf::RenderWindow& window) : _window(window),gameLoop(window)
 {
     _historiaTextura.loadFromFile("menu/historia.png");
     _historiaSprite.setTexture(_historiaTextura);
@@ -26,10 +26,10 @@ void Historia::procesarEventoEntrada(sf::Event &evento) {
 
         if (_enHistoria){
             if (_empezarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                game game;
-                while (game.isRunning()) {
-                    game.update();
-                    game.render();
+
+                while (gameLoop.isRunning()) {
+                    gameLoop.update();
+                    gameLoop.render();
                 }
 
                 _enPausa = false;

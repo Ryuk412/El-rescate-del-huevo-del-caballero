@@ -26,7 +26,7 @@ private:
     bool _volver = false;
 
 public:
-    NuevaPartida();
+    NuevaPartida(sf::RenderWindow& window);
     void procesarEventoEntrada(sf::Event &evento);
     sf::RectangleShape getVolverHitbox();
     void setVolver(bool volver);

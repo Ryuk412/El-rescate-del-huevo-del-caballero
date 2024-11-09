@@ -5,7 +5,7 @@ using namespace std;
 
 int main(){
 
-    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate m�gico: El rescate del huevo del caballero");
+    sf::RenderWindow ventana(sf::VideoMode(800, 600), "Rescate magico: El rescate del huevo del caballero");
     Menu menuPrincipal(ventana);
 
     while(ventana.isOpen()){

@@ -22,7 +22,7 @@ private:
     sf::RenderWindow& _window;
 
     Pausa _pausa;
-
+    game gameLoop;
     bool _enMenu = false;
     bool _enHistoria = true;
     bool _enEmpezar = false;

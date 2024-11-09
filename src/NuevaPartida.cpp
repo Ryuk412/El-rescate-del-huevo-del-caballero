@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-NuevaPartida::NuevaPartida(){
+NuevaPartida::NuevaPartida(sf::RenderWindow& window):_historia(window){
 
     _nuevaPartidaTextura.loadFromFile("menu/nueva_partida.png");
     _nuevaPartidaSprite.setTexture(_nuevaPartidaTextura);

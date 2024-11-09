@@ -2,13 +2,13 @@
 
      mapa mapaTest;
 
-game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+game::game(sf::RenderWindow& window) {
 
      // Espera hasta que el mapa esté completamente cargado antes de continuar
-    while (!mapaTest.mapaCargado()) {
+    /*while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
-    }
+    }*/
 
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
@@ -25,17 +25,18 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
 game::~game(){}
 
 const bool game::isRunning() const {
-    return window.isOpen();
+    /*return window.isOpen();*/
+    return true;
 
 }
 
 void game::updateEvent(){
-    while(window.pollEvent(evento)){
+    /*while(window.pollEvent(evento)){
             if (evento.type == sf::Event::Closed){
                 window.close();
             }
 
-    }
+    }*/
 }
 
 
@@ -45,7 +46,7 @@ void game::updateEvent(){
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(){
 
-    updateEvent();
+   /* updateEvent();*/
 
     if(corazon.getActive()==false){
        corazon.respawn();
@@ -72,11 +73,11 @@ void game::update(){
 
 
     // Actualizar la vista en la ventana
-    window.setView(camara);
+   /* window.setView(camara);
     if(ejemplo.isCollision(star) ) {
             contador+=20;
             star.setActive(false);
-        }
+        }*/
 
 
     if(ejemplo.isCollision(corazon) ) {
@@ -94,11 +95,10 @@ void game::update(){
 
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-
-
+}
 //Todas las visualizaciones
 void game::render(){
-        window.clear();
+     /*   window.clear();
 
         mapaTest.dibujar(window);
 
@@ -107,6 +107,6 @@ void game::render(){
         window.draw(star);
         window.draw(textoTest);
 
-        window.display();
+        window.display();*/
 
 }
