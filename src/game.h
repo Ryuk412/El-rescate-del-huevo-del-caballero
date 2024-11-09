@@ -10,7 +10,7 @@
 #include <iostream>
 #include <vector>
 #include "Jefe.h"
-#include "pj.h"
+#include "clsPJ.h"
 #include "Item.h"
 #include "mapa.h"
 #include "enemigoEsqueleto.h"
@@ -22,8 +22,6 @@
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
-
-        sf::RenderWindow& window;
 
         sf::Event evento;
         sf::View camara;
@@ -42,14 +40,14 @@ class game{
 
     public:
     //Constructor y destructor
-        game();
+        game(sf::RenderWindow& window);
         virtual ~game();
     //Nexo entre game y main:
-        const bool isRunning() const;
+        const bool isRunning(sf::RenderWindow& window) const;
     //Funciones:
-        void updateEvent();
-        void update();
-        void render();
+        void updateEvent(sf::RenderWindow& window);
+        void update(sf::RenderWindow& window);
+        void render(sf::RenderWindow& window);
 
 };
 

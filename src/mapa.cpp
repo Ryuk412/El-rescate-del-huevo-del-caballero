@@ -1,9 +1,9 @@
 #include "mapa.h"
 #include <iostream>
 
-// Implementaci贸n del constructor
+// Implementaci髇 del constructor
 mapa::mapa() {
-    // Inicia el hilo para cargar el mapa de forma as铆ncrona
+    // Inicia el hilo para cargar el mapa de forma as韓crona
     std::thread hiloCarga(&mapa::cargarMapaEnHilo, this);
     hiloCarga.detach();  // Desconectar el hilo para que cargue de fondo
 }
@@ -27,7 +27,7 @@ void mapa::cargarMapaEnHilo() {
 mapa::~mapa(){
     _hitbox.clear();
 }
-// Implementaci贸n del m茅todo para cargar el mapa
+// Implementaci髇 del m閠odo para cargar el mapa
 void mapa::cargarMapa() {
     switch(_nivel){
     case 1:
@@ -66,7 +66,7 @@ case 3:
     break;
     }
 }
-// Implementaci贸n del m茅todo para configurar la estructura de la hitbox
+// Implementaci髇 del m閠odo para configurar la estructura de la hitbox
 bool mapa::cargarEstructura() {
     //Crear la estructura del terreno segun el nivel
     switch(_nivel){
@@ -173,12 +173,12 @@ bool mapa::cargarNivel3(){
 
 bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
 
-    _hitbox[vecPos].setSize({w,h}); // Define el tama帽o en pixeles del rectangulo
+    _hitbox[vecPos].setSize({w,h}); // Define el tama駉 en pixeles del rectangulo
     _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
     _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
     return true;
 }
-// Limpia el vector y le reasigna el tama帽o
+// Limpia el vector y le reasigna el tama駉
 void mapa::inicializarVector(int tam){
     _hitbox.clear();
     _hitbox.resize(tam);
@@ -193,7 +193,7 @@ void mapa::setNivel(int nivel){
  int mapa::getNivel(){
  return _nivel;
  }
-// M茅todo para dibujar el mapa en la ventana
+// M閠odo para dibujar el mapa en la ventana
 void mapa::dibujar(sf::RenderWindow& ventana) {
 
      ventana.draw(_Smapa); // Dibujar mapa
@@ -205,13 +205,13 @@ void mapa::dibujarHitbox(sf::RenderWindow& ventana){
     ventana.draw(_hitbox[j]);
      }
 }
-    // M茅todo para verificar colisiones
+    // M閠odo para verificar colisiones
 bool mapa::verificarColision(const sf::RectangleShape& objeto) {
     for (int i=0;i<35;i++) { // Recorre el vector buscando colision
         if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())) {
-            return true; // Colisi贸n detectada
+            return true; // Colisi髇 detectada
         }
     }
-    return false; // No hay colisi贸n
+    return false; // No hay colisi髇
 }
 

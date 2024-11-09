@@ -3,12 +3,12 @@
 #include <cstring>
 using namespace std;
 
-///getters(metodos q nos permiten acceder a los valores de los atributos privados de la clase jugador)
+//getters(metodos q nos permiten acceder a los valores de los atributos privados de la clase jugador)
 std::string Jugador::getNombre()const {return _nombre;}
 int Jugador::getPuntaje()const {return _puntaje;}
 int Jugador::getNivel()const {return _nivel;}
 
-///setters(metodos que nos permiten modificar los valores de los atributos privados)
+//setters(metodos que nos permiten modificar los valores de los atributos privados)
 void Jugador::setNombre(const std::string &n){_nombre = n;}
 void Jugador::setPuntaje(int p){_puntaje = p;}
 void Jugador::setNivel(int nv){ _nivel = nv;}
@@ -19,7 +19,7 @@ void Jugador::Mostrar() const{
     cout<<"Nivel: "<<_nivel<<endl;
 }
 
-/// guarda los datos del jugador en el archivo
+// guarda los datos del jugador en el archivo
 void Jugador::escribirEnArchivo(FILE *pArchivo)const{ ///recibe como parametro el puntero de archivo
 
     size_t longitud = _nombre.length();///longitud del nombre

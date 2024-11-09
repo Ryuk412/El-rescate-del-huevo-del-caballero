@@ -1,14 +1,6 @@
 #ifndef ENEMIGOESQUELETO_H_INCLUDED
 #define ENEMIGOESQUELETO_H_INCLUDED
-#include <cstdlib>
-#include <stdio.h>
-#include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
-#include "colisionable.h"
-#include <stdlib.h>
-#include <iostream>
+#include "inc.h"
 
 class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     public:
@@ -28,7 +20,7 @@ class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     int _direccion=-1;
     sf::Sprite esq_sprite;
     sf::Texture _textureEsq;
-    sf::Vector2f esq_velocity={};
+    sf::Vector2f esq_velocity={0,0};
     float _frame=0;
     float _frame2=0;
     int esq_vida;

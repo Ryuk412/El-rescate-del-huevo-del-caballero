@@ -1,95 +1,45 @@
-#include <iostream>
 #include "Opciones.h"
 
+#include <iostream>
 using namespace std;
 
-Opciones::Opciones(){
-    _opcionesTextura.loadFromFile("menu/opciones.png");
-    _opciones.setTexture(_opcionesTextura);
-    _opciones.setPosition(0,0);
+void opcionesMenu(sf::RenderWindow& window){
 
-    _comoJugarHitbox.setSize(sf::Vector2f(320, 56));
-    _comoJugarHitbox.setPosition(243, 314);
-    _comoJugarHitbox.setFillColor(sf::Color::Transparent);
-    _comoJugarHitbox.setOutlineColor(sf::Color::Blue);
-    _comoJugarHitbox.setOutlineThickness(2);
+    Boton comoJugar(290, 225, 220, 70, "CÓMO JUGAR");
+    Boton eliminarPartidas(290, 310, 220, 70, "ELIMINAR PARTIDAS");
+    Boton volver(290, 440, 220, 70, " ");
 
-    _eliminarPartidasHitbox.setSize(sf::Vector2f(320, 55));
-    _eliminarPartidasHitbox.setPosition(243, 402);
-    _eliminarPartidasHitbox.setFillColor(sf::Color::Transparent);
-    _eliminarPartidasHitbox.setOutlineColor(sf::Color::Green);
-    _eliminarPartidasHitbox.setOutlineThickness(2);
+    sf::Texture texture;
+    if (!texture.loadFromFile("menu/opciones.png")){return;}
 
-    _volverHitbox.setSize(sf::Vector2f(70, 20));
-    _volverHitbox.setPosition(365, 485);
-    _volverHitbox.setFillColor(sf::Color::Transparent);
+    while (window.isOpen()){
+        sf::Event event;
 
-
-    _fuente.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
-
-    _comoJugarTexto.setFont(_fuente);
-    _comoJugarTexto.setString("COMO JUGAR");
-    _comoJugarTexto.setCharacterSize(28);
-    _comoJugarTexto.setFillColor(sf::Color::White);
-    _comoJugarTexto.setPosition(320, 322);
-
-    _eliminarPartidasTexto.setFont(_fuente);
-    _eliminarPartidasTexto.setString("ELIMINAR PARTIDAS");
-    _eliminarPartidasTexto.setCharacterSize(28);
-    _eliminarPartidasTexto.setFillColor(sf::Color::White);
-    _eliminarPartidasTexto.setPosition(274, 411);
-
-}
-
-void Opciones::procesarEventoEntrada(sf::Event &evento){
-
-    /// maneja los eventos del mouse sobre las hitboxes
-    if(evento.type == sf::Event::MouseButtonPressed){
-
-        if(_enOpcionesMenu){
-
-            if(_comoJugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                _enComoJugar = true;
-                _enOpcionesMenu = false;
+        while (window.pollEvent(event)){
+            if (event.type == sf::Event::Closed){
+                window.close();
             }
-            else if(_eliminarPartidasHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-               ///vaciar archivo (completo)
-               _archivo.vaciar();
-            }
-            else if(_volverHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                _volver = true;
-            }
-        }
+            if (event.type == sf::Event::MouseButtonPressed) {
 
-        if(_enComoJugar){
-                _comoJugar.procesarEventoEntrada(evento);
-                if (_comoJugar.getVolverHitbox().getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-                    _enComoJugar = false;
-                    _enOpcionesMenu = true;
+                if (volver.MouseClick(window)){return;}
+
+                if (comoJugar.MouseClick(window)) {
+                    cout << "Mostrar tutorial de cómo jugar" << endl;
+                    // Aquí puedes agregar la lógica para mostrar el tutorial de cómo jugar
                 }
+                if (eliminarPartidas.MouseClick(window)) {
+                    cout << "Eliminar partidas guardadas" << endl;
+                    // Aquí puedes agregar la lógica para eliminar las partidas guardadas
+                }
+
+            }
         }
+        window.clear();
+        sf::Sprite sprite(texture);
+        window.draw(sprite);
+        comoJugar.draw(window);
+        eliminarPartidas.draw(window);
+        volver.draw(window);
+        window.display();
     }
-}
-
-sf::RectangleShape Opciones::getVolverHitbox(){return _volverHitbox;}
-void Opciones::setVolver(bool volver){_volver=volver;}
-bool Opciones::getVolver(){return _volver;}
-
-void Opciones::dibujar(sf::RenderWindow &ventana){
-
-    ventana.clear();
-    ventana.draw(_opciones);
-
-    if (_enOpcionesMenu){
-        ventana.draw(_comoJugarHitbox);
-        ventana.draw(_eliminarPartidasHitbox);
-        ventana.draw(_volverHitbox);
-        ventana.draw(_comoJugarTexto);
-        ventana.draw(_eliminarPartidasTexto);
-    }
-
-    if(_enComoJugar){
-        _comoJugar.dibujar(ventana);
-    }
-
 }

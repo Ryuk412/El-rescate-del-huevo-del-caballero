@@ -2,9 +2,8 @@
 
      mapa mapaTest;
 
-game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballero",sf::Style::Default) {
+game::game(sf::RenderWindow& window){
 
-     // Espera hasta que el mapa est√© completamente cargado antes de continuar
     while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
@@ -13,23 +12,23 @@ game::game() : window(sf::VideoMode(800, 600), "El rescate del huevo del caballe
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
-    font.loadFromFile("src/arial.ttf");
+    font.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
     textoTest.setFont(font);
-    textoTest.setPosition(0,200);
-    textoTest.setColor(sf::Color::Black);
+    textoTest.setPosition(30,25);
+    textoTest.setFillColor(sf::Color::White);
     contador=0;
-    textoTest.setCharacterSize(15);
+    textoTest.setCharacterSize(30);
 
 }
 
 game::~game(){}
 
-const bool game::isRunning() const {
+const bool game::isRunning(sf::RenderWindow& window) const {
     return window.isOpen();
 
 }
 
-void game::updateEvent(){
+void game::updateEvent(sf::RenderWindow& window){
     while(window.pollEvent(evento)){
             if (evento.type == sf::Event::Closed){
                 window.close();
@@ -42,10 +41,10 @@ void game::updateEvent(){
 
 
 
-//Toda las verificaiones y los updates de cada objeto van ac√É¬°
-void game::update(){
+//Toda las verificaiones y los updates de cada objeto van ac√°
+void game::update(sf::RenderWindow& window){
 
-    updateEvent();
+    updateEvent(window);
 
     if(corazon.getActive()==false){
        corazon.respawn();
@@ -57,16 +56,16 @@ void game::update(){
     }
     ejemplo.update(mapaTest);
 
-    // Verificar si el personaje ha pasado el l√≠mite para mover la c√°mara
+    // Verificar si el personaje ha pasado el lÌmite para mover la c·mara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
             camara.setCenter(ejemplo.getPositionX(), camara.getCenter().y);
         } else {
-            // Si el personaje est√° antes del l√≠mite, la c√°mara se queda al inicio
+            // Si el personaje est· antes del lÌmite, la c·mara se queda al inicio
             camara.setCenter(limiteCamaraIzq, camara.getCenter().y);
         }
         if (ejemplo.getPositionX() > limiteCamaraDer && ejemplo.getPositionX() > limiteCamaraIzq) {
-            // Si el personaje est√° antes del l√≠mite, la c√°mara se queda al inicio
+            // Si el personaje est· antes del lÌmite, la c·mara se queda al inicio
             camara.setCenter(limiteCamaraDer, camara.getCenter().y);
         }
 
@@ -95,9 +94,9 @@ void game::update(){
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 
-
+}
 //Todas las visualizaciones
-void game::render(){
+void game::render(sf::RenderWindow& window){
         window.clear();
 
         mapaTest.dibujar(window);

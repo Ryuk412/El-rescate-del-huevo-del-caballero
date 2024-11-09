@@ -1,3 +1,5 @@
+// NuevaPartida.h
+
 #ifndef NUEVAPARTIDA_H
 #define NUEVAPARTIDA_H
 

@@ -12,7 +12,7 @@
 #include <SFML/System.hpp>
 #include <SFML/System/Time.hpp>
 #include <SFML/Window.hpp>
-#include "colisionable.h"
+#include "clsColissionable.h"
 
 // Typical stdafx.h
 #include <algorithm>

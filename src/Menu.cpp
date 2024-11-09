@@ -1,115 +1,71 @@
-#include "menu.h"
+#include "Menu.h"
+#include <SFML/Graphics.hpp>
+#include <iostream>
+using namespace std;
 
-Menu::Menu(sf::RenderWindow& window) : _window(window) , _jugar(_window)
-{
-    _fondoTextura.loadFromFile("menu/menu_principal.png");
-    _fondo.setTexture(_fondoTextura);
-    _musica.reproducir(); /// inicia la reproduccion de la musica
+int menu(){
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Rescate magico: El rescate del huevo del caballero");
 
-    _jugarHitbox.setSize(sf::Vector2f(200, 55));
-    _jugarHitbox.setPosition(300, 240);
-    _jugarHitbox.setFillColor(sf::Color::Transparent);
+    Boton menu1(290, 235, 220, 70, "JUGAR");
+    Boton menu2(290, 320, 220, 70, "OPCIONES");
+    Boton menu3(290, 410, 220, 70, "CREDITOS");
+    Boton menu4(290, 495, 220, 70, "SALIR");
 
-    _opcionesHitbox.setSize(sf::Vector2f(200, 55));
-    _opcionesHitbox.setPosition(300, 328);
-    _opcionesHitbox.setFillColor(sf::Color::Transparent);
+    sf::Texture texture;
+    if (!texture.loadFromFile("menu/menu.png")){return -1;}
 
-    _creditosHitbox.setSize(sf::Vector2f(200, 55));
-    _creditosHitbox.setPosition(300, 415);
-    _creditosHitbox.setFillColor(sf::Color::Transparent);
+    sf::Music musica;
+    if (!musica.openFromFile("menu/musica/musica_menu.mp3")){return -2;}
+    musica.setLoop(true);
+    musica.play();
 
-    _salirHitbox.setSize(sf::Vector2f(200, 55));
-    _salirHitbox.setPosition(300, 500);
-    _salirHitbox.setFillColor(sf::Color::Transparent);
+    bool enJugar=0;
+    bool enOpciones=0;
+    bool enCreditos=0;
 
-    _fuente.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
+    while (window.isOpen()){
+        sf::Event event;
 
-    _jugarTexto.setFont(_fuente);
-    _jugarTexto.setString("JUGAR");
-    _jugarTexto.setCharacterSize(28);
-    _jugarTexto.setFillColor(sf::Color::White);
-    _jugarTexto.setPosition(357, 252);
+        while (window.pollEvent(event)){
+            if (event.type == sf::Event::Closed){window.close();}
 
-    _opcionesTexto.setFont(_fuente);
-    _opcionesTexto.setString("OPCIONES");
-    _opcionesTexto.setCharacterSize(28);
-    _opcionesTexto.setFillColor(sf::Color::White);
-    _opcionesTexto.setPosition(337, 337);
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (menu1.MouseClick(window)){
+                        enJugar=1;}
 
-    _creditosTexto.setFont(_fuente);
-    _creditosTexto.setString("CRÉDITOS");
-    _creditosTexto.setCharacterSize(28);
-    _creditosTexto.setFillColor(sf::Color::White);
-    _creditosTexto.setPosition(338, 423);
+                if (menu2.MouseClick(window)){enOpciones=1;}
+                if (menu3.MouseClick(window)){enCreditos=1;}
 
-    _salirTexto.setFont(_fuente);
-    _salirTexto.setString("SALIR");
-    _salirTexto.setCharacterSize(28);
-    _salirTexto.setFillColor(sf::Color::White);
-    _salirTexto.setPosition(360, 508);
-}
-
-void Menu::procesarEventoEntrada(sf::Event &evento){
-
-    _musica.procesarEventoEntrada(evento);
-
-    if(_enJugar){
-            _jugar.procesarEventoEntrada(evento);
-            if (_jugar.getVolver()){
-                _enJugar = false;
-                _jugar.setVolver(false);
-            }
-    }
-    else if(_enOpciones){
-            _opciones.procesarEventoEntrada(evento);
-            if (_opciones.getVolver()) {
-                _enOpciones = false;
-                _opciones.setVolver(false);
-            }
-    }else if (_enCreditos) {
-        _creditos.procesarEventoEntrada(evento);
-        if (_creditos.getVolver()) {
-            _enCreditos = false;
-            _creditos.setVolver(false);
-        }
-    }
-
-    else{
-        if(evento.type == sf::Event::MouseButtonPressed){
-
-            if (_jugarHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enJugar = true;
-            } else if (_opcionesHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enOpciones = true;
-            } else if (_creditosHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _enCreditos = true;
-            } else if (_salirHitbox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)) {
-                _musica.detener();
-                exit(0);
+                if (menu4.MouseClick(window)){
+                        musica.stop();
+                        return 0;}
             }
         }
+        window.clear();
+
+        if(enJugar){
+            jugarMenu(window);
+            enJugar=0;
+        }
+        if(enOpciones){
+            opcionesMenu(window);
+            enOpciones=0;
+        }
+        if(enCreditos){
+            creditosMenu(window);
+            enCreditos=0;
+        }
+
+        sf::Sprite sprite(texture);
+        window.draw(sprite);
+        menu1.draw(window);
+        menu2.draw(window);
+        menu3.draw(window);
+        menu4.draw(window);
+
+        window.display();
     }
 
+    return 0;
 }
 
-void Menu::dibujar(sf::RenderWindow &ventana){
-
-    ventana.clear();
-    ventana.draw(_fondo);
-
-     if(!_enJugar && !_enOpciones && !_enCreditos){
-        ventana.draw(_jugarHitbox);
-        ventana.draw(_opcionesHitbox);
-        ventana.draw(_creditosHitbox);
-        ventana.draw(_salirHitbox);
-    }
-
-    ventana.draw(_jugarTexto);
-    ventana.draw(_opcionesTexto);
-    ventana.draw(_creditosTexto);
-    ventana.draw(_salirTexto);
-
-    if(_enJugar){_jugar.dibujar(ventana);}
-    else if(_enOpciones){_opciones.dibujar(ventana);}
-    else if(_enCreditos){_creditos.dibujar(ventana);}
-}

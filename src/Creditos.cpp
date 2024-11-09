@@ -1,28 +1,31 @@
 #include "Creditos.h"
 
-Creditos::Creditos(){
-    _creditosTextura.loadFromFile("menu/creditos.png");
-    _creditos.setTexture(_creditosTextura);
-    _creditos.setPosition(0,0);
+#include <iostream>
+using namespace std;
 
-    _volverHitBox.setSize(sf::Vector2f(70, 20));
-    _volverHitBox.setPosition(365, 529);
-    _volverHitBox.setFillColor(sf::Color::Transparent);
-}
+void creditosMenu(sf::RenderWindow& window){
+    Boton volver(290, 440, 227, 70, " ");
 
-void Creditos::procesarEventoEntrada(sf::Event &evento){
-    if(evento.type == sf::Event::MouseButtonPressed){
-        if(_volverHitBox.getGlobalBounds().contains(evento.mouseButton.x, evento.mouseButton.y)){
-            _volver=true;
+    sf::Texture texture;
+    if (!texture.loadFromFile("menu/creditos.png")){return;}
+
+    while (window.isOpen()){
+        sf::Event event;
+
+        while (window.pollEvent(event)){
+            if (event.type == sf::Event::Closed){
+                window.close();
+            }
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (volver.MouseClick(window)){return;}
+            }
         }
+
+        window.clear();
+        sf::Sprite sprite(texture);
+        window.draw(sprite);
+        volver.draw(window);
+
+        window.display();
     }
-}
-
-sf::RectangleShape Creditos::getVolverHitbox(){return _volverHitBox;}
-void Creditos::setVolver(bool volver){_volver=volver;}
-bool Creditos::getVolver(){return _volver;}
-
-void Creditos::dibujar(sf::RenderWindow &ventana){
-    ventana.draw(_creditos);
-    ventana.draw(_volverHitBox);
 }
