@@ -1,7 +1,6 @@
 #ifndef COLISIONABLE_H_INCLUDED
 #define COLISIONABLE_H_INCLUDED
 #include <SFML/Graphics.hpp>
-//Clase encargada de administar las colisiones
 class colisionable{
 
 public:

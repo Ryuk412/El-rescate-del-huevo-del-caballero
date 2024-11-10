@@ -1,34 +1,32 @@
 #include "mapa.h"
 #include <iostream>
 
-// Implementación del constructor
-mapa::mapa() {
-    // Inicia el hilo para cargar el mapa de forma asíncrona
+mapa::mapa(){
+
     std::thread hiloCarga(&mapa::cargarMapaEnHilo, this);
-    hiloCarga.detach();  // Desconectar el hilo para que cargue de fondo
+    hiloCarga.detach();
 }
 void mapa::cargarTexturaMapa(){
-    // Cargar la textura
-    if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
-        std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
-    }
-    if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
-    }
-    // Valor del vector cambiado
+
+    if(!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")){std::cerr<<"error de carga: mapa 1 (mapa.cpp)"<<std::endl;}
+    if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){std::cout<<"error de carga: mapa 2 (mapa.cpp)"<<std::endl;}
+
     _hitbox.resize(35);
     cargarEstructura();
     cargarMapa();
     _cargado=true;
 }
-void mapa::cargarMapaEnHilo() {
-    cargarTexturaMapa();  // Ejecuta la carga
+
+void mapa::cargarMapaEnHilo(){
+    cargarTexturaMapa();
 }
+
 mapa::~mapa(){
     _hitbox.clear();
 }
-// Implementación del método para cargar el mapa
-void mapa::cargarMapa() {
+
+
+void mapa::cargarMapa(){
     switch(_nivel){
     case 1:
         _Smapa.setTexture(_nivel1);
@@ -38,54 +36,50 @@ void mapa::cargarMapa() {
         break;
     }
 }
-// Implementacion del metodo para cambiar la textura del mapa segun el nivel
+
 void mapa::setTextMapa(int numero){
+
     switch(numero){
-case 1:
-    // Desarrollo del cambio de textura
-    _nivel=1;
-    if(!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 1" << std::endl;
-    }
-    cargarMapa();
-    break;
-case 2:
-    // Desarrollo del cambio de textura
-    _nivel=2;
-    if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
-    }
-    cargarMapa();
-    break;
-case 3:
-    // Desarrollo del cambio de textura
-    if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
-    }
-    cargarMapa();
-    break;
+        case 1:
+            _nivel=1;
+            if(!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")){std::cout<<"error de carga: mapa nv 1"<<std::endl;}
+            cargarMapa();
+            break;
+
+        case 2:
+            _nivel=2;
+            if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){std::cout<<"error de carga: mapa nv 2"<<std::endl;}
+            cargarMapa();
+            break;
+
+        case 3:
+            if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){std::cout<<"error de carga: mapa nv 3"<<std::endl;}
+            cargarMapa();
+            break;
     }
 }
-// Implementación del método para configurar la estructura de la hitbox
-bool mapa::cargarEstructura() {
-    //Crear la estructura del terreno segun el nivel
-    switch(_nivel){
-case 1:
-    setTextMapa(1);
-    cargarNivel1();
-    break;
-case 2:
-    setTextMapa(2);
-    cargarNivel2();
-    break;
-case 3:
-    break;
-    }
 
+bool mapa::cargarEstructura(){
+
+    switch(_nivel){
+
+        case 1:
+            setTextMapa(1);
+            cargarNivel1();
+            break;
+
+        case 2:
+            setTextMapa(2);
+            cargarNivel2();
+            break;
+
+        case 3:
+            break;
+    }
 
     return true;
 }
-// Metodo para cargar hitboxes del nivel 1
+
 bool mapa::cargarNivel1(){
 
       inicializarVector(25);
@@ -104,7 +98,7 @@ bool mapa::cargarNivel1(){
       cargarHitbox(12,199.0f,27.0f,122.0f,557.0f);
       cargarHitbox(13,117.0f,30.0f,2.0f,529.0f);
       cargarHitbox(14,27.0f,113.0f,1.0f,415.0f);
-      cargarHitbox(15,47.0f,29.0f,29.0f,419.0f);//
+      cargarHitbox(15,47.0f,29.0f,29.0f,419.0f);
       cargarHitbox(16,213.0f,40.0f,694.0f,505.0f);
       cargarHitbox(17,167.0f,40.0f,798.0f,337.0f);
       cargarHitbox(18,71.0f,13.0f,971.0f,194.0f);
@@ -116,7 +110,8 @@ bool mapa::cargarNivel1(){
       cargarHitbox(24,207.0f,131.0f,1393.0f,375.0f);
       return true;
 }
-// Metodo para cargar hitboxes del nivel 2
+
+
 bool mapa::cargarNivel2(){
     inicializarVector(35);
     cargarHitbox(0,195.0f, 80.0f, 40.0f, 422.0f);
@@ -165,7 +160,8 @@ bool mapa::cargarNivel2(){
     cargarHitbox(31,20.0f, 5.0f, 1440.0f, 110.0f);
     return true;
 }
-// Metodo para cargar hitboxes del nivel 3
+
+
 bool mapa::cargarNivel3(){
     inicializarVector(25);
     return true;
@@ -173,17 +169,19 @@ bool mapa::cargarNivel3(){
 
 bool mapa::cargarHitbox(int vecPos,float w,float h,float x,float y){
 
-    _hitbox[vecPos].setSize({w,h}); // Define el tamaño en pixeles del rectangulo
-    _hitbox[vecPos].setPosition({x,y}); // Setea la posicion del rectangulo en la pantalla
-    _hitbox[vecPos].setFillColor(sf::Color::Blue); // Para poder ver las hitboxes, borrar despues
+    _hitbox[vecPos].setSize({w,h});
+    _hitbox[vecPos].setPosition({x,y});
+    _hitbox[vecPos].setFillColor(sf::Color::Blue);
     return true;
 }
-// Limpia el vector y le reasigna el tamaño
+
+
 void mapa::inicializarVector(int tam){
     _hitbox.clear();
     _hitbox.resize(tam);
 }
-// Metodo para establecer el valor de la variable _nivel
+
+
 void mapa::setNivel(int nivel){
     if(_nivel==2){
     _nivel=1;
@@ -193,25 +191,29 @@ void mapa::setNivel(int nivel){
  int mapa::getNivel(){
  return _nivel;
  }
-// Método para dibujar el mapa en la ventana
-void mapa::dibujar(sf::RenderWindow& ventana) {
 
-     ventana.draw(_Smapa); // Dibujar mapa
-     dibujarHitbox(ventana); // Llamado al metodo dibujar hitbox
+
+void mapa::dibujar(sf::RenderWindow& ventana){
+
+     ventana.draw(_Smapa);
+     dibujarHitbox(ventana);
 }
-    // Metodo para Dibujar la hitbox
+
+
 void mapa::dibujarHitbox(sf::RenderWindow& ventana){
-    for(int j=0; j<_hitbox.size();j++){ // Recorre el vector
+    for(int j=0; j<_hitbox.size();j++){
     ventana.draw(_hitbox[j]);
      }
 }
-    // Método para verificar colisiones
-bool mapa::verificarColision(const sf::RectangleShape& objeto) {
-    for (int i=0;i<35;i++) { // Recorre el vector buscando colision
-        if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())) {
-            return true; // Colisión detectada
+
+
+bool mapa::verificarColision(const sf::RectangleShape& objeto){
+
+    for (int i=0;i<35;i++) {
+        if (_hitbox[i].getGlobalBounds().intersects(objeto.getGlobalBounds())){
+            return true;
         }
     }
-    return false; // No hay colisión
+    return false;
 }
 

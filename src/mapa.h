@@ -2,53 +2,40 @@
 #define MAPA_H
 #include "inc.h"
 
+class mapa{
 
-class mapa  {
 public:
-    // Constructor que carga el mapa
     mapa();
     ~mapa();
-    // Nueva función que se encargará de cargar el mapa en un hilo
     void cargarMapaEnHilo();
-    // Método para verificar si el mapa está cargado
-    bool mapaCargado() const { return _cargado; }
-    // Metodo para generar la estructura
+    bool mapaCargado() const{return _cargado;}
     bool cargarEstructura();
-    // Método para dibujar el mapa en la ventana de SFML
     void dibujar(sf::RenderWindow& ventana);
-    // Metodo para cargar la textura del mapa
     void cargarTexturaMapa();
-    // Metodo para crear una hitbox
-    bool cargarHitbox(int vecPos,float w,float h,float x, float y);
-    // Metodo para dibujar hitbox
+    bool cargarHitbox(int vecPos, float w, float h, float x, float y);
     void dibujarHitbox(sf::RenderWindow& ventana);
-    // Metodo para verificar la colision
     bool verificarColision(const sf::RectangleShape& objeto);
-    // Metodo para cambiar el nivel
     void setNivel(int nivel);
-    // Metodo para cambiar la textura del mapa
     void setTextMapa(int nivel);
-    // Metodos para cargar la estructura de los niveles
     bool cargarNivel1();
     bool cargarNivel2();
     bool cargarNivel3();
-    // Metodo para setearle dinamicamente tamaño al vector
     void inicializarVector(int tam);
     int getNivel();
 
 private:
-    sf::Texture _mapa;        // Textura del mapa
-    sf::Sprite _Smapa;        // Sprite del mapa
-    sf::Texture _nivel1;      // Textura nivel 1
-    sf::Texture _nivel2;      // Textura nivel 2
-    sf::Texture _nivel3;      // Textura nivel 3
+    sf::Texture _mapa;
+    sf::Sprite _Smapa;
+    sf::Texture _nivel1;
+    sf::Texture _nivel2;
+    sf::Texture _nivel3;
 
-    std::atomic<bool> _cargado{false};  // Bandera de carga
+    std::atomic<bool> _cargado{false};
 
-    int _nivel=1;
-    std::vector<sf::RectangleShape> _hitbox;  // Terreno
-    bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
-    void cargarMapa(); // Método para cargar el mapa
+    int _nivel = 1;
+    std::vector<sf::RectangleShape> _hitbox;
+    bool _dibujado = false;
+    void cargarMapa();
 };
 
 #endif // MAPA_H

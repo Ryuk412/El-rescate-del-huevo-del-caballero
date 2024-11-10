@@ -12,7 +12,7 @@
 
 class enemigo:  public sf::Drawable, public colisionable
 {
-    public:
+public:
 
     enemigo();
     void update();
@@ -23,7 +23,7 @@ class enemigo:  public sf::Drawable, public colisionable
     bool isAlive();
     void danioRecibido(int danio);
 
-    private:
+private:
 
     sf::RectangleShape en_hitbox;
     int _direccion=-1;

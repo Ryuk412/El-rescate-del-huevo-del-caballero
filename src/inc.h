@@ -1,5 +1,4 @@
 #pragma once
-// SFML
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/Graphics/Drawable.hpp>
@@ -14,7 +13,6 @@
 #include <SFML/Window.hpp>
 #include "clsColissionable.h"
 
-// Typical stdafx.h
 #include <algorithm>
 #include <array>
 #include <atomic>
@@ -47,5 +45,5 @@
 #include <vector>
 
 
-// Mapa
+
 #include "mapa.h"

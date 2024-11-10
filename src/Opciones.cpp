@@ -16,6 +16,7 @@ void opcionesMenu(sf::RenderWindow& window){
         sf::Event event;
 
         while (window.pollEvent(event)){
+
             if (event.type == sf::Event::Closed){
                 window.close();
             }
@@ -23,13 +24,11 @@ void opcionesMenu(sf::RenderWindow& window){
 
                 if (volver.MouseClick(window)){return;}
 
-                if (comoJugar.MouseClick(window)) {
-                    cout << "Mostrar tutorial de cómo jugar" << endl;
-                    // Aquí puedes agregar la lógica para mostrar el tutorial de cómo jugar
+                if (comoJugar.MouseClick(window)){
+                    cout<<"menu como jugar"<<endl;
                 }
-                if (eliminarPartidas.MouseClick(window)) {
-                    cout << "Eliminar partidas guardadas" << endl;
-                    // Aquí puedes agregar la lógica para eliminar las partidas guardadas
+                if (eliminarPartidas.MouseClick(window)){
+                    cout<<"menu eliminar partida"<<endl;
                 }
 
             }

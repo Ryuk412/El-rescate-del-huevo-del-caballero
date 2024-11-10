@@ -17,37 +17,32 @@
 #include "enemigoSlime.h"
 #include "itemPuntos.h"
 
-//Clase que funciona como el game engine.
-
 class game{
-    private:
-    //Variables que solo la clase game puede tener acceso:
 
-        sf::Event evento;
-        sf::View camara;
+private:
 
-        pj ejemplo;
-        Item corazon;
-        int contador;
-        itemPuntos star;
-        sf::Font font;
-        sf::Text textoTest;
-        float limiteCamaraIzq=400;
-        float limiteCamaraDer=1200;
+    sf::Event evento;
+    sf::View camara;
 
-        sf::Sprite _nv;
-        sf::Texture _textura;
+    pj ejemplo;
+    Item corazon;
+    int contador;
+    itemPuntos star;
+    sf::Font font;
+    sf::Text textoTest;
+    float limiteCamaraIzq=400;
+    float limiteCamaraDer=1200;
 
-    public:
-    //Constructor y destructor
-        game(sf::RenderWindow& window);
-        virtual ~game();
-    //Nexo entre game y main:
-        const bool isRunning(sf::RenderWindow& window) const;
-    //Funciones:
-        void updateEvent(sf::RenderWindow& window);
-        void update(sf::RenderWindow& window);
-        void render(sf::RenderWindow& window);
+    sf::Sprite _nv;
+    sf::Texture _textura;
+
+public:
+    game(sf::RenderWindow& window);
+    virtual ~game();
+    const bool isRunning(sf::RenderWindow& window) const;
+    void updateEvent(sf::RenderWindow& window);
+    void update(sf::RenderWindow& window);
+    void render(sf::RenderWindow& window);
 
 };
 

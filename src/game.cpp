@@ -5,7 +5,7 @@
 game::game(sf::RenderWindow& window){
 
     while (!mapaTest.mapaCargado()) {
-        std::cout<<"Mapa cargando..."<<std::endl;
+        std::cout<<"mapa..."<<std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
@@ -29,19 +29,15 @@ const bool game::isRunning(sf::RenderWindow& window) const {
 }
 
 void game::updateEvent(sf::RenderWindow& window){
+
     while(window.pollEvent(evento)){
             if (evento.type == sf::Event::Closed){
                 window.close();
             }
-
     }
 }
 
-
-
-
-
-//Toda las verificaiones y los updates de cada objeto van acÃ¡
+//toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(sf::RenderWindow& window){
 
     updateEvent(window);
@@ -56,47 +52,48 @@ void game::update(sf::RenderWindow& window){
     }
     ejemplo.update(mapaTest);
 
-    // Verificar si el personaje ha pasado el límite para mover la cámara
-        if (ejemplo.getPositionX() > limiteCamaraIzq) {
-            // Centrar la vista en el personaje solo en el eje horizontal
+
+    //verifica si el personaje ha pasado el límite para mover la camara
+        if(ejemplo.getPositionX() > limiteCamaraIzq){
+
             camara.setCenter(ejemplo.getPositionX(), camara.getCenter().y);
-        } else {
-            // Si el personaje está antes del límite, la cámara se queda al inicio
+        }
+        else{
             camara.setCenter(limiteCamaraIzq, camara.getCenter().y);
         }
-        if (ejemplo.getPositionX() > limiteCamaraDer && ejemplo.getPositionX() > limiteCamaraIzq) {
-            // Si el personaje está antes del límite, la cámara se queda al inicio
+
+        if(ejemplo.getPositionX() > limiteCamaraDer && ejemplo.getPositionX() > limiteCamaraIzq){
+
             camara.setCenter(limiteCamaraDer, camara.getCenter().y);
         }
 
 
-    // Actualizar la vista en la ventana
+    //actualiza la vista en la ventana
     window.setView(camara);
-    if(ejemplo.isCollision(star) ) {
+    if(ejemplo.isCollision(star)){
             contador+=20;
             star.setActive(false);
         }
 
-
-    if(ejemplo.isCollision(corazon) ) {
+    if(ejemplo.isCollision(corazon)){
             ejemplo.curar(25);
             corazon.setActive(false);
         }
 
-
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
+
         if(contador>=60){
             mapaTest.setTextMapa(2);
             mapaTest.setNivel(2);
             mapaTest.cargarNivel2();
-
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 
 }
-//Todas las visualizaciones
+
 void game::render(sf::RenderWindow& window){
+
         window.clear();
 
         mapaTest.dibujar(window);
@@ -107,5 +104,4 @@ void game::render(sf::RenderWindow& window){
         window.draw(textoTest);
 
         window.display();
-
 }

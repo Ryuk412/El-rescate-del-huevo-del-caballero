@@ -27,12 +27,12 @@ int menu(){
         sf::Event event;
 
         while (window.pollEvent(event)){
-            if (event.type == sf::Event::Closed){window.close();}
+            if (event.type == sf::Event::Closed){
+                    window.close();
+            }
+            if(event.type == sf::Event::MouseButtonPressed){
 
-            if (event.type == sf::Event::MouseButtonPressed){
-                if (menu1.MouseClick(window)){
-                        enJugar=1;}
-
+                if (menu1.MouseClick(window)){enJugar=1;}
                 if (menu2.MouseClick(window)){enOpciones=1;}
                 if (menu3.MouseClick(window)){enCreditos=1;}
 

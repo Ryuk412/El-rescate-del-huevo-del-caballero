@@ -3,7 +3,8 @@
 #include "inc.h"
 
 class enemigoEsqueleto:  public sf::Drawable, public colisionable{
-    public:
+
+public:
 
     enemigoEsqueleto();
     void update(int limitA, int limitB);
@@ -14,7 +15,8 @@ class enemigoEsqueleto:  public sf::Drawable, public colisionable{
     bool isAlive();
     void danioRecibido(int danio);
     void setSpritePosition(int posicionX, int posicionY);
-    private:
+
+private:
 
     sf::RectangleShape esq_hitbox;
     int _direccion=-1;

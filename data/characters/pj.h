@@ -8,12 +8,11 @@
 #include "inc.h"
 
 class pj: public sf::Drawable, public colisionable
-//Si una clase se va a mostrar en pantalla, se debe heredar el metodo DRAW de la clase Drawable
 {
     public:
 
-        void update(mapa& _objetoMapa);//Metodo para actualizar la posicion del personaje
-        void draw(sf::RenderTarget& target, sf::RenderStates state)const override;//Dibuja al personaje
+        void update(mapa& _objetoMapa);
+        void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
 //        sf::FloatRect getBounds()const override;
         sf::RectangleShape getHitbox()const override;
         sf::RectangleShape getHitboxE();
@@ -38,10 +37,10 @@ class pj: public sf::Drawable, public colisionable
         sf::Sprite _sprite;
         sf::Texture _textureM;
         float _gravity=1.0f;
-        float _jumpVelocity = -20.0f; // Velocidad inicial del salto (negativo para moverse hacia arriba)
-        bool _isJumping = false;      // Variable para saber si el personaje está en el aire
+        float _jumpVelocity = -20.0f;
+        bool _isJumping = false;
         bool _colisiionando=false;
-        sf::Vector2f _velocity={};//Vector de 2 posiciones que define la velocidad en pixeles que tiene el personaje en X e Y
+        sf::Vector2f _velocity={};
         float _frame=0;
         float _frame2=0;
         float _frame3=0;

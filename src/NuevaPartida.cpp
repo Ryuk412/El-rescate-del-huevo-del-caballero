@@ -20,7 +20,7 @@ void nuevaPartidaMenu(sf::RenderWindow& window){
                 if (volver.MouseClick(window)){return;}
 
                 if(siguiente.MouseClick(window)){
-                        cout<<"Historia"<<endl;
+                        cout<<"historia"<<endl;
                         historiaMenu(window);
                    }
 

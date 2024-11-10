@@ -2,8 +2,7 @@
 #include "enemigo.h"
 
 
-enemigo::enemigo()
-{
+enemigo::enemigo(){
 
     _textureE.loadFromFile("assets/Characters(100x100)/Slime/Slime/Slime.png");
     e_sprite.setTexture(_textureE);
@@ -13,16 +12,14 @@ enemigo::enemigo()
     en_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,600);
     e_vida=50;
-
-
 }
+
 void enemigo::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
 }
- void enemigo::muerte(){
 
-
+void enemigo::muerte(){
 
         _frame2 += 0.15;
         if (e_sprite.getScale().x == -4 && _frame2 > 2) {
@@ -37,116 +34,85 @@ void enemigo::respawn(){
         en_hitbox.setPosition(-50, -50);
         e_sprite.setPosition(-50,-50);
         }
+}
 
+bool enemigo::isAlive(){
 
+     if(e_vida > 0 ){
+        return true;
+     }
+     else{
+        return false;
+     }
+}
 
+void enemigo::danioRecibido(int danio){e_vida=e_vida-danio;}
 
-    }
+void enemigo::update(){
 
- bool enemigo::isAlive(){
- if(e_vida > 0  ){ return true;   }
- else{return false;    }
-
-
-
-
- }
-    void enemigo::danioRecibido(int danio){
-
-    e_vida=e_vida-danio;
-
-
-    }
-
-
-
-void enemigo::update()
-{
     bool ban=true;
     e_velocity= {};
 
+    if(e_velocity.x==0&&e_velocity.y==0){
 
-
-
-    if(e_velocity.x==0&&e_velocity.y==0)
-    {
         _frame+=0.009;
-        e_sprite.setTextureRect({0 + (int)_frame*130,0,130,130}); //Ancho y Alto del Personaje,70x65.
+        e_sprite.setTextureRect({0 + (int)_frame*130,0,130,130});
+
         if(_frame>=4)
         {
             _frame=0;
         }
     }
 
-
-
-    if(e_velocity.x==0&&e_velocity.y==0 )
-    {
-
-
-
+    if(e_velocity.x==0&&e_velocity.y==0){
         _frame+=0.2;
         e_velocity.x=-2 * _direccion;
-        e_sprite.setTextureRect({130 + (int)_frame*130,130,130,130}); //Ancho y Alto del Personaje,70x65.
+        e_sprite.setTextureRect({130 + (int)_frame*130,130,130,130});
+
         if(_frame>=6)
         {
             _frame=0;
         }
-
     }
 
-    if(en_hitbox.getGlobalBounds().left < 0   )
-    {
+    if(en_hitbox.getGlobalBounds().left < 0){
 
         e_sprite.setPosition(e_sprite.getPosition().x + 4, e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
 
 
         _direccion=_direccion*-1;
-
-
-
     }
 
-    if (en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width > 800)
-    {
+
+    if (en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width > 800){
         e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 103), e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
 
         _direccion=_direccion*-1;
-
     }
 
 
-    if(e_velocity.x < 0)
-    {
+    if(e_velocity.x < 0){
         e_sprite.setScale(-1,1);//setScale es el encargado del efecto visual para que el personaje se de vuelta
     }
-    else if(e_velocity.x > 0 )
-    {
+    else if(e_velocity.x > 0){
         e_sprite.setScale(1,1);
     }
 
-
     e_sprite.move(e_velocity);
-
-
 
     en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30, e_sprite.getGlobalBounds().top + 50 );
 
-
-
-}
-sf::RectangleShape enemigo::getHitbox()const
-{
-    return en_hitbox;
 }
 
-void enemigo::draw(sf::RenderTarget& target, sf::RenderStates state)const
-{
+sf::RectangleShape enemigo::getHitbox()const{return en_hitbox;}
+
+void enemigo::draw(sf::RenderTarget& target, sf::RenderStates state)const{
     target.draw(en_hitbox);
     target.draw(e_sprite);
 }
+
 //
 //enemigo::~enemigo()
 //{
