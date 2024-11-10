@@ -97,7 +97,6 @@
 		<Unit filename="src/Jugador.cpp" />
 		<Unit filename="src/Jugar.cpp" />
 		<Unit filename="src/Menu.cpp" />
-		<Unit filename="src/Musica.cpp" />
 		<Unit filename="src/NuevaPartida.cpp" />
 		<Unit filename="src/Opciones.cpp" />
 		<Unit filename="src/Pausa.cpp" />
