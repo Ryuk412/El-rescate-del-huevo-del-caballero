@@ -55,7 +55,7 @@ void game::update(sf::RenderWindow& window){
        star.setActive(true);
     }
     ejemplo.update(mapaTest);
-
+    oso.update(mapaTest);
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -77,7 +77,13 @@ void game::update(sf::RenderWindow& window){
             star.setActive(false);
         }
 
+if(ejemplo.isCollision(oso)){
+    if(ejemplo.isAlive()==false){
+        ejemplo.muerte();
+    }
+    ejemplo.danioRecibido(25);
 
+}
     if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);
             corazon.setActive(false);
@@ -102,6 +108,7 @@ void game::render(sf::RenderWindow& window){
         mapaTest.dibujar(window);
 
         window.draw(ejemplo);
+        window.draw(oso);
         window.draw(corazon);
         window.draw(star);
         window.draw(textoTest);

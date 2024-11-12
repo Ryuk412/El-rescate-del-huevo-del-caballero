@@ -17,7 +17,7 @@ Jefe::Jefe()
 
 
 }
-void Jefe::update(int LimiteA, int LimiteB){
+void Jefe::update(mapa& _objetoMapa){
 
 j_velocity={};
 
@@ -62,16 +62,28 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
 
 
-  // Verificar si el objeto ha llegado a los límites y cambiar la dirección suavemente
-if (j_hitbox.getGlobalBounds().left <= LimiteA) {
-    _direccion = 1; // Cambiar dirección hacia la derecha
-} else if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width >= LimiteB) {
-    _direccion = -1; // Cambiar dirección hacia la izquierda
-}
+//  // Verificar si el objeto ha llegado a los límites y cambiar la dirección suavemente
+//if (j_hitbox.getGlobalBounds().left <= LimiteA) {
+
+//} else if (j_hitbox.getGlobalBounds().left + j_hitbox.getGlobalBounds().width >= LimiteB) {
+//
+//}
     j_sprite.move(j_velocity);
 
     j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 30, j_sprite.getGlobalBounds().top + 30 );
 
+
+
+    if (j_hitbox.getGlobalBounds().left < 0) {
+               _direccion = -1; // Cambiar dirección hacia la derecha
+        j_sprite.setPosition(j_sprite.getPosition().x + 4, j_sprite.getPosition().y);
+        j_hitbox.setPosition(j_hitbox.getPosition().x - j_velocity.x, j_hitbox.getPosition().y);
+    }
+    if (j_hitbox.getGlobalBounds().left+50 > 1600) {
+        _direccion = 1; // Cambiar dirección hacia la izquierda
+        j_sprite.setPosition(j_sprite.getPosition().x - 4, j_sprite.getPosition().y);
+         j_hitbox.setPosition(j_hitbox.getPosition().x - j_velocity.x, j_hitbox.getPosition().y);
+    }
 }
 
 

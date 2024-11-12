@@ -27,6 +27,7 @@ class game{
         sf::View camara;
 
         pj ejemplo;
+        Jefe oso;
         Item corazon;
         int contador;
         itemPuntos star;
