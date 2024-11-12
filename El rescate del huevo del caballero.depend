@@ -3544,7 +3544,7 @@
 1731198935 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1731374581 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
+1731375871 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731375943 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.h
@@ -4932,10 +4932,10 @@
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\ranking.cpp
 	"Ranking.h"
 
-1731375910 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
+1731376989 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 
-1731374966 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1731377000 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>

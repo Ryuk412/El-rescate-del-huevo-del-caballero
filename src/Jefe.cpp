@@ -107,6 +107,10 @@ void Jefe::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(j_sprite, states);
 }
 
+sf::RectangleShape Jefe::getHitbox()const
+{
+    return j_hitbox;
+}
 //Jefe::~Jefe()
 //{
 //    //dtor

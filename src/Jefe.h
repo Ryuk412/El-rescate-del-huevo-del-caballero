@@ -8,7 +8,7 @@ class Jefe : public sf::Drawable, public colisionable
     void update(mapa& _objetoMapa);
 
        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-//    sf::RectangleShape getHitbox()const override;
+   sf::RectangleShape getHitbox()const override;
     bool isAlive();
     void muerte();
     void danioRecivido(int danio);
