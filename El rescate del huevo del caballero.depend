@@ -5202,7 +5202,11 @@
 
 1731198935 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 
+<<<<<<< Updated upstream
 1731588208 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+=======
+1731588914 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+>>>>>>> Stashed changes
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -5992,7 +5996,22 @@
 	"enemigoSlime.h"
 	"itemPuntos.h"
 
+<<<<<<< Updated upstream
 1731585358 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.h
+=======
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\enemigo.h
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"clsColissionable.h"
+	<stdlib.h>
+	<iostream>
+
+1731590561 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\jefe.h
+>>>>>>> Stashed changes
 	"inc.h"
 
 1731585358 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\clspj.h
@@ -6042,7 +6061,22 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
+<<<<<<< Updated upstream
 1731590262 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.cpp
+=======
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+	<iostream>
+	"enemigo.h"
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
+	<iostream>
+	"enemigoEsqueleto.h"
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
+	"enemigoSlime.h"
+
+1731590544 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\game.cpp
+>>>>>>> Stashed changes
 	"game.h"
 
 1731585358 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\historia.cpp
@@ -6054,7 +6088,70 @@
 	"Botones.h"
 	"game.h"
 
+<<<<<<< Updated upstream
 1731588208 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+=======
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\jugador.cpp
+	"Jugador.h"
+	<iostream>
+	<cstring>
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\jugar.cpp
+	"Jugar.h"
+	<iostream>
+
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\jugar.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"NuevaPartida.h"
+
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\nuevapartida.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"Historia.h"
+
+1731585618 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\mapa.cpp
+	"mapa.h"
+	<iostream>
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\menu.cpp
+	"Menu.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\menu.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Botones.h"
+	"Jugar.h"
+	"Opciones.h"
+	"Creditos.h"
+
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\opciones.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\musica.cpp
+	"musica.h"
+	<iostream>
+
+1731583569 c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\include\musica.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
+	"NuevaPartida.h"
+	<iostream>
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\opciones.cpp
+	"Opciones.h"
+	<iostream>
+
+1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+
+1731591030 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+>>>>>>> Stashed changes
 	<iostream>
 	<cstdlib>
 	<stdio.h>
