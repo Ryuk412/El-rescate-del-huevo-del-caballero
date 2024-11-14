@@ -41,6 +41,8 @@ void game::setLevel(){
             mapaTest.setTextMapa(2);
             mapaTest.setNivel(2);
             mapaTest.cargarNivel2();
+            ejemplo.setPosicion();
+
 }
 //Toda las verificaiones y los updates de cada objeto van acá
 void game::update(sf::RenderWindow& window){
@@ -78,14 +80,14 @@ void game::update(sf::RenderWindow& window){
             star.setActive(false);
         }
 
-/*if(ejemplo.isCollision(oso)){
+if(ejemplo.isCollision(oso)){
     if(ejemplo.isAlive()==false){
         ejemplo.muerte();
     }
     oso.ataque();
     ejemplo.danioRecibido(25);
 
-}*/
+}
 
     if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);

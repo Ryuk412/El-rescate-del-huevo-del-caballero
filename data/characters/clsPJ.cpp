@@ -213,7 +213,10 @@ void pj::muerte() {
     _vida=100;
     }
 }
+ void pj::setPosicion(){
+ _sprite.setPosition({});
 
+ }
 // Métodos de obtención de hitboxes
 sf::RectangleShape pj::getHitbox() const {
     return m_hitbox;

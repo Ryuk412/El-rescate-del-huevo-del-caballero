@@ -92,23 +92,7 @@ if(j_velocity.x==0&& j_velocity.y==0)
             countdown-=0.1;
         }
 
-    if(j_hitbox.getGlobalBounds().intersects(ejemplo.getHitbox().getGlobalBounds())&&countdown<=0){
-        attack=true;
-    }
-    if(attack==true){
-        _frame2 += 0.30;
-        if (j_sprite.getScale().x == -1 && _frame2 > 2) {
-            j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 40, j_sprite.getGlobalBounds().top + 60);
-        } else if (_frame2 > 2) {
-            j_hitbox.setPosition(j_hitbox.getGlobalBounds().left + 55, j_sprite.getGlobalBounds().top + 60);
-        }
-        j_velocity = {0, 0};
-        j_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
-        if(_frame2>=13){
-            _frame2=0;
-            countdown=20;
-        }
-    }
+
 
     j_sprite.move(j_velocity);
 
@@ -133,14 +117,17 @@ j_vida=j_vida-danio;
 
 
 
-
-        _frame2+=0.01;
-        j_velocity.x=0;
-        //j_velocity.x=-2 * _direccion;
-        j_sprite.setTextureRect({130 + (int)_frame*130,520,130,130}); //Ancho y Alto del Personaje,70x65.
-        if(_frame2>=13)
-        {
+        _frame2 += 0.30;
+        if (j_sprite.getScale().x == -1 && _frame2 > 2) {
+            j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 40, j_sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            j_hitbox.setPosition(j_hitbox.getGlobalBounds().left + 55, j_sprite.getGlobalBounds().top + 60);
+        }
+        j_velocity = {0, 0};
+        j_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
+        if(_frame2>=13){
             _frame2=0;
+            countdown=2;
         }
 
 

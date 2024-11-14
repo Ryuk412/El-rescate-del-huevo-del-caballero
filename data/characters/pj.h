@@ -19,6 +19,7 @@ class pj: public sf::Drawable, public colisionable
         sf::RectangleShape getHitboxE();
         void setColisionando(bool estado);
         pj();
+        void setPosicion();
         bool getBan();
         void respawn();
         virtual ~pj();
