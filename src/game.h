@@ -28,6 +28,7 @@ class game{
 
         pj ejemplo;
         Jefe oso;
+        enemigo slime;
         Item corazon;
         int contador;
         itemPuntos star;

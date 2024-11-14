@@ -18,7 +18,7 @@ game::game(sf::RenderWindow& window){
     textoTest.setFillColor(sf::Color::White);
     contador=0;
     textoTest.setCharacterSize(30);
-
+    slime.setSpritePosition(100,200,120,300);
 }
 
 game::~game(){}
@@ -57,6 +57,7 @@ void game::update(sf::RenderWindow& window){
     }
     ejemplo.update(mapaTest);
     oso.update(mapaTest,ejemplo);
+    slime.update();
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -111,6 +112,7 @@ void game::render(sf::RenderWindow& window){
         window.draw(ejemplo);
         window.draw(oso);
         window.draw(corazon);
+        window.draw(slime);
         window.draw(star);
         window.draw(textoTest);
 

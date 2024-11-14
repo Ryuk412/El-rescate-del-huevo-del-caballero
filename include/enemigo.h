@@ -22,9 +22,9 @@ class enemigo:  public sf::Drawable, public colisionable
     void muerte();
     bool isAlive();
     void danioRecibido(int danio);
+    void setSpritePosition(int posX, int posY, int posA, int posB);
 
     private:
-
     sf::RectangleShape en_hitbox;
     int _direccion=-1;
     sf::Sprite e_sprite;
@@ -33,6 +33,9 @@ class enemigo:  public sf::Drawable, public colisionable
     float _frame=0;
     float _frame2=0;
     int e_vida;
+    int limitA;
+    int limitB;
+    sf::RectangleShape attackHitbox;
 
 };
 

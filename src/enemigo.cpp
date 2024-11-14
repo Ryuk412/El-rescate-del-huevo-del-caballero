@@ -13,12 +13,14 @@ enemigo::enemigo()
     en_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,600);
     e_vida=50;
-
-
+    attackHitbox.setSize({20,60});
+    attackHitbox.setFillColor(sf::Color::Red);
 }
+
 void enemigo::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
+    attackHitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
 }
  void enemigo::muerte(){
 
@@ -100,11 +102,8 @@ void enemigo::update()
 
         e_sprite.setPosition(e_sprite.getPosition().x + 4, e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
-
-
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left - 40, e_sprite.getGlobalBounds().top - 60);
         _direccion=_direccion*-1;
-
-
 
     }
 
@@ -112,7 +111,7 @@ void enemigo::update()
     {
         e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 103), e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
-
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left - 40, e_sprite.getGlobalBounds().top - 60);
         _direccion=_direccion*-1;
 
     }
@@ -133,10 +132,9 @@ void enemigo::update()
 
 
     en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30, e_sprite.getGlobalBounds().top + 50 );
-
-
-
+    attackHitbox.setPosition(e_sprite.getGlobalBounds().left+90,e_sprite.getGlobalBounds().top+80);
 }
+
 sf::RectangleShape enemigo::getHitbox()const
 {
     return en_hitbox;
@@ -146,7 +144,17 @@ void enemigo::draw(sf::RenderTarget& target, sf::RenderStates state)const
 {
     target.draw(en_hitbox);
     target.draw(e_sprite);
+    target.draw(attackHitbox);
 }
+
+void enemigo::setSpritePosition(int posX, int posY, int posA,int posB){
+    e_vida=50;
+    e_sprite.setPosition(sf::Vector2f(posX,posY));
+    limitA=posA;
+    limitB=posB;
+    e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
+}
+
 //
 //enemigo::~enemigo()
 //{
