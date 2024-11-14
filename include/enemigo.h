@@ -35,6 +35,8 @@ class enemigo:  public sf::Drawable, public colisionable
     int limitA;
     int limitB;
     sf::RectangleShape attackHitbox;
+    bool attack=false;
+    float countdown=0;
 
 };
 

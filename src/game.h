@@ -38,6 +38,7 @@ class game{
         //caso de mapa jefe:
         float limiteCamaraDer=1200;
         //caso de mapa comun: float limiteCamaraDer=1200;
+        //caso de mapa jefe: 400;
 
         sf::Sprite _nv;
         sf::Texture _textura;

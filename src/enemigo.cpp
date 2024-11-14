@@ -117,19 +117,44 @@ void enemigo::update(pj ejemplo)
     if(e_velocity.x < 0)
     {
         e_sprite.setScale(-1,1);//setScale es el encargado del efecto visual para que el personaje se de vuelta
+        //attackHitbox.setPosition(e_sprite.getOrigin().x-33,e_sprite.getPosition().y);
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left+20,e_sprite.getGlobalBounds().top+80);
     }
     else if(e_velocity.x > 0 )
     {
         e_sprite.setScale(1,1);
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left+90,e_sprite.getGlobalBounds().top+80);
+    }
+    if (countdown >= 0) {
+            attack=false;
+            _frame2 = 0;
+            countdown-=0.1;
+        }
+
+    if(attackHitbox.getGlobalBounds().intersects(ejemplo.getHitbox().getGlobalBounds())&&countdown<=0){
+        attack=true;
     }
 
-
+    if(attack==true){
+        _frame2 += 0.30;
+        if (e_sprite.getScale().x == -1 && _frame2 > 2) {
+            en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
+        }
+        e_velocity = {0, 0};
+        e_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
+        if(_frame2>=13){
+            _frame2=0;
+            countdown=2;
+        }
+    }
     e_sprite.move(e_velocity);
 
 
 
     en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30, e_sprite.getGlobalBounds().top + 50 );
-    attackHitbox.setPosition(e_sprite.getGlobalBounds().left+90,e_sprite.getGlobalBounds().top+80);
+
 }
 
 sf::RectangleShape enemigo::getHitbox()const

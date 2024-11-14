@@ -57,17 +57,17 @@ void game::update(sf::RenderWindow& window){
     }
     ejemplo.update(mapaTest);
     oso.update(mapaTest,ejemplo);
-    slime.update();
-    // Verificar si el personaje ha pasado el límite para mover la cámara
+    slime.update(ejemplo);
+    // Verificar si el personaje ha pasado el lï¿½mite para mover la cï¿½mara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
             camara.setCenter(ejemplo.getPositionX(), camara.getCenter().y);
         } else {
-            // Si el personaje está antes del límite, la cámara se queda al inicio
+            // Si el personaje estï¿½ antes del lï¿½mite, la cï¿½mara se queda al inicio
             camara.setCenter(limiteCamaraIzq, camara.getCenter().y);
         }
         if (ejemplo.getPositionX() > limiteCamaraDer && ejemplo.getPositionX() > limiteCamaraIzq) {
-            // Si el personaje está antes del límite, la cámara se queda al inicio
+            // Si el personaje estï¿½ antes del lï¿½mite, la cï¿½mara se queda al inicio
             camara.setCenter(limiteCamaraDer, camara.getCenter().y);
         }
 
