@@ -19,7 +19,7 @@ pj::pj() {
     e_hitbox.setFillColor(sf::Color::Blue);
 
 
-    _sprite.setPosition(200, 200);
+    _sprite.setPosition(700, 200);
 
     _vida=100;
    _bVida.setSize({_vida,10}); /// _bVida: barra de vida(grafica x ventana)
