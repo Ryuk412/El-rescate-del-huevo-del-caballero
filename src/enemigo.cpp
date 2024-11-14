@@ -13,14 +13,13 @@ enemigo::enemigo()
     en_hitbox.setFillColor(sf::Color::Yellow);
     e_sprite.setPosition(500,600);
     e_vida=50;
-    attackHitbox.setSize({20,60});
+    attackHitbox.setSize({10,-30});
     attackHitbox.setFillColor(sf::Color::Red);
 }
 
 void enemigo::respawn(){
     e_sprite.setPosition(std::rand()%700+e_sprite.getGlobalBounds().width,std::rand() % 500+e_sprite.getGlobalBounds().height);
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
-    attackHitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
 }
  void enemigo::muerte(){
 
@@ -28,9 +27,9 @@ void enemigo::respawn(){
 
         _frame2 += 0.15;
         if (e_sprite.getScale().x == -4 && _frame2 > 2) {
-            en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
+            en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().height + 60);
         } else if (_frame2 > 2) {
-            en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
+            en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().height + 60);
         }
         e_velocity = {0, 0};
         e_sprite.setTextureRect({139 + (int)_frame2 * 130, 390, 130, 130});
@@ -62,7 +61,7 @@ void enemigo::respawn(){
 
 
 
-void enemigo::update()
+void enemigo::update(pj ejemplo)
 {
     bool ban=true;
     e_velocity= {};
@@ -102,7 +101,6 @@ void enemigo::update()
 
         e_sprite.setPosition(e_sprite.getPosition().x + 4, e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
-        attackHitbox.setPosition(e_sprite.getGlobalBounds().left - 40, e_sprite.getGlobalBounds().top - 60);
         _direccion=_direccion*-1;
 
     }
@@ -111,7 +109,6 @@ void enemigo::update()
     {
         e_sprite.setPosition(800 - (e_sprite.getGlobalBounds().width - 103), e_sprite.getPosition().y);
         en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
-        attackHitbox.setPosition(e_sprite.getGlobalBounds().left - 40, e_sprite.getGlobalBounds().top - 60);
         _direccion=_direccion*-1;
 
     }

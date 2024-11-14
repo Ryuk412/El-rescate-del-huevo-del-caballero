@@ -8,14 +8,13 @@
 #include <SFML/System.hpp>
 #include "colisionable.h"
 #include <stdlib.h>
-#include <iostream>
-
+#include "pj.h"
 class enemigo:  public sf::Drawable, public colisionable
 {
     public:
 
     enemigo();
-    void update();
+    void update(pj ejemplo);
     void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
     sf::RectangleShape getHitbox()const override;
     void respawn();
