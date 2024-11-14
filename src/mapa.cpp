@@ -116,6 +116,7 @@ bool mapa::cargarNivel1(){
       cargarHitbox(24,207.0f,131.0f,1393.0f,375.0f);
       return true;
 }
+
 // Metodo para cargar hitboxes del nivel 2
 bool mapa::cargarNivel2(){
     inicializarVector(35);
