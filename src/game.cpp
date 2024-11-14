@@ -37,10 +37,6 @@ void game::updateEvent(sf::RenderWindow& window){
     }
 }
 
-
-
-
-
 //Toda las verificaiones y los updates de cada objeto van acá
 void game::update(sf::RenderWindow& window){
 

@@ -91,7 +91,6 @@ bool Jefe::isAlive(){
 if(j_vida > 0  ){ return true;   }
  else{return false;    }
 
-
 }
 void Jefe::setSpritePosition(float x,float y){
     j_sprite.setPosition(x,y);

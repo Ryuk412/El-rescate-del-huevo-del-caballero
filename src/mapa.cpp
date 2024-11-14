@@ -15,6 +15,9 @@ void mapa::cargarTexturaMapa(){
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
+    if(!_nivel1Boss.loadFromFile("data/maps/nivel1_pelea.png")){
+        std::cout << "Error al cargar el archivo del Mapa 1-2" << std::endl;
+    }
     // Valor del vector cambiado
     _hitbox.resize(35);
     cargarEstructura();
@@ -36,6 +39,8 @@ void mapa::cargarMapa() {
     case 2:
         _Smapa.setTexture(_nivel2);
         break;
+    case 3:
+        _Smapa.setTexture(_nivel1Boss);
     }
 }
 // Implementacion del metodo para cambiar la textura del mapa segun el nivel
@@ -59,8 +64,8 @@ case 2:
     break;
 case 3:
     // Desarrollo del cambio de textura
-    if(!_nivel3.loadFromFile("data/maps/nivel3_mapa.png")){
-        std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
+    if(!_nivel1Boss.loadFromFile("data/maps/nivel1_pelea.png")){
+        std::cout << "Error al cargar el archivo del Mapa 1-2" << std::endl;
     }
     cargarMapa();
     break;
@@ -79,6 +84,8 @@ case 2:
     cargarNivel2();
     break;
 case 3:
+    setTextMapa(3);
+    cargarNivel3();
     break;
     }
 
@@ -168,6 +175,11 @@ bool mapa::cargarNivel2(){
 // Metodo para cargar hitboxes del nivel 3
 bool mapa::cargarNivel3(){
     inicializarVector(25);
+    cargarHitbox(0,800.0f, 50.0f, 0.0f, 525.0f);
+    cargarHitbox(1,210.f,30.f,0.f,280.f);
+    cargarHitbox(2,270.f,25.f,310.f,375.f);
+    cargarHitbox(3,210.f,20.f,650.f,290.f);
+    cargarHitbox(4,10.f,600.f,800.f,0.f);
     return true;
 }
 

@@ -34,7 +34,9 @@ class game{
         sf::Font font;
         sf::Text textoTest;
         float limiteCamaraIzq=400;
-        float limiteCamaraDer=1200;
+        //caso de mapa jefe:
+        float limiteCamaraDer=400;
+        //caso de mapa comun: float limiteCamaraDer=1200;
 
         sf::Sprite _nv;
         sf::Texture _textura;
