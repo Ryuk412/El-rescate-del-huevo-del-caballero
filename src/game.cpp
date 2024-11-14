@@ -43,7 +43,7 @@ void game::update(sf::RenderWindow& window){
     updateEvent(window);
 
     if(corazon.getActive()==false){
-       corazon.respawn();
+       corazon.respawn(mapaTest);
        corazon.setActive(true);
     }
     if(star.getActive()==false){

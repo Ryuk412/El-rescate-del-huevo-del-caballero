@@ -5202,7 +5202,7 @@
 
 1731198935 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 
-1731464202 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+1731588208 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -5870,16 +5870,17 @@
 1731464202 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
 	<colisionable.h>
 
-1731464202 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
+1731589919 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
 	<iostream>
 	<stdlib.h>
 	"Item.h"
 
-1731464202 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\item.h
+1731589919 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\item.h
 	<SFML/Graphics.hpp>
 	"colisionable.h"
+	"inc.h"
 
-1731464202 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
+1731589918 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
 
@@ -5973,7 +5974,7 @@
 	"Botones.h"
 	"game.h"
 
-1731588056 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.h
+1731590531 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -6041,7 +6042,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1731587809 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.cpp
+1731590262 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731585358 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\historia.cpp
@@ -6053,7 +6054,7 @@
 	"Botones.h"
 	"game.h"
 
-1731585521 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1731588208 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>
@@ -6092,7 +6093,7 @@
 
 1731585358 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 
-1731587967 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\mapa.cpp
+1731589290 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\mapa.cpp
 	"mapa.h"
 	<iostream>
 
