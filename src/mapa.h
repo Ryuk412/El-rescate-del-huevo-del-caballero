@@ -45,7 +45,7 @@ private:
     sf::Texture _nivel1Boss;
     std::atomic<bool> _cargado{false};  // Bandera de carga
 
-    int _nivel=3;
+    int _nivel=1;
     std::vector<sf::RectangleShape> _hitbox;  // Terreno
     bool _dibujado=false;     // Booleano para solo dibujar una vez todas las hitbox
     void cargarMapa(); // Método para cargar el mapa

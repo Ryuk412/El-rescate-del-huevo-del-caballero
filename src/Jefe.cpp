@@ -17,7 +17,7 @@ Jefe::Jefe()
 
 
 }
-void Jefe::update(mapa& _objetoMapa){
+void Jefe::update(mapa& _objetoMapa, pj ejemplo){
 
 j_velocity={};
 
@@ -62,9 +62,6 @@ if(j_velocity.x==0&& j_velocity.y==0)
 
 
 
-    j_sprite.move(j_velocity);
-
-    j_hitbox.setPosition(j_sprite.getPosition().x - 30,j_sprite.getPosition().y - j_sprite.getGlobalBounds().height + 30);
 
 // Verificar colisiones en el eje X
    // j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 66, j_sprite.getGlobalBounds().top + 64);
@@ -89,6 +86,33 @@ if(j_velocity.x==0&& j_velocity.y==0)
         j_sprite.setPosition(j_sprite.getPosition().x - 4, j_sprite.getPosition().y);
          j_hitbox.setPosition(j_hitbox.getPosition().x - j_velocity.x, j_hitbox.getPosition().y);
     }
+    if (countdown >= 0) {
+            attack=false;
+            _frame2 = 0;
+            countdown-=0.1;
+        }
+
+    if(j_hitbox.getGlobalBounds().intersects(ejemplo.getHitbox().getGlobalBounds())&&countdown<=0){
+        attack=true;
+    }
+    if(attack==true){
+        _frame2 += 0.30;
+        if (j_sprite.getScale().x == -1 && _frame2 > 2) {
+            j_hitbox.setPosition(j_sprite.getGlobalBounds().left + 40, j_sprite.getGlobalBounds().top + 60);
+        } else if (_frame2 > 2) {
+            j_hitbox.setPosition(j_hitbox.getGlobalBounds().left + 55, j_sprite.getGlobalBounds().top + 60);
+        }
+        j_velocity = {0, 0};
+        j_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
+        if(_frame2>=13){
+            _frame2=0;
+            countdown=20;
+        }
+    }
+
+    j_sprite.move(j_velocity);
+
+    j_hitbox.setPosition(j_sprite.getPosition().x - 30,j_sprite.getPosition().y - j_sprite.getGlobalBounds().height + 30);
 }
 
 

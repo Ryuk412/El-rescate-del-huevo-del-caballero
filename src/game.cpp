@@ -37,6 +37,11 @@ void game::updateEvent(sf::RenderWindow& window){
     }
 }
 
+void game::setLevel(){
+            mapaTest.setTextMapa(2);
+            mapaTest.setNivel(2);
+            mapaTest.cargarNivel2();
+}
 //Toda las verificaiones y los updates de cada objeto van acÃ¡
 void game::update(sf::RenderWindow& window){
 
@@ -51,7 +56,7 @@ void game::update(sf::RenderWindow& window){
        star.setActive(true);
     }
     ejemplo.update(mapaTest);
-    oso.update(mapaTest);
+    oso.update(mapaTest,ejemplo);
     // Verificar si el personaje ha pasado el límite para mover la cámara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -73,14 +78,15 @@ void game::update(sf::RenderWindow& window){
             star.setActive(false);
         }
 
-if(ejemplo.isCollision(oso)){
+/*if(ejemplo.isCollision(oso)){
     if(ejemplo.isAlive()==false){
         ejemplo.muerte();
     }
     oso.ataque();
     ejemplo.danioRecibido(25);
 
-}
+}*/
+
     if(ejemplo.isCollision(corazon) ) {
             ejemplo.curar(25);
             corazon.setActive(false);
@@ -89,11 +95,9 @@ if(ejemplo.isCollision(oso)){
 
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador>=60){
-            mapaTest.setTextMapa(2);
-            mapaTest.setNivel(2);
-            mapaTest.cargarNivel2();
-
+        if(contador==60&&nivel2==false){
+            setLevel();
+            nivel2=true;
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 

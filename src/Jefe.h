@@ -1,11 +1,12 @@
 #ifndef JEFE_H
 #define JEFE_H
 #include "inc.h"
+#include "pj.h"
 class Jefe : public sf::Drawable, public colisionable
 {
     public:
         Jefe();
-    void update(mapa& _objetoMapa);
+    void update(mapa& _objetoMapa, pj ejemplo);
 
        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
    sf::RectangleShape getHitbox()const override;
@@ -29,6 +30,8 @@ class Jefe : public sf::Drawable, public colisionable
         float _frame3=0;
         float _frame4=0;
         float j_vida;
+        float countdown=0;
+        bool attack=false;
 };
 
 #endif // JEFE_H

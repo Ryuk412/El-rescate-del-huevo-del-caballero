@@ -35,12 +35,13 @@ class game{
         sf::Text textoTest;
         float limiteCamaraIzq=400;
         //caso de mapa jefe:
-        float limiteCamaraDer=400;
+        float limiteCamaraDer=1200;
         //caso de mapa comun: float limiteCamaraDer=1200;
 
         sf::Sprite _nv;
         sf::Texture _textura;
-
+        void setLevel();
+        bool nivel2=false;
     public:
     //Constructor y destructor
         game(sf::RenderWindow& window);
