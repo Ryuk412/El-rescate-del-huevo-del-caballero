@@ -77,6 +77,7 @@ if(ejemplo.isCollision(oso)){
     if(ejemplo.isAlive()==false){
         ejemplo.muerte();
     }
+    oso.ataque();
     ejemplo.danioRecibido(25);
 
 }

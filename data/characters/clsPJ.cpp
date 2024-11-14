@@ -47,20 +47,20 @@ void pj::update(mapa& _objetoMapa){
     }
 
     // Movimiento y animación en función de las teclas presionadas
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
         _frame += 0.2;
         _velocity.x = -4;
         _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});///x y posicion ancho alto de la imagen
         if (_frame >= 7) _frame = 0;
     }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
         _frame += 0.2;
         _velocity.x = 4;
         _sprite.setTextureRect({0 + (int)_frame * 195, 195, 195, 195});
         if (_frame >= 7) _frame = 0;
     }
     // Verificar si se presiona la tecla de salto y el personaje no está en el aire
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && !_isJumping) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) && !_isJumping) {
         _velocity.y = _jumpVelocity; // Iniciar el salto con la velocidad de salto
         _isJumping = true;           // Marcar que está en el aire
     }
@@ -71,7 +71,7 @@ void pj::update(mapa& _objetoMapa){
     }else{_velocity.y+=_gravity;}
 
     // Ataque activado con la tecla Z
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Z)&& !_isJumping) {
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)&& !_isJumping) {
         if (!_ban) _ban = true;
         e_hitbox.setPosition(-50, -50);
     }

@@ -12,6 +12,7 @@ class Jefe : public sf::Drawable, public colisionable
     bool isAlive();
     void muerte();
     void danioRecivido(int danio);
+    void ataque();
     void setSpritePosition(float x,float y);
 
 
@@ -24,6 +25,9 @@ class Jefe : public sf::Drawable, public colisionable
         sf::Vector2f j_velocity={};
         int _direccion=-1;
         float  _frame=0;
+        float _frame2=0;
+        float _frame3=0;
+        float _frame4=0;
         float j_vida;
 };
 
