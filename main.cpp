@@ -4,8 +4,8 @@
 #include "Menu.h"
 using namespace std;
 
-int main()
-{
-    menu();
+int main(){
 
+    menu();
+    system("pause");
 }
