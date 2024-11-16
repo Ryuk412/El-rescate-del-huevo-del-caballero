@@ -4,7 +4,7 @@
 using namespace std;
 
 void creditosMenu(sf::RenderWindow& window){
-    Boton volver(290, 440, 227, 70, " ");
+    Boton volver(363, 463, 70, 20, " ");
 
     sf::Texture texture;
     if (!texture.loadFromFile("menu/creditos.png")){return;}

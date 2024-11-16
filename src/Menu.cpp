@@ -1,7 +1,5 @@
 #include "Menu.h"
 #include <SFML/Graphics.hpp>
-#include <iostream>
-using namespace std;
 
 int menu(){
     sf::RenderWindow window(sf::VideoMode(800, 600), "Rescate magico: El rescate del huevo del caballero");
@@ -10,6 +8,7 @@ int menu(){
     Boton menu2(290, 320, 220, 70, "OPCIONES");
     Boton menu3(290, 410, 220, 70, "CREDITOS");
     Boton menu4(290, 495, 220, 70, "SALIR");
+    Boton musicaBoton(35, 503, 47, 50, " ");
 
     sf::Texture texture;
     if (!texture.loadFromFile("menu/menu.png")){return -1;}
@@ -22,6 +21,7 @@ int menu(){
     bool enJugar=0;
     bool enOpciones=0;
     bool enCreditos=0;
+    bool enMusica=0;
 
     while (window.isOpen()){
         sf::Event event;
@@ -32,9 +32,17 @@ int menu(){
             }
             if(event.type == sf::Event::MouseButtonPressed){
 
-                if (menu1.MouseClick(window)){enJugar=1;}
-                if (menu2.MouseClick(window)){enOpciones=1;}
-                if (menu3.MouseClick(window)){enCreditos=1;}
+                if(menu1.MouseClick(window)){enJugar=1;}
+                if(menu2.MouseClick(window)){enOpciones=1;}
+                if(menu3.MouseClick(window)){enCreditos=1;}
+
+                if(musicaBoton.MouseClick(window)){
+                    if(musica.getStatus()==sf::Music::Playing){
+                        musica.pause();
+                    }else{
+                        musica.play();
+                    }
+                }
 
                 if (menu4.MouseClick(window)){
                         musica.stop();
@@ -55,6 +63,9 @@ int menu(){
             creditosMenu(window);
             enCreditos=0;
         }
+        if(enMusica){
+            musica.pause();
+        }
 
         sf::Sprite sprite(texture);
         window.draw(sprite);
@@ -62,6 +73,7 @@ int menu(){
         menu2.draw(window);
         menu3.draw(window);
         menu4.draw(window);
+        musicaBoton.draw(window);
 
         window.display();
     }

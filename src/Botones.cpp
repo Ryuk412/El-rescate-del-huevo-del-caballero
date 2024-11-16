@@ -7,6 +7,8 @@ Boton::Boton(float x, float y, float ancho, float alto, const std::string& texto
     formaboton.setPosition(x, y);
     formaboton.setSize(sf::Vector2f(ancho, alto));
     formaboton.setFillColor(sf::Color::Transparent);
+    formaboton.setOutlineColor(sf::Color::Green);
+    formaboton.setOutlineThickness(2);
 
     if(!fuente.loadFromFile("menu/fuente/PixelifySans-Bold.ttf")){cout<<"No se pudo usar la fuente"<<endl;}
     botontexto.setFont(fuente);

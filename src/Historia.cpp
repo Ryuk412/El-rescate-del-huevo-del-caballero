@@ -4,7 +4,7 @@
 using namespace std;
 
 void historiaMenu(sf::RenderWindow& window){
-    Boton empezar(400, 440, 227, 70, "EMPEZAR");
+    Boton empezar(273, 496, 255, 30, " ");
 
     sf::Texture texture;
     if (!texture.loadFromFile("menu/historia.png")){return;}
