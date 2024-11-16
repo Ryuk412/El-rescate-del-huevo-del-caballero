@@ -40,6 +40,8 @@ void jugarMenu(sf::RenderWindow& window){
         sf::Sprite sprite(texture);
         window.draw(sprite);
         volver.draw(window);
+        nuevaPartida.draw(window);
+        cargarPartida.draw(window);
         window.display();
     }
 }
