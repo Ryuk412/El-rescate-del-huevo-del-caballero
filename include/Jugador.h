@@ -20,8 +20,6 @@ public:
     void setPuntaje(int p);
     void setNivel(int nv);
 
-    void Mostrar() const;
-
     void escribirEnArchivo(FILE *pArchivo) const;
     bool leerDeArchivo(FILE *pArchivo);
 };

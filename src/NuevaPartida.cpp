@@ -1,17 +1,20 @@
 #include "NuevaPartida.h"
 #include "Jugador.h"
+#include "ArchivoJugadores.h"
+
 #include <iostream>
 using namespace std;
 
 void nuevaPartidaMenu(sf::RenderWindow& window){
+
     Boton volver(363, 463, 70, 20, " ");
     Boton siguiente(646, 490, 60, 55, " ");
 
     sf::Texture _textura;
-    if(!_textura.loadFromFile("menu/nueva_partida.png")){return;}
+    if (!_textura.loadFromFile("menu/nueva_partida.png")){return;}
 
     sf::Font _fuente;
-    if(!_fuente.loadFromFile("menu/fuente/Arimo-Bold.ttf")){return;}
+    if (!_fuente.loadFromFile("menu/fuente/Arimo-Bold.ttf")){return;}
 
     string _nombreJugador;
 
@@ -22,36 +25,40 @@ void nuevaPartidaMenu(sf::RenderWindow& window){
     _nombreTxt.setPosition(294, 307);
 
     Jugador _jugador;
+    ArchivoJugadores _archivo;
 
-
-    while (window.isOpen()){
+    while(window.isOpen()){
         sf::Event evento;
 
         while(window.pollEvent(evento)){
 
             if(evento.type == sf::Event::Closed){
-                    window.close();
+                window.close();
             }
 
             if(evento.type == sf::Event::MouseButtonPressed){
 
                 if(volver.MouseClick(window)){
-                        return;
+                    return;
                 }
 
                 if(siguiente.MouseClick(window)){
-                    _jugador.setNombre(_nombreJugador);
-                    cout<<"Nombre del jugador: "<<_jugador.getNombre()<<endl;
 
+                    _jugador.setNombre(_nombreJugador);
+                    _archivo.grabarRegistro(_jugador);
                     historiaMenu(window);
+
                 }
             }
 
-            if(evento.type == sf::Event::TextEntered){
-                if(evento.text.unicode < 128){
-                    char character= static_cast<char>(evento.text.unicode);
-                    if (character == '\b'){_nombreJugador.pop_back();}
-                    else if(_nombreJugador.length() < 10){_nombreJugador += character;}
+            if (evento.type == sf::Event::TextEntered){
+                if (evento.text.unicode < 128){
+                    char character = static_cast<char>(evento.text.unicode);
+                    if (character == '\b'){
+                        _nombreJugador.pop_back();
+                    } else if (_nombreJugador.length() < 10){
+                        _nombreJugador += character;
+                    }
                     _nombreTxt.setString(_nombreJugador);
                 }
             }

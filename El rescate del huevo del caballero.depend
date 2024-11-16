@@ -6,6 +6,12 @@
 	<iostream>
 	"pj.h"
 	"mapa.h"
+	<iostream>
+	"pj.h"
+	"mapa.h"
+	<iostream>
+	"pj.h"
+	"mapa.h"
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\data\characters\pj.h
 	<SFML/Graphics.hpp>
@@ -20,8 +26,74 @@
 	<SFML/System.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -108,8 +180,74 @@
 	<SFML/Window/Window.hpp>
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -150,8 +288,14 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\config.hpp
 	"TargetConditionals.h"
 	"TargetConditionals.h"
+	"TargetConditionals.h"
+	"TargetConditionals.h"
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
@@ -160,12 +304,20 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+	<SFML/System/Export.hpp>
+	<ostream>
 	<SFML/System/Export.hpp>
 	<ostream>
 	<SFML/System/Export.hpp>
@@ -184,8 +336,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<cstdio>
 	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
@@ -194,8 +362,14 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\noncopyable.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -210,8 +384,20 @@
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -222,8 +408,24 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -250,12 +452,32 @@
 	<string>
 	<cstdlib>
 	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\utf.inl
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\string.inl
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
@@ -274,8 +496,18 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
@@ -286,10 +518,14 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\vector2.inl
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 
@@ -300,12 +536,26 @@
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -320,12 +570,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\contextsettings.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\cursor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
@@ -344,8 +606,22 @@
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
@@ -354,8 +630,14 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
@@ -368,14 +650,28 @@
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+	<SFML/Window/Export.hpp>
+	<vector>
 	<SFML/Window/Export.hpp>
 	<vector>
 	<SFML/Window/Export.hpp>
@@ -388,8 +684,34 @@
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\windowbase.hpp
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Cursor.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/VideoMode.hpp>
@@ -422,8 +744,20 @@
 	<vector>
 	<cstddef>
 	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -432,12 +766,20 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
@@ -454,14 +796,34 @@
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
@@ -476,8 +838,20 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
@@ -492,8 +866,24 @@
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -514,14 +904,28 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\primitivetype.hpp
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
@@ -544,14 +948,38 @@
 	<map>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -570,14 +998,48 @@
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -608,6 +1070,14 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\rendertexture.hpp
 	<SFML/Graphics/Export.hpp>
@@ -618,8 +1088,26 @@
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
@@ -648,8 +1136,34 @@
 	<SFML/System/Vector3.hpp>
 	<map>
 	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\glsl.hpp
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
@@ -664,6 +1178,16 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\glsl.inl
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -694,6 +1218,24 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\graphics\vertexbuffer.hpp
 	<SFML/Graphics/Export.hpp>
@@ -704,8 +1246,44 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
 	<SFML/Audio/Listener.hpp>
@@ -746,8 +1324,20 @@
 	<SFML/System/Time.hpp>
 	<string>
 	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -756,8 +1346,26 @@
 	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundStream.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
@@ -786,8 +1394,26 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Mutex.hpp>
 	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/AlResource.hpp>
 	<SFML/System/Vector3.hpp>
@@ -798,6 +1424,8 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\alresource.hpp
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\outputsoundfile.hpp
 	<SFML/Audio/Export.hpp>
@@ -806,8 +1434,22 @@
 	<SFML/Audio/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundSource.hpp>
 	<SFML/System/Time.hpp>
@@ -830,8 +1472,28 @@
 	<string>
 	<vector>
 	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundBuffer.hpp>
 	<SFML/Audio/SoundRecorder.hpp>
@@ -854,8 +1516,28 @@
 	<SFML/System/Time.hpp>
 	<vector>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<vector>
@@ -872,8 +1554,16 @@
 	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<SFML/Audio/Export.hpp>
@@ -882,8 +1572,96 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\src\inc.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -994,8 +1772,42 @@
 	<SFML/Network/TcpListener.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/System/NonCopyable.hpp>
@@ -1012,8 +1824,16 @@
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\tcpsocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/System/Time.hpp>
@@ -1030,14 +1850,40 @@
 	<SFML/Network/SocketHandle.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\sockethandle.hpp
 	<SFML/Config.hpp>
 	<basetsd.h>
 	<SFML/Config.hpp>
 	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/TcpSocket.hpp>
@@ -1064,8 +1910,24 @@
 	<istream>
 	<ostream>
 	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<string>
 	<vector>
@@ -1078,8 +1940,18 @@
 	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\sfml\include\sfml\network\tcplistener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
@@ -1096,16 +1968,34 @@
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
 
 1730651578 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\src\mapa.h
+	"inc.h"
+	"inc.h"
 	"inc.h"
 	"inc.h"
 
 1730559884 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\data\etc\clscolissionable.cpp
 	<colisionable.h>
 	<colisionable.h>
+	<colisionable.h>
+	<colisionable.h>
 
 1730559884 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\data\etc\item.cpp
+	<iostream>
+	<stdlib.h>
+	"Item.h"
+	<iostream>
+	<stdlib.h>
+	"Item.h"
 	<iostream>
 	<stdlib.h>
 	"Item.h"
@@ -1118,8 +2008,16 @@
 	"colisionable.h"
 	<SFML/Graphics.hpp>
 	"colisionable.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
 
 1730649621 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\main.cpp
+	<windows.h>
+	"game.h"
+	<windows.h>
+	"game.h"
 	<windows.h>
 	"game.h"
 	<windows.h>
@@ -1144,8 +2042,30 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1730559884 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\src\enemigo.cpp
+	<iostream>
+	"enemigo.h"
+	<iostream>
+	"enemigo.h"
 	<iostream>
 	"enemigo.h"
 	<iostream>
@@ -1156,12 +2076,24 @@
 	<iostream>
 	"mapa.h"
 	<iostream>
+	"mapa.h"
+	<iostream>
+	"mapa.h"
+	<iostream>
 
 1730559884 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\src\menu.cpp
 	"Menu.h"
 	"Menu.h"
+	"Menu.h"
+	"Menu.h"
 
 1730559884 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\include\menu.h
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
 	<SFML/Graphics.hpp>
 	<vector>
 	<string>
@@ -1190,12 +2122,37 @@
 	"data/characters/pj.h"
 	"data/etc/Item.h"
 	"src/mapa.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
 
 1730651968 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-test\el-rescate-del-huevo-del-caballero-test\game.cpp
 	"game.h"
 	"game.h"
+	"game.h"
+	"game.h"
 
 1730938952 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+	<iostream>
+	"pj.h"
+	"mapa.h"
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -1207,8 +2164,68 @@
 	<SFML/System.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -1295,8 +2312,74 @@
 	<SFML/Window/Window.hpp>
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -1337,8 +2420,14 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\config.hpp
 	"TargetConditionals.h"
 	"TargetConditionals.h"
+	"TargetConditionals.h"
+	"TargetConditionals.h"
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
@@ -1347,12 +2436,20 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+	<SFML/System/Export.hpp>
+	<ostream>
 	<SFML/System/Export.hpp>
 	<ostream>
 	<SFML/System/Export.hpp>
@@ -1371,8 +2468,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<cstdio>
 	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
@@ -1381,8 +2494,14 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\noncopyable.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -1397,8 +2516,20 @@
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -1409,8 +2540,24 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -1437,12 +2584,32 @@
 	<string>
 	<cstdlib>
 	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\utf.inl
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.inl
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
@@ -1461,8 +2628,18 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
@@ -1473,10 +2650,14 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.inl
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 
@@ -1487,12 +2668,26 @@
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -1507,12 +2702,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\contextsettings.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\cursor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
@@ -1531,8 +2738,22 @@
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
@@ -1541,8 +2762,14 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
@@ -1555,14 +2782,28 @@
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+	<SFML/Window/Export.hpp>
+	<vector>
 	<SFML/Window/Export.hpp>
 	<vector>
 	<SFML/Window/Export.hpp>
@@ -1575,8 +2816,34 @@
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowbase.hpp
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Cursor.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/VideoMode.hpp>
@@ -1609,8 +2876,20 @@
 	<vector>
 	<cstddef>
 	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -1619,12 +2898,20 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
@@ -1641,14 +2928,34 @@
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
@@ -1663,8 +2970,20 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
@@ -1679,8 +2998,24 @@
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -1701,14 +3036,28 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\primitivetype.hpp
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
@@ -1731,14 +3080,38 @@
 	<map>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -1757,14 +3130,48 @@
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -1795,6 +3202,14 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertexture.hpp
 	<SFML/Graphics/Export.hpp>
@@ -1805,8 +3220,26 @@
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
@@ -1835,8 +3268,34 @@
 	<SFML/System/Vector3.hpp>
 	<map>
 	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.hpp
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
@@ -1851,6 +3310,16 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.inl
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -1881,6 +3350,24 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexbuffer.hpp
 	<SFML/Graphics/Export.hpp>
@@ -1891,8 +3378,44 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
 	<SFML/Audio/Listener.hpp>
@@ -1933,8 +3456,20 @@
 	<SFML/System/Time.hpp>
 	<string>
 	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -1943,8 +3478,26 @@
 	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundStream.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
@@ -1973,8 +3526,26 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Mutex.hpp>
 	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/AlResource.hpp>
 	<SFML/System/Vector3.hpp>
@@ -1985,6 +3556,8 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\alresource.hpp
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\outputsoundfile.hpp
 	<SFML/Audio/Export.hpp>
@@ -1993,8 +3566,22 @@
 	<SFML/Audio/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundSource.hpp>
 	<SFML/System/Time.hpp>
@@ -2017,8 +3604,28 @@
 	<string>
 	<vector>
 	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundBuffer.hpp>
 	<SFML/Audio/SoundRecorder.hpp>
@@ -2041,8 +3648,28 @@
 	<SFML/System/Time.hpp>
 	<vector>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<vector>
@@ -2059,8 +3686,16 @@
 	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<SFML/Audio/Export.hpp>
@@ -2069,8 +3704,54 @@
 1730860543 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1730938006 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\inc.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	"colisionable.h"
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -2139,8 +3820,42 @@
 	<SFML/Network/TcpListener.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/System/NonCopyable.hpp>
@@ -2157,8 +3872,16 @@
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcpsocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/System/Time.hpp>
@@ -2175,14 +3898,40 @@
 	<SFML/Network/SocketHandle.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\sockethandle.hpp
 	<SFML/Config.hpp>
 	<basetsd.h>
 	<SFML/Config.hpp>
 	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/TcpSocket.hpp>
@@ -2209,8 +3958,24 @@
 	<istream>
 	<ostream>
 	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<string>
 	<vector>
@@ -2223,8 +3988,18 @@
 	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728180627 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcplistener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
@@ -2241,12 +4016,24 @@
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
 
 1730953665 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
 	"inc.h"
+	"inc.h"
+	"inc.h"
 
 1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
+	<colisionable.h>
+	<colisionable.h>
 	<colisionable.h>
 	<colisionable.h>
 
@@ -2254,8 +4041,15 @@
 	<iostream>
 	<stdlib.h>
 	"Item.h"
+	<iostream>
+	<stdlib.h>
+	"Item.h"
 
 1730938952 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\item.h
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	<SFML/Graphics.hpp>
@@ -2266,8 +4060,28 @@
 	"Menu.h"
 	<windows.h>
 	"game.h"
+	<SFML/Graphics.hpp>
+	"Menu.h"
+	<windows.h>
+	"game.h"
 
 1730954483 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<cstring>
+	<iostream>
+	<vector>
+	"Jefe.h"
+	"pj.h"
+	"Item.h"
+	"mapa.h"
+	"enemigoEsqueleto.h"
+	"enemigoSlime.h"
+	"itemPuntos.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -2295,8 +4109,21 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1730860543 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+	<iostream>
+	"enemigo.h"
+	<iostream>
+	"enemigo.h"
 	<iostream>
 	"enemigo.h"
 	<iostream>
@@ -2307,8 +4134,14 @@
 	<iostream>
 	"mapa.h"
 	<iostream>
+	"mapa.h"
+	<iostream>
+	"mapa.h"
+	<iostream>
 
 1730869521 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\menu.cpp
+	"menu.h"
+	"Menu.h"
 	"menu.h"
 	"Menu.h"
 
@@ -2318,11 +4151,37 @@
 	"Jugar.h"
 	"Creditos.h"
 	"Opciones.h"
+	<SFML/Graphics.hpp>
+	"Musica.h"
+	"Jugar.h"
+	"Creditos.h"
+	"Opciones.h"
 
 1730954488 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
+	"game.h"
 
 1730862109 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -2347,8 +4206,28 @@
 1730949165 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
 	<iostream>
 	"enemigoEsqueleto.h"
+	<iostream>
+	"enemigoEsqueleto.h"
 
 1730777964 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\enemigoesqueleto.h
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 	<cstdlib>
 	<stdio.h>
 	<SFML/Graphics.hpp>
@@ -2378,12 +4257,25 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1730938952 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
 	"enemigoSlime.h"
 	"enemigoSlime.h"
+	"enemigoSlime.h"
+	"enemigoSlime.h"
 
 1730938952 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
+	"inc.h"
+	"inc.h"
 	"inc.h"
 	"inc.h"
 
@@ -2391,12 +4283,23 @@
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1730938952 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
+	<stdlib.h>
+	"itemPuntos.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+	<iostream>
+	"pj.h"
+	"mapa.h"
+	<iostream>
+	"pj.h"
+	"mapa.h"
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -2417,8 +4320,74 @@
 	<SFML/System.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -2505,8 +4474,74 @@
 	<SFML/Window/Window.hpp>
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -2547,8 +4582,14 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\config.hpp
 	"TargetConditionals.h"
 	"TargetConditionals.h"
+	"TargetConditionals.h"
+	"TargetConditionals.h"
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
@@ -2557,12 +4598,20 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+	<SFML/System/Export.hpp>
+	<ostream>
 	<SFML/System/Export.hpp>
 	<ostream>
 	<SFML/System/Export.hpp>
@@ -2581,8 +4630,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<cstdio>
 	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
@@ -2591,8 +4656,14 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\noncopyable.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -2607,8 +4678,20 @@
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -2619,8 +4702,24 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -2647,12 +4746,32 @@
 	<string>
 	<cstdlib>
 	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\utf.inl
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.inl
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
@@ -2671,8 +4790,18 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
@@ -2683,10 +4812,14 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.inl
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 
@@ -2697,12 +4830,26 @@
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -2717,12 +4864,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\contextsettings.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\cursor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
@@ -2741,8 +4900,22 @@
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
@@ -2751,8 +4924,14 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
@@ -2765,14 +4944,28 @@
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+	<SFML/Window/Export.hpp>
+	<vector>
 	<SFML/Window/Export.hpp>
 	<vector>
 	<SFML/Window/Export.hpp>
@@ -2785,8 +4978,34 @@
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowbase.hpp
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Cursor.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/VideoMode.hpp>
@@ -2819,8 +5038,20 @@
 	<vector>
 	<cstddef>
 	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -2829,12 +5060,20 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
@@ -2851,14 +5090,34 @@
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
@@ -2873,8 +5132,20 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
@@ -2889,8 +5160,24 @@
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -2911,14 +5198,28 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\primitivetype.hpp
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
@@ -2941,14 +5242,38 @@
 	<map>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -2967,14 +5292,48 @@
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -3005,6 +5364,14 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertexture.hpp
 	<SFML/Graphics/Export.hpp>
@@ -3015,8 +5382,26 @@
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
@@ -3045,8 +5430,34 @@
 	<SFML/System/Vector3.hpp>
 	<map>
 	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.hpp
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
@@ -3061,6 +5472,16 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.inl
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -3091,6 +5512,24 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexbuffer.hpp
 	<SFML/Graphics/Export.hpp>
@@ -3101,8 +5540,44 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
 	<SFML/Audio/Listener.hpp>
@@ -3143,8 +5618,20 @@
 	<SFML/System/Time.hpp>
 	<string>
 	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -3153,8 +5640,26 @@
 	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundStream.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
@@ -3183,8 +5688,26 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Mutex.hpp>
 	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/AlResource.hpp>
 	<SFML/System/Vector3.hpp>
@@ -3195,6 +5718,8 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\alresource.hpp
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\outputsoundfile.hpp
 	<SFML/Audio/Export.hpp>
@@ -3203,8 +5728,22 @@
 	<SFML/Audio/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundSource.hpp>
 	<SFML/System/Time.hpp>
@@ -3227,8 +5766,28 @@
 	<string>
 	<vector>
 	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundBuffer.hpp>
 	<SFML/Audio/SoundRecorder.hpp>
@@ -3251,8 +5810,28 @@
 	<SFML/System/Time.hpp>
 	<vector>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<vector>
@@ -3269,8 +5848,16 @@
 	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<SFML/Audio/Export.hpp>
@@ -3279,8 +5866,98 @@
 1730950232 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1730950232 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\inc.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	"colisionable.h"
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	"colisionable.h"
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -3393,8 +6070,42 @@
 	<SFML/Network/TcpListener.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/System/NonCopyable.hpp>
@@ -3411,8 +6122,16 @@
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcpsocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/System/Time.hpp>
@@ -3429,14 +6148,40 @@
 	<SFML/Network/SocketHandle.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\sockethandle.hpp
 	<SFML/Config.hpp>
 	<basetsd.h>
 	<SFML/Config.hpp>
 	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/TcpSocket.hpp>
@@ -3463,8 +6208,24 @@
 	<istream>
 	<ostream>
 	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<string>
 	<vector>
@@ -3477,8 +6238,18 @@
 	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728170896 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcplistener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
@@ -3495,16 +6266,34 @@
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
 
 1730951109 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\mapa.h
+	"inc.h"
+	"inc.h"
 	"inc.h"
 	"inc.h"
 
 1730950232 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
 	<colisionable.h>
 	<colisionable.h>
+	<colisionable.h>
+	<colisionable.h>
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
+	<iostream>
+	<stdlib.h>
+	"Item.h"
+	<iostream>
+	<stdlib.h>
+	"Item.h"
 	<iostream>
 	<stdlib.h>
 	"Item.h"
@@ -3517,8 +6306,16 @@
 	"colisionable.h"
 	<SFML/Graphics.hpp>
 	"colisionable.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
+	<stdlib.h>
+	"itemPuntos.h"
+	<stdlib.h>
+	"itemPuntos.h"
 	<stdlib.h>
 	"itemPuntos.h"
 	<stdlib.h>
@@ -3531,14 +6328,44 @@
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	"inc.h"
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\main.cpp
 	<windows.h>
 	"game.h"
 	<windows.h>
 	"game.h"
+	<windows.h>
+	"game.h"
+	<windows.h>
+	"game.h"
 
 1730950232 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -3579,14 +6406,40 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1730950232 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
 	<iostream>
 	"enemigo.h"
 	<iostream>
 	"enemigo.h"
+	<iostream>
+	"enemigo.h"
+	<iostream>
+	"enemigo.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
+	<iostream>
+	"enemigoEsqueleto.h"
+	<iostream>
+	"enemigoEsqueleto.h"
 	<iostream>
 	"enemigoEsqueleto.h"
 	<iostream>
@@ -3611,8 +6464,28 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1730950232 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\menu.cpp
+	"Menu.h"
+	"Menu.h"
 	"Menu.h"
 	"Menu.h"
 
@@ -3623,20 +6496,63 @@
 	<SFML/Graphics.hpp>
 	<vector>
 	<string>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
+	<SFML/Graphics.hpp>
+	<vector>
+	<string>
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
+	"enemigoSlime.h"
+	"enemigoSlime.h"
 	"enemigoSlime.h"
 	"enemigoSlime.h"
 
 1730951109 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 	"inc.h"
+	"inc.h"
+	"inc.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 	"game.h"
+	"game.h"
+	"game.h"
 
 1730951109 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<cstring>
+	<iostream>
+	<vector>
+	"Jefe.h"
+	"pj.h"
+	"Item.h"
+	"mapa.h"
+	"enemigoEsqueleto.h"
+	"enemigoSlime.h"
+	"itemPuntos.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<cstring>
+	<iostream>
+	<vector>
+	"pj.h"
+	"Item.h"
+	"mapa.h"
+	"enemigoEsqueleto.h"
+	"enemigoSlime.h"
+	"itemPuntos.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -3674,8 +6590,15 @@
 	<iostream>
 	"mapa.h"
 	<iostream>
+	"mapa.h"
+	<iostream>
+	"mapa.h"
+	<iostream>
 
 1731203673 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\characters\clspj.cpp
+	<iostream>
+	"pj.h"
+	"mapa.h"
 	<iostream>
 	"pj.h"
 	"mapa.h"
@@ -3687,8 +6610,68 @@
 	<SFML/System.hpp>
 	"colisionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	"inc.h"
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics.hpp
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Window.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/CircleShape.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/ConvexShape.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/RectangleShape.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/RenderTexture.hpp>
+	<SFML/Graphics/RenderWindow.hpp>
+	<SFML/Graphics/Shader.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Sprite.hpp>
+	<SFML/Graphics/Text.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/Graphics/VertexBuffer.hpp>
+	<SFML/Graphics/View.hpp>
 	<SFML/Window.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/CircleShape.hpp>
@@ -3775,8 +6758,74 @@
 	<SFML/Window/Window.hpp>
 	<SFML/Window/WindowHandle.hpp>
 	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System.hpp>
+	<SFML/Window/Clipboard.hpp>
+	<SFML/Window/Context.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Event.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Window/Touch.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Window.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/FileInputStream.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/MemoryInputStream.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Clock.hpp>
 	<SFML/System/Err.hpp>
@@ -3817,8 +6866,14 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\config.hpp
 	"TargetConditionals.h"
 	"TargetConditionals.h"
+	"TargetConditionals.h"
+	"TargetConditionals.h"
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
@@ -3827,12 +6882,20 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+	<SFML/System/Export.hpp>
+	<ostream>
 	<SFML/System/Export.hpp>
 	<ostream>
 	<SFML/System/Export.hpp>
@@ -3851,8 +6914,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<cstdio>
 	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdio>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/Config.hpp>
+	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/Config.hpp>
@@ -3861,8 +6940,14 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\noncopyable.hpp
 	<SFML/System/Export.hpp>
 	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Export.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -3877,8 +6962,20 @@
 	<SFML/System/InputStream.hpp>
 	<SFML/System/Export.hpp>
 	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
+	<SFML/Config.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Export.hpp>
+	<cstdlib>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Export.hpp>
@@ -3889,8 +6986,24 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/Utf.hpp>
+	<iterator>
+	<locale>
+	<string>
+	<SFML/System/String.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/Utf.hpp>
 	<iterator>
@@ -3917,12 +7030,32 @@
 	<string>
 	<cstdlib>
 	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\utf.inl
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\string.inl
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
@@ -3941,8 +7074,18 @@
 	<SFML/System/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
 	<SFML/System/ThreadLocalPtr.inl>
 	<SFML/System/ThreadLocal.hpp>
@@ -3953,10 +7096,14 @@
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.hpp
 	<SFML/System/Vector2.inl>
 	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
+	<SFML/System/Vector2.inl>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector2.inl
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 	<SFML/System/Vector3.inl>
 
@@ -3967,12 +7114,26 @@
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\context.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/ContextSettings.hpp>
@@ -3987,12 +7148,24 @@
 	<SFML/System/NonCopyable.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\contextsettings.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\cursor.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<SFML/System/Vector2.hpp>
@@ -4011,8 +7184,22 @@
 	<SFML/Window/Keyboard.hpp>
 	<SFML/Window/Mouse.hpp>
 	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
+	<SFML/Config.hpp>
+	<SFML/Window/Joystick.hpp>
+	<SFML/Window/Keyboard.hpp>
+	<SFML/Window/Mouse.hpp>
+	<SFML/Window/Sensor.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\joystick.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/String.hpp>
 	<SFML/Window/Export.hpp>
@@ -4021,8 +7208,14 @@
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\keyboard.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/Export.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\mouse.hpp
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
@@ -4035,14 +7228,28 @@
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector3.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/System/Time.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\touch.hpp
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\videomode.hpp
+	<SFML/Window/Export.hpp>
+	<vector>
+	<SFML/Window/Export.hpp>
+	<vector>
 	<SFML/Window/Export.hpp>
 	<vector>
 	<SFML/Window/Export.hpp>
@@ -4055,8 +7262,34 @@
 	<SFML/Window/ContextSettings.hpp>
 	<SFML/Window/GlResource.hpp>
 	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Window/WindowBase.hpp>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowbase.hpp
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Window/Cursor.hpp>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/VideoMode.hpp>
+	<SFML/Window/Vulkan.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<SFML/Window/WindowStyle.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Vector2.hpp>
 	<SFML/Window/Cursor.hpp>
 	<SFML/Window/Export.hpp>
 	<SFML/Window/VideoMode.hpp>
@@ -4089,8 +7322,20 @@
 	<vector>
 	<cstddef>
 	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
+	<SFML/Window/Export.hpp>
+	<SFML/Window/WindowHandle.hpp>
+	<vector>
+	<cstddef>
+	<stdint.h>
 
 1728170077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\window\windowhandle.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -4099,12 +7344,20 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\blendmode.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\circleshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
@@ -4121,14 +7374,34 @@
 	<SFML/Graphics/Transformable.hpp>
 	<SFML/Graphics/VertexArray.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\drawable.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderStates.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderstates.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/BlendMode.hpp>
 	<SFML/Graphics/Transform.hpp>
@@ -4143,8 +7416,20 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rect.hpp
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
+	<SFML/System/Vector2.hpp>
+	<algorithm>
+	<SFML/Graphics/Rect.inl>
 	<SFML/System/Vector2.hpp>
 	<algorithm>
 	<SFML/Graphics/Rect.inl>
@@ -4159,8 +7444,24 @@
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Transform.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexarray.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Vertex.hpp>
 	<SFML/Graphics/PrimitiveType.hpp>
@@ -4181,14 +7482,28 @@
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\color.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Export.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\primitivetype.hpp
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\convexshape.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<vector>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<vector>
@@ -4211,14 +7526,38 @@
 	<map>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glyph.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<map>
+	<string>
+	<vector>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glyph.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\texture.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/GlResource.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Image.hpp>
 	<SFML/Window/GlResource.hpp>
@@ -4237,14 +7576,48 @@
 	<SFML/Graphics/Rect.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<string>
+	<vector>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rectangleshape.hpp
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Shape.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertarget.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/View.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/BlendMode.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/System/NonCopyable.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/Graphics/Rect.hpp>
@@ -4275,6 +7648,14 @@
 	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/System/Vector2.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\rendertexture.hpp
 	<SFML/Graphics/Export.hpp>
@@ -4285,8 +7666,26 @@
 	<SFML/Graphics/Texture.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Window/ContextSettings.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\renderwindow.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Image.hpp>
+	<SFML/Window/Window.hpp>
+	<string>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/RenderTarget.hpp>
 	<SFML/Graphics/Image.hpp>
@@ -4315,8 +7714,34 @@
 	<SFML/System/Vector3.hpp>
 	<map>
 	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Glsl.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<map>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.hpp
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
+	<SFML/Graphics/Transform.hpp>
+	<SFML/Graphics/Color.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Graphics/Glsl.inl>
 	<SFML/Graphics/Transform.hpp>
 	<SFML/Graphics/Color.hpp>
 	<SFML/System/Vector2.hpp>
@@ -4331,6 +7756,16 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\glsl.inl
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\sprite.hpp
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Graphics/Rect.hpp>
 	<SFML/Graphics/Export.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Graphics/Transformable.hpp>
@@ -4361,6 +7796,24 @@
 	<SFML/System/String.hpp>
 	<string>
 	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Font.hpp>
+	<SFML/Graphics/Rect.hpp>
+	<SFML/Graphics/VertexArray.hpp>
+	<SFML/System/String.hpp>
+	<string>
+	<vector>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\graphics\vertexbuffer.hpp
 	<SFML/Graphics/Export.hpp>
@@ -4371,8 +7824,44 @@
 	<SFML/Graphics/PrimitiveType.hpp>
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
+	<SFML/Graphics/Export.hpp>
+	<SFML/Graphics/PrimitiveType.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Window/GlResource.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
 	<SFML/System.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
 	<SFML/Audio/Listener.hpp>
@@ -4413,8 +7902,20 @@
 	<SFML/System/Time.hpp>
 	<string>
 	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<cstddef>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
 
@@ -4423,8 +7924,26 @@
 	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundStream.hpp>
 	<SFML/Audio/InputSoundFile.hpp>
@@ -4453,8 +7972,26 @@
 	<SFML/System/Time.hpp>
 	<SFML/System/Mutex.hpp>
 	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/AlResource.hpp>
 	<SFML/System/Vector3.hpp>
@@ -4465,6 +8002,8 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\alresource.hpp
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/Export.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\outputsoundfile.hpp
 	<SFML/Audio/Export.hpp>
@@ -4473,8 +8012,22 @@
 	<SFML/Audio/Export.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundSource.hpp>
 	<SFML/System/Time.hpp>
@@ -4497,8 +8050,28 @@
 	<string>
 	<vector>
 	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
 	<SFML/Audio/Export.hpp>
 	<SFML/Audio/SoundBuffer.hpp>
 	<SFML/Audio/SoundRecorder.hpp>
@@ -4521,8 +8094,28 @@
 	<SFML/System/Time.hpp>
 	<vector>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<vector>
@@ -4539,8 +8132,16 @@
 	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<SFML/Audio/Export.hpp>
+	<string>
 	<SFML/Audio/Export.hpp>
 	<string>
 	<SFML/Audio/Export.hpp>
@@ -4548,8 +8149,53 @@
 
 1731203950 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1731200970 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\inc.h
+	<SFML/Audio.hpp>
+	<SFML/Graphics.hpp>
+	<SFML/Graphics/Drawable.hpp>
+	<SFML/Graphics/RenderStates.hpp>
+	<SFML/Graphics/RenderTarget.hpp>
+	<SFML/Graphics/Texture.hpp>
+	<SFML/Graphics/Transformable.hpp>
+	<SFML/Graphics/Vertex.hpp>
+	<SFML/Network.hpp>
+	<SFML/System.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Window.hpp>
+	"clsColissionable.h"
+	<algorithm>
+	<array>
+	<atomic>
+	<cassert>
+	<cmath>
+	<cstdio>
+	<cstdlib>
+	<ctime>
+	<deque>
+	<exception>
+	<filesystem>
+	<fstream>
+	<functional>
+	<iomanip>
+	<iostream>
+	<limits>
+	<list>
+	<map>
+	<memory>
+	<mutex>
+	<queue>
+	<random>
+	<set>
+	<sstream>
+	<stack>
+	<string>
+	<thread>
+	<time.h>
+	<type_traits>
+	<vector>
+	"mapa.h"
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -4618,8 +8264,42 @@
 	<SFML/Network/TcpListener.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
+	<SFML/System.hpp>
+	<SFML/Network/Ftp.hpp>
+	<SFML/Network/Http.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Packet.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/Network/SocketSelector.hpp>
+	<SFML/Network/TcpListener.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/Network/UdpSocket.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\ftp.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/TcpSocket.hpp>
 	<SFML/System/NonCopyable.hpp>
@@ -4636,8 +8316,16 @@
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\export.hpp
 	<SFML/Config.hpp>
 	<SFML/Config.hpp>
+	<SFML/Config.hpp>
+	<SFML/Config.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcpsocket.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/System/Time.hpp>
@@ -4654,14 +8342,40 @@
 	<SFML/Network/SocketHandle.hpp>
 	<SFML/System/NonCopyable.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/SocketHandle.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<vector>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\sockethandle.hpp
 	<SFML/Config.hpp>
 	<basetsd.h>
 	<SFML/Config.hpp>
 	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
+	<SFML/Config.hpp>
+	<basetsd.h>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\http.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/TcpSocket.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<map>
+	<string>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/TcpSocket.hpp>
@@ -4688,8 +8402,24 @@
 	<istream>
 	<ostream>
 	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<istream>
+	<ostream>
+	<string>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\packet.hpp
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<string>
+	<vector>
 	<SFML/Network/Export.hpp>
 	<string>
 	<vector>
@@ -4702,8 +8432,18 @@
 	<SFML/System/Time.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/System/Time.hpp>
 
 1728170076 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\sfml\include\sfml\network\tcplistener.hpp
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
 	<SFML/Network/Export.hpp>
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
@@ -4720,11 +8460,22 @@
 	<SFML/Network/Socket.hpp>
 	<SFML/Network/IpAddress.hpp>
 	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
+	<SFML/Network/Export.hpp>
+	<SFML/Network/Socket.hpp>
+	<SFML/Network/IpAddress.hpp>
+	<vector>
 
 1731203138 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
+	"inc.h"
 
 1730860746 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
+	<colisionable.h>
+	<colisionable.h>
 	<colisionable.h>
 	<colisionable.h>
 
@@ -4732,16 +8483,26 @@
 	<iostream>
 	<stdlib.h>
 	"Item.h"
+	<iostream>
+	<stdlib.h>
+	"Item.h"
 
 1731203950 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\item.h
+	<SFML/Graphics.hpp>
+	"colisionable.h"
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 
 1730910599 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
+	<stdlib.h>
+	"itemPuntos.h"
 
 1731203950 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\data\etc\itempuntos.h
+	<SFML/Graphics.hpp>
+	"colisionable.h"
+	"inc.h"
 	<SFML/Graphics.hpp>
 	"colisionable.h"
 	"inc.h"
@@ -4751,8 +8512,32 @@
 	<SFML/Audio.hpp>
 	"Botones.h"
 	"Menu.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Botones.h"
+	"Menu.h"
 
 1730860746 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\game.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"enemigo.h"
+	<stdlib.h>
+	<iostream>
+	"data/characters/pj.h"
+	"data/etc/Item.h"
+	"src/mapa.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -4793,28 +8578,53 @@
 	"colisionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"colisionable.h"
+	<stdlib.h>
+	<iostream>
 
 1731202568 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+	<iostream>
+	"enemigo.h"
 	<iostream>
 	"enemigo.h"
 
 1731203739 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.cpp
 	<iostream>
 	"enemigoEsqueleto.h"
+	<iostream>
+	"enemigoEsqueleto.h"
 
 1731143383 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoesqueleto.h
+	"inc.h"
 	"inc.h"
 
 1731202568 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoslime.cpp
 	"enemigoSlime.h"
+	"enemigoSlime.h"
 
 1731143439 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
+	"inc.h"
 
-1731202568 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
+1731792162 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
-1731200970 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.h
+1731791733 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -4831,12 +8641,16 @@
 	"enemigoEsqueleto.h"
 	"enemigoSlime.h"
 	"itemPuntos.h"
+	"Botones.h"
+	"Pausa.h"
 
 1731202696 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\mapa.cpp
 	"mapa.h"
 	<iostream>
+	"mapa.h"
+	<iostream>
 
-1731725634 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\archivojugadores.cpp
+1731789522 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\archivojugadores.cpp
 	"ArchivoJugadores.h"
 	<iostream>
 	<cstring>
@@ -4844,32 +8658,47 @@
 1731148312 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\archivojugadores.h
 	"Jugador.h"
 	<string>
+	"Jugador.h"
+	<string>
 
-1731722921 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\jugador.h
+1731787972 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\jugador.h
+	<iostream>
+	<string>
 	<iostream>
 	<string>
 
-1731726369 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
+1731789522 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
 	"CargarPartida.h"
+	"ArchivoJugadores.h"
 
 1731724392 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\cargarpartida.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
 1731149892 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\comojugar.cpp
 	"ComoJugar.h"
+	"ComoJugar.h"
 
 1731149953 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\comojugar.h
 
-1731718720 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\creditos.cpp
+1731790418 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\creditos.cpp
 	"Creditos.h"
-	<iostream>
 
 1731148836 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\creditos.h
 	<SFML/Graphics.hpp>
 	"Botones.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
 1731717682 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\menu.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Botones.h"
+	"Jugar.h"
+	"Opciones.h"
+	"Creditos.h"
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Botones.h"
@@ -4881,8 +8710,14 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
 
 1731724566 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\jugar.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"NuevaPartida.h"
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"NuevaPartida.h"
@@ -4891,8 +8726,14 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"Historia.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"Historia.h"
 
 1731148836 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\historia.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"game.h"
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"game.h"
@@ -4900,15 +8741,18 @@
 1731720193 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\opciones.h
 	<SFML/Graphics.hpp>
 	"Botones.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
 1731148312 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\ranking.h
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
-1731723545 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
+1731791530 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\historia.cpp
 	"Historia.h"
-	<iostream>
+	"Pausa.h"
 
-1731149891 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugador.cpp
+1731790418 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugador.cpp
 	"Jugador.h"
 	<iostream>
 	<cstring>
@@ -4916,34 +8760,51 @@
 1731724566 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
 	"CargarPartida.h"
+	"Jugar.h"
+	"CargarPartida.h"
 
 1731720980 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
+	"Menu.h"
+	<SFML/Graphics.hpp>
 	"Menu.h"
 	<SFML/Graphics.hpp>
 
 1731148312 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\musica.cpp
 	"musica.h"
 	<iostream>
+	"musica.h"
+	<iostream>
 
-1731726248 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
+1731789626 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
 	"NuevaPartida.h"
 	"Jugador.h"
+	"ArchivoJugadores.h"
 	<iostream>
 
 1731724058 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\opciones.cpp
 	"Opciones.h"
 	"ArchivoJugadores.h"
 	<iostream>
+	"Opciones.h"
+	"ArchivoJugadores.h"
+	<iostream>
 
 1731148312 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\ranking.cpp
 	"Ranking.h"
+	"Ranking.h"
 
-1731148312 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
+1731790418 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\pausa.h
 	<SFML/Graphics.hpp>
+	"Botones.h"
 
-1731149891 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+1731791530 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+	"Pausa.h"
+	"Menu.h"
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\musica.h
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<iostream>
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<iostream>
@@ -4953,20 +8814,34 @@
 	"CargarPartida.h"
 	"NuevaPartida.h"
 	"ArchivoJugadores.h"
+	<SFML/Graphics.hpp>
+	"CargarPartida.h"
+	"NuevaPartida.h"
+	"ArchivoJugadores.h"
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\cargarpartida.h
+	<SFML/Graphics.hpp>
+	<ArchivoJugadores.h>
 	<SFML/Graphics.hpp>
 	<ArchivoJugadores.h>
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\archivojugadores.h
 	"Jugador.h"
 	<string>
+	"Jugador.h"
+	<string>
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\jugador.h
 	<iostream>
 	<string>
+	<iostream>
+	<string>
 
 1730961510 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\nuevapartida.h
+	<SFML/Graphics.hpp>
+	"Jugador.h"
+	"ArchivoJugadores.h"
+	"Historia.h"
 	<SFML/Graphics.hpp>
 	"Jugador.h"
 	"ArchivoJugadores.h"
@@ -4977,11 +8852,17 @@
 	<windows.h>
 	"game.h"
 	"Pausa.h"
+	<SFML/Graphics.hpp>
+	<windows.h>
+	"game.h"
+	"Pausa.h"
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\pausa.h
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\creditos.h
+	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\opciones.h
@@ -4989,28 +8870,42 @@
 	"ComoJugar.h"
 	"Ranking.h"
 	"ArchivoJugadores.h"
+	<SFML/Graphics.hpp>
+	"ComoJugar.h"
+	"Ranking.h"
+	"ArchivoJugadores.h"
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\comojugar.h
 	<SFML/Graphics.hpp>
+	<SFML/Graphics.hpp>
 
 1730960832 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\include\ranking.h
+	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\archivojugadores.cpp
 	"ArchivoJugadores.h"
 	<iostream>
 	<cstring>
+	"ArchivoJugadores.h"
+	<iostream>
+	<cstring>
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
+	"CargarPartida.h"
 	"CargarPartida.h"
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\comojugar.cpp
 	"ComoJugar.h"
+	"ComoJugar.h"
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\creditos.cpp
 	"Creditos.h"
+	"Creditos.h"
 
 1730961795 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\historia.cpp
+	"Historia.h"
+	<iostream>
 	"Historia.h"
 	<iostream>
 
@@ -5018,29 +8913,42 @@
 	"Jugador.h"
 	<iostream>
 	<cstring>
+	"Jugador.h"
+	<iostream>
+	<cstring>
 
 1730961547 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
+	"Jugar.h"
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\musica.cpp
+	"musica.h"
+	<iostream>
 	"musica.h"
 	<iostream>
 
 1730961815 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
 	"NuevaPartida.h"
 	<iostream>
+	"NuevaPartida.h"
+	<iostream>
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\opciones.cpp
+	<iostream>
+	"Opciones.h"
 	<iostream>
 	"Opciones.h"
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 	"Pausa.h"
+	"Pausa.h"
 
 1730960832 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\ranking.cpp
 	"Ranking.h"
+	"Ranking.h"
 
 1730951109 c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.h
+	"inc.h"
 	"inc.h"
 
 1730951109 source:c:\users\usuario\documents\github\el-rescate-del-huevo-del-caballero\src\jefe.cpp
@@ -5048,8 +8956,13 @@
 	<cstdlib>
 	<stdio.h>
 	"Jefe.h"
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	"Jefe.h"
 
 1730938952 c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jefe.h
+	"inc.h"
 	"inc.h"
 
 1730938952 source:c:\users\dylan\documents\code\el-rescate-del-huevo-del-caballero\src\jefe.cpp
@@ -5057,15 +8970,26 @@
 	<cstdlib>
 	<stdio.h>
 	"Jefe.h"
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	"Jefe.h"
 
 1731142827 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\clscolissionable.h
+	<SFML/Graphics.hpp>
 	<SFML/Graphics.hpp>
 
 1731147617 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\creditos.h
 	<SFML/Graphics.hpp>
 	"Botones.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
 1731140315 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\botones.h
+	<iostream>
+	<windows.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
 	<iostream>
 	<windows.h>
 	<SFML/Graphics.hpp>
@@ -5081,15 +9005,30 @@
 	"clsColissionable.h"
 	<stdlib.h>
 	<iostream>
+	<cstdlib>
+	<stdio.h>
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"clsColissionable.h"
+	<stdlib.h>
+	<iostream>
 
 1731717912 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\botones.cpp
+	"Botones.h"
+	<iostream>
 	"Botones.h"
 	<iostream>
 
 1731142855 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\clscolissionable.cpp
 	"clsColissionable.h"
+	"clsColissionable.h"
 
 1731144989 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\clspj.cpp
+	<iostream>
+	"clsPJ.h"
+	"mapa.h"
 	<iostream>
 	"clsPJ.h"
 	"mapa.h"
@@ -5101,15 +9040,27 @@
 	<SFML/System.hpp>
 	"clsColissionable.h"
 	"inc.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Window.hpp>
+	<SFML/System.hpp>
+	"clsColissionable.h"
+	"inc.h"
 
 1731203012 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jefe.h
+	"inc.h"
 	"inc.h"
 
 1731143338 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\item.h
 	<SFML/Graphics.hpp>
 	"clsColissionable.h"
+	<SFML/Graphics.hpp>
+	"clsColissionable.h"
 
 1731143493 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\itempuntos.h
+	<SFML/Graphics.hpp>
+	"clsColissionable.h"
+	"inc.h"
 	<SFML/Graphics.hpp>
 	"clsColissionable.h"
 	"inc.h"
@@ -5118,8 +9069,14 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"game.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"game.h"
 
 1731143330 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\item.cpp
+	<iostream>
+	<stdlib.h>
+	"Item.h"
 	<iostream>
 	<stdlib.h>
 	"Item.h"
@@ -5127,8 +9084,14 @@
 1731143484 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\itempuntos.cpp
 	<stdlib.h>
 	"itemPuntos.h"
+	<stdlib.h>
+	"itemPuntos.h"
 
 1731202838 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+	<iostream>
+	<cstdlib>
+	<stdio.h>
+	"Jefe.h"
 	<iostream>
 	<cstdlib>
 	<stdio.h>
@@ -5141,8 +9104,17 @@
 	"Jugar.h"
 	"Opciones.h"
 	"Creditos.h"
+	<SFML/Graphics.hpp>
+	<SFML/Audio.hpp>
+	"Botones.h"
+	"Jugar.h"
+	"Opciones.h"
+	"Creditos.h"
 
 1731141119 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"NuevaPartida.h"
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"NuevaPartida.h"
@@ -5151,8 +9123,13 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 	"Historia.h"
+	<SFML/Graphics.hpp>
+	"Botones.h"
+	"Historia.h"
 
 1731136092 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\opciones.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
 	<SFML/Graphics.hpp>
 	"Botones.h"
 

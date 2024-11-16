@@ -10,23 +10,18 @@ ArchivoJugadores::ArchivoJugadores(const std::string &n){
 }
 
 int ArchivoJugadores::contarRegistro(){
-    FILE *p=fopen(nombre.c_str(), "rb");
-    if (p == nullptr){
-        return 0;
-    }
+    FILE *p = fopen(nombre.c_str(), "rb");
+    if (p == nullptr){return 0;}
     fseek(p, 0, 2);
-    int tam=ftell(p);
+    int tam = ftell(p);
     fclose(p);
-    return tam/sizeof(Jugador);
+    if(tam==0){return 0;}
+    return tam / sizeof(Jugador);
 }
 
-bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){///recibe el nombre del jugador desde jugador.h
-    FILE *p;
-    p=fopen(nombre.c_str(),"ab");
-    if(p==nullptr){
-        cout<<"grabarRegistro: error al abrir el archivo para grabar"<<endl;
-        return false;
-    }
+bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){
+    FILE *p = fopen(nombre.c_str(), "ab");
+    if(p == nullptr){return false;}
     jugador.escribirEnArchivo(p);
     fclose(p);
     return true;
@@ -35,27 +30,20 @@ bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){///recibe el nombr
 std::string ArchivoJugadores::listarRegistro(){
     FILE *p = fopen(nombre.c_str(), "rb");
     std::string registro;
-
-    if (p == nullptr){
-        return "";
-    }
+    if (p == nullptr){return "";}
 
     Jugador jug;
     while(jug.leerDeArchivo(p)){
-        registro += jug.getNombre() + "     " + std::to_string(jug.getPuntaje()) +" puntos     nivel " + std::to_string(jug.getNivel()) + "\n";
+        registro += jug.getNombre() + "             " + std::to_string(jug.getPuntaje()) +" puntos              nivel " + std::to_string(jug.getNivel()) + "\n";
     }
 
     fclose(p);
     return registro;
 }
 
-
 void ArchivoJugadores::vaciar(){
     FILE* p = fopen(nombre.c_str(), "wb");///abre al archivo y como el archivo ya existe su contenido sera borrado
-    if (p == nullptr) {
-        cout << "Error al vaciar el archivo."<<endl;
-        return;
-    }
+    if (p == nullptr){return;}
     fclose(p);
-    cout << "Se eliminaron todos los registros."<<endl;
+    cout<<"archivo vacio"<<endl;
 }

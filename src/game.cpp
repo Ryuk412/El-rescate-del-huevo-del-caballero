@@ -1,11 +1,11 @@
 #include "game.h"
 
-     mapa mapaTest;
+mapa mapaTest;
 
-game::game(sf::RenderWindow& window){
-
-    while (!mapaTest.mapaCargado()) {
-        std::cout<<"mapa..."<<std::endl;
+game::game(sf::RenderWindow& window)
+    : pausa(690, 55, 50, 50, " ")
+{
+    while(!mapaTest.mapaCargado()){
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
 
@@ -18,6 +18,8 @@ game::game(sf::RenderWindow& window){
     textoTest.setFillColor(sf::Color::White);
     contador=0;
     textoTest.setCharacterSize(30);
+
+    enPausa=0;
 
 }
 
@@ -90,6 +92,11 @@ void game::update(sf::RenderWindow& window){
         }
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
 
+
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+            enPausa=1;
+        }
+
 }
 
 void game::render(sf::RenderWindow& window){
@@ -97,6 +104,11 @@ void game::render(sf::RenderWindow& window){
         window.clear();
 
         mapaTest.dibujar(window);
+
+        if(enPausa){
+            pausaMenu(window);
+            enPausa=0;
+        }
 
         window.draw(ejemplo);
         window.draw(corazon);

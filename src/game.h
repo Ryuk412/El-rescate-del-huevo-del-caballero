@@ -16,6 +16,8 @@
 #include "enemigoEsqueleto.h"
 #include "enemigoSlime.h"
 #include "itemPuntos.h"
+#include "Botones.h"
+#include "Pausa.h"
 
 class game{
 
@@ -33,8 +35,8 @@ private:
     float limiteCamaraIzq=400;
     float limiteCamaraDer=1200;
 
-    sf::Sprite _nv;
-    sf::Texture _textura;
+    Boton pausa;
+    bool enPausa;
 
 public:
     game(sf::RenderWindow& window);

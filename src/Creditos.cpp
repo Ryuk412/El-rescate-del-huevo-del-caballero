@@ -1,8 +1,5 @@
 #include "Creditos.h"
 
-#include <iostream>
-using namespace std;
-
 void creditosMenu(sf::RenderWindow& window){
     Boton volver(363, 463, 70, 20, " ");
 
