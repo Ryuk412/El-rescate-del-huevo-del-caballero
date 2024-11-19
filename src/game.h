@@ -13,8 +13,7 @@
 #include "clsPJ.h"
 #include "Item.h"
 #include "mapa.h"
-#include "enemigoEsqueleto.h"
-#include "enemigoSlime.h"
+#include "enemigo2.h"
 #include "itemPuntos.h"
 
 //Clase que funciona como el game engine.
@@ -25,13 +24,13 @@ class game{
 
         sf::Event evento;
         sf::View camara;
-
         pj ejemplo;
         Jefe oso;
         enemigo slime;
+        enemigo2 esqueleto;
         Item corazon;
-        int contador;
         itemPuntos star;
+        int contador;
         sf::Font font;
         sf::Text textoTest;
         float limiteCamaraIzq=400;
@@ -39,10 +38,11 @@ class game{
         float limiteCamaraDer=1200;
         //caso de mapa comun: float limiteCamaraDer=1200;
         //caso de mapa jefe: 400;
-
         sf::Sprite _nv;
         sf::Texture _textura;
         void setLevel();
+        void nivel1();
+        bool lvl1=true;
         bool nivel2=false;
     public:
     //Constructor y destructor

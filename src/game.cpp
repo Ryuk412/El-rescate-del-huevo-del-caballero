@@ -8,7 +8,6 @@ game::game(sf::RenderWindow& window){
         std::cout<<"Mapa cargando..."<<std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
-
     window.setFramerateLimit(60);
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
@@ -18,7 +17,7 @@ game::game(sf::RenderWindow& window){
     textoTest.setFillColor(sf::Color::White);
     contador=0;
     textoTest.setCharacterSize(30);
-    slime.setSpritePosition(100,200,120,300);
+    nivel1();
 }
 
 game::~game(){}
@@ -38,10 +37,19 @@ void game::updateEvent(sf::RenderWindow& window){
 }
 
 void game::setLevel(){
-            mapaTest.setTextMapa(2);
-            mapaTest.setNivel(2);
-            mapaTest.cargarNivel2();
+    mapaTest.setTextMapa(2);
+    mapaTest.setNivel(2);
+    mapaTest.cargarNivel2();
+    slime.setSpritePosition(420,200,380,600);
+    esqueleto.setSpritePosition(900,450,850,1200);
 }
+
+
+void game::nivel1(){
+    slime.setSpritePosition(100,200,120,300);
+    esqueleto.setSpritePosition(800,360,750,1000);
+}
+
 //Toda las verificaiones y los updates de cada objeto van acá
 void game::update(sf::RenderWindow& window){
 
@@ -58,6 +66,7 @@ void game::update(sf::RenderWindow& window){
     ejemplo.update(mapaTest);
     oso.update(mapaTest,ejemplo);
     slime.update(ejemplo);
+    esqueleto.update(ejemplo);
     // Verificar si el personaje ha pasado el l�mite para mover la c�mara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -96,7 +105,7 @@ void game::update(sf::RenderWindow& window){
 
         //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
         textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador==60&&nivel2==false){
+        if(contador==200&&nivel2==false){
             setLevel();
             nivel2=true;
         }
@@ -113,6 +122,7 @@ void game::render(sf::RenderWindow& window){
         window.draw(oso);
         window.draw(corazon);
         window.draw(slime);
+        window.draw(esqueleto);
         window.draw(star);
         window.draw(textoTest);
 

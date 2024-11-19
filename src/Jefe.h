@@ -2,23 +2,18 @@
 #define JEFE_H
 #include "inc.h"
 #include "pj.h"
-class Jefe : public sf::Drawable, public colisionable
-{
+class Jefe : public sf::Drawable, public colisionable{
     public:
         Jefe();
-    void update(mapa& _objetoMapa, pj ejemplo);
-
-       void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-   sf::RectangleShape getHitbox()const override;
-    bool isAlive();
-    void muerte();
-    void danioRecivido(int danio);
-    void ataque();
-    void setSpritePosition(float x,float y);
-
-
+        void update(mapa& _objetoMapa, pj ejemplo);
+        void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+        sf::RectangleShape getHitbox()const override;
+        bool isAlive();
+        void muerte();
+        void danioRecivido(int danio);
+        void ataque();
+        void setSpritePosition(float x,float y);
     private:
-
         sf::RectangleShape j_hitbox;
         sf::RectangleShape _hitbox;
         sf::Sprite j_sprite;

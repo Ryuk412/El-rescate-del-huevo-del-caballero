@@ -1,15 +1,14 @@
-#ifndef ENEMIGO_H
-#define ENEMIGO_H
+#ifndef ENEMIGO2_H_INCLUDED
+#define ENEMIGO2_H_INCLUDED
 #include "inc.h"
 #include "enemigoBase.h"
 
-class enemigo:  public sf::Drawable, public colisionable, public enemigoBase{
-
+class enemigo2:  public sf::Drawable, public colisionable, public enemigoBase{
     public:
-        enemigo();
+        enemigo2();
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
         sf::RectangleShape getHitbox()const override;
         void attackFrames() override;
 };
 
-#endif // ENEMIGO_H
+#endif // ENEMIGO2_H_INCLUDED
