@@ -83,6 +83,8 @@
 		<Unit filename="include/Opciones.h" />
 		<Unit filename="include/Pausa.h" />
 		<Unit filename="include/enemigo.h" />
+		<Unit filename="include/enemigo2.h" />
+		<Unit filename="include/enemigoBase.h" />
 		<Unit filename="include/enemigoEsqueleto.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ArchivoJugadores.cpp" />
@@ -102,9 +104,9 @@
 		<Unit filename="src/Opciones.cpp" />
 		<Unit filename="src/Pausa.cpp" />
 		<Unit filename="src/enemigo.cpp" />
+		<Unit filename="src/enemigo2.cpp" />
+		<Unit filename="src/enemigoBase.cpp" />
 		<Unit filename="src/enemigoEsqueleto.cpp" />
-		<Unit filename="src/enemigoSlime.cpp" />
-		<Unit filename="src/enemigoSlime.h" />
 		<Unit filename="src/game.cpp" />
 		<Unit filename="src/game.h" />
 		<Unit filename="src/inc.h" />
