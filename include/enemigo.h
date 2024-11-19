@@ -3,11 +3,10 @@
 #include "inc.h"
 #include "enemigoBase.h"
 
-class enemigo:  public sf::Drawable, public colisionable, public enemigoBase{
+class enemigo: public colisionable, public enemigoBase{
 
     public:
         enemigo();
-        void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
         sf::RectangleShape getHitbox()const override;
         void attackFrames() override;
 };

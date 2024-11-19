@@ -16,12 +16,6 @@ sf::RectangleShape enemigo2::getHitbox()const{
     return en_hitbox;
 }
 
-void enemigo2::draw(sf::RenderTarget& target, sf::RenderStates state)const{
-    target.draw(en_hitbox);
-    target.draw(e_sprite);
-    target.draw(attackHitbox);
-}
-
 void enemigo2::attackFrames(){
         _frame2 += 0.30;
         if (e_sprite.getScale().x == -1 && _frame2 > 2) {
