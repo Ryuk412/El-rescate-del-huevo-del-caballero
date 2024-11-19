@@ -21,7 +21,6 @@
 class game{
     private:
     //Variables que solo la clase game puede tener acceso:
-
         sf::Event evento;
         sf::View camara;
         pj ejemplo;
@@ -40,8 +39,12 @@ class game{
         //caso de mapa jefe: 400;
         sf::Sprite _nv;
         sf::Texture _textura;
+    //Funciones privadas de la funcion publica update:
         void setLevel();
         void nivel1();
+        void updateCharacters();
+        void updateCamera(sf::RenderWindow& window);
+        void checkCollisions();
         bool lvl1=true;
         bool nivel2=false;
     public:

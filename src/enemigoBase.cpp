@@ -116,3 +116,7 @@ void enemigoBase::attackFrames(){
 float enemigoBase::getVelocityX(){
     return e_velocity.x;
 }
+
+sf::RectangleShape enemigoBase::getDamageHitbox(){
+    return damageHitbox;
+}

@@ -37,6 +37,7 @@ class enemigoBase:public sf::Drawable{
         void danioRecibido(int danio);
         virtual void attackFrames();
         float getVelocityX();
+        sf::RectangleShape getDamageHitbox();
 
 };
 

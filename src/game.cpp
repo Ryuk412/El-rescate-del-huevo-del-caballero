@@ -50,11 +50,14 @@ void game::nivel1(){
     esqueleto.setSpritePosition(800,360,750,1000);
 }
 
-//Toda las verificaiones y los updates de cada objeto van acá
-void game::update(sf::RenderWindow& window){
+void game::updateCharacters(){
+    ejemplo.update(mapaTest);
+    oso.update(mapaTest,ejemplo);
+    slime.update(ejemplo);
+    esqueleto.update(ejemplo);
+}
 
-    updateEvent(window);
-
+void game::checkCollisions(){
     if(corazon.getActive()==false){
        corazon.respawn(mapaTest);
        corazon.setActive(true);
@@ -63,10 +66,36 @@ void game::update(sf::RenderWindow& window){
        star.respawn(mapaTest);
        star.setActive(true);
     }
-    ejemplo.update(mapaTest);
-    oso.update(mapaTest,ejemplo);
-    slime.update(ejemplo);
-    esqueleto.update(ejemplo);
+
+    if(ejemplo.isCollision(star) ) {
+            contador+=20;
+            star.setActive(false);
+    }
+
+    if(ejemplo.isCollision(corazon) ) {
+        ejemplo.curar(25);
+        corazon.setActive(false);
+    }
+
+    if(ejemplo.getHitbox().getGlobalBounds().intersects(slime.getDamageHitbox().getGlobalBounds())){
+        ejemplo.danioRecibido(25);
+    }
+
+    if(ejemplo.getHitbox().getGlobalBounds().intersects(esqueleto.getDamageHitbox().getGlobalBounds())){
+        ejemplo.danioRecibido(40);
+    }
+    if(!ejemplo.isAlive()){
+        ejemplo.respawn();
+        slime.respawn();
+        esqueleto.respawn();
+    }
+    if(contador==200&&nivel2==false){
+            setLevel();
+            nivel2=true;
+        }
+}
+
+void game::updateCamera(sf::RenderWindow& window){
     // Verificar si el personaje ha pasado el l�mite para mover la c�mara
         if (ejemplo.getPositionX() > limiteCamaraIzq) {
             // Centrar la vista en el personaje solo en el eje horizontal
@@ -83,34 +112,15 @@ void game::update(sf::RenderWindow& window){
 
     // Actualizar la vista en la ventana
     window.setView(camara);
-    if(ejemplo.isCollision(star) ) {
-            contador+=20;
-            star.setActive(false);
-        }
+}
 
-/*if(ejemplo.isCollision(oso)){
-    if(ejemplo.isAlive()==false){
-        ejemplo.muerte();
-    }
-    oso.ataque();
-    ejemplo.danioRecibido(25);
-
-}*/
-
-    if(ejemplo.isCollision(corazon) ) {
-            ejemplo.curar(25);
-            corazon.setActive(false);
-        }
-
-
-        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-        textoTest.setString("PUNTOS: "+std::to_string(contador));
-        if(contador==200&&nivel2==false){
-            setLevel();
-            nivel2=true;
-        }
-        //textoTest.setString("BOTON APRETADO: "+std::to_string(evento.type));
-
+//Toda las verificaiones y los updates de cada objeto van acá
+void game::update(sf::RenderWindow& window){
+    updateEvent(window);
+    updateCharacters();
+    updateCamera(window);
+    checkCollisions();
+    textoTest.setString("PUNTOS: "+std::to_string(contador));
 }
 //Todas las visualizaciones
 void game::render(sf::RenderWindow& window){
