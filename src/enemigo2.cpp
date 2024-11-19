@@ -10,6 +10,8 @@ enemigo2::enemigo2(){
     e_vida=50;
     attackHitbox.setSize({10,-30});
     attackHitbox.setFillColor(sf::Color::Red);
+    damageHitbox.setSize({20,-50});
+    damageHitbox.setFillColor(sf::Color::Black);
 }
 
 sf::RectangleShape enemigo2::getHitbox()const{
@@ -25,14 +27,22 @@ void enemigo2::attackFrames(){
         }
         e_velocity = {0, 0};
         e_sprite.setTextureRect({0 + (int)_frame2 * 130, 260, 130, 130});
+        if(_frame2>=5&&_frame2<=8){
+            damageFlag=true;
+        }
         if(_frame2>=9){
+            damageFlag=false;
             _frame3+=0.30;
             e_sprite.setTextureRect({0 + (int)_frame3 * 130, 390, 130, 130});
+            if(_frame3>=6&&_frame3<=9){
+                damageFlag=true;
+           }
         }
         if(_frame3>=12){
             _frame2=0;
             _frame3=0;
             countdown=2;
+            damageFlag=false;
         }
 
 }
