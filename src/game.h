@@ -25,13 +25,13 @@ class game{
         sf::View camara;
         pj ejemplo;
         Jefe oso;
-        enemigo2 esqueleto;
         std::vector<enemigoBase *> enemigos;
         Item corazon;
         itemPuntos star;
         int contador;
         sf::Font font;
         sf::Text textoTest;
+        sf::Text caballeroVida;
         float limiteCamaraIzq=400;
         //caso de mapa jefe:
         float limiteCamaraDer=1200;

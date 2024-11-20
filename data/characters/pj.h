@@ -28,6 +28,7 @@ class pj: public sf::Drawable, public colisionable
         void curar(int cant);
         float getPositionX();
         float getPositionY();
+        float getVida();
     protected:
 
     private:

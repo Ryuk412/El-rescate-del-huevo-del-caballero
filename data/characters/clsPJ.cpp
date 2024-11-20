@@ -10,23 +10,16 @@ pj::pj() {
     _sprite.setTextureRect({0, 0, 195, 195});
     _sprite.setOrigin(_sprite.getGlobalBounds().width / 2, _sprite.getGlobalBounds().height);
 
-
-
     // Configurar hitboxes
     m_hitbox.setSize({50, 60}); // Hitbox personaje
     m_hitbox.setFillColor(sf::Color::Red);
     e_hitbox.setSize({25, 65}); // Hitbox espada
     e_hitbox.setFillColor(sf::Color::Blue);
-
-
     _sprite.setPosition(700, 200);
 
     _vida=100;
    _bVida.setSize({_vida,10}); /// _bVida: barra de vida(grafica x ventana)
    _bVida.setFillColor(sf::Color::Green);
-
-
-
 }
 
 pj::~pj() {}
@@ -35,9 +28,6 @@ pj::~pj() {}
 void pj::update(mapa& _objetoMapa){
 
     _velocity = {0, _velocity.y};  // Reiniciar velocidad en X y mantener la velocidad en Y
-
-
-   // _velocity.y += 3.0f; // Aplicar gravedad en el eje Y
 
     // Animación si el personaje está quieto
     if (_velocity.x == 0 && !_isJumping) {
@@ -109,20 +99,16 @@ void pj::update(mapa& _objetoMapa){
         // No es necesario marcar _isJumping como false aca, ya que el personaje todavía está en el aire
     }else{_sprite.setTextureRect({0,1170,195,195});}
 }
-
     _sprite.move(_velocity.x, 0); // Movimiento en el eje X
-
 
     // Verificar colisiones en el eje X
     m_hitbox.setPosition(_sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);
     if (_objetoMapa.verificarColision(m_hitbox)) {
         if (_velocity.x != 0) {  // Si el personaje estaba moviéndose en X
-
             _sprite.move(-_velocity.x, 0); // Deshacer el movimiento en X
             _velocity.x = 0; // Detiene el movimiento en X sin afectar el eje Y
         }
 }
-
     ///actualización de la posición de la hitbox (ancho, alto) 5= 66=offset
     ///conj de fotogramas q animamos con la
     m_hitbox.setPosition(5 + _sprite.getGlobalBounds().left + 66, _sprite.getGlobalBounds().top + 64);///hitbox se posiciona al sprite
@@ -161,19 +147,17 @@ void pj::update(mapa& _objetoMapa){
 }
 
 bool pj::isAlive(){
- if( _vida > 0  ){ return true;   }
- else{return false;    }
+        if( _vida > 0  ) return true;
+            else return false;
 }
 
 void pj::danioRecibido(int danio){
 
         _frame4 += 0.1f;
-
-
-         _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
-        if (_frame4 >= 4) {
-            _frame4 = 0;
-        _vida=_vida-danio;
+        _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
+            if (_frame4 >= 4) {
+                _frame4 = 0;
+                _vida=_vida-danio;
         }
 }
 
@@ -189,7 +173,7 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
 
 // Métodos auxiliares y de estado del personaje
 bool pj::getBan(){
-return _ban;
+    return _ban;
 }
 
 void pj::curar(int cant) {
@@ -225,9 +209,10 @@ sf::RectangleShape pj::getHitboxE() {
 
 // Método de respawn para reiniciar la posición del personaje
 void pj::respawn() {
-    _sprite.setPosition(std::rand() % 700 + _sprite.getGlobalBounds().width,
-                        std::rand() % 500 + _sprite.getGlobalBounds().height);
+    _sprite.setPosition(50,100);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
 }
 
-
+float pj::getVida(){
+    return _vida;
+}
