@@ -27,6 +27,7 @@ class game{
         Jefe oso;
         enemigo slime;
         enemigo2 esqueleto;
+        std::vector<enemigoBase *> enemigos;
         Item corazon;
         itemPuntos star;
         int contador;

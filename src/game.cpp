@@ -48,6 +48,8 @@ void game::setLevel(){
 void game::nivel1(){
     slime.setSpritePosition(100,200,120,300);
     esqueleto.setSpritePosition(800,360,750,1000);
+    enemigos.push_back(new enemigo());
+    this->enemigos[0]->setSpritePosition(300,400,320,500);
 }
 
 void game::updateCharacters(){
@@ -55,6 +57,7 @@ void game::updateCharacters(){
     oso.update(mapaTest,ejemplo);
     slime.update(ejemplo);
     esqueleto.update(ejemplo);
+    this->enemigos[0]->update(ejemplo);
 }
 
 void game::checkCollisions(){
@@ -135,7 +138,7 @@ void game::render(sf::RenderWindow& window){
         window.draw(esqueleto);
         window.draw(star);
         window.draw(textoTest);
-
+        window.draw(*enemigos[0]);
         window.display();
 
 }

@@ -5755,7 +5755,7 @@
 1731464202 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\colisionable.h
 	<SFML/Graphics.hpp>
 
-1731585358 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\inc.h
+1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\inc.h
 	<SFML/Audio.hpp>
 	<SFML/Graphics.hpp>
 	<SFML/Graphics/Drawable.hpp>
@@ -5768,7 +5768,7 @@
 	<SFML/System.hpp>
 	<SFML/System/Time.hpp>
 	<SFML/Window.hpp>
-	"clsColissionable.h"
+	"colisionable.h"
 	<algorithm>
 	<array>
 	<atomic>
@@ -5882,8 +5882,8 @@
 1731591789 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\mapa.h
 	"inc.h"
 
-1731464202 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
-	<colisionable.h>
+1732053742 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
+	"colisionable.h"
 
 1731589919 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\data\etc\item.cpp
 	<iostream>
@@ -5917,7 +5917,7 @@
 	<iostream>
 	<string>
 
-1731593569 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+1732106507 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
 	<iostream>
 	"enemigo.h"
 
@@ -5954,7 +5954,7 @@
 	<SFML/Audio.hpp>
 	<iostream>
 
-1731585358 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\main.cpp
+1732053742 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\main.cpp
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Botones.h"
@@ -5989,7 +5989,7 @@
 	"Botones.h"
 	"game.h"
 
-1731593179 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.h
+1732106898 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -6003,11 +6003,10 @@
 	"clsPJ.h"
 	"Item.h"
 	"mapa.h"
-	"enemigoEsqueleto.h"
-	"enemigoSlime.h"
+	"enemigo2.h"
 	"itemPuntos.h"
 
-1731591666 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.h
+1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 	"pj.h"
 
@@ -6071,7 +6070,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1731593674 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.cpp
+1732108211 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731583569 source:c:\users\54113\documents\we\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
@@ -6096,7 +6095,7 @@
 	"Botones.h"
 	"game.h"
 
-1731591542 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1732053742 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>
@@ -6213,16 +6212,9 @@
 	"Opciones.h"
 	"Creditos.h"
 
-1731593544 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\include\enemigo.h
-	<cstdlib>
-	<stdio.h>
-	<SFML/Graphics.hpp>
-	<SFML/Audio.hpp>
-	<SFML/Window.hpp>
-	<SFML/System.hpp>
-	"colisionable.h"
-	<stdlib.h>
-	<iostream>
+1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\include\enemigo.h
+	"inc.h"
+	"enemigoBase.h"
 
 1732048525 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\data\etc\clscolissionable.cpp
 	"colisionable.h"
@@ -7134,4 +7126,18 @@
 
 1732047141 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo2.cpp
 	"enemigo2.h"
+
+1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\include\enemigobase.h
+	"inc.h"
+	"pj.h"
+
+1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\include\enemigo2.h
+	"inc.h"
+	"enemigoBase.h"
+
+1732053742 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\enemigo2.cpp
+	"enemigo2.h"
+
+1732053742 source:c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
+	"enemigoBase.h"
 
