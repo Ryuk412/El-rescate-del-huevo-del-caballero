@@ -6990,7 +6990,7 @@
 	"enemigo2.h"
 	"itemPuntos.h"
 
-1732044118 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo.h
+1732138316 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo.h
 	"inc.h"
 	"enemigoBase.h"
 
@@ -7041,7 +7041,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1732132439 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1732138871 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp
@@ -7109,22 +7109,22 @@
 
 1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\pausa.cpp
 
-1732131704 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
+1732138299 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
 	<iostream>
 	"enemigo.h"
 
-1732132614 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigobase.h
+1732138654 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigobase.h
 	"inc.h"
 	"pj.h"
 
-1732132623 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
+1732138654 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
 	"enemigoBase.h"
 
-1732047799 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo2.h
+1732138902 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo2.h
 	"inc.h"
 	"enemigoBase.h"
 
-1732131613 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo2.cpp
+1732138888 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo2.cpp
 	"enemigo2.h"
 
 1732053742 c:\users\flavio\documents\codeblocks\el-rescate-del-huevo-del-caballero\include\enemigobase.h

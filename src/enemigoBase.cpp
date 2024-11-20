@@ -126,3 +126,7 @@ int enemigoBase::getDamage(){
 sf::RectangleShape enemigoBase::getHitbox()const{
     return en_hitbox;
 }
+
+int enemigoBase::getVida(){
+    return e_vida;
+}

@@ -3,10 +3,9 @@
 #include "inc.h"
 #include "enemigoBase.h"
 
-class enemigo2:public colisionable, public enemigoBase{
+class enemigo2:public enemigoBase{
     public:
         enemigo2();
-        sf::RectangleShape getHitbox()const override;
         void attackFrames() override;
 };
 

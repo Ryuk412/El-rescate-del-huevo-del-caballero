@@ -17,11 +17,6 @@ enemigo::enemigo(){
     damage=25;
 }
 
-
-sf::RectangleShape enemigo::getHitbox()const{
-    return en_hitbox;
-}
-
 void enemigo::attackFrames(){
         _frame2 += 0.30;
         if (e_sprite.getScale().x == -1 && _frame2 > 2) {

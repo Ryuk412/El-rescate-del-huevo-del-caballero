@@ -41,6 +41,7 @@ class enemigoBase:public sf::Drawable,public colisionable{
         float getVelocityX();
         sf::RectangleShape getDamageHitbox();
         sf::RectangleShape getHitbox()const override;
+        int getVida();
 
 };
 

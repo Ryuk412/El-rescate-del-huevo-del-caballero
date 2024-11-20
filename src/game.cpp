@@ -101,12 +101,12 @@ void game::checkCollisions(){
     }
 
     for(int i=0;i<enemigos.size();i++){
-        if(ejemplo.getHitboxE().getGlobalBounds().intersects(this->enemigos[i]->getHitbox().getGlobalBounds())){
-           enemigos.erase(enemigos.begin(),enemigos.begin()+i);
+        if(ejemplo.getHitboxE().getGlobalBounds().intersects(this->enemigos[i]->getHitbox().getGlobalBounds())&&ejemplo.getBan()==true){
+            this->enemigos[i]->danioRecibido(25);
         }
-//        if(!this->enemigos[i]->isAlive()){
-//            enemigos.erase(enemigos.begin(),enemigos.begin()+i);
-//        }
+        if(this->enemigos[i]->getVida()<=0){
+            enemigos.erase(enemigos.begin(),enemigos.begin()+i);
+        }
    }
 
     if(contador==200&&nivel2==false){
@@ -140,7 +140,8 @@ void game::update(sf::RenderWindow& window){
     updateCharacters();
     updateCamera(window);
     checkCollisions();
-    textoTest.setString("PUNTOS: "+std::to_string(contador));
+    //textoTest.setString("PUNTOS: "+std::to_string(contador));
+    textoTest.setString("VIDA DEL CABALLERO: "+std::to_string((int)enemigos[0]->getVida()));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 }
 //Todas las visualizaciones
