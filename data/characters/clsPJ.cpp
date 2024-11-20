@@ -216,3 +216,9 @@ void pj::respawn() {
 float pj::getVida(){
     return _vida;
 }
+
+void pj::setLife(){
+    _vida=100;
+    _sprite.setPosition(50,100);
+    m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
+}

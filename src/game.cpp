@@ -49,6 +49,7 @@ void game::setLevel(){
 
 
 void game::nivel1(){
+    ejemplo.setLife();
     enemigos.push_back(new enemigo());
     this->enemigos[0]->setSpritePosition(110,200,100,300);
     enemigos.push_back(new enemigo2());
@@ -95,10 +96,7 @@ void game::checkCollisions(){
         ejemplo.danioRecibido(25);
     }
     if(!ejemplo.isAlive()){
-        ejemplo.respawn();
-        this->enemigos[0]->respawn();
-        this->enemigos[1]->respawn();
-        this->enemigos[2]->respawn();
+        nivel1();
     }
     if(contador==200&&nivel2==false){
             setLevel();
