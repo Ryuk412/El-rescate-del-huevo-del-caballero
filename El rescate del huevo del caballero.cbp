@@ -106,7 +106,6 @@
 		<Unit filename="src/enemigo.cpp" />
 		<Unit filename="src/enemigo2.cpp" />
 		<Unit filename="src/enemigoBase.cpp" />
-		<Unit filename="src/enemigoEsqueleto.cpp" />
 		<Unit filename="src/game.cpp" />
 		<Unit filename="src/game.h" />
 		<Unit filename="src/inc.h" />
