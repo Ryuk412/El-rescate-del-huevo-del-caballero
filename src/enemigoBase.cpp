@@ -89,8 +89,6 @@ void enemigoBase::muerte(){
         e_sprite.setTextureRect({139 + (int)_frame2 * 130, 390, 130, 130});
         if (_frame2 >= 4) {
             _frame2 = 0;
-        en_hitbox.setPosition(-50, -50);
-        e_sprite.setPosition(-50,-50);
         }
     }
 
@@ -119,4 +117,12 @@ float enemigoBase::getVelocityX(){
 
 sf::RectangleShape enemigoBase::getDamageHitbox(){
     return damageHitbox;
+}
+
+int enemigoBase::getDamage(){
+    return damage;
+}
+
+sf::RectangleShape enemigoBase::getHitbox()const{
+    return en_hitbox;
 }

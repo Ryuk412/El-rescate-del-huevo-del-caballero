@@ -60,23 +60,27 @@ void game::nivel1(){
 
 void game::updateCharacters(){
     ejemplo.update(mapaTest);
-    this->enemigos[0]->update(ejemplo);
-    this->enemigos[1]->update(ejemplo);
-    this->enemigos[2]->update(ejemplo);
+
+    for(int i=0;i<enemigos.size();i++){
+        this->enemigos[i]->update(ejemplo);
+    }
+
     oso.update(mapaTest,ejemplo);
 }
 
 void game::checkCollisions(){
+
     if(corazon.getActive()==false){
        corazon.respawn(mapaTest);
        corazon.setActive(true);
     }
+
     if(star.getActive()==false){
        star.respawn(mapaTest);
        star.setActive(true);
     }
 
-    if(ejemplo.isCollision(star) ) {
+    if(ejemplo.isCollision(star)) {
             contador+=20;
             star.setActive(false);
     }
@@ -85,19 +89,26 @@ void game::checkCollisions(){
         ejemplo.curar(25);
         corazon.setActive(false);
     }
-    if(ejemplo.getHitbox().getGlobalBounds().intersects(this->enemigos[0]->getDamageHitbox().getGlobalBounds())){
-        ejemplo.danioRecibido(25);
+
+    for(int i=0;i<enemigos.size();i++){
+    if(ejemplo.getHitbox().getGlobalBounds().intersects(this->enemigos[i]->getDamageHitbox().getGlobalBounds())){
+        ejemplo.danioRecibido(this->enemigos[i]->getDamage());
+        }
     }
 
-    if(ejemplo.getHitbox().getGlobalBounds().intersects(this->enemigos[1]->getDamageHitbox().getGlobalBounds())){
-        ejemplo.danioRecibido(40);
-    }
-    if(ejemplo.getHitbox().getGlobalBounds().intersects(this->enemigos[2]->getDamageHitbox().getGlobalBounds())){
-        ejemplo.danioRecibido(25);
-    }
     if(!ejemplo.isAlive()){
         nivel1();
     }
+
+    for(int i=0;i<enemigos.size();i++){
+        if(ejemplo.getHitboxE().getGlobalBounds().intersects(this->enemigos[i]->getHitbox().getGlobalBounds())){
+           enemigos.erase(enemigos.begin(),enemigos.begin()+i);
+        }
+//        if(!this->enemigos[i]->isAlive()){
+//            enemigos.erase(enemigos.begin(),enemigos.begin()+i);
+//        }
+   }
+
     if(contador==200&&nivel2==false){
             setLevel();
             nivel2=true;
@@ -140,9 +151,9 @@ void game::render(sf::RenderWindow& window){
         window.draw(ejemplo);
         window.draw(oso);
         window.draw(corazon);
-        window.draw(*enemigos[0]);
-        window.draw(*enemigos[1]);
-        window.draw(*enemigos[2]);
+        for(int i=0;i<enemigos.size();i++){
+            window.draw(*enemigos[i]);
+        }
         window.draw(star);
         window.draw(textoTest);
         window.draw(caballeroVida);

@@ -2,7 +2,7 @@
 #define ENEMIGOBASE_H_INCLUDED
 #include "inc.h"
 #include "pj.h"
-class enemigoBase:public sf::Drawable{
+class enemigoBase:public sf::Drawable,public colisionable{
     protected:
         sf::Sprite e_sprite;
         sf::Texture _textureE;
@@ -18,6 +18,7 @@ class enemigoBase:public sf::Drawable{
         int startInY;
         int limitA;
         int limitB;
+        int damage;
 
         float _frame=0;
         float _frame2=0;
@@ -35,9 +36,11 @@ class enemigoBase:public sf::Drawable{
         void respawn();
         bool isAlive();
         void danioRecibido(int danio);
+        int getDamage();
         virtual void attackFrames();
         float getVelocityX();
         sf::RectangleShape getDamageHitbox();
+        sf::RectangleShape getHitbox()const override;
 
 };
 

@@ -14,6 +14,7 @@ enemigo::enemigo(){
     attackHitbox.setFillColor(sf::Color::Red);
     damageHitbox.setSize({10,-50});
     damageHitbox.setFillColor(sf::Color::Black);
+    damage=25;
 }
 
 
@@ -30,7 +31,7 @@ void enemigo::attackFrames(){
         }
         e_velocity = {0, 0};
         e_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
-        if(_frame2>=9){
+        if(_frame2>9){
             damageFlag=true;
         }
         if(_frame2>=13){

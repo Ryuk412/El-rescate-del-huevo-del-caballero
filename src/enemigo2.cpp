@@ -7,11 +7,12 @@ enemigo2::enemigo2(){
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
     en_hitbox.setSize({60,30});
     en_hitbox.setFillColor(sf::Color::Yellow);
-    e_vida=50;
+    e_vida=100;
     attackHitbox.setSize({10,-30});
     attackHitbox.setFillColor(sf::Color::Red);
     damageHitbox.setSize({20,-50});
     damageHitbox.setFillColor(sf::Color::Black);
+    damage=40;
 }
 
 sf::RectangleShape enemigo2::getHitbox()const{
