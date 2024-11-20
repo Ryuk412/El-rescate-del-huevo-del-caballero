@@ -130,7 +130,7 @@ void game::update(sf::RenderWindow& window){
     updateCamera(window);
     checkCollisions();
     textoTest.setString("PUNTOS: "+std::to_string(contador));
-    caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string(ejemplo.getVida()));
+    caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 }
 //Todas las visualizaciones
 void game::render(sf::RenderWindow& window){
