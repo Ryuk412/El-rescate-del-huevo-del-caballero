@@ -40,24 +40,22 @@ void game::setLevel(){
     mapaTest.setTextMapa(2);
     mapaTest.setNivel(2);
     mapaTest.cargarNivel2();
-    slime.setSpritePosition(420,200,380,600);
+    this->enemigos[0]->setSpritePosition(420,200,380,600);
     esqueleto.setSpritePosition(900,450,850,1200);
 }
 
 
 void game::nivel1(){
-    slime.setSpritePosition(100,200,120,300);
     esqueleto.setSpritePosition(800,360,750,1000);
     enemigos.push_back(new enemigo());
-    this->enemigos[0]->setSpritePosition(300,400,320,500);
+    this->enemigos[0]->setSpritePosition(100,200,120,300);
 }
 
 void game::updateCharacters(){
     ejemplo.update(mapaTest);
-    oso.update(mapaTest,ejemplo);
-    slime.update(ejemplo);
-    esqueleto.update(ejemplo);
     this->enemigos[0]->update(ejemplo);
+    esqueleto.update(ejemplo);
+    oso.update(mapaTest,ejemplo);
 }
 
 void game::checkCollisions(){
@@ -80,7 +78,7 @@ void game::checkCollisions(){
         corazon.setActive(false);
     }
 
-    if(ejemplo.getHitbox().getGlobalBounds().intersects(slime.getDamageHitbox().getGlobalBounds())){
+    if(ejemplo.getHitbox().getGlobalBounds().intersects(this->enemigos[0]->getDamageHitbox().getGlobalBounds())){
         ejemplo.danioRecibido(25);
     }
 
@@ -89,7 +87,7 @@ void game::checkCollisions(){
     }
     if(!ejemplo.isAlive()){
         ejemplo.respawn();
-        slime.respawn();
+        this->enemigos[0]->respawn();
         esqueleto.respawn();
     }
     if(contador==200&&nivel2==false){
@@ -134,11 +132,10 @@ void game::render(sf::RenderWindow& window){
         window.draw(ejemplo);
         window.draw(oso);
         window.draw(corazon);
-        window.draw(slime);
+        window.draw(*enemigos[0]);
         window.draw(esqueleto);
         window.draw(star);
         window.draw(textoTest);
-        window.draw(*enemigos[0]);
         window.display();
 
 }

@@ -25,7 +25,6 @@ class game{
         sf::View camara;
         pj ejemplo;
         Jefe oso;
-        enemigo slime;
         enemigo2 esqueleto;
         std::vector<enemigoBase *> enemigos;
         Item corazon;
