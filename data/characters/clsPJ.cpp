@@ -79,6 +79,7 @@ void pj::update(mapa& _objetoMapa){
         if (_frame2 >= 6) {
             _frame2 = 0;
             _ban = false;
+            pjDamageFlag=false;
         }
     }
     _sprite.move(0, _velocity.y); // Movimiento en el eje Y
@@ -146,21 +147,6 @@ void pj::update(mapa& _objetoMapa){
     }
 }
 
-bool pj::isAlive(){
-        if( _vida > 0  ) return true;
-            else return false;
-}
-
-void pj::danioRecibido(int danio){
-
-        _frame4 += 0.1f;
-        _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
-            if (_frame4 >= 4) {
-                _frame4 = 0;
-                _vida=_vida-danio;
-        }
-}
-
 // Método para dibujar el personaje y sus hitboxes
 void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     target.draw(m_hitbox, state);
@@ -171,20 +157,15 @@ void pj::draw(sf::RenderTarget& target, sf::RenderStates state) const {
     }
 }
 
-// Métodos auxiliares y de estado del personaje
-bool pj::getBan(){
-    return _ban;
+// Métodos de obtención de hitboxes
+sf::RectangleShape pj::getHitbox() const {
+    return m_hitbox;
 }
 
-void pj::curar(int cant) {
-    _vida = _vida + cant;
+sf::RectangleShape pj::getHitboxE() {
+    return e_hitbox;
 }
-float pj::getPositionX(){
-    return _sprite.getPosition().x;
-};
-float pj::getPositionY(){
-    return m_hitbox.getPosition().y;
-};
+
 void pj::muerte() {
 
     _frame3 += 0.15;
@@ -198,27 +179,58 @@ void pj::muerte() {
     }
 }
 
-// Métodos de obtención de hitboxes
-sf::RectangleShape pj::getHitbox() const {
-    return m_hitbox;
-}
-
-sf::RectangleShape pj::getHitboxE() {
-    return e_hitbox;
-}
-
 // Método de respawn para reiniciar la posición del personaje
 void pj::respawn() {
     _sprite.setPosition(50,100);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
 }
 
-float pj::getVida(){
-    return _vida;
+void pj::danioRecibido(int danio){
+
+        _frame4 += 0.1f;
+        _sprite.setTextureRect({0 + (int)_frame4 * 195, 1170 , 195, 195});
+            if (_frame4 >= 4) {
+                _frame4 = 0;
+                _vida=_vida-danio;
+        }
+}
+
+void pj::curar(int cant) {
+    _vida = _vida + cant;
 }
 
 void pj::setLife(){
     _vida=100;
     _sprite.setPosition(50,100);
     m_hitbox.setPosition(_sprite.getGlobalBounds().left, _sprite.getGlobalBounds().top);
+}
+
+void pj::setDamageFlag(bool f){
+    pjDamageFlag=f;
+}
+
+float pj::getPositionX(){
+    return _sprite.getPosition().x;
+}
+
+float pj::getPositionY(){
+    return m_hitbox.getPosition().y;
+}
+
+float pj::getVida(){
+    return _vida;
+}
+
+// Métodos auxiliares y de estado del personaje
+bool pj::getBan(){
+    return _ban;
+}
+
+bool pj::isAlive(){
+    if( _vida > 0  ) return true;
+        else return false;
+}
+
+bool pj::getDamageFlag(){
+    return pjDamageFlag;
 }

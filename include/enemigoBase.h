@@ -29,19 +29,23 @@ class enemigoBase:public sf::Drawable,public colisionable{
         bool damageFlag=false;
 
     public:
+        sf::RectangleShape getDamageHitbox();
+        sf::RectangleShape getHitbox()const override;
+
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
         void update(pj ejemplo);
         void setSpritePosition(int posX, int posY, int posA, int posB);
         void muerte();
         void respawn();
-        bool isAlive();
         void danioRecibido(int danio);
-        int getDamage();
         virtual void attackFrames();
-        float getVelocityX();
-        sf::RectangleShape getDamageHitbox();
-        sf::RectangleShape getHitbox()const override;
+
+        int getDamage();
         int getVida();
+
+        float getVelocityX();
+
+        bool isAlive();
 
 };
 
