@@ -93,6 +93,7 @@ void enemigoBase::muerte(){
     }
 
 void enemigoBase::respawn(){
+    e_vida=50;
     e_sprite.setPosition(sf::Vector2f(startInX,startInY));
     en_hitbox.setPosition(e_sprite.getGlobalBounds().left, e_sprite.getGlobalBounds().top);
 }

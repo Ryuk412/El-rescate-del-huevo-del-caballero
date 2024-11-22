@@ -67,6 +67,11 @@ void game::updateCharacters(){
 
     oso.update(mapaTest,ejemplo);
 }
+void game::respawnMap(){
+    ejemplo.setLife();
+    enemigos.clear();
+    nivel1();
+}
 
 void game::checkCollisions(){
 
@@ -97,7 +102,7 @@ void game::checkCollisions(){
     }
 
     if(!ejemplo.isAlive()){
-        nivel1();
+        respawnMap();
     }
 
     for(int i=0;i<enemigos.size();i++){
@@ -108,7 +113,9 @@ void game::checkCollisions(){
    }
    for(int i=0;i<enemigos.size();i++){
         if(!this->enemigos[i]->isAlive()){
-            enemigos.erase(enemigos.begin(),enemigos.begin()+i);
+            enemigos.erase(enemigos.begin()+i);
+            i--;
+            //Aca hay que decrementar una iteración porque tras borrar un enemigo, todos los que estaban adelante se mueven para la izquierda.
         }
    }
     if(contador==200&&nivel2==false){

@@ -45,6 +45,7 @@ class game{
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
         void checkCollisions();
+        void respawnMap();
         bool lvl1=true;
         bool nivel2=false;
     public:
