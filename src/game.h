@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <cstring>
 #include <iostream>
+#include <memory>
 #include <vector>
 #include "Jefe.h"
 #include "clsPJ.h"
@@ -25,7 +26,8 @@ class game{
         sf::View camara;
         pj ejemplo;
         Jefe oso;
-        std::vector<enemigoBase *> enemigos;
+        //std::vector<enemigoBase *> enemigos;
+        std::vector<std::unique_ptr<enemigoBase>> enemigos;
         Item corazon;
         itemPuntos star;
         int contador;
@@ -40,14 +42,17 @@ class game{
         sf::Sprite _nv;
         sf::Texture _textura;
     //Funciones privadas de la funcion publica update:
-        void setLevel();
-        void nivel1();
+        void setLevel2();
+        void nivel1(sf::RenderWindow& window);
+        void nivel2(sf::RenderWindow& window);
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
         void checkCollisions();
-        void respawnMap();
+        void respawnMap1();
+        void gameLoop(sf::RenderWindow& window);
+        int nivelActual;
         bool lvl1=true;
-        bool nivel2=false;
+        bool lvl2=false;
     public:
     //Constructor y destructor
         game(sf::RenderWindow& window);

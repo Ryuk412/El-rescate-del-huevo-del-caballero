@@ -6973,7 +6973,7 @@
 	"Botones.h"
 	"game.h"
 
-1732299870 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.h
+1732675859 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -6982,6 +6982,7 @@
 	<stdlib.h>
 	<cstring>
 	<iostream>
+	<memory>
 	<vector>
 	"Jefe.h"
 	"clsPJ.h"
@@ -7041,7 +7042,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1732299900 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1732675963 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp

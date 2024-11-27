@@ -20,7 +20,8 @@ game::game(sf::RenderWindow& window){
     caballeroVida.setFillColor(sf::Color::White);
     contador=0;
     textoTest.setCharacterSize(30);
-    nivel1();
+    respawnMap1();
+    nivelActual=1;
 }
 
 game::~game(){}
@@ -39,24 +40,61 @@ void game::updateEvent(sf::RenderWindow& window){
     }
 }
 
-void game::setLevel(){
+void game::gameLoop(sf::RenderWindow& window){//Por ahora en desuso
+    while(true){
+        switch(nivelActual){
+            case 1:
+                nivel1(window);
+            case 2:
+                nivel2(window);
+        }
+    }
+}
+
+void game::respawnMap1(){
+    ejemplo.setLife();
+    enemigos.clear();
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+    this->enemigos[0]->setSpritePosition(110, 200, 100, 300);
+
+    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+    this->enemigos[1]->setSpritePosition(800, 360, 750, 1000);
+
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+    this->enemigos[2]->setSpritePosition(520, 575, 490, 680);
+}
+
+void game::setLevel2(){
     mapaTest.setTextMapa(2);
     mapaTest.setNivel(2);
     mapaTest.cargarNivel2();
+    ejemplo.setLife();
+    enemigos.clear();
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
     this->enemigos[0]->setSpritePosition(420,200,380,600);
+    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
     this->enemigos[1]->setSpritePosition(900,450,850,1200);
 }
 
-
-void game::nivel1(){
-    ejemplo.setLife();
-    enemigos.push_back(new enemigo());
-    this->enemigos[0]->setSpritePosition(110,200,100,300);
-    enemigos.push_back(new enemigo2());
-    this->enemigos[1]->setSpritePosition(800,360,750,1000);
-    enemigos.push_back(new enemigo());
-    this->enemigos[2]->setSpritePosition(520,575,490,680);
+void game::nivel1(sf::RenderWindow& window){//Por ahora en desuso
+    respawnMap1();
+    while(lvl1){
+        update(window);
+    }
+    nivelActual=2;
+    return;
 }
+
+
+
+void game::nivel2(sf::RenderWindow& window){//Por ahora en desuso
+    setLevel2();
+    while(lvl2){
+        update(window);
+    }
+    return;
+}
+
 
 void game::updateCharacters(){
     ejemplo.update(mapaTest);
@@ -66,11 +104,6 @@ void game::updateCharacters(){
     }
 
     oso.update(mapaTest,ejemplo);
-}
-void game::respawnMap(){
-    ejemplo.setLife();
-    enemigos.clear();
-    nivel1();
 }
 
 void game::checkCollisions(){
@@ -101,26 +134,30 @@ void game::checkCollisions(){
         }
     }
 
-    if(!ejemplo.isAlive()){
-        respawnMap();
-    }
-
     for(int i=0;i<enemigos.size();i++){
         if(ejemplo.getHitboxE().getGlobalBounds().intersects(this->enemigos[i]->getHitbox().getGlobalBounds())&&ejemplo.getBan()==true&&ejemplo.getDamageFlag()==false){
             this->enemigos[i]->danioRecibido(25);
             ejemplo.setDamageFlag(true);
         }
    }
-   for(int i=0;i<enemigos.size();i++){
+   /*for(int i=0;i<enemigos.size();i++){
         if(!this->enemigos[i]->isAlive()){
             enemigos.erase(enemigos.begin()+i);
             i--;
             //Aca hay que decrementar una iteración porque tras borrar un enemigo, todos los que estaban adelante se mueven para la izquierda.
         }
-   }
-    if(contador==200&&nivel2==false){
-            setLevel();
-            nivel2=true;
+   }*/
+   for (int i = enemigos.size() - 1; i >= 0; i--) {
+    if (!this->enemigos[i]->isAlive()) {
+        enemigos.erase(enemigos.begin() + i);
+    }
+}
+    if(!ejemplo.isAlive()){
+        respawnMap1();
+    }
+    if(contador==200&&lvl2==false){
+            setLevel2();
+            lvl2=true;
         }
 }
 
@@ -153,6 +190,7 @@ void game::update(sf::RenderWindow& window){
     textoTest.setString("VIDA DEL ENEMIGO: "+std::to_string((int)enemigos[0]->getVida()));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 }
+
 //Todas las visualizaciones
 void game::render(sf::RenderWindow& window){
         window.clear();
