@@ -7042,7 +7042,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1732799719 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1732801433 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp
@@ -7083,7 +7083,7 @@
 	"mapa.h"
 	<iostream>
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\menu.cpp
+1732800741 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"Menu.h"
 	<SFML/Graphics.hpp>
 	<iostream>
