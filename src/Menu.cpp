@@ -17,6 +17,7 @@ int menu(){
     sf::Music musica;
     if (!musica.openFromFile("menu/musica/musica_menu.mp3")){return -2;}
     musica.setLoop(true);
+    musica.setVolume(40.0f);
     musica.play();
 
     bool enJugar=0;
