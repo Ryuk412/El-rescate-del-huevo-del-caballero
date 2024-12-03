@@ -66,7 +66,16 @@ void game::respawnMap1(){
     this->enemigos[1]->setSpritePosition(800, 360, 750, 1000);
 
     enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-    this->enemigos[2]->setSpritePosition(520, 575, 490, 680);}void game::setLevel2(){
+    this->enemigos[2]->setSpritePosition(520, 575, 490, 680);
+
+    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+    this->enemigos[3]->setSpritePosition(1000, 250, 950, 1200);
+
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+    this->enemigos[4]->setSpritePosition(1100, 450, 1050, 1350);
+    }
+
+    void game::setLevel2(){
     //Esta función haría lo mismo que arriba, con la diferencia que esta vez necesita setear la textura de mapa y los hitboxes correctos.
     mapaTest.setTextMapa(2);
     mapaTest.setNivel(2);
