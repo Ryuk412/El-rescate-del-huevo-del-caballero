@@ -42,8 +42,7 @@ class game{
         sf::Sprite _nv;
         sf::Texture _textura;
     //Funciones privadas de la funcion publica update:
-        void setLevel2();
-        void setLevel3();
+        void setLevel(int nivelActual);
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
         void checkCollisions();
