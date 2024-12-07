@@ -20,8 +20,8 @@ game::game(sf::RenderWindow& window){
     caballeroVida.setFillColor(sf::Color::White);
     contador=0;
     textoTest.setCharacterSize(30);
-    respawnMap1();
     nivelActual=1;
+    respawnMap(nivelActual);
 }
 
 game::~game(){}
@@ -40,18 +40,7 @@ void game::updateEvent(sf::RenderWindow& window){
     }
 }
 
-void game::gameLoop(sf::RenderWindow& window){//Por ahora en desuso
-    while(true){
-        switch(nivelActual){
-            case 1:
-                nivel1(window);
-            case 2:
-                nivel2(window);
-        }
-    }
-}
-
-void game::respawnMap1(){
+void game::respawnMap(int nivelActual){
     //Esta función se llama cada vez que el personaje muere
     ejemplo.setLife();
     enemigos.clear();
@@ -59,23 +48,36 @@ void game::respawnMap1(){
     //unique_ptr es un puntero que maneja la devolución de memoria más eficientemente y con más seguridad.
     //La clase abstracta enemigoBase engloba todas las clases heredadas de enemigos, esto permite que el vector enemigoBase contenga cualquier clase que la hereda.
     //Primero se le dice a unique_ptr que tipo de puntero va a generar, despues se llama a un new clase de enemigo.
-    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-    this->enemigos[0]->setSpritePosition(110, 200, 100, 300);
+    switch(nivelActual){
+        case 1:
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[0]->setSpritePosition(110, 200, 100, 300);
+            /*enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            this->enemigos[1]->setSpritePosition(800, 360, 750, 1000);
 
-    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
-    this->enemigos[1]->setSpritePosition(800, 360, 750, 1000);
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[2]->setSpritePosition(520, 575, 490, 680);
 
-    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-    this->enemigos[2]->setSpritePosition(520, 575, 490, 680);
+            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            this->enemigos[3]->setSpritePosition(1000, 250, 950, 1200);
 
-    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
-    this->enemigos[3]->setSpritePosition(1000, 250, 950, 1200);
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[4]->setSpritePosition(1100, 450, 1050, 1350);*/
+            break;
+        case 2:
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[0]->setSpritePosition(250,100,230,380);
+            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            this->enemigos[1]->setSpritePosition(900,450,850,1200);
+            break;
+        default:
+            break;
 
-    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-    this->enemigos[4]->setSpritePosition(1100, 450, 1050, 1350);
     }
+}
 
-    void game::setLevel2(){
+void game::setLevel2(){
+    nivelActual=2;
     //Esta función haría lo mismo que arriba, con la diferencia que esta vez necesita setear la textura de mapa y los hitboxes correctos.
     mapaTest.setTextMapa(2);
     mapaTest.setNivel(2);
@@ -83,30 +85,26 @@ void game::respawnMap1(){
     ejemplo.setLife();
     enemigos.clear();
     enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-    this->enemigos[0]->setSpritePosition(420,200,380,600);
+    this->enemigos[0]->setSpritePosition(300,140,230,380);
     enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
-    this->enemigos[1]->setSpritePosition(900,450,850,1200);
+    this->enemigos[1]->setSpritePosition(900,500,800,1000);
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+    this->enemigos[2]->setSpritePosition(300,450,230,450);
+    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+    this->enemigos[3]->setSpritePosition(200,470,100,250);
+    enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+    this->enemigos[4]->setSpritePosition(1400,520,1300,1500);
+    enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+    this->enemigos[5]->setSpritePosition(1400,520,1200,1550);
 }
 
-void game::nivel1(sf::RenderWindow& window){//Por ahora en desuso
-    respawnMap1();
-    while(lvl1){
-        update(window);
-    }
-    nivelActual=2;
-    return;
+void game::setLevel3(){
+    mapaTest.setTextMapa(3);
+    mapaTest.setNivel(3);
+    mapaTest.cargarNivel3();
+    ejemplo.setLife();
+    enemigos.clear();
 }
-
-
-
-void game::nivel2(sf::RenderWindow& window){//Por ahora en desuso
-    setLevel2();
-    while(lvl2){
-        update(window);
-    }
-    return;
-}
-
 
 void game::updateCharacters(){
     ejemplo.update(mapaTest);
@@ -163,12 +161,17 @@ void game::checkCollisions(){
 }
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
         contador=contador-100;
-        respawnMap1();
+        respawnMap(nivelActual);
     }
-    if(enemigos.size()==0){
+    if(enemigos.size()==0&&lvl2==false){
             setLevel2();
             lvl2=true;
         }
+
+    if(enemigos.size()==0&&lvl2==true&&lvl3==false){
+        setLevel3();
+        lvl3=true;
+    }
 }
 
 void game::updateCamera(sf::RenderWindow& window){

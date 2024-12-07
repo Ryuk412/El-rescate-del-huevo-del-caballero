@@ -43,16 +43,15 @@ class game{
         sf::Texture _textura;
     //Funciones privadas de la funcion publica update:
         void setLevel2();
-        void nivel1(sf::RenderWindow& window);
-        void nivel2(sf::RenderWindow& window);
+        void setLevel3();
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
         void checkCollisions();
-        void respawnMap1();
-        void gameLoop(sf::RenderWindow& window);
+        void respawnMap(int nivelActual);
         int nivelActual;
         bool lvl1=true;
         bool lvl2=false;
+        bool lvl3=false;
     public:
     //Constructor y destructor
         game(sf::RenderWindow& window);
