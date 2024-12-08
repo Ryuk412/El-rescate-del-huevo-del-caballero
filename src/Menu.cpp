@@ -44,9 +44,10 @@ int menu(){
                     }
                 }
 
-                if (menu4.MouseClick(window)){
-                        musica.stop();
-                        return 0;}
+                if(menu4.MouseClick(window)){
+                    musica.stop();
+                    return 0;
+                }
             }
         }
         window.clear();

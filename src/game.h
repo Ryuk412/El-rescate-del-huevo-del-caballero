@@ -16,6 +16,8 @@
 #include "mapa.h"
 #include "enemigo2.h"
 #include "itemPuntos.h"
+#include "Botones.h"
+#include "Pausa.h"
 
 //Clase que funciona como el game engine.
 
@@ -51,6 +53,8 @@ class game{
         bool lvl1=true;
         bool lvl2=false;
         bool lvl3=false;
+        Boton pausa;
+        bool enPausa;
     public:
     //Constructor y destructor
         game(sf::RenderWindow& window);

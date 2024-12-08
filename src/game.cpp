@@ -2,8 +2,9 @@
 
      mapa mapaTest;
 
-game::game(sf::RenderWindow& window){
-
+game::game(sf::RenderWindow& window)
+    : pausa(690, 55, 50, 50, " ")
+{
     while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
@@ -22,6 +23,8 @@ game::game(sf::RenderWindow& window){
     textoTest.setCharacterSize(30);
     nivelActual=1;
     respawnMap(nivelActual);
+
+    enPausa=0;
 }
 
 game::~game(){}
@@ -136,7 +139,7 @@ void game::checkCollisions(){
             star.setActive(false);
     }
 
-    if(ejemplo.isCollision(corazon) ) {
+    if(ejemplo.isCollision(corazon)){
         ejemplo.curar(25);
         corazon.setActive(false);
     }
@@ -199,12 +202,22 @@ void game::update(sf::RenderWindow& window){
     //textoTest.setString("PUNTOS: "+std::to_string(contador));
     textoTest.setString("VIDA DEL ENEMIGO: "+std::to_string((int)enemigos[0]->getVida()));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
+
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+            enPausa=1;
+}
+
 }
 
 //Todas las visualizaciones
 void game::render(sf::RenderWindow& window){
         window.clear();
         mapaTest.dibujar(window);
+
+        if(enPausa){
+            pausaMenu(window);
+            enPausa=0;
+        }
 
         window.draw(ejemplo);
         window.draw(oso);
