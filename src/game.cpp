@@ -54,9 +54,12 @@ void game::respawnMap(int nivelActual){
     //Primero se le dice a unique_ptr que tipo de puntero va a generar, despues se llama a un new clase de enemigo.
     switch(nivelActual){
         case 1:
-            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            enemigos.clear();
+            enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
+            this->enemigos[0]->setSpritePosition(400,200,200,800);
+            /*enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[0]->setSpritePosition(110, 200, 100, 300);
-            /*enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
             this->enemigos[1]->setSpritePosition(800, 360, 750, 1000);
 
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
@@ -87,6 +90,7 @@ void game::respawnMap(int nivelActual){
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
             this->enemigos[0]->setSpritePosition(300,140,230,380);
+            break;
         default:
             break;
 
@@ -123,7 +127,7 @@ void game::setLevel(int nivelActual){
             ejemplo.setLife();
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
-            this->enemigos[0]->setSpritePosition(300,140,230,380);
+            this->enemigos[0]->setSpritePosition(400,800,200,800);
             break;
     }
 }

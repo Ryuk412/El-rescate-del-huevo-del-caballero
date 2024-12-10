@@ -6990,7 +6990,7 @@
 	"inc.h"
 	"enemigoBase.h"
 
-1733801837 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.h
+1733854667 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 	"pj.h"
 	"enemigoBase.h"
@@ -7040,7 +7040,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1733803294 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1733854753 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
 1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp
@@ -7052,7 +7052,7 @@
 	"Botones.h"
 	"game.h"
 
-1733803099 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1733854872 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>
