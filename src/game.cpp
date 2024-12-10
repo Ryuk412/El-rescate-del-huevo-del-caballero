@@ -68,10 +68,19 @@ void game::respawnMap(int nivelActual){
             this->enemigos[4]->setSpritePosition(1100, 450, 1050, 1350);*/
             break;
         case 2:
+            enemigos.clear();
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-            this->enemigos[0]->setSpritePosition(250,100,230,380);
+            this->enemigos[0]->setSpritePosition(300,140,230,380);
             enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
-            this->enemigos[1]->setSpritePosition(900,450,850,1200);
+            this->enemigos[1]->setSpritePosition(900,500,800,1000);
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[2]->setSpritePosition(300,450,230,450);
+            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            this->enemigos[3]->setSpritePosition(200,470,100,250);
+            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            this->enemigos[4]->setSpritePosition(1400,520,1300,1500);
+            enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
+            this->enemigos[5]->setSpritePosition(1400,520,1200,1550);
             break;
         default:
             break;
@@ -82,7 +91,6 @@ void game::respawnMap(int nivelActual){
 void game::setLevel(int nivelActual){
     switch(nivelActual){
         case 1:
-            nivelActual=2;
             //Esta función haría lo mismo que arriba, con la diferencia que esta vez necesita setear la textura de mapa y los hitboxes correctos.
             mapaTest.setTextMapa(2);
             mapaTest.setNivel(2);
@@ -171,6 +179,7 @@ void game::checkCollisions(){
     }
     if(enemigos.size()==0){
             setLevel(nivelActual);
+            nivelActual=2;
         }
 }
 

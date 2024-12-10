@@ -6943,7 +6943,7 @@
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 
-1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\menu.h
+1733798466 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\menu.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	"Botones.h"
@@ -6966,7 +6966,7 @@
 	"Botones.h"
 	"game.h"
 
-1733548969 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.h
+1733798466 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.h
 	<SFML/Graphics.hpp>
 	<SFML/Audio.hpp>
 	<SFML/Window.hpp>
@@ -6983,6 +6983,8 @@
 	"mapa.h"
 	"enemigo2.h"
 	"itemPuntos.h"
+	"Botones.h"
+	"Pausa.h"
 
 1732138316 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo.h
 	"inc.h"
@@ -7017,30 +7019,32 @@
 	"Botones.h"
 	<iostream>
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
 	"CargarPartida.h"
+	"ArchivoJugadores.h"
 
-1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\cargarpartida.h
+1733798466 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\cargarpartida.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
 1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\comojugar.cpp
 	"ComoJugar.h"
 
 1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\comojugar.h
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\creditos.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\creditos.cpp
 	"Creditos.h"
-	<iostream>
 
 1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\creditos.h
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1733548969 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1733800822 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 
-1733265074 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.cpp
 	"Historia.h"
-	<iostream>
+	"Pausa.h"
 
 1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\historia.h
 	<SFML/Graphics.hpp>
@@ -7058,9 +7062,9 @@
 	<iostream>
 	<cstring>
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jugar.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
-	<iostream>
+	"CargarPartida.h"
 
 1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jugar.h
 	<SFML/Graphics.hpp>
@@ -7076,10 +7080,9 @@
 	"mapa.h"
 	<iostream>
 
-1732800741 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\menu.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"Menu.h"
 	<SFML/Graphics.hpp>
-	<iostream>
 
 1731607388 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\menu.h
 	<SFML/Graphics.hpp>
@@ -7093,15 +7096,20 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\nuevapartida.cpp
 	"NuevaPartida.h"
+	"Jugador.h"
+	"ArchivoJugadores.h"
 	<iostream>
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\opciones.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\opciones.cpp
 	"Opciones.h"
+	"ArchivoJugadores.h"
 	<iostream>
 
-1731607388 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+1733798466 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\pausa.cpp
+	"Pausa.h"
+	"Menu.h"
 
 1732138299 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigo.cpp
 	<iostream>
@@ -7148,4 +7156,8 @@
 
 1733615878 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
 	"enemigoBase.h"
+
+1733798466 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\pausa.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
