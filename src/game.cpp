@@ -124,7 +124,7 @@ void game::setLevel(int nivelActual){
             ejemplo.setLife();
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
-            this->enemigos[0]->setSpritePosition(300,300,200,800);
+            this->enemigos[0]->setSpritePosition(300,680,200,700);
             break;
     }
 }
