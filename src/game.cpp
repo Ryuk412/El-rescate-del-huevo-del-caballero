@@ -187,6 +187,9 @@ void game::checkCollisions(){
     }
     if(enemigos.size()==0){
             setLevel(nivelActual);
+            //if(nivelActual==3){
+                //Acá iría donde se le indica al jugador que ganó
+            //}
             nivelActual++;
         }
 }
