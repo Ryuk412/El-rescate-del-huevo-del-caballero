@@ -15,8 +15,8 @@ void mapa::cargarTexturaMapa(){
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;
     }
-    if(!_nivel1Boss.loadFromFile("data/maps/nivel1_pelea.png")){
-        std::cout << "Error al cargar el archivo del Mapa 1-2" << std::endl;
+    if(!_nivel3.loadFromFile("data/maps/nivel1_pelea.png")){
+        std::cout << "Error al cargar el archivo del Mapa 3" << std::endl;
     }
     // Valor del vector cambiado
     _hitbox.resize(35);
@@ -40,7 +40,7 @@ void mapa::cargarMapa() {
         _Smapa.setTexture(_nivel2);
         break;
     case 3:
-        _Smapa.setTexture(_nivel1Boss);
+        _Smapa.setTexture(_nivel3);
     }
 }
 // Implementacion del metodo para cambiar la textura del mapa segun el nivel
@@ -64,7 +64,8 @@ case 2:
     break;
 case 3:
     // Desarrollo del cambio de textura
-    if(!_nivel1Boss.loadFromFile("data/maps/nivel1_pelea.png")){
+    _nivel=3;
+    if(!_nivel3.loadFromFile("data/maps/nivel1_pelea.png")){
         std::cout << "Error al cargar el archivo del Mapa 1-2" << std::endl;
     }
     cargarMapa();

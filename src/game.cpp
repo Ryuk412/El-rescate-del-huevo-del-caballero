@@ -72,7 +72,7 @@ void game::respawnMap(int nivelActual){
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[0]->setSpritePosition(300,140,230,380);
-            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+           /* enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
             this->enemigos[1]->setSpritePosition(900,500,800,1000);
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[2]->setSpritePosition(300,450,230,450);
@@ -81,7 +81,7 @@ void game::respawnMap(int nivelActual){
             enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
             this->enemigos[4]->setSpritePosition(1400,520,1300,1500);
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-            this->enemigos[5]->setSpritePosition(1400,520,1200,1550);
+            this->enemigos[5]->setSpritePosition(1400,520,1200,1550);*/
             break;
         default:
             break;
@@ -100,7 +100,7 @@ void game::setLevel(int nivelActual){
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[0]->setSpritePosition(300,140,230,380);
-            enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
+            /*enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
             this->enemigos[1]->setSpritePosition(900,500,800,1000);
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[2]->setSpritePosition(300,450,230,450);
@@ -109,7 +109,7 @@ void game::setLevel(int nivelActual){
             enemigos.push_back(std::unique_ptr<enemigo2>(new enemigo2()));
             this->enemigos[4]->setSpritePosition(1400,520,1300,1500);
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
-            this->enemigos[5]->setSpritePosition(1400,520,1200,1550);
+            this->enemigos[5]->setSpritePosition(1400,520,1200,1550);*/
             break;
         case 2:
             mapaTest.setTextMapa(3);
@@ -117,6 +117,8 @@ void game::setLevel(int nivelActual){
             mapaTest.cargarNivel3();
             ejemplo.setLife();
             enemigos.clear();
+            enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
+            this->enemigos[0]->setSpritePosition(300,140,230,380);
             break;
     }
 }
@@ -127,8 +129,6 @@ void game::updateCharacters(){
     for(int i=0;i<enemigos.size();i++){
         this->enemigos[i]->update(ejemplo);
     }
-
-    oso.update(mapaTest,ejemplo);
     caballeroVida.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+20);
     textoTest.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+10);
 }
@@ -182,7 +182,7 @@ void game::checkCollisions(){
     }
     if(enemigos.size()==0){
             setLevel(nivelActual);
-            nivelActual=2;
+            nivelActual++;
         }
 }
 
@@ -233,7 +233,6 @@ void game::render(sf::RenderWindow& window){
         }
 
         window.draw(ejemplo);
-        window.draw(oso);
         window.draw(corazon);
         for(int i=0;i<enemigos.size();i++){
             window.draw(*enemigos[i]);

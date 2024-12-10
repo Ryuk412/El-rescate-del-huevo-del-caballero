@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "Jefe.h"
 
-    Jefe::Jefe(){
+    /*Jefe::Jefe(){
         j_texture.loadFromFile("assets/Characters(100x100)/Werebear/Werebear/Werebear.png");
         j_sprite.setTexture(j_texture);
         j_sprite.setTextureRect({0,0,130,130});
@@ -13,8 +13,40 @@
         j_sprite.setPosition(1050,250);
         j_vida=500;
     }
+*/
 
-    void Jefe::update(mapa& _objetoMapa, pj ejemplo){
+    Jefe::Jefe(){
+        _textureE.loadFromFile("assets/Characters(100x100)/Werebear/Werebear/Werebear.png");
+        e_sprite.setTexture(_textureE);
+        e_sprite.setTextureRect({0,0,130,130});
+        e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
+        en_hitbox.setSize({50,40});
+        en_hitbox.setFillColor(sf::Color::Yellow);
+        e_vida=50;
+        attackHitbox.setSize({10,-30});
+        attackHitbox.setFillColor(sf::Color::Red);
+        damageHitbox.setSize({10,-50});
+        damageHitbox.setFillColor(sf::Color::Black);
+        damage=50;
+    }
+    void Jefe::attackFrames(){
+            _frame2 += 0.30;
+            if (e_sprite.getScale().x == -1 && _frame2 > 2) {
+                en_hitbox.setPosition(e_sprite.getGlobalBounds().left + 40, e_sprite.getGlobalBounds().top + 60);
+            } else if (_frame2 > 2) {
+                en_hitbox.setPosition(en_hitbox.getGlobalBounds().left + 55, e_sprite.getGlobalBounds().top + 60);
+                damageFlag=true;
+            }
+            e_velocity = {0, 0};
+            e_sprite.setTextureRect({0 + (int)_frame2 * 130, 390, 130, 130});
+            if(_frame2>=13){
+                _frame2=0;
+                countdown=20;
+                damageFlag=false;
+            }
+        }
+
+/*    void Jefe::update(mapa& _objetoMapa, pj ejemplo){
 
     j_velocity={};
 
@@ -136,6 +168,9 @@
         return j_hitbox;
 
     }
+    */
+
+
 //Jefe::~Jefe()
 //{
 //    //dtor

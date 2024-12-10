@@ -27,7 +27,7 @@ class game{
         sf::Event evento;
         sf::View camara;
         pj ejemplo;
-        Jefe oso;
+        //Jefe oso;
         //std::vector<enemigoBase *> enemigos;
         std::vector<std::unique_ptr<enemigoBase>> enemigos;
         Item corazon;

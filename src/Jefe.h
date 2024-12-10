@@ -2,7 +2,15 @@
 #define JEFE_H
 #include "inc.h"
 #include "pj.h"
-class Jefe : public sf::Drawable, public colisionable{
+#include "enemigoBase.h"
+
+class Jefe:public enemigoBase {
+    public:
+        Jefe();
+        void attackFrames() override;
+};
+
+/*class Jefe : public sf::Drawable, public colisionable{
     public:
         Jefe();
         void update(mapa& _objetoMapa, pj ejemplo);
@@ -28,5 +36,5 @@ class Jefe : public sf::Drawable, public colisionable{
         float countdown=0;
         bool attack=false;
 };
-
+*/
 #endif // JEFE_H
