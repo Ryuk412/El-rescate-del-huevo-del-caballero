@@ -1,5 +1,5 @@
 #include "game.h"
-
+#include <iostream>
      mapa mapaTest;
 
 game::game(sf::RenderWindow& window)
