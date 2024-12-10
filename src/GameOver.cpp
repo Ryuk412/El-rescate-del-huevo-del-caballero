@@ -1,12 +1,12 @@
-#include "Pausa.h"
+#include "GameOver.h"
 #include "Menu.h"
 
-void pausaMenu(sf::RenderWindow& window){
+void gameOverMenu(sf::RenderWindow& window){
     Boton reanudar(250, 260, 290, 57, " ");
     Boton salir(255, 340, 290, 57, " ");
 
     sf::Texture texture;
-    if(!texture.loadFromFile("menu/pausa_menu.png")){return;}
+    if(!texture.loadFromFile("menu/game_over.png")){return;}
 
     bool salirAMenu=0;
 
