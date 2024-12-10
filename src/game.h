@@ -29,22 +29,22 @@ class game{
         sf::Event evento;
         sf::View camara;
         pj ejemplo;
-        //Jefe oso;
-        //std::vector<enemigoBase *> enemigos;
         std::vector<std::unique_ptr<enemigoBase>> enemigos;
         Item corazon;
         itemPuntos star;
+
         int contador;
+
         sf::Font font;
-        sf::Text textoTest;
+        sf::Text textoPuntos;
         sf::Text caballeroVida;
+
         float limiteCamaraIzq=400;
-        //caso de mapa jefe:
         float limiteCamaraDer=1200;
-        //caso de mapa comun: float limiteCamaraDer=1200;
-        //caso de mapa jefe: 400;
+
         sf::Sprite _nv;
         sf::Texture _textura;
+        mapa mapaTest;
     //Funciones privadas de la funcion publica update:
         void setLevel(int nivelActual);
         void updateCharacters();
