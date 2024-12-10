@@ -1,12 +1,10 @@
-#include "Pausa.h"
+#include "Final.h"
 #include "Menu.h"
 
-void pausaMenu(sf::RenderWindow& window){
-    Boton reanudar(250, 260, 290, 57, " ");
-    Boton salir(255, 340, 290, 57, " ");
+void finalMenu(sf::RenderWindow& window){
 
     sf::Texture texture;
-    if(!texture.loadFromFile("menu/pausa_menu.png")){return;}
+    if(!texture.loadFromFile("menu/final.png")){return;}
 
     bool salirAMenu=0;
 
@@ -19,17 +17,9 @@ void pausaMenu(sf::RenderWindow& window){
                 window.close();
             }
 
-            if(event.type == sf::Event::MouseButtonPressed){
-
-                if(reanudar.MouseClick(window)){
-                    return;
-                }
-
-                if(salir.MouseClick(window)){
+            if(sf::Keyboard::isKeyPressed(sf::Keyboard::Space)){
                     salirAMenu=1;
                     window.close();
-                }
-
             }
         }
 
@@ -38,8 +28,6 @@ void pausaMenu(sf::RenderWindow& window){
         window.clear();
         sf::Sprite sprite(texture);
         window.draw(sprite);
-        reanudar.draw(window);
-        salir.draw(window);
 
         window.display();
 

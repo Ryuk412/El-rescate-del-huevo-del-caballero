@@ -18,6 +18,8 @@
 #include "itemPuntos.h"
 #include "Botones.h"
 #include "Pausa.h"
+#include "GameOver.h"
+#include "Jugador.h"
 
 //Clase que funciona como el game engine.
 
@@ -53,8 +55,11 @@ class game{
         bool lvl1=true;
         bool lvl2=false;
         bool lvl3=false;
-        Boton pausa;
+
+        bool enGameOver;
         bool enPausa;
+
+        Jugador jugador;
     public:
     //Constructor y destructor
         game(sf::RenderWindow& window);

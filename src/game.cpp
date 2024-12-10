@@ -3,7 +3,6 @@
      mapa mapaTest;
 
 game::game(sf::RenderWindow& window)
-    : pausa(690, 55, 50, 50, " ")
 {
     while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
@@ -26,6 +25,7 @@ game::game(sf::RenderWindow& window)
     respawnMap(nivelActual);
 
     enPausa=0;
+    enGameOver=0;
 }
 
 game::~game(){}
@@ -153,6 +153,8 @@ void game::checkCollisions(){
     if(ejemplo.isCollision(star)) {
             contador+=20;
             star.setActive(false);
+            jugador.setPuntaje(contador);
+            std::cout<<"se guardo la moneda: "<<jugador.getPuntaje()<<std::endl;
     }
 
     if(ejemplo.isCollision(corazon)){
@@ -184,6 +186,7 @@ void game::checkCollisions(){
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
         contador=contador-100;
         respawnMap(nivelActual);
+        enGameOver=1;
     }
     if(enemigos.size()==0){
             setLevel(nivelActual);
@@ -224,9 +227,7 @@ void game::update(sf::RenderWindow& window){
     textoTest.setString("VIDA DEL ENEMIGO: "+std::to_string((int)enemigos[0]->getVida()));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
-            enPausa=1;
-}
+    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)){enPausa=1;}
 
 }
 
@@ -239,6 +240,10 @@ void game::render(sf::RenderWindow& window){
             pausaMenu(window);
             enPausa=0;
         }
+        if(enGameOver){
+            gameOverMenu(window);
+            enGameOver=0;
+        }
 
         window.draw(ejemplo);
         window.draw(corazon);
@@ -250,3 +255,4 @@ void game::render(sf::RenderWindow& window){
         window.draw(caballeroVida);
         window.display();
 }
+
