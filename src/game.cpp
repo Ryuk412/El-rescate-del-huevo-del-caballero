@@ -83,6 +83,10 @@ void game::respawnMap(int nivelActual){
             enemigos.push_back(std::unique_ptr<enemigo>(new enemigo()));
             this->enemigos[5]->setSpritePosition(1400,520,1200,1550);*/
             break;
+        case 3:
+            enemigos.clear();
+            enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
+            this->enemigos[0]->setSpritePosition(300,140,230,380);
         default:
             break;
 
@@ -115,6 +119,7 @@ void game::setLevel(int nivelActual){
             mapaTest.setTextMapa(3);
             mapaTest.setNivel(3);
             mapaTest.cargarNivel3();
+            limiteCamaraDer=400;
             ejemplo.setLife();
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
