@@ -6995,7 +6995,7 @@
 	"inc.h"
 	"enemigoBase.h"
 
-1733854667 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.h
+1733867286 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.h
 	"inc.h"
 	"pj.h"
 	"enemigoBase.h"
@@ -7045,7 +7045,7 @@
 	<SFML/Graphics.hpp>
 	"Botones.h"
 
-1733855743 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
+1733867567 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 	<iostream>
 
@@ -7058,7 +7058,7 @@
 	"Botones.h"
 	"game.h"
 
-1733855172 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.cpp
+1733867686 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\jefe.cpp
 	<iostream>
 	<cstdlib>
 	<stdio.h>
@@ -7122,11 +7122,11 @@
 	<iostream>
 	"enemigo.h"
 
-1732299321 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigobase.h
+1733867286 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigobase.h
 	"inc.h"
 	"pj.h"
 
-1732299947 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
+1733867135 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\enemigobase.cpp
 	"enemigoBase.h"
 
 1732138902 c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\include\enemigo2.h

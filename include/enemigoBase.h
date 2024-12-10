@@ -33,7 +33,7 @@ class enemigoBase:public sf::Drawable,public colisionable{
         sf::RectangleShape getHitbox()const override;
 
         void draw(sf::RenderTarget& target, sf::RenderStates state)const override;
-        void update(pj ejemplo);
+        virtual void update(pj ejemplo);
         void setSpritePosition(int posX, int posY, int posA, int posB);
         void muerte();
         void respawn();

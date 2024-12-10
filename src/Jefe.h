@@ -8,6 +8,7 @@ class Jefe:public enemigoBase {
     public:
         Jefe();
         void attackFrames() override;
+        void update(pj ejemplo) override;
 };
 
 /*class Jefe : public sf::Drawable, public colisionable{

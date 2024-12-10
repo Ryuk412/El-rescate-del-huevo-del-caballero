@@ -46,6 +46,64 @@
             }
         }
 
+    void Jefe::update(pj ejemplo){
+        e_velocity= {};
+    if(e_velocity.x==0&&e_velocity.y==0){
+        _frame+=0.009;
+        e_sprite.setTextureRect({0 + (int)_frame*130,0,130,130}); //Ancho y Alto del Personaje,70x65.
+        if(_frame>=4){
+            _frame=0;
+        }
+    }
+
+    if(e_velocity.x==0&&e_velocity.y==0 ){
+        _frame+=0.2;
+        e_velocity.x=-2 * _direccion;
+        e_sprite.setTextureRect({130 + (int)_frame*130,130,130,130}); //Ancho y Alto del Personaje,70x65.
+        if(_frame>=6){
+            _frame=0;
+        }
+    }
+
+    if(en_hitbox.getGlobalBounds().left< limitA){
+        e_sprite.setPosition(e_sprite.getPosition().x + 4, e_sprite.getPosition().y);
+        en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
+        _direccion=_direccion*-1;
+    }
+
+    if (en_hitbox.getGlobalBounds().left + en_hitbox.getGlobalBounds().width> limitB){
+        e_sprite.setPosition(limitB - (e_sprite.getGlobalBounds().width - 103), e_sprite.getPosition().y);
+        en_hitbox.setPosition(5 + e_sprite.getGlobalBounds().left + 66, e_sprite.getGlobalBounds().top + 64);
+        _direccion=_direccion*-1;
+    }
+
+    if(e_velocity.x< 0){
+        e_sprite.setScale(-3,3);//setScale es el encargado del efecto visual para que el personaje se de vuelta
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left+20,e_sprite.getGlobalBounds().top+80);
+        damageHitbox.setPosition(e_sprite.getGlobalBounds().left+10,e_sprite.getGlobalBounds().top+80);
+    } else if(e_velocity.x> 0 ){
+        e_sprite.setScale(3,3);
+        attackHitbox.setPosition(e_sprite.getGlobalBounds().left+90,e_sprite.getGlobalBounds().top+80);
+        damageHitbox.setPosition(e_sprite.getGlobalBounds().left+100,e_sprite.getGlobalBounds().top+80);
+    }
+
+    if (countdown >= 0){
+            attack=false;
+            _frame2 = 0;
+            countdown-=0.1;
+    }
+
+    if(attackHitbox.getGlobalBounds().intersects(ejemplo.getHitbox().getGlobalBounds())&&countdown<=0){
+        attack=true;
+    }
+
+    if(attack==true){
+        attackFrames();
+    }
+    e_sprite.move(e_velocity);
+
+    en_hitbox.setPosition( e_sprite.getGlobalBounds().left + 30, e_sprite.getGlobalBounds().top + 50 );
+    }
 /*    void Jefe::update(mapa& _objetoMapa, pj ejemplo){
 
     j_velocity={};
