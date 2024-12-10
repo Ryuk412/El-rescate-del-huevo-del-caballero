@@ -13,14 +13,15 @@ game::game(sf::RenderWindow& window)
     camara.setSize(800.0f,600.0f);
     camara.move(0,-200);
     font.loadFromFile("menu/fuente/PixelifySans-Bold.ttf");
+    contador=0;
+    textoTest.setCharacterSize(15);
     textoTest.setFont(font);
     textoTest.setPosition(30,25);
     textoTest.setFillColor(sf::Color::White);
+    caballeroVida.setCharacterSize(15);
     caballeroVida.setFont(font);
-    caballeroVida.setPosition(30,40);
+    caballeroVida.setPosition(30,55);
     caballeroVida.setFillColor(sf::Color::White);
-    contador=0;
-    textoTest.setCharacterSize(30);
     nivelActual=1;
     respawnMap(nivelActual);
 
@@ -120,6 +121,8 @@ void game::updateCharacters(){
     }
 
     oso.update(mapaTest,ejemplo);
+    caballeroVida.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+20);
+    textoTest.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+10);
 }
 
 void game::checkCollisions(){
@@ -195,6 +198,7 @@ void game::updateCamera(sf::RenderWindow& window){
 
 //Toda las verificaiones y los updates de cada objeto van acá
 void game::update(sf::RenderWindow& window){
+
     updateEvent(window);
     updateCharacters();
     updateCamera(window);
