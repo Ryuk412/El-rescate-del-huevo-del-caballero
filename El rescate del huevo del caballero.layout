@@ -2,59 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\Jugador.cpp" open="0" top="0" tabpos="61" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\Menu.h" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="89" topLine="2" />
-		</Cursor>
-	</File>
-	<File name="data\characters\clsPJ.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="8212" topLine="205" />
-		</Cursor>
-	</File>
-	<File name="src\Creditos.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="279" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Opciones.h" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="166" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Creditos.h" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="166" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\ArchivoJugadores.cpp" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\mapa.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3758" topLine="96" />
-		</Cursor>
-	</File>
-	<File name="src\CargarPartida.cpp" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="28" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Jugar.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="895" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="155" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\inc.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="30" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\NuevaPartida.cpp" open="0" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -62,34 +12,19 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Botones.h" open="0" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\CargarPartida.h" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
+			<Cursor1 position="52" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\game.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Jugador.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="8689" topLine="20" />
+			<Cursor1 position="734" topLine="1" />
 		</Cursor>
 	</File>
-	<File name="include\enemigoBase.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\GameOver.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Menu.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="643" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Opciones.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1442" topLine="10" />
-		</Cursor>
-	</File>
-	<File name="src\enemigo.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="597" topLine="0" />
+			<Cursor1 position="249" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="data\etc\Item.cpp" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -97,19 +32,19 @@
 			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Historia.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Jugar.cpp" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="166" topLine="4" />
+			<Cursor1 position="895" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Historia.h" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\game.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="187" topLine="0" />
+			<Cursor1 position="1659" topLine="44" />
 		</Cursor>
 	</File>
-	<File name="include\enemigo.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="297" topLine="0" />
+			<Cursor1 position="155" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="include\Jugar.h" open="0" top="0" tabpos="25" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -117,14 +52,134 @@
 			<Cursor1 position="181" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\CargarPartida.h" open="0" top="0" tabpos="23" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Botones.cpp" open="0" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="52" topLine="0" />
+			<Cursor1 position="151" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\inc.h" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Jugador.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="809" topLine="2" />
+		</Cursor>
+	</File>
+	<File name="include\enemigo.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="297" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Opciones.h" open="0" top="0" tabpos="27" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="166" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\game.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9927" topLine="231" />
+		</Cursor>
+	</File>
+	<File name="data\characters\pj.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1063" topLine="18" />
+		</Cursor>
+	</File>
+	<File name="src\Historia.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="645" topLine="15" />
+		</Cursor>
+	</File>
+	<File name="include\NuevaPartida.h" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="205" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\enemigo.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="597" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="data\characters\clsPJ.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2483" topLine="52" />
+		</Cursor>
+	</File>
+	<File name="src\Jefe.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="323" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Historia.h" open="0" top="0" tabpos="24" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="187" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Jefe.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2470" topLine="69" />
+		</Cursor>
+	</File>
+	<File name="src\Final.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="294" topLine="4" />
+		</Cursor>
+	</File>
+	<File name="include\enemigoBase.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="494" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\CargarPartida.cpp" open="0" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\ArchivoJugadores.cpp" open="0" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="354" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Creditos.h" open="0" top="0" tabpos="28" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="166" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Botones.h" open="0" top="0" tabpos="30" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Creditos.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="279" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\mapa.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3758" topLine="96" />
 		</Cursor>
 	</File>
 	<File name="include\ComoJugar.h" open="0" top="0" tabpos="63" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="42" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\Pausa.h" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="86" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Pausa.cpp" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="317" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\enemigoBase.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="28" topLine="0" />
 		</Cursor>
 	</File>
 	<File name="src\mapa.h" open="0" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -137,49 +192,19 @@
 			<Cursor1 position="24" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\enemigoBase.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Menu.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="28" topLine="0" />
+			<Cursor1 position="643" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="data\characters\pj.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="data\etc\itemPuntos.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1063" topLine="18" />
+			<Cursor1 position="1037" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Botones.cpp" open="0" top="0" tabpos="29" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Opciones.cpp" open="0" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="151" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Jefe.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="323" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\game.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="911" topLine="29" />
-		</Cursor>
-	</File>
-	<File name="src\Pausa.cpp" open="0" top="0" tabpos="62" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\Menu.h" open="0" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="30" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Jefe.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2470" topLine="69" />
-		</Cursor>
-	</File>
-	<File name="include\NuevaPartida.h" open="0" top="0" tabpos="26" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="205" topLine="0" />
+			<Cursor1 position="1442" topLine="10" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

@@ -74,6 +74,8 @@
 		<Unit filename="include/CargarPartida.h" />
 		<Unit filename="include/ComoJugar.h" />
 		<Unit filename="include/Creditos.h" />
+		<Unit filename="include/Final.h" />
+		<Unit filename="include/GameOver.h" />
 		<Unit filename="include/Historia.h" />
 		<Unit filename="include/Jugador.h" />
 		<Unit filename="include/Jugar.h" />
@@ -93,6 +95,8 @@
 		<Unit filename="src/CargarPartida.cpp" />
 		<Unit filename="src/ComoJugar.cpp" />
 		<Unit filename="src/Creditos.cpp" />
+		<Unit filename="src/Final.cpp" />
+		<Unit filename="src/GameOver.cpp" />
 		<Unit filename="src/Historia.cpp" />
 		<Unit filename="src/Jefe.cpp" />
 		<Unit filename="src/Jefe.h" />
