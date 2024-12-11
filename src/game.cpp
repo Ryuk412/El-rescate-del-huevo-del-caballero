@@ -185,7 +185,7 @@ void game::checkCollisions(sf::RenderWindow& window){
     }
 }
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
-        contador=contador-100;
+        contador=0;
         respawnMap(nivelActual);
         enGameOver=1;
     }
