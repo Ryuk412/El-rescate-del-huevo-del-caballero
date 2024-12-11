@@ -35,7 +35,7 @@ Item::Item(){
     _sprite.setTexture(_textureM);
     _sprite.setOrigin(_sprite.getGlobalBounds().width/2, _sprite.getGlobalBounds().height);
     m_hitbox.setSize({_sprite.getGlobalBounds().getSize()});
-     m_hitbox.setFillColor(sf::Color::Green);
+     m_hitbox.setFillColor(sf::Color::Transparent);
 
     //ctor
 }

@@ -139,11 +139,12 @@ void game::updateCharacters(){
 }
 
 void game::checkCollisions(sf::RenderWindow& window, Jugador& _jugador){
-
+if(nivelActual<3){
     if(corazon.getActive()==false){
        corazon.respawn(mapaTest);
        corazon.setActive(true);
     }
+}
 
     if(star.getActive()==false){
        star.respawn(mapaTest);

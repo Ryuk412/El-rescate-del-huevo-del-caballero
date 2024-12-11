@@ -6,12 +6,12 @@ enemigo2::enemigo2(){
     e_sprite.setTextureRect({0,0,130,130});
     e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
     en_hitbox.setSize({60,30});
-    en_hitbox.setFillColor(sf::Color::Yellow);
+    en_hitbox.setFillColor(sf::Color::Transparent);
     e_vida=100;
     attackHitbox.setSize({10,-30});
-    attackHitbox.setFillColor(sf::Color::Red);
+    attackHitbox.setFillColor(sf::Color::Transparent);
     damageHitbox.setSize({20,-50});
-    damageHitbox.setFillColor(sf::Color::Black);
+    damageHitbox.setFillColor(sf::Color::Transparent);
     damage=40;
 }
 

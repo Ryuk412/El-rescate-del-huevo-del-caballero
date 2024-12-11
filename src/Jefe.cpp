@@ -9,12 +9,12 @@
         e_sprite.setTextureRect({0,0,130,130});
         e_sprite.setOrigin(e_sprite.getGlobalBounds().width/2, e_sprite.getGlobalBounds().height);
         en_hitbox.setSize({55,90});
-        en_hitbox.setFillColor(sf::Color::Yellow);
+        en_hitbox.setFillColor(sf::Color::Transparent);
         e_vida=100;
         attackHitbox.setSize({25,-60});
-        attackHitbox.setFillColor(sf::Color::Red);
+        attackHitbox.setFillColor(sf::Color::Transparent);
         damageHitbox.setSize({25,-50});
-        damageHitbox.setFillColor(sf::Color::Black);
+        damageHitbox.setFillColor(sf::Color::Transparent);
         damage=50;
     }
 

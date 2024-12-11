@@ -39,7 +39,7 @@ itemPuntos::itemPuntos(){
     _spriteP.setTexture(_textureP);
     _spriteP.setOrigin(_spriteP.getGlobalBounds().width/2, _spriteP.getGlobalBounds().height);
     p_hitbox.setSize({_spriteP.getGlobalBounds().getSize()});
-     p_hitbox.setFillColor(sf::Color::Green);
+     p_hitbox.setFillColor(sf::Color::Transparent);
 
     //ctor
 }
