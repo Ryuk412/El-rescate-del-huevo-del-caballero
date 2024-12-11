@@ -27,7 +27,8 @@ bool ArchivoJugadores::grabarRegistro(const Jugador &jugador){///recibe el nombr
         cout<<"grabarRegistro: error al abrir el archivo para grabar"<<endl;
         return false;
     }
-    jugador.escribirEnArchivo(p);
+    if(jugador.getPuntaje()>0)
+       jugador.escribirEnArchivo(p);
     fclose(p);
     return true;
 }

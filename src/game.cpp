@@ -186,7 +186,6 @@ void game::checkCollisions(sf::RenderWindow& window, Jugador& _jugador){
     }
 }
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
-        contador=0;
         respawnMap(nivelActual);
         enGameOver=1;
     }
@@ -246,6 +245,7 @@ void game::render(sf::RenderWindow& window, Jugador& _jugador){
             if(contador>0){
             playerFile.grabarRegistro(_jugador);
             }
+            contador=0;
             gameOverMenu(window);
             enGameOver=0;
         }
