@@ -47,7 +47,7 @@ void nuevaPartidaMenu(sf::RenderWindow& window){
 
                     _jugador.setNombre(_nombreJugador);
                     _archivo.grabarRegistro(_jugador);
-                    historiaMenu(window);
+                    historiaMenu(window, _jugador);
 
                 }
             }

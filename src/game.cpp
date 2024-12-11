@@ -1,7 +1,7 @@
 #include "game.h"
 #include <iostream>
 
-game::game(sf::RenderWindow& window)
+game::game(sf::RenderWindow& window, Jugador& _jugador)
 {
     while (!mapaTest.mapaCargado()) {
         std::cout<<"Mapa cargando..."<<std::endl;
@@ -139,7 +139,7 @@ void game::updateCharacters(){
     textoPuntos.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+10);
 }
 
-void game::checkCollisions(sf::RenderWindow& window){
+void game::checkCollisions(sf::RenderWindow& window, Jugador& _jugador){
 
     if(corazon.getActive()==false){
        corazon.respawn(mapaTest);
@@ -154,12 +154,14 @@ void game::checkCollisions(sf::RenderWindow& window){
     if(ejemplo.isCollision(star)) {
             contador+=20;
             star.setActive(false);
-            jugador.setPuntaje(contador);
-            std::cout<<"se guardo la moneda: "<<jugador.getPuntaje()<<std::endl;
+            _jugador.setPuntaje(contador);
+            std::cout<<"se guardo la moneda: "<<_jugador.getPuntaje()<<std::endl;
     }
 
     if(ejemplo.isCollision(corazon)){
-        ejemplo.curar(25);
+        if(ejemplo.getVida()<100){
+            ejemplo.curar(25);
+        }
         corazon.setActive(false);
     }
     //For dinámico donde se verifica si la hitbox de pj se cruza con algún ataque de los enemigos en el vector
@@ -219,12 +221,12 @@ void game::updateCamera(sf::RenderWindow& window){
 }
 
 //Toda las verificaiones y los updates de cada objeto van acá
-void game::update(sf::RenderWindow& window){
+void game::update(sf::RenderWindow& window, Jugador& _jugador){
 
     updateEvent(window);
     updateCharacters();
     updateCamera(window);
-    checkCollisions(window);
+    checkCollisions(window, _jugador);
     textoPuntos.setString("PUNTOS: "+std::to_string(contador));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 
@@ -233,7 +235,7 @@ void game::update(sf::RenderWindow& window){
 }
 
 //Todas las visualizaciones
-void game::render(sf::RenderWindow& window){
+void game::render(sf::RenderWindow& window, Jugador& _jugador){
         window.clear();
         mapaTest.dibujar(window);
 
@@ -242,6 +244,7 @@ void game::render(sf::RenderWindow& window){
             enPausa=0;
         }
         if(enGameOver){
+            playerFile.grabarRegistro(_jugador);
             gameOverMenu(window);
             enGameOver=0;
         }

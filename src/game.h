@@ -21,6 +21,7 @@
 #include "GameOver.h"
 #include "Jugador.h"
 #include "Final.h"
+#include "ArchivoJugadores.h"
 
 //Clase que funciona como el game engine.
 
@@ -50,7 +51,7 @@ class game{
         void setLevel(int nivelActual);
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
-        void checkCollisions(sf::RenderWindow& window);
+        void checkCollisions(sf::RenderWindow& window, Jugador& _jugador);
         void respawnMap(int nivelActual);
         int nivelActual;
         bool lvl1=true;
@@ -61,17 +62,17 @@ class game{
         bool enPausa;
 
         Final finalm;
-        Jugador jugador;
+        ArchivoJugadores playerFile;
     public:
     //Constructor y destructor
-        game(sf::RenderWindow& window);
+        game(sf::RenderWindow& window, Jugador& _jugador);
         virtual ~game();
     //Nexo entre game y main:
         const bool isRunning(sf::RenderWindow& window) const;
     //Funciones:
         void updateEvent(sf::RenderWindow& window);
-        void update(sf::RenderWindow& window);
-        void render(sf::RenderWindow& window);
+        void update(sf::RenderWindow& window, Jugador& _jugador);
+        void render(sf::RenderWindow& window, Jugador& _jugador);
 
 };
 

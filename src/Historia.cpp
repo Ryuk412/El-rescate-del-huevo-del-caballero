@@ -1,7 +1,7 @@
 #include "Historia.h"
 #include "Pausa.h"
 
-void historiaMenu(sf::RenderWindow& window){
+void historiaMenu(sf::RenderWindow& window, Jugador& _jugador){
     Boton empezar(273, 496, 255, 30, " ");
     Boton pausa(690, 55, 50, 50, " ");
 
@@ -22,11 +22,11 @@ void historiaMenu(sf::RenderWindow& window){
             if(event.type == sf::Event::MouseButtonPressed){
 
                 if (empezar.MouseClick(window)){
-                    game juego(window);
+                    game juego(window, _jugador);
 
                     while (juego.isRunning(window)){
-                        juego.update(window);
-                        juego.render(window);
+                        juego.update(window, _jugador);
+                        juego.render(window, _jugador);
                     }
                 }
 
