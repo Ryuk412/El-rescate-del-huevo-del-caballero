@@ -6,17 +6,14 @@ using namespace std;
 //getters(metodos q nos permiten acceder a los valores de los atributos privados de la clase jugador)
 std::string Jugador::getNombre()const {return _nombre;}
 int Jugador::getPuntaje()const {return _puntaje;}
-int Jugador::getNivel()const {return _nivel;}
 
 //setters(metodos que nos permiten modificar los valores de los atributos privados)
 void Jugador::setNombre(const std::string &n){_nombre = n;}
 void Jugador::setPuntaje(int p){_puntaje = p;}
-void Jugador::setNivel(int nv){ _nivel = nv;}
 
 void Jugador::Mostrar() const{
     cout<<"Nombre: "<<_nombre<<endl;
     cout<<"Puntaje: "<<_puntaje<<endl;
-    cout<<"Nivel: "<<_nivel<<endl;
 }
 
 // guarda los datos del jugador en el archivo
@@ -27,7 +24,6 @@ void Jugador::escribirEnArchivo(FILE *pArchivo)const{ ///recibe como parametro e
     fwrite(&longitud, sizeof(longitud), 1, pArchivo);///escribe la longitud del nombre al archivo
     fwrite(_nombre.c_str(), sizeof(char), longitud, pArchivo);///escribe el nombre (caracter por caracter)
     fwrite(&_puntaje, sizeof(_puntaje), 1, pArchivo);///escribe el puntaje
-    fwrite(&_nivel, sizeof(_nivel), 1, pArchivo);///escribe el nivel
 }
 
 ///verifica que los datos del jugador haya hayan sido recbidos correctamente y sin ningun dato perdido
@@ -56,7 +52,6 @@ bool Jugador::leerDeArchivo(FILE *pArchivo){
 
     /// 2- lee el puntaje y el nivel
     if(fread(&_puntaje, sizeof(_puntaje), 1, pArchivo) != 1){return false;}
-    if(fread(&_nivel, sizeof(_nivel), 1, pArchivo) != 1){return false;}
 
     /// 3 - si todo salio bien devolvera TRUE
     return true;

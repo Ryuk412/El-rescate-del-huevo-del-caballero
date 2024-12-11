@@ -8,7 +8,6 @@ class Jugador{
 private:
     std::string _nombre="";
     int _puntaje=0;
-    int _nivel=1;
 
 public:
 
