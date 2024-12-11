@@ -244,7 +244,9 @@ void game::render(sf::RenderWindow& window, Jugador& _jugador){
             enPausa=0;
         }
         if(enGameOver){
+            if(contador>0){
             playerFile.grabarRegistro(_jugador);
+            }
             gameOverMenu(window);
             enGameOver=0;
         }
