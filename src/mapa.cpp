@@ -10,7 +10,7 @@ mapa::mapa() {
 void mapa::cargarTexturaMapa(){
     // Cargar la textura
     if (!_nivel1.loadFromFile("data/maps/nivel1_mapa.png")) {
-        std::cerr << "Error al cargar el archivo del Mapa" << std::endl;
+        std::cout << "Error al cargar el archivo del Mapa" << std::endl;
     }
     if(!_nivel2.loadFromFile("data/maps/nivel2_mapa.png")){
         std::cout << "Error al cargar el archivo del Mapa 2" << std::endl;

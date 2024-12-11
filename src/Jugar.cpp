@@ -5,7 +5,7 @@ void jugarMenu(sf::RenderWindow& window){
 
     Boton volver(363, 463, 70, 20, " ");
     Boton nuevaPartida(240, 225, 320, 70, "NUEVA PARTIDA");
-    Boton cargarPartida(240, 310, 320, 70, "CARGAR PARTIDA");
+    Boton cargarPartida(240, 310, 320, 70, "PUNTAJES");
 
     sf::Texture texture;
     if(!texture.loadFromFile("menu/jugar.png")){return;}

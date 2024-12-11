@@ -2,11 +2,10 @@
 #include "ArchivoJugadores.h"
 
 void cargarPartidaMenu(sf::RenderWindow& window){
-
     Boton volver(363, 463, 70, 20, " ");
 
     sf::Texture _textura;
-    if(!_textura.loadFromFile("menu/cargar_partida.png")){return;}
+    if(!_textura.loadFromFile("menu/puntajes.png")){return;}
 
 
     ArchivoJugadores archivo;
