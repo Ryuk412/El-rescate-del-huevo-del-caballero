@@ -85,7 +85,7 @@ void game::respawnMap(int nivelActual){
         case 3:
             enemigos.clear();
             enemigos.push_back(std::unique_ptr<Jefe>(new Jefe()));
-            this->enemigos[0]->setSpritePosition(300,-100,230,380);
+            this->enemigos[0]->setSpritePosition(300,680,200,700);
             break;
         default:
             break;
@@ -187,7 +187,7 @@ void game::checkCollisions(sf::RenderWindow& window, Jugador& _jugador){
     }
 }
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
-        contador=0;
+        contador=contador-100;
         respawnMap(nivelActual);
         enGameOver=1;
     }
