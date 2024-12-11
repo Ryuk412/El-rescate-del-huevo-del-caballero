@@ -3,8 +3,7 @@
 
 game::game(sf::RenderWindow& window, Jugador& _jugador)
 {
-    while (!mapaTest.mapaCargado()) {
-        std::cout<<"Mapa cargando..."<<std::endl;
+    while (!mapaTest.mapaCargado()){
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }
     window.setFramerateLimit(60);
@@ -187,7 +186,7 @@ void game::checkCollisions(sf::RenderWindow& window, Jugador& _jugador){
     }
 }
     if(!ejemplo.isAlive()||ejemplo.getHitbox().getGlobalBounds().top + ejemplo.getHitbox().getGlobalBounds().height > 600){
-        contador=contador-100;
+        contador=0;
         respawnMap(nivelActual);
         enGameOver=1;
     }
