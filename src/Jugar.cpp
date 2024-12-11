@@ -1,11 +1,11 @@
 #include "Jugar.h"
-#include "Puntajes.h"
+#include "CargarPartida.h"
 
 void jugarMenu(sf::RenderWindow& window){
 
     Boton volver(363, 463, 70, 20, " ");
     Boton nuevaPartida(240, 225, 320, 70, "NUEVA PARTIDA");
-    Boton puntajes(240, 310, 320, 70, "PUNTAJES");
+    Boton cargarPartida(240, 310, 320, 70, "CARGAR PARTIDA");
 
     sf::Texture texture;
     if(!texture.loadFromFile("menu/jugar.png")){return;}
@@ -25,7 +25,7 @@ void jugarMenu(sf::RenderWindow& window){
 
                 if (nuevaPartida.MouseClick(window)){nuevaPartidaMenu(window);}
 
-                if (puntajes.MouseClick(window)){puntajesMenu(window);}
+                if (cargarPartida.MouseClick(window)){cargarPartidaMenu(window);}
             }
         }
 
@@ -34,7 +34,7 @@ void jugarMenu(sf::RenderWindow& window){
         window.draw(sprite);
         volver.draw(window);
         nuevaPartida.draw(window);
-        puntajes.draw(window);
+        cargarPartida.draw(window);
         window.display();
     }
 }
