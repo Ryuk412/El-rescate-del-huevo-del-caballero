@@ -4689,7 +4689,7 @@
 1731143439 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\enemigoslime.h
 	"inc.h"
 
-1733883431 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
+1733889823 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\game.cpp
 	"game.h"
 	<iostream>
 
@@ -4734,9 +4734,7 @@
 	<iostream>
 	<string>
 
-1733615077 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
-	"CargarPartida.h"
-	"ArchivoJugadores.h"
+1733890358 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\cargarpartida.cpp
 
 1733615077 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\cargarpartida.h
 	<SFML/Graphics.hpp>
@@ -4799,9 +4797,9 @@
 	<iostream>
 	<cstring>
 
-1733615076 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
+1733890422 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\jugar.cpp
 	"Jugar.h"
-	"CargarPartida.h"
+	"Puntajes.h"
 
 1733885320 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\menu.cpp
 	"Menu.h"
@@ -7204,4 +7202,12 @@
 1733855183 source:c:\users\gabriel\downloads\el-rescate-del-huevo-del-caballero-afyuda\el-rescate-del-huevo-del-caballero\src\gameover.cpp
 	"GameOver.h"
 	"Menu.h"
+
+1733890358 source:c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\src\puntajes.cpp
+	"Puntajes.h"
+	"ArchivoJugadores.h"
+
+1733890358 c:\users\elvis\onedrive - frgp.utn.edu.ar\desktop\escritorio\progra ii\el-rescate-del-huevo-del-caballero\include\puntajes.h
+	<SFML/Graphics.hpp>
+	"Botones.h"
 
