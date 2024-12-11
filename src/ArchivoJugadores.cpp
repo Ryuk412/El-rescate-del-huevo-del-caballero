@@ -42,7 +42,7 @@ std::string ArchivoJugadores::listarRegistro(){
 
     Jugador jug;
     while(jug.leerDeArchivo(p)){
-        registro += jug.getNombre() + "     " + std::to_string(jug.getPuntaje()) +" puntos     nivel " + std::to_string(jug.getNivel()) + "\n";
+        registro += jug.getNombre() + "     " + std::to_string(jug.getPuntaje()) +" puntos\n";
     }
 
     fclose(p);
