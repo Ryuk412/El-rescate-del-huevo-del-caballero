@@ -48,9 +48,9 @@ bool Jugador::leerDeArchivo(FILE *pArchivo){
         return false;
     }
 
-    caracteresDelNombre[longitud]='\0';///guarda \0 al final del nombre
+    caracteresDelNombre[longitud]='\0';///guarda '\0' al final del nombre
 
-    _nombre = std::string(caracteresDelNombre);///le asigna al nombre \0
+    _nombre = std::string(caracteresDelNombre);///le asigna al nombre '\0'
 
     delete[] caracteresDelNombre;///libera el espacio de memoria
 

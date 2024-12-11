@@ -1,8 +1,11 @@
-#ifndef FINAL
-#define FINAL
+#ifndef FINAL_H
+#define FINAL_H
 
 #include <SFML/Graphics.hpp>
 
-void finalMenu(sf::RenderWindow& window);
+class Final{
+public:
+    void finalMenu(sf::RenderWindow& window);
+};
 
-#endif // FINAL
+#endif // FINAL_H

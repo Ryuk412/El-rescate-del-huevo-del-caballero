@@ -139,7 +139,7 @@ void game::updateCharacters(){
     textoPuntos.setPosition(ejemplo.getPositionX()+10,ejemplo.getPositionY()+10);
 }
 
-void game::checkCollisions(){
+void game::checkCollisions(sf::RenderWindow& window){
 
     if(corazon.getActive()==false){
        corazon.respawn(mapaTest);
@@ -192,6 +192,7 @@ void game::checkCollisions(){
     if(enemigos.size()==0){
             setLevel(nivelActual);
             if(nivelActual==3){
+                finalm.finalMenu(window);
                 return;
             }
             nivelActual++;
@@ -223,7 +224,7 @@ void game::update(sf::RenderWindow& window){
     updateEvent(window);
     updateCharacters();
     updateCamera(window);
-    checkCollisions();
+    checkCollisions(window);
     textoPuntos.setString("PUNTOS: "+std::to_string(contador));
     caballeroVida.setString("VIDA DEL CABALLERO: "+std::to_string((int)ejemplo.getVida()));
 

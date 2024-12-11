@@ -20,6 +20,7 @@
 #include "Pausa.h"
 #include "GameOver.h"
 #include "Jugador.h"
+#include "Final.h"
 
 //Clase que funciona como el game engine.
 
@@ -49,7 +50,7 @@ class game{
         void setLevel(int nivelActual);
         void updateCharacters();
         void updateCamera(sf::RenderWindow& window);
-        void checkCollisions();
+        void checkCollisions(sf::RenderWindow& window);
         void respawnMap(int nivelActual);
         int nivelActual;
         bool lvl1=true;
@@ -59,6 +60,7 @@ class game{
         bool enGameOver;
         bool enPausa;
 
+        Final finalm;
         Jugador jugador;
     public:
     //Constructor y destructor
